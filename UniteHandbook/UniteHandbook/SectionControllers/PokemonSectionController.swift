@@ -7,9 +7,19 @@
 
 import IGListKit
 
+protocol PokemonSectionControllerDelegate {
+    func didSelectPokemon(pokemon: Pokemon)
+}
+
 class PokemonSectionController: ListSectionController {
     
     private var model: Pokemon? = nil
+    private var delegate: PokemonSectionControllerDelegate?
+    
+    convenience init(delegate: PokemonSectionControllerDelegate) {
+        self.init()
+        self.delegate = delegate
+    }
     
     internal override func numberOfItems() -> Int {
         return 1
@@ -32,6 +42,7 @@ class PokemonSectionController: ListSectionController {
         self.model = object as? Pokemon
     }
     internal override func didSelectItem(at index: Int) {
-        
+        guard let model = model else { return }
+        self.delegate?.didSelectPokemon(pokemon: model)
     }
 }
