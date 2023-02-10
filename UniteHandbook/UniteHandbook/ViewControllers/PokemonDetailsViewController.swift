@@ -130,6 +130,7 @@ class PokemonDetailsViewController: UIViewController {
     }()
     private var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionView.showsVerticalScrollIndicator = false
         collectionView.layer.cornerRadius = 20
@@ -149,6 +150,7 @@ class PokemonDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = .white
+        self.createSections()
         self.setup()
     }
     
@@ -232,7 +234,13 @@ class PokemonDetailsViewController: UIViewController {
         }
     }
     
+    private func createSections() {
+        self.abilitiesArray.append(AbilityDetails(imageName: "\(self.pokemon.name.lowercased())_\(self.pokemon.ability.name.replacingOccurrences(of: " ", with: "").lowercased()).png", name: self.pokemon.ability.name, desc: self.pokemon.ability.desc))
+        self.abilitiesArray.append(AbilityDetails(imageName: "\(self.pokemon.name.lowercased())_\(self.pokemon.ability.name.replacingOccurrences(of: " ", with: "").lowercased()).png", name: self.pokemon.ability.name, desc: self.pokemon.ability.desc))
+    }
+    
     @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+        self.adapter.performUpdates(animated: false)
         self.adapter.reloadData()
     }
 }
@@ -251,6 +259,9 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
     
     public func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         
+        if object is AbilityDetails {
+            return AbilitiesSectionController()
+        }
         return ListSectionController()
     }
     
