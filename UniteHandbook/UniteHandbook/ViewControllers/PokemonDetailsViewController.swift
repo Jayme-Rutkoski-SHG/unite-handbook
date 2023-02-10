@@ -104,6 +104,21 @@ class PokemonDetailsViewController: UIViewController {
         return button
     }()
     
+    private var segmentedControl: UISegmentedControl = {
+        let control = UISegmentedControl(frame: .zero)
+        control.insertSegment(withTitle: "Abilities", at: 0, animated: false)
+        control.insertSegment(withTitle: "Builds", at: 1, animated: false)
+        control.insertSegment(withTitle: "Stats", at: 2, animated: false)
+        
+        control.selectedSegmentTintColor = UIColor(hex: 0xF9CB53)
+        control.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.white], for: .normal)
+        control.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.black], for: .selected)
+        control.backgroundColor = UIColor(hex: 0x3B276B)
+        control.selectedSegmentIndex = 0
+        
+        return control
+    }()
+    
     private lazy var adapter: ListAdapter = {
         let adapter = ListAdapter(updater: ListAdapterUpdater.init(), viewController: self, workingRangeSize: 0)
         
@@ -191,6 +206,13 @@ class PokemonDetailsViewController: UIViewController {
             make.top.equalTo(self.labelStyle.snp.bottom).offset(5)
             make.right.equalTo(self.viewContainer.snp.right)
             make.height.equalTo(25)
+        }
+        
+        self.viewContainer.addSubview(self.segmentedControl)
+        self.segmentedControl.snp.makeConstraints { make in
+            make.top.equalTo(self.imageView.snp.bottom).offset(10)
+            make.left.equalTo(self.viewContainer.snp.left)
+            make.right.equalTo(self.viewContainer.snp.right)
         }
     }
 }
