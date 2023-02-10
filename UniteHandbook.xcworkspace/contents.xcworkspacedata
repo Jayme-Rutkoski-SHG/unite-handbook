@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:UniteHandbook/UniteHandbook.xcodeproj">
+      location = "group:/Users/jayme-rutkoski/Development/Sandhills/GitHub/unite-handbook/UniteHandbook/UniteHandbook.xcodeproj">
    </FileRef>
 </Workspace>
