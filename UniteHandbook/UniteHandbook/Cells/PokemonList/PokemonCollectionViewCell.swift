@@ -58,6 +58,15 @@ class PokemonCollectionViewCell: UICollectionViewCell {
         
         return imageView
     }()
+    private var imageViewRight: UIImageView = {
+        let imageView = UIImageView(frame: .zero)
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(named: "right_arrow")
+        imageView.contentMode = .scaleAspectFit
+        
+        return imageView
+    }()
+    
     private var stackView: UIStackView = {
         let stackView = UIStackView(frame: .zero)
         stackView.axis = .vertical
@@ -111,6 +120,14 @@ class PokemonCollectionViewCell: UICollectionViewCell {
             make.left.equalTo(self.contentView.snp.left).offset(10)
             make.right.equalTo(self.contentView.snp.right).offset(10)
             make.height.equalTo(0.3)
+        }
+        
+        self.contentView.addSubview(self.imageViewRight)
+        self.imageViewRight.snp.makeConstraints { make in
+            make.right.equalTo(self.contentView.snp.right).offset(-15)
+            make.centerY.equalTo(self.contentView.snp.centerY)
+            make.height.equalTo(25)
+            make.width.equalTo(25)
         }
     }
 }

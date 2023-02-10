@@ -13,6 +13,16 @@ class PokemonListViewController: UIViewController {
 
     public var pokemonList: [Pokemon] = [Pokemon]()
     
+    private lazy var gradientLayer: CAGradientLayer = {
+        let layer = CAGradientLayer()
+        layer.colors = [UIColor(hex:0xFCA97B).cgColor, UIColor(hex:0xA971A2).cgColor]
+        layer.startPoint = CGPoint(x:0, y:0)
+        layer.endPoint = CGPoint(x:0, y:1)
+        layer.anchorPoint = CGPointZero;
+        layer.frame = self.collectionView.bounds
+        
+        return layer
+    }()
     private lazy var adapter: ListAdapter = {
         let adapter = ListAdapter(updater: ListAdapterUpdater.init(), viewController: self, workingRangeSize: 0)
         
@@ -21,7 +31,6 @@ class PokemonListViewController: UIViewController {
     private var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
-        collectionView.backgroundColor = .white
         collectionView.showsVerticalScrollIndicator = false
         
         return collectionView
@@ -36,6 +45,14 @@ class PokemonListViewController: UIViewController {
         super.viewDidLoad()
 
         self.setup()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        let bgView = UIView(frame: self.collectionView.bounds)
+        bgView.layer.insertSublayer(self.gradientLayer, at: 0)
+        self.collectionView.backgroundView = bgView
     }
     
     private func setup() {
