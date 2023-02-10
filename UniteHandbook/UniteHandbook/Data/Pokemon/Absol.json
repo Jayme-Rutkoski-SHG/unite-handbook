@@ -7,7 +7,7 @@
     "Ability": {
         "Name": "Super Luck",
         "Desc": "Increases Critical-Hit rate by 15%."
-    }
+    },
     "Moves": [
         {
             "Name": "Feint",
@@ -109,7 +109,7 @@
     },
     "Stats": [
         {
-            "Level": 1
+            "Level": 1,
             "HP": 3000,
             "Attack": 140,
             "Defense": 52,
@@ -122,7 +122,7 @@
             "Speed": 3650
         },
         {
-            "Level": 2
+            "Level": 2,
             "HP": 3107,
             "Attack": 157,
             "Defense": 59,
@@ -135,7 +135,7 @@
             "Speed": 3650
         },
         {
-            "Level": 3
+            "Level": 3,
             "HP": 3224,
             "Attack": 175,
             "Defense": 67,
@@ -148,7 +148,7 @@
             "Speed": 3650
         },
         {
-            "Level": 4
+            "Level": 4,
             "HP": 3353,
             "Attack": 195,
             "Defense": 76,
@@ -161,7 +161,7 @@
             "Speed": 3650
         },
         {
-            "Level": 5
+            "Level": 5,
             "HP": 3495,
             "Attack": 217,
             "Defense": 86,
@@ -174,7 +174,7 @@
             "Speed": 3650
         },
         {
-            "Level": 6
+            "Level": 6,
             "HP": 3651,
             "Attack": 241,
             "Defense": 97,
@@ -187,7 +187,7 @@
             "Speed": 3650
         },
         {
-            "Level": 7
+            "Level": 7,
             "HP": 3823,
             "Attack": 268,
             "Defense": 109,
@@ -200,7 +200,7 @@
             "Speed": 3650
         },
         {
-            "Level": 8
+            "Level": 8,
             "HP": 4012,
             "Attack": 298,
             "Defense": 122,
@@ -213,7 +213,7 @@
             "Speed": 3650
         },
         {
-            "Level": 9
+            "Level": 9,
             "HP": 4221,
             "Attack": 331,
             "Defense": 136,
@@ -226,7 +226,7 @@
             "Speed": 3650
         },
         {
-            "Level": 10
+            "Level": 10,
             "HP": 4451,
             "Attack": 367,
             "Defense": 152,
@@ -239,7 +239,7 @@
             "Speed": 3650
         },
         {
-            "Level": 11
+            "Level": 11,
             "HP": 4704,
             "Attack": 407,
             "Defense": 170,
@@ -252,7 +252,7 @@
             "Speed": 3650
         },
         {
-            "Level": 12
+            "Level": 12,
             "HP": 4983,
             "Attack": 451,
             "Defense": 189,
@@ -265,7 +265,7 @@
             "Speed": 3650
         },
         {
-            "Level": 13
+            "Level": 13,
             "HP": 5290,
             "Attack": 499,
             "Defense": 210,
@@ -278,7 +278,7 @@
             "Speed": 3650
         },
         {
-            "Level": 14
+            "Level": 14,
             "HP": 5628,
             "Attack": 552,
             "Defense": 233,
@@ -291,7 +291,7 @@
             "Speed": 3650
         },
         {
-            "Level": 15
+            "Level": 15,
             "HP": 6000,
             "Attack": 610,
             "Defense": 259,
