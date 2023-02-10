@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class PokemonListViewController: UIViewController {
 
@@ -18,10 +19,23 @@ class PokemonListViewController: UIViewController {
 
         return view
     }()
+    
+    public convenience init(pokemonList: [Pokemon]) {
+        self.init(nibName: nil, bundle: nil)
+        self.pokemonList = pokemonList
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        self.setup()
+    }
+    
+    private func setup() {
+        self.view.addSubview(self.collectionView)
+        self.collectionView.snp.makeConstraints { make in
+            make.edges.equalTo(self.view)
+        }
     }
 }
 
@@ -37,6 +51,7 @@ extension PokemonListViewController : UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokemonCollectionViewCell", for: indexPath) as! PokemonCollectionViewCell
+        cell.name = self.pokemonList[indexPath.row].name
         
         return cell
     }
