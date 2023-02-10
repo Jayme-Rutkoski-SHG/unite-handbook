@@ -23,7 +23,6 @@ class PokemonListViewController: UIViewController {
 
         
     }
-
 }
 
 extension PokemonListViewController : UICollectionViewDataSource {
