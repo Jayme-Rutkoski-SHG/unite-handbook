@@ -235,8 +235,31 @@ class PokemonDetailsViewController: UIViewController {
     }
     
     private func createSections() {
-        self.abilitiesArray.append(AbilityDetails(imageName: "\(self.pokemon.name.lowercased())_\(self.pokemon.ability.name.replacingOccurrences(of: " ", with: "").lowercased()).png", name: self.pokemon.ability.name, desc: self.pokemon.ability.desc))
-        self.abilitiesArray.append(AbilityDetails(imageName: "\(self.pokemon.name.lowercased())_\(self.pokemon.ability.name.replacingOccurrences(of: " ", with: "").lowercased()).png", name: self.pokemon.ability.name, desc: self.pokemon.ability.desc))
+        self.abilitiesArray.append(AbilityDetails(
+            imageName: "\(self.pokemon.name.lowercased())_\(self.pokemon.ability.name.replacingOccurrences(of: " ", with: "").lowercased()).png",
+            name: self.pokemon.ability.name,
+            desc: self.pokemon.ability.desc))
+        
+        if let moves = convertMovesToMoveDetailsArray(moves: self.pokemon.moves) {
+            for move in moves {
+                self.abilitiesArray.append(move)
+            }
+        }
+    }
+    
+    private func convertMovesToMoveDetailsArray(moves: [Move]?) -> [MoveDetails]? {
+        guard let moves = moves else { return nil }
+        var result = [MoveDetails]()
+        for move in moves {
+            result.append(MoveDetails(
+                imageName: "\(self.pokemon.name.lowercased())_\(move.name.lowercased())",
+                name: move.name,
+                category: move.category,
+                cooldown: move.cooldown,
+                levelDetails: move.levelDetails,
+                upgrades: convertMovesToMoveDetailsArray(moves: move.upgrades)))
+        }
+        return result
     }
     
     @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
@@ -261,6 +284,8 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
         
         if object is AbilityDetails {
             return AbilitiesSectionController()
+        } else if object is MoveDetails {
+            return MoveSectionController()
         }
         return ListSectionController()
     }

@@ -15,11 +15,6 @@ class AbilityCollectionViewCell: UICollectionViewCell {
             self.labelName.text = self.name
         }
     }
-    public var desc: String = "" {
-        didSet {
-            self.labelDesc.text = self.desc
-        }
-    }
     public var image: UIImage? {
         didSet {
             self.imageView.image = self.image
@@ -43,12 +38,20 @@ class AbilityCollectionViewCell: UICollectionViewCell {
         label.textAlignment = .left
         label.font = UIFont(name: "Georgia", size: 14.0)
         label.numberOfLines = 0
+        label.text = "Passive Ability"
         
         return label
     }()
     private var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.contentMode = .scaleAspectFit
+        
+        return imageView
+    }()
+    private var imageViewInfo: UIImageView = {
+        let imageView = UIImageView(frame: .zero)
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(named: "info.png")
         
         return imageView
     }()
@@ -82,6 +85,13 @@ class AbilityCollectionViewCell: UICollectionViewCell {
         self.labelName.snp.makeConstraints { make in
             make.left.equalTo(self.imageView.snp.right).offset(8)
             make.top.equalTo(self.imageView.snp.top)
+        }
+        self.viewContainer.addSubview(self.imageViewInfo)
+        self.imageViewInfo.snp.makeConstraints { make in
+            make.centerY.equalTo(self.labelName.snp.centerY)
+            make.left.equalTo(self.labelName.snp.right).offset(8)
+            make.height.equalTo(22)
+            make.width.equalTo(22)
         }
 
         self.viewContainer.addSubview(self.labelDesc)

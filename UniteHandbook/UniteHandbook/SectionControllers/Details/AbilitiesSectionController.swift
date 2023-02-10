@@ -23,7 +23,6 @@ class AbilitiesSectionController: ListSectionController {
         guard let model = model else { return cell }
         cell.image = UIImage(named: model.imageName.lowercased())
         cell.name = model.name
-        cell.desc = model.desc
         
         return cell
     }
