@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Pokemon : Decodable {
+public class Pokemon : BaseListDiffable, Decodable {
     
     enum CodingKeys: String, CodingKey {
         case name = "Name"
@@ -29,7 +29,7 @@ public class Pokemon : Decodable {
     public var moves: [Move] = [Move]()
     public var stats: [StatDetails] = [StatDetails]()
     
-    public init() { }
+    public override init() { }
     
     required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

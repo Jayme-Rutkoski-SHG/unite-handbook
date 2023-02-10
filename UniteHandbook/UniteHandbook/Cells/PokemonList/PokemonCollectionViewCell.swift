@@ -16,13 +16,14 @@ class PokemonCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    private var labelName: UILabel {
+    private var labelName: UILabel = {
         let label = UILabel(frame: .zero)
         label.textAlignment = .left
-        label.font = UIFont(name: "Arial", size: 14.0)
+        label.text = "Test"
         
         return label
-    }
+    }()
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }

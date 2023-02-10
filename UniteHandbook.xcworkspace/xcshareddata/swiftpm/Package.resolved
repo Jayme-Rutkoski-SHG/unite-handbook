@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "iglistkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Instagram/IGListKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9875d7e15bec311f0aefb0670a70b721d73e169f"
+      }
+    },
+    {
       "identity" : "snapkit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SnapKit/SnapKit.git",

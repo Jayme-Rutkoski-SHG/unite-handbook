@@ -7,17 +7,24 @@
 
 import UIKit
 import SnapKit
+import IGListKit
 
 class PokemonListViewController: UIViewController {
 
     public var pokemonList: [Pokemon] = [Pokemon]()
     
-    private lazy var collectionView: UICollectionView = {
-        let view = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
-        view.dataSource = self
-        view.delegate = self
-
-        return view
+    private lazy var adapter: ListAdapter = {
+        let adapter = ListAdapter(updater: ListAdapterUpdater.init(), viewController: self, workingRangeSize: 0)
+        
+        return adapter
+    }()
+    private var collectionView: UICollectionView = {
+        let flowLayout = UICollectionViewFlowLayout()
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
+        collectionView.backgroundColor = .white
+        collectionView.showsVerticalScrollIndicator = false
+        
+        return collectionView
     }()
     
     public convenience init(pokemonList: [Pokemon]) {
@@ -32,32 +39,34 @@ class PokemonListViewController: UIViewController {
     }
     
     private func setup() {
+        self.adapter.collectionView = self.collectionView
+        self.adapter.dataSource = self
+        
         self.view.addSubview(self.collectionView)
         self.collectionView.snp.makeConstraints { make in
-            make.edges.equalTo(self.view)
+            make.top.equalTo(self.view.snp.top)
+            make.left.equalTo(self.view.snp.left)
+            make.right.equalTo(self.view.snp.right)
+            make.bottom.equalTo(self.view.snp.bottom)
         }
     }
 }
 
-extension PokemonListViewController : UICollectionViewDataSource {
-
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+extension PokemonListViewController: ListAdapterDataSource {
+    public func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
+        return self.pokemonList
     }
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.pokemonList.count
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokemonCollectionViewCell", for: indexPath) as! PokemonCollectionViewCell
-        cell.name = self.pokemonList[indexPath.row].name
+    
+    public func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
+        if (object is Pokemon) {
+            return PokemonSectionController()
+        }
         
-        return cell
+        return ListSectionController()
     }
-
-}
-
-extension PokemonListViewController : UICollectionViewDelegate {
+    
+    public func emptyView(for listAdapter: ListAdapter) -> UIView? {
+        return nil
+    }
     
 }
