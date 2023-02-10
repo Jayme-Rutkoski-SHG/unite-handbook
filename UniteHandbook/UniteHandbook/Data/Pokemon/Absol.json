@@ -1,0 +1,307 @@
+{
+    "Name": "Absol",
+    "AttackStyle": "Attack",
+    "Role": "Speedster",
+    "Style": "Melee",
+    "Difficulty": "Expert",
+    "Ability": {
+        "Name": "Super Luck",
+        "Desc": "Increases Critical-Hit rate by 15%."
+    }
+    "Moves": [
+        {
+            "Name": "Feint",
+            "Category": "Dash",
+            "Cooldown": 6.40,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Absol dashes in an arc, damaging all enemies hit. Each use alternates between a left and right arc. Feint ignores the target’s Defense and bypasses all shields."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Night Slash",
+                    "Category": "Dash",
+                    "Cooldown": 4.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Absol dashes in an arc, damaging the first Pokémon hit. If Absol hits, this ability can be activated within 6s – allowing Absol to dash again, dealing damage to all enemies hit and increasing attack speed once again. The second hit also has 30% increased Critical-Hit Rate on enemies below 50% max HP. \n\nCooldown on Hit or without recasting is 6s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Absol heals for 50% of damage dealt on the second hit, including critical hits."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Pursuit",
+                    "Category": "Dash",
+                    "Cooldown": 4.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Absol dashes to a location, and dashes to an enemy with its next auto attack. If Absol hits the back of the target, this ability's cooldown is reduced by 80%. If it fails to hit the back, damage is reduced. The next auto attack stays empowered for 3s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Absol gains 35% increased movement speed for 2s after the initial dash."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Slash",
+            "Category": "Melee",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Absol quickly slashes in front of themself, damaging any enemy hit by the slash. Slash has an increased critical-hit rate by 15%."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Psycho Cut",
+                    "Category": "Ranged",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Throw a wide slash forward; damaging and slowing enemies hit by 90% for 2s. This slow decreases by 25% every 0.5s. Enemies hit are marked for 5s with 3 cleansable marks. When Absol deals damage to a marked enemy, a mark is consumed, dealing extra damage. All damage dealt by Psycho Cut or its marks have a 15% increased Critical-Hit Rate."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increases Absol's movement speed by 20% when near a debuffed enemy."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sucker Punch",
+                    "Category": "Sure Hit",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Absol targets an enemy and enters a counter stance for 1s, decreasing the movement speed of the target enemy and Absol by 50% for the duration and negating all damage and effects of the next attack on Absol. While in counter stance, if Absol is attacked or the target attacks, Absol immediately exits counter stance and leaps behind the target, stunning it and dealing damage. If the attack is not triggered before the counter stance expires, Absol leaps behind the target, stunning them and dealing damage."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increases Attack Speed by 40% for 3s after using this move."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": {
+        "Name": "Midnight Slash",
+        "Category": "Area",
+        "Cooldown": 134,
+        "LevelDetails": [
+            {
+                "Level": 9,
+                "Desc": "Unleash a flurry of 5 slashes in front of Absol and become untargetable for 1.15s. This move ends by unleashing powerful blades of energy, shoving enemies and dealing damage up to 4 times at melee range and down to 1 time at maximum range. Only the first ending hit connecting with an enemy does full damage, the others, deal 30% damage to the same target."
+            }
+        ]
+    },
+    "Stats": [
+        {
+            "Level": 1
+            "HP": 3000,
+            "Attack": 140,
+            "Defense": 52,
+            "SpAttack": 20,
+            "SpDefense": 36,
+            "CritRate": 0,
+            "CDR": 0,
+            "Lifesteal": 0,
+            "AtkSpd": 0.10,
+            "Speed": 3650
+        },
+        {
+            "Level": 2
+            "HP": 3107,
+            "Attack": 157,
+            "Defense": 59,
+            "SpAttack": 23,
+            "SpDefense": 41,
+            "CritRate": 0,
+            "CDR": 0,
+            "Lifesteal": 0,
+            "AtkSpd": 0.1071,
+            "Speed": 3650
+        },
+        {
+            "Level": 3
+            "HP": 3224,
+            "Attack": 175,
+            "Defense": 67,
+            "SpAttack": 27,
+            "SpDefense": 47,
+            "CritRate": 0,
+            "CDR": 0,
+            "Lifesteal": 0,
+            "AtkSpd": 0.1149,
+            "Speed": 3650
+        },
+        {
+            "Level": 4
+            "HP": 3353,
+            "Attack": 195,
+            "Defense": 76,
+            "SpAttack": 31,
+            "SpDefense": 53,
+            "CritRate": 0,
+            "CDR": 0,
+            "Lifesteal": 0,
+            "AtkSpd": 0.1235,
+            "Speed": 3650
+        },
+        {
+            "Level": 5
+            "HP": 3495,
+            "Attack": 217,
+            "Defense": 86,
+            "SpAttack": 36,
+            "SpDefense": 60,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1329,
+            "Speed": 3650
+        },
+        {
+            "Level": 6
+            "HP": 3651,
+            "Attack": 241,
+            "Defense": 97,
+            "SpAttack": 41,
+            "SpDefense": 68,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1433,
+            "Speed": 3650
+        },
+        {
+            "Level": 7
+            "HP": 3823,
+            "Attack": 268,
+            "Defense": 109,
+            "SpAttack": 47,
+            "SpDefense": 76,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1548,
+            "Speed": 3650
+        },
+        {
+            "Level": 8
+            "HP": 4012,
+            "Attack": 298,
+            "Defense": 122,
+            "SpAttack": 53,
+            "SpDefense": 85,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1674,
+            "Speed": 3650
+        },
+        {
+            "Level": 9
+            "HP": 4221,
+            "Attack": 331,
+            "Defense": 136,
+            "SpAttack": 60,
+            "SpDefense": 95,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1813,
+            "Speed": 3650
+        },
+        {
+            "Level": 10
+            "HP": 4451,
+            "Attack": 367,
+            "Defense": 152,
+            "SpAttack": 68,
+            "SpDefense": 106,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1966,
+            "Speed": 3650
+        },
+        {
+            "Level": 11
+            "HP": 4704,
+            "Attack": 407,
+            "Defense": 170,
+            "SpAttack": 76,
+            "SpDefense": 118,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2153,
+            "Speed": 3650
+        },
+        {
+            "Level": 12
+            "HP": 4983,
+            "Attack": 451,
+            "Defense": 189,
+            "SpAttack": 85,
+            "SpDefense": 131,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2321,
+            "Speed": 3650
+        },
+        {
+            "Level": 13
+            "HP": 5290,
+            "Attack": 499,
+            "Defense": 210,
+            "SpAttack": 95,
+            "SpDefense": 146,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2526,
+            "Speed": 3650
+        },
+        {
+            "Level": 14
+            "HP": 5628,
+            "Attack": 552,
+            "Defense": 233,
+            "SpAttack": 106,
+            "SpDefense": 162,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2751,
+            "Speed": 3650
+        },
+        {
+            "Level": 15
+            "HP": 6000,
+            "Attack": 610,
+            "Defense": 259,
+            "SpAttack": 118,
+            "SpDefense": 180,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2999,
+            "Speed": 3650
+        }
+    ]
+}
