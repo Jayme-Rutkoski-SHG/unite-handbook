@@ -10,6 +10,14 @@ import UIKit
 class PokemonListViewController: UIViewController {
 
     public var pokemonList: [Pokemon] = [Pokemon]()
+    
+    private lazy var collectionView: UICollectionView = {
+        let view = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+        view.dataSource = self
+        view.delegate = self
+
+        return view
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,4 +42,8 @@ extension PokemonListViewController : UICollectionViewDataSource {
         return cell
     }
 
+}
+
+extension PokemonListViewController : UICollectionViewDelegate {
+    
 }
