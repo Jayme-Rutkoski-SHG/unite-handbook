@@ -12,6 +12,9 @@ import IGListKit
 class PokemonDetailsViewController: UIViewController {
 
     private var pokemon: Pokemon = Pokemon()
+    private var abilitiesArray: [ListDiffable] = [ListDiffable]()
+    private var buildsArray: [ListDiffable] = [ListDiffable]()
+    private var statsArray: [ListDiffable] = [ListDiffable]()
     
     private lazy var gradientLayer: CAGradientLayer = {
         let layer = CAGradientLayer()
@@ -104,7 +107,7 @@ class PokemonDetailsViewController: UIViewController {
         return button
     }()
     
-    private var segmentedControl: UISegmentedControl = {
+    private lazy var segmentedControl: UISegmentedControl = {
         let control = UISegmentedControl(frame: .zero)
         control.insertSegment(withTitle: "Abilities", at: 0, animated: false)
         control.insertSegment(withTitle: "Builds", at: 1, animated: false)
@@ -115,6 +118,7 @@ class PokemonDetailsViewController: UIViewController {
         control.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.black], for: .selected)
         control.backgroundColor = UIColor(hex: 0x3B276B)
         control.selectedSegmentIndex = 0
+        control.addTarget(self, action: #selector(segmentedControlValueChanged(_:)), for: .valueChanged)
         
         return control
     }()
@@ -128,6 +132,10 @@ class PokemonDetailsViewController: UIViewController {
         let flowLayout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionView.showsVerticalScrollIndicator = false
+        collectionView.layer.cornerRadius = 20
+        collectionView.backgroundColor = UIColor(hex: 0xAFFEFF)
+        collectionView.layer.borderWidth = 1.5
+        collectionView.layer.borderColor = UIColor.black.cgColor
         
         return collectionView
     }()
@@ -214,11 +222,30 @@ class PokemonDetailsViewController: UIViewController {
             make.left.equalTo(self.viewContainer.snp.left)
             make.right.equalTo(self.viewContainer.snp.right)
         }
+        
+        self.viewContainer.addSubview(self.collectionView)
+        self.collectionView.snp.makeConstraints { make in
+            make.top.equalTo(self.segmentedControl.snp.bottom).offset(10)
+            make.left.equalTo(self.viewContainer.snp.left)
+            make.right.equalTo(self.viewContainer.snp.right)
+            make.bottom.equalTo(self.viewContainer.snp.bottom)
+        }
+    }
+    
+    @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+        self.adapter.reloadData()
     }
 }
 
 extension PokemonDetailsViewController: ListAdapterDataSource {
     public func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
+        if self.segmentedControl.selectedSegmentIndex == 0 {
+            return self.abilitiesArray
+        } else if self.segmentedControl.selectedSegmentIndex == 1 {
+            return self.buildsArray
+        } else if self.segmentedControl.selectedSegmentIndex == 2 {
+            return self.statsArray
+        }
         return [ListDiffable]()
     }
     
