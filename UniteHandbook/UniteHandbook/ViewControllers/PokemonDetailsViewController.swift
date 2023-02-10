@@ -1,17 +1,17 @@
 //
-//  PokemonListViewController.swift
+//  PokemonDetailsViewController.swift
 //  UniteHandbook
 //
-//  Created by Jayme Rutkoski on 2/9/23.
+//  Created by Jayme Rutkoski on 2/10/23.
 //
 
 import UIKit
 import SnapKit
 import IGListKit
 
-class PokemonListViewController: UIViewController {
+class PokemonDetailsViewController: UIViewController {
 
-    private var pokemonList: [Pokemon] = [Pokemon]()
+    private var pokemon: Pokemon = Pokemon()
     
     private lazy var gradientLayer: CAGradientLayer = {
         let layer = CAGradientLayer()
@@ -36,9 +36,9 @@ class PokemonListViewController: UIViewController {
         return collectionView
     }()
     
-    public convenience init(pokemonList: [Pokemon]) {
+    public convenience init(pokemon: Pokemon) {
         self.init(nibName: nil, bundle: nil)
-        self.pokemonList = pokemonList
+        self.pokemon = pokemon
     }
     
     override func viewDidLoad() {
@@ -50,9 +50,7 @@ class PokemonListViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        let bgView = UIView(frame: self.collectionView.bounds)
-        bgView.layer.insertSublayer(self.gradientLayer, at: 0)
-        self.collectionView.backgroundView = bgView
+        
     }
     
     private func setup() {
@@ -69,15 +67,12 @@ class PokemonListViewController: UIViewController {
     }
 }
 
-extension PokemonListViewController: ListAdapterDataSource {
+extension PokemonDetailsViewController: ListAdapterDataSource {
     public func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        return self.pokemonList
+        return [ListDiffable]()
     }
     
     public func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        if (object is Pokemon) {
-            return PokemonSectionController()
-        }
         
         return ListSectionController()
     }
