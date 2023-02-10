@@ -12,7 +12,13 @@ public class PokemonListService {
     public static func loadPokemon() -> [Pokemon] {
         var pokemonList = [Pokemon]()
         for pokeName in PokemonHelper.getAllPokemonNames() {
-            var pokemon = Pokemon.loadJson(filename: "\(pokeName)")
+            let pokemon = Pokemon.loadJson(filename: "\(pokeName)")
+            if (pokemon.name.count > 0) {
+                pokemonList.append(pokemon)
+            }
+        }
+        for pokeName in PokemonHelper.getAllPokemonNames() {
+            let pokemon = Pokemon.loadJson(filename: "\(pokeName)")
             if (pokemon.name.count > 0) {
                 pokemonList.append(pokemon)
             }

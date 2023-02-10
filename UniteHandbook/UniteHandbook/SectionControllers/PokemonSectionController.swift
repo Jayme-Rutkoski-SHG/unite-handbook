@@ -15,13 +15,16 @@ class PokemonSectionController: ListSectionController {
         return 1
     }
     internal override func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: self.collectionContext?.containerSize.width ?? 0, height: 55)
+        return CGSize(width: self.collectionContext?.containerSize.width ?? 0, height: 79.5)
     }
     internal override func cellForItem(at index: Int) -> UICollectionViewCell {
         guard let cell = (self.collectionContext?.dequeueReusableCell(of: PokemonCollectionViewCell.self, for: self, at: index))! as? PokemonCollectionViewCell else { return UICollectionViewCell() }
         
         guard let model = model else { return cell }
         cell.name = model.name
+        cell.image = UIImage(named: model.name.lowercased())
+        cell.role = model.role
+        cell.difficulty = model.difficulty
         
         return cell
     }
