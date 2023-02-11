@@ -183,8 +183,8 @@ class MoveCollectionViewCell: UICollectionViewCell {
         self.sectionController?.didSelectInfo()
     }
     @objc func imageViewUpgrades_TapGesture(_ sender: UITapGestureRecognizer) {
-        UIView.animate(withDuration: 1.0) {[weak self] in
-            let angle = self?.didRotate == true ? CGFloat(Double.pi) : 0
+        UIView.animate(withDuration: 0.5) {[weak self] in
+            let angle = self?.didRotate == false ? CGFloat(Double.pi) : 0
             self?.imageViewUpgrades.transform = CGAffineTransform(rotationAngle: angle)
             self?.didRotate = !(self?.didRotate ?? true)
         }
