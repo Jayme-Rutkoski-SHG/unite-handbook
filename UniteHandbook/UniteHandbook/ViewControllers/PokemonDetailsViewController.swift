@@ -12,9 +12,9 @@ import IGListKit
 class PokemonDetailsViewController: UIViewController {
 
     private var pokemon: Pokemon = Pokemon()
-    private var abilitiesArray: [ListDiffable] = [ListDiffable]()
-    private var buildsArray: [ListDiffable] = [ListDiffable]()
-    private var statsArray: [ListDiffable] = [ListDiffable]()
+    private var abilitiesArray: [BaseListDiffable] = [BaseListDiffable]()
+    private var buildsArray: [BaseListDiffable] = [BaseListDiffable]()
+    private var statsArray: [BaseListDiffable] = [BaseListDiffable]()
     
     private lazy var gradientLayer: CAGradientLayer = {
         let layer = CAGradientLayer()
@@ -252,7 +252,7 @@ class PokemonDetailsViewController: UIViewController {
         var result = [MoveDetails]()
         for move in moves {
             result.append(MoveDetails(
-                imageName: "\(self.pokemon.name.lowercased())_\(move.name.lowercased())",
+                imageName: "\(self.pokemon.name.lowercased())_\(move.name.replacingOccurrences(of: " ", with: "").lowercased()).png",
                 name: move.name,
                 category: move.category,
                 cooldown: move.cooldown,
@@ -307,7 +307,20 @@ extension PokemonDetailsViewController : MoveSectionControllerDelegate {
         
     }
     
-    func showUpgrades() {
+    func showUpgrades(forMove: MoveDetails, upgrades: [MoveDetails], shouldAddUpgrades: Bool) {
+        let index: Int? = self.abilitiesArray.firstIndex(where: {$0 == forMove})
         
+        if index != nil {
+            let startIndex = index!+1
+            
+            if shouldAddUpgrades {
+                self.abilitiesArray.insert(contentsOf: upgrades, at: startIndex)
+            } else {
+                self.abilitiesArray.removeSubrange(startIndex...startIndex+upgrades.count-1)
+            }
+            
+            self.adapter.performUpdates(animated: true)
+            self.adapter.reloadObjects(upgrades)
+        }
     }
 }

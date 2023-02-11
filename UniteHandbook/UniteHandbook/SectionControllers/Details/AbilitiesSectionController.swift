@@ -25,7 +25,7 @@ class AbilitiesSectionController: ListSectionController {
         return 1
     }
     internal override func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: self.collectionContext?.containerSize.width ?? 0, height: 75)
+        return CGSize(width: self.collectionContext?.containerSize.width ?? 0, height: 93)
     }
     internal override func cellForItem(at index: Int) -> UICollectionViewCell {
         guard let cell = (self.collectionContext?.dequeueReusableCell(of: AbilityCollectionViewCell.self, for: self, at: index))! as? AbilityCollectionViewCell else { return UICollectionViewCell() }

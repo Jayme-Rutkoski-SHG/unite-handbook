@@ -25,7 +25,7 @@ class MoveCollectionViewCell: UICollectionViewCell {
     public var category: String = "" {
         didSet {
             self.labelCategory.setTitle(self.category, for: .normal)
-            self.labelCategory.setImage(UIImage(named: "\(self.category.lowercased()).png"), for: .normal)
+            self.labelCategory.setImage(UIImage(named: "\(self.category.replacingOccurrences(of: " ", with: "_").lowercased()).png"), for: .normal)
             self.labelCategory.imageView?.snp.makeConstraints { make in
                 make.height.equalTo(20)
                 make.width.equalTo(20)
@@ -43,6 +43,11 @@ class MoveCollectionViewCell: UICollectionViewCell {
                 make.width.equalTo(15)
                 make.right.equalTo(self.labelCooldown.titleLabel!.snp.left).offset(-8)
             }
+        }
+    }
+    public var hasUpgrades: Bool = false {
+        didSet {
+            self.imageViewUpgrades.isHidden = !self.hasUpgrades
         }
     }
     public var sectionController: MoveSectionController?
@@ -183,12 +188,13 @@ class MoveCollectionViewCell: UICollectionViewCell {
         self.sectionController?.didSelectInfo()
     }
     @objc func imageViewUpgrades_TapGesture(_ sender: UITapGestureRecognizer) {
-        UIView.animate(withDuration: 0.5) {[weak self] in
-            let angle = self?.didRotate == false ? CGFloat(Double.pi) : 0
-            self?.imageViewUpgrades.transform = CGAffineTransform(rotationAngle: angle)
-            self?.didRotate = !(self?.didRotate ?? true)
+        UIView.animate(withDuration: 0.3, delay: 0) {
+            let angle = self.didRotate == false ? CGFloat(Double.pi) : 0
+            self.imageViewUpgrades.transform = CGAffineTransform(rotationAngle: angle)
+            self.didRotate = !self.didRotate
+        } completion: { success in
+            self.sectionController?.showUpgrades(shouldAddUpgrades: self.didRotate)
         }
-        self.sectionController?.showUpgrades()
     }
     
     override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {

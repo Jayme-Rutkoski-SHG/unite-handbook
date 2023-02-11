@@ -9,7 +9,7 @@ import IGListKit
 
 protocol MoveSectionControllerDelegate {
     func didSelectMoveInfo(levelDetails: [LevelDetails])
-    func showUpgrades()
+    func showUpgrades(forMove: MoveDetails, upgrades: [MoveDetails], shouldAddUpgrades: Bool)
 }
 
 class MoveSectionController: ListSectionController {
@@ -36,6 +36,7 @@ class MoveSectionController: ListSectionController {
         cell.name = model.name
         cell.category = model.category
         cell.cooldown = model.cooldown
+        cell.hasUpgrades = model.upgrades != nil && model.upgrades?.count ?? 0 > 0
         cell.sectionController = self
         
         return cell
@@ -51,8 +52,10 @@ class MoveSectionController: ListSectionController {
         guard let model = model else { return }
         self.delegate?.didSelectMoveInfo(levelDetails: model.levelDetails)
     }
-    internal func showUpgrades() {
-        self.delegate?.showUpgrades()
+    internal func showUpgrades(shouldAddUpgrades: Bool) {
+        guard let model = model else { return }
+        guard let upgrades = model.upgrades else { return }
+        self.delegate?.showUpgrades(forMove: model, upgrades: upgrades, shouldAddUpgrades: shouldAddUpgrades)
     }
 }
 
