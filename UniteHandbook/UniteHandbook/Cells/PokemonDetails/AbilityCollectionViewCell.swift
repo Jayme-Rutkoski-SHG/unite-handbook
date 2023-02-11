@@ -20,6 +20,7 @@ class AbilityCollectionViewCell: UICollectionViewCell {
             self.imageView.image = self.image
         }
     }
+    public var sectionController: AbilitiesSectionController?
     
     private var viewContainer: UIView = {
         let view = UIView(frame: .zero)
@@ -100,6 +101,10 @@ class AbilityCollectionViewCell: UICollectionViewCell {
             make.left.equalTo(self.imageView.snp.right).offset(8)
             make.right.equalTo(self.viewContainer.snp.right)
         }
+    }
+    
+    @objc func imageViewInfo_TapGesture() {
+        self.sectionController?.didSelectInfo()
     }
     
     override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {

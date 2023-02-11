@@ -283,9 +283,9 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
     public func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         
         if object is AbilityDetails {
-            return AbilitiesSectionController()
+            return AbilitiesSectionController(delegate: self)
         } else if object is MoveDetails {
-            return MoveSectionController()
+            return MoveSectionController(delegate: self)
         }
         return ListSectionController()
     }
@@ -294,4 +294,16 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
         return nil
     }
     
+}
+
+extension PokemonDetailsViewController : AbilitiesSectionControllerDelegate {
+    func didSelectInfo() {
+        
+    }
+}
+
+extension PokemonDetailsViewController : MoveSectionControllerDelegate {
+    func showUpgrades() {
+        
+    }
 }

@@ -7,9 +7,19 @@
 
 import IGListKit
 
+protocol AbilitiesSectionControllerDelegate {
+    func didSelectInfo()
+}
+
 class AbilitiesSectionController: ListSectionController {
     
     private var model: AbilityDetails? = nil
+    private var delegate: AbilitiesSectionControllerDelegate?
+    
+    convenience init(delegate: AbilitiesSectionControllerDelegate) {
+        self.init()
+        self.delegate = delegate
+    }
     
     internal override func numberOfItems() -> Int {
         return 1
@@ -23,6 +33,7 @@ class AbilitiesSectionController: ListSectionController {
         guard let model = model else { return cell }
         cell.image = UIImage(named: model.imageName.lowercased())
         cell.name = model.name
+        cell.sectionController = self
         
         return cell
     }
@@ -31,6 +42,9 @@ class AbilitiesSectionController: ListSectionController {
     }
     internal override func didSelectItem(at index: Int) {
         guard let model = model else { return }
+    }
+    internal func didSelectInfo() {
+        self.delegate?.didSelectInfo()
     }
 }
 

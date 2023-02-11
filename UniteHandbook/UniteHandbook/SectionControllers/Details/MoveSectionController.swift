@@ -7,9 +7,20 @@
 
 import IGListKit
 
+protocol MoveSectionControllerDelegate {
+    func didSelectInfo()
+    func showUpgrades()
+}
+
 class MoveSectionController: ListSectionController {
     
     private var model: MoveDetails? = nil
+    private var delegate: MoveSectionControllerDelegate?
+    
+    convenience init(delegate: MoveSectionControllerDelegate) {
+        self.init()
+        self.delegate = delegate
+    }
     
     internal override func numberOfItems() -> Int {
         return 1
@@ -25,6 +36,7 @@ class MoveSectionController: ListSectionController {
         cell.name = model.name
         cell.category = model.category
         cell.cooldown = model.cooldown
+        cell.sectionController = self
         
         return cell
     }
@@ -33,6 +45,13 @@ class MoveSectionController: ListSectionController {
     }
     internal override func didSelectItem(at index: Int) {
         guard let model = model else { return }
+    }
+    
+    internal func didSelectInfo() {
+        self.delegate?.didSelectInfo()
+    }
+    internal func showUpgrades() {
+        self.delegate?.showUpgrades()
     }
 }
 

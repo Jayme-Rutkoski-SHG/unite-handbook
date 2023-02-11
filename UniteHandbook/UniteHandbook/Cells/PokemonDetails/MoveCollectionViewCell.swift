@@ -44,6 +44,7 @@ class MoveCollectionViewCell: UICollectionViewCell {
             }
         }
     }
+    public var sectionController: MoveSectionController?
     
     private var viewContainer: UIView = {
         let view = UIView(frame: .zero)
@@ -177,10 +178,10 @@ class MoveCollectionViewCell: UICollectionViewCell {
     }
     
     @objc func imageViewInfo_TapGesture() {
-        
+        self.sectionController?.didSelectInfo()
     }
     @objc func imageViewUpgrades_TapGesture() {
-        
+        self.sectionController?.showUpgrades()
     }
     
     override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
