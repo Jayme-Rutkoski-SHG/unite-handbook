@@ -297,12 +297,16 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
 }
 
 extension PokemonDetailsViewController : AbilitiesSectionControllerDelegate {
-    func didSelectInfo() {
+    func didSelectAbilityInfo(desc: String) {
         
     }
 }
 
 extension PokemonDetailsViewController : MoveSectionControllerDelegate {
+    func didSelectMoveInfo(levelDetails: [LevelDetails]) {
+        
+    }
+    
     func showUpgrades() {
         
     }

@@ -8,7 +8,7 @@
 import IGListKit
 
 protocol AbilitiesSectionControllerDelegate {
-    func didSelectInfo()
+    func didSelectAbilityInfo(desc: String)
 }
 
 class AbilitiesSectionController: ListSectionController {
@@ -41,10 +41,11 @@ class AbilitiesSectionController: ListSectionController {
         self.model = object as? AbilityDetails
     }
     internal override func didSelectItem(at index: Int) {
-        guard let model = model else { return }
+
     }
     internal func didSelectInfo() {
-        self.delegate?.didSelectInfo()
+        guard let model = model else { return }
+        self.delegate?.didSelectAbilityInfo(desc: model.desc)
     }
 }
 

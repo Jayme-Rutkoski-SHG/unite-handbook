@@ -8,7 +8,7 @@
 import IGListKit
 
 protocol MoveSectionControllerDelegate {
-    func didSelectInfo()
+    func didSelectMoveInfo(levelDetails: [LevelDetails])
     func showUpgrades()
 }
 
@@ -44,11 +44,12 @@ class MoveSectionController: ListSectionController {
         self.model = object as? MoveDetails
     }
     internal override func didSelectItem(at index: Int) {
-        guard let model = model else { return }
+
     }
     
     internal func didSelectInfo() {
-        self.delegate?.didSelectInfo()
+        guard let model = model else { return }
+        self.delegate?.didSelectMoveInfo(levelDetails: model.levelDetails)
     }
     internal func showUpgrades() {
         self.delegate?.showUpgrades()
