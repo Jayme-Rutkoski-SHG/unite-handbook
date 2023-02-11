@@ -171,6 +171,16 @@ class MoveCollectionViewCell: UICollectionViewCell {
         
         self.stackView.addArrangedSubview(self.labelCooldown)
         self.stackView.addArrangedSubview(self.labelCategory)
+        
+        self.imageViewInfo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewUpgrades_TapGesture)))
+        self.imageViewUpgrades.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewUpgrades_TapGesture)))
+    }
+    
+    @objc func imageViewInfo_TapGesture() {
+        
+    }
+    @objc func imageViewUpgrades_TapGesture() {
+        
     }
     
     override func preferredLayoutAttributesFitting(_ layoutAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutAttributes {
