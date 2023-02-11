@@ -10,6 +10,7 @@ import SnapKit
 
 class MoveCollectionViewCell: UICollectionViewCell {
     
+    private var didRotate: Bool = false
     public var image: UIImage? {
         didSet {
             self.imageView.image = self.image
@@ -97,6 +98,7 @@ class MoveCollectionViewCell: UICollectionViewCell {
         imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(named: "show_details.png")?.withRenderingMode(.alwaysTemplate)
         imageView.tintColor = .black
+        imageView.isUserInteractionEnabled = true
         
         return imageView
     }()
@@ -173,14 +175,19 @@ class MoveCollectionViewCell: UICollectionViewCell {
         self.stackView.addArrangedSubview(self.labelCooldown)
         self.stackView.addArrangedSubview(self.labelCategory)
         
-        self.imageViewInfo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewUpgrades_TapGesture)))
-        self.imageViewUpgrades.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewUpgrades_TapGesture)))
+        self.imageViewInfo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewInfo_TapGesture(_:))))
+        self.imageViewUpgrades.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewUpgrades_TapGesture(_:))))
     }
     
-    @objc func imageViewInfo_TapGesture() {
+    @objc func imageViewInfo_TapGesture(_ sender: UITapGestureRecognizer) {
         self.sectionController?.didSelectInfo()
     }
-    @objc func imageViewUpgrades_TapGesture() {
+    @objc func imageViewUpgrades_TapGesture(_ sender: UITapGestureRecognizer) {
+        UIView.animate(withDuration: 1.0) {[weak self] in
+            let angle = self?.didRotate == true ? CGFloat(Double.pi) : 0
+            self?.imageViewUpgrades.transform = CGAffineTransform(rotationAngle: angle)
+            self?.didRotate = !(self?.didRotate ?? true)
+        }
         self.sectionController?.showUpgrades()
     }
     
