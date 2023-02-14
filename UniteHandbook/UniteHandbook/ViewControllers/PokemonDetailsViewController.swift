@@ -304,13 +304,21 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
 
 extension PokemonDetailsViewController : AbilitiesSectionControllerDelegate {
     func didSelectAbilityInfo(desc: String) {
+        let vc = PokemonLevelDetailsViewController(desc: desc)
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
         
+        self.present(vc, animated: true)
     }
 }
 
 extension PokemonDetailsViewController : MoveSectionControllerDelegate {
     func didSelectMoveInfo(levelDetails: [LevelDetails]) {
+        let vc = PokemonLevelDetailsViewController(levelDetails: levelDetails)
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
         
+        self.present(vc, animated: true)
     }
     
     func showUpgrades(forMove: MoveDetails, upgrades: [MoveDetails], shouldAddUpgrades: Bool) {

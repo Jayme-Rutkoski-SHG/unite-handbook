@@ -53,6 +53,7 @@ class AbilityCollectionViewCell: UICollectionViewCell {
         let imageView = UIImageView(frame: .zero)
         imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(named: "info.png")
+        imageView.isUserInteractionEnabled = true
         
         return imageView
     }()
@@ -101,9 +102,11 @@ class AbilityCollectionViewCell: UICollectionViewCell {
             make.left.equalTo(self.imageView.snp.right).offset(8)
             make.right.equalTo(self.viewContainer.snp.right)
         }
+        
+        self.imageViewInfo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewInfo_TapGesture(_:))))
     }
     
-    @objc func imageViewInfo_TapGesture() {
+    @objc func imageViewInfo_TapGesture(_ sender: UITapGestureRecognizer) {
         self.sectionController?.didSelectInfo()
     }
     

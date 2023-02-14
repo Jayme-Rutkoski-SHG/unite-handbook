@@ -95,6 +95,7 @@ class MoveCollectionViewCell: UICollectionViewCell {
         let imageView = UIImageView(frame: .zero)
         imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(named: "info.png")
+        imageView.isUserInteractionEnabled = true
         
         return imageView
     }()
