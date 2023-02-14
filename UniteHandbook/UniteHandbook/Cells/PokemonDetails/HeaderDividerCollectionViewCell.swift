@@ -21,13 +21,6 @@ class HeaderDividerCollectionViewCell: UICollectionViewCell {
                 self.viewContainer.backgroundColor = UIColor(hex: 0x3B276B)
                 self.labelTitle.textColor = .white
                 
-                self.viewContainer.snp.remakeConstraints { make in
-                    make.top.equalTo(self.contentView.snp.top)
-                    make.left.equalTo(self.contentView.snp.left)
-                    make.right.equalTo(self.contentView.snp.right)
-                    make.bottom.equalTo(self.contentView.snp.bottom)
-                }
-                
                 self.labelTitle.snp.remakeConstraints { make in
                     make.left.equalTo(self.viewContainer.snp.left).offset(22)
                     make.centerY.equalTo(self.viewContainer.snp.centerY)
@@ -77,15 +70,25 @@ class HeaderDividerCollectionViewCell: UICollectionViewCell {
         self.setup()
     }
     
+    override func prepareForReuse() {
+        //self.viewContainer.layer.mask?.sublayers?.forEach { $0.removeFromSuperlayer() }
+        self.viewContainer.layer.mask = nil
+        self.viewContainer.backgroundColor = UIColor(hex: 0xF9CB53)
+        self.labelTitle.textColor = .black
+        self.isSubHeader = false
+        self.labelTitle.snp.remakeConstraints { make in
+            make.center.equalTo(self.viewContainer.snp.center)
+        }
+    }
+    
     private func setup() {
+        
         self.contentView.addSubview(self.viewContainer)
         self.viewContainer.snp.makeConstraints { make in
             make.top.equalTo(self.contentView.snp.top)
             make.left.equalTo(self.contentView.snp.left)
             make.right.equalTo(self.contentView.snp.right)
             make.bottom.equalTo(self.contentView.snp.bottom)
-            make.height.equalTo(35)
-            make.width.equalTo(self.contentView.snp.width)
         }
         self.viewContainer.addSubview(self.labelTitle)
         self.labelTitle.snp.makeConstraints { make in

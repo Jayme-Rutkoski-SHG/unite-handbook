@@ -358,6 +358,13 @@ extension PokemonDetailsViewController : MoveSectionControllerDelegate {
     }
     
     func showUpgrades(forMove: MoveDetails, upgrades: [MoveDetails], shouldAddUpgrades: Bool) {
+        for ability in self.abilitiesArray {
+            if ability.isEqual(forMove) {
+                if let move = ability as? MoveDetails {
+                    move.isShowingUpgrades = true
+                }
+            }
+        }
         let index: Int? = self.abilitiesArray.firstIndex(where: {$0 == forMove})
         var newObjects: [BaseListDiffable] = upgrades
         if index != nil {
