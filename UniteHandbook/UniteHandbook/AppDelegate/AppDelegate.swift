@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        window?.rootViewController = PokemonListViewController(pokemonList: PokemonListService.loadPokemon())
+        window?.rootViewController = UINavigationController(rootViewController: PokemonListViewController(pokemonList: PokemonListService.loadPokemon()))
         window?.makeKeyAndVisible()
         
         return true

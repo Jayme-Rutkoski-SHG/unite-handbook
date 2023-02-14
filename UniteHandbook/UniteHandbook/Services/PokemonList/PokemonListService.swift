@@ -17,12 +17,6 @@ public class PokemonListService {
                 pokemonList.append(pokemon)
             }
         }
-        for pokeName in PokemonHelper.getAllPokemonNames() {
-            let pokemon = Pokemon.loadJson(filename: "\(pokeName)")
-            if (pokemon.name.count > 0) {
-                pokemonList.append(pokemon)
-            }
-        }
         return pokemonList
     }
 }

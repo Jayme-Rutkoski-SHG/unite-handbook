@@ -118,7 +118,7 @@ class PokemonCollectionViewCell: UICollectionViewCell {
         self.viewSeparator.snp.makeConstraints { make in
             make.top.equalTo(self.imageView.snp.bottom).offset(4.7)
             make.left.equalTo(self.contentView.snp.left).offset(10)
-            make.right.equalTo(self.contentView.snp.right).offset(10)
+            make.right.equalTo(self.contentView.snp.right).offset(-10)
             make.height.equalTo(0.3)
         }
         

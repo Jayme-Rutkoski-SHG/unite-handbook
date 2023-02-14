@@ -11,7 +11,7 @@ import IGListKit
 
 class PokemonListViewController: UIViewController {
 
-    public var pokemonList: [Pokemon] = [Pokemon]()
+    private var pokemonList: [Pokemon] = [Pokemon]()
     
     private lazy var gradientLayer: CAGradientLayer = {
         let layer = CAGradientLayer()
@@ -76,7 +76,7 @@ extension PokemonListViewController: ListAdapterDataSource {
     
     public func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         if (object is Pokemon) {
-            return PokemonSectionController()
+            return PokemonSectionController(delegate: self)
         }
         
         return ListSectionController()
@@ -85,5 +85,11 @@ extension PokemonListViewController: ListAdapterDataSource {
     public func emptyView(for listAdapter: ListAdapter) -> UIView? {
         return nil
     }
+}
+
+extension PokemonListViewController: PokemonSectionControllerDelegate {
     
+    func didSelectPokemon(pokemon: Pokemon) {
+        self.show(PokemonDetailsViewController(pokemon: pokemon), sender: self)
+    }
 }

@@ -17,6 +17,7 @@ public class Pokemon : BaseListDiffable, Decodable {
         case difficulty = "Difficulty"
         case ability = "Ability"
         case moves = "Moves"
+        case unite = "Unite"
         case stats = "Stats"
     }
     
@@ -27,6 +28,7 @@ public class Pokemon : BaseListDiffable, Decodable {
     public var difficulty: String = ""
     public var ability: Ability = Ability()
     public var moves: [Move] = [Move]()
+    public var unite: Unite = Unite()
     public var stats: [StatDetails] = [StatDetails]()
     
     public override init() { }
@@ -40,6 +42,7 @@ public class Pokemon : BaseListDiffable, Decodable {
         self.difficulty = try container.decode(String.self, forKey: .difficulty)
         self.ability = try container.decode(Ability.self, forKey: .ability)
         self.moves = try container.decode([Move].self, forKey: .moves)
+        self.unite = try container.decode(Unite.self, forKey: .unite)
         self.stats = try container.decode([StatDetails].self, forKey: .stats)
     }
     
