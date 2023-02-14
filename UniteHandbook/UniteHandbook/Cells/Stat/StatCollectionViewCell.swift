@@ -23,7 +23,6 @@ class StatCollectionViewCell: UICollectionViewCell {
     
     private var viewContainer: UIView = {
         let view = UIView(frame: .zero)
-        view.backgroundColor = .white
         
         return view
     }()
@@ -58,7 +57,8 @@ class StatCollectionViewCell: UICollectionViewCell {
         self.contentView.addSubview(self.viewContainer)
         self.viewContainer.snp.makeConstraints { make in
             make.top.equalTo(self.contentView.snp.top)
-            make.left.equalTo(self.contentView.snp.left)
+            make.left.equalTo(self.contentView.snp.left).offset(15)
+            make.right.equalTo(self.contentView.snp.right).offset(-15)
             make.bottom.equalTo(self.contentView.snp.bottom)
         }
         self.viewContainer.addSubview(self.labelTitle)

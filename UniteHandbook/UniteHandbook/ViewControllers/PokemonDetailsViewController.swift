@@ -227,7 +227,7 @@ class PokemonDetailsViewController: UIViewController {
         
         self.viewContainer.addSubview(self.collectionView)
         self.collectionView.snp.makeConstraints { make in
-            make.top.equalTo(self.segmentedControl.snp.bottom).offset(10)
+            make.top.equalTo(self.segmentedControl.snp.bottom).offset(15)
             make.left.equalTo(self.viewContainer.snp.left)
             make.right.equalTo(self.viewContainer.snp.right)
             make.bottom.equalTo(self.viewContainer.snp.bottom)
@@ -235,6 +235,7 @@ class PokemonDetailsViewController: UIViewController {
     }
     
     private func createSections() {
+        // Abilities
         self.abilitiesArray.append(AbilityDetails(
             imageName: "\(self.pokemon.name.lowercased())_\(self.pokemon.ability.name.replacingOccurrences(of: " ", with: "").lowercased()).png",
             name: self.pokemon.ability.name,
@@ -258,6 +259,9 @@ class PokemonDetailsViewController: UIViewController {
             levelDetails: self.pokemon.unite.levelDetails,
             upgrades: nil))
         
+        // Stats
+        // TODO: Implement some stat section slider
+        self.setStatsForLevel(1)
     }
     
     private func convertMovesToMoveDetailsArray(moves: [Move]?) -> [MoveDetails]? {
@@ -273,6 +277,23 @@ class PokemonDetailsViewController: UIViewController {
                 upgrades: convertMovesToMoveDetailsArray(moves: move.upgrades)))
         }
         return result
+    }
+    
+    private func setStatsForLevel(_ level: Int) {
+        var stats = self.pokemon.stats.first(where: { $0.level == level })
+
+        if let stats = stats {
+            self.statsArray.removeAll()
+            
+            self.statsArray.append(StatSection(title: "HP", value: "\(stats.hp)"))
+            self.statsArray.append(StatSection(title: "Attack", value: "\(stats.attack)"))
+            self.statsArray.append(StatSection(title: "Defense", value: "\(stats.defense)"))
+            self.statsArray.append(StatSection(title: "Sp. Attack", value: "\(stats.spAttack)"))
+            self.statsArray.append(StatSection(title: "Sp. Defense", value: "\(stats.spDefense)"))
+            self.statsArray.append(StatSection(title: "Critical-Hit Rate", value: "\(Int(stats.critRate * 100))%"))
+            self.statsArray.append(StatSection(title: "CD Reduction", value: "\(Int(stats.cdr * 100))%"))
+            self.statsArray.append(StatSection(title: "Lifesteal", value: "\(Int(stats.lifesteal * 100))%"))
+        }
     }
     
     @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
@@ -301,6 +322,8 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
             return MoveSectionController(delegate: self)
         } else if object is HeaderDivider {
             return HeaderDividerSectionController()
+        } else if object is StatSection {
+            return StatSectionController()
         }
         
         return ListSectionController()
