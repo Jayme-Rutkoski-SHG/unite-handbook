@@ -241,7 +241,10 @@ class PokemonDetailsViewController: UIViewController {
             desc: self.pokemon.ability.desc))
         
         if let moves = convertMovesToMoveDetailsArray(moves: self.pokemon.moves) {
+            var count = 0
             for move in moves {
+                count+=1
+                self.abilitiesArray.append(HeaderDivider(title: "Move \(count)"))
                 self.abilitiesArray.append(move)
             }
         }
@@ -286,7 +289,10 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
             return AbilitiesSectionController(delegate: self)
         } else if object is MoveDetails {
             return MoveSectionController(delegate: self)
+        } else if object is HeaderDivider {
+            return HeaderDividerSectionController()
         }
+        
         return ListSectionController()
     }
     
@@ -309,18 +315,18 @@ extension PokemonDetailsViewController : MoveSectionControllerDelegate {
     
     func showUpgrades(forMove: MoveDetails, upgrades: [MoveDetails], shouldAddUpgrades: Bool) {
         let index: Int? = self.abilitiesArray.firstIndex(where: {$0 == forMove})
-        
+        var newObjects: [BaseListDiffable] = upgrades
         if index != nil {
             let startIndex = index!+1
-            
+            newObjects.insert(HeaderDivider(title: "\(forMove.name) Upgrade Choices", isSubHeader: true), at: 0)
             if shouldAddUpgrades {
-                self.abilitiesArray.insert(contentsOf: upgrades, at: startIndex)
+                self.abilitiesArray.insert(contentsOf: newObjects, at: startIndex)
             } else {
-                self.abilitiesArray.removeSubrange(startIndex...startIndex+upgrades.count-1)
+                self.abilitiesArray.removeSubrange(startIndex...startIndex+newObjects.count-1)
             }
             
             self.adapter.performUpdates(animated: true)
-            self.adapter.reloadObjects(upgrades)
+            self.adapter.reloadObjects(newObjects)
         }
     }
 }
