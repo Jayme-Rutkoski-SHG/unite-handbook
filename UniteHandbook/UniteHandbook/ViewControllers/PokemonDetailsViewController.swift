@@ -248,6 +248,16 @@ class PokemonDetailsViewController: UIViewController {
                 self.abilitiesArray.append(move)
             }
         }
+        
+        self.abilitiesArray.append(HeaderDivider(title: "Unite Move"))
+        self.abilitiesArray.append(MoveDetails(
+            imageName: "\(self.pokemon.name.lowercased())_\(self.pokemon.unite.name.replacingOccurrences(of: " ", with: "").lowercased()).png",
+            name: self.pokemon.unite.name,
+            category: self.pokemon.unite.category,
+            cooldown: self.pokemon.unite.cooldown,
+            levelDetails: self.pokemon.unite.levelDetails,
+            upgrades: nil))
+        
     }
     
     private func convertMovesToMoveDetailsArray(moves: [Move]?) -> [MoveDetails]? {
