@@ -11,6 +11,7 @@ import IGListKit
 
 class PokemonDetailsViewController: UIViewController {
 
+    private var currentLevel: Int = 1
     private var pokemon: Pokemon = Pokemon()
     private var abilitiesArray: [BaseListDiffable] = [BaseListDiffable]()
     private var buildsArray: [BaseListDiffable] = [BaseListDiffable]()
@@ -260,8 +261,8 @@ class PokemonDetailsViewController: UIViewController {
             upgrades: nil))
         
         // Stats
-        // TODO: Implement some stat section slider
-        self.setStatsForLevel(1)
+        self.statsArray.append(StatSlider(currentLevel: self.currentLevel))
+        self.setStatsForLevel(self.currentLevel)
     }
     
     private func convertMovesToMoveDetailsArray(moves: [Move]?) -> [MoveDetails]? {
@@ -283,7 +284,7 @@ class PokemonDetailsViewController: UIViewController {
         let stats = self.pokemon.stats.first(where: { $0.level == level })
 
         if let stats = stats {
-            self.statsArray.removeAll()
+            self.statsArray.removeAll(where: { $0 is StatSection })
             
             self.statsArray.append(StatSection(title: "HP", value: "\(stats.hp)"))
             self.statsArray.append(StatSection(title: "Attack", value: "\(stats.attack)"))
@@ -324,6 +325,8 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
             return HeaderDividerSectionController()
         } else if object is StatSection {
             return StatSectionController()
+        } else if object is StatSlider {
+            return StatSliderSectionController(delegate: self)
         }
         
         return ListSectionController()
@@ -369,5 +372,21 @@ extension PokemonDetailsViewController : MoveSectionControllerDelegate {
             self.adapter.performUpdates(animated: true)
             self.adapter.reloadObjects(newObjects)
         }
+    }
+}
+
+extension PokemonDetailsViewController : StatSliderSectionControllerDelegate {
+    
+    func didChangeLevel(level: Int) {
+        self.currentLevel = level
+        for stat in statsArray {
+            if let statSlider = stat as? StatSlider {
+                statSlider.currentLevel = level
+            }
+        }
+        self.setStatsForLevel(level)
+        
+        self.adapter.performUpdates(animated: true)
+        self.adapter.reloadObjects(self.statsArray.filter( { $0 is StatSection }))
     }
 }

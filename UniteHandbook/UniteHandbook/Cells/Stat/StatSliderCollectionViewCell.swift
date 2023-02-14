@@ -23,10 +23,13 @@ class StatSliderCollectionViewCell: UICollectionViewCell {
         
         return view
     }()
-    private var sliderStats: UISlider = {
+    private lazy var sliderStats: UISlider = {
         let slider = UISlider(frame: .zero)
         slider.minimumValue = 1
         slider.maximumValue = 15
+        slider.addTarget(self, action: #selector(self.sliderStat_ValueChanged), for: .valueChanged)
+        slider.setThumbImage(UIImage(named: "stat_slider_thumb.png"), for: .normal)
+        slider.tintColor = UIColor(hex: 0x3B276B)
         
         return slider
     }()
@@ -61,7 +64,7 @@ class StatSliderCollectionViewCell: UICollectionViewCell {
     private func setup() {
         self.contentView.addSubview(self.viewContainer)
         self.viewContainer.snp.makeConstraints { make in
-            make.top.equalTo(self.contentView.snp.top)
+            make.top.equalTo(self.contentView.snp.top).offset(15)
             make.left.equalTo(self.contentView.snp.left).offset(15)
             make.right.equalTo(self.contentView.snp.right).offset(-15)
             make.bottom.equalTo(self.contentView.snp.bottom)
@@ -78,10 +81,15 @@ class StatSliderCollectionViewCell: UICollectionViewCell {
         }
         self.viewContainer.addSubview(self.sliderStats)
         self.sliderStats.snp.makeConstraints { make in
-            make.top.equalTo(self.labelTitle.snp.bottom).offset(5)
+            make.top.equalTo(self.labelTitle.snp.bottom).offset(10)
             make.left.equalTo(self.viewContainer.snp.left)
             make.right.equalTo(self.viewContainer.snp.right)
         }
-        
+    }
+    
+    @objc func sliderStat_ValueChanged() {
+        let currentValue = Int(self.sliderStats.value)
+        self.labelValue.text = "\(currentValue)"
+        self.sectionController?.didChangeLevel(level: currentValue)
     }
 }

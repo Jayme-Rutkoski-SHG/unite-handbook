@@ -25,7 +25,7 @@ class StatSliderSectionController: ListSectionController {
         return 1
     }
     internal override func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: self.collectionContext?.containerSize.width ?? 0, height: 40)
+        return CGSize(width: self.collectionContext?.containerSize.width ?? 0, height: 65)
     }
     internal override func cellForItem(at index: Int) -> UICollectionViewCell {
         guard let cell = (self.collectionContext?.dequeueReusableCell(of: StatSliderCollectionViewCell.self, for: self, at: index))! as? StatSliderCollectionViewCell else { return UICollectionViewCell() }
