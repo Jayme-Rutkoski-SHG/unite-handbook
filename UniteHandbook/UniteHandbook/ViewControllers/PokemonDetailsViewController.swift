@@ -280,7 +280,7 @@ class PokemonDetailsViewController: UIViewController {
     }
     
     private func setStatsForLevel(_ level: Int) {
-        var stats = self.pokemon.stats.first(where: { $0.level == level })
+        let stats = self.pokemon.stats.first(where: { $0.level == level })
 
         if let stats = stats {
             self.statsArray.removeAll()
