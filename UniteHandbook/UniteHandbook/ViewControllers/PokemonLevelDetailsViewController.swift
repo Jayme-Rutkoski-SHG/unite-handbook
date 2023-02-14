@@ -11,7 +11,6 @@ import IGListKit
 
 class PokemonLevelDetailsViewController: UIViewController {
 
-    private var cellHeight: CGFloat = 0.0
     private var collectionViewHeightConstraint: Constraint?
     
     private var sections: [BaseListDiffable] = [BaseListDiffable]()
@@ -30,6 +29,7 @@ class PokemonLevelDetailsViewController: UIViewController {
     }()
     private var collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collectionView.showsVerticalScrollIndicator = false
         collectionView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
@@ -53,10 +53,15 @@ class PokemonLevelDetailsViewController: UIViewController {
     public convenience init(desc: String) {
         self.init(nibName: nil, bundle: nil)
         
+        self.sections.append(LevelDetailsDesc(desc: desc))
     }
     public convenience init(levelDetails: [LevelDetails]) {
         self.init(nibName: nil, bundle: nil)
         
+        for details in levelDetails {
+            self.sections.append(LevelDetailsLevel(title: "Level \(details.level)"))
+            self.sections.append(LevelDetailsDesc(desc: details.desc))
+        }
     }
     
     override func viewDidLoad() {
@@ -67,11 +72,12 @@ class PokemonLevelDetailsViewController: UIViewController {
         self.setup()
     }
     
-    override func viewWillLayoutSubviews() {
-        let height = self.collectionView.collectionViewLayout.collectionViewContentSize.height
-        self.cellHeight = height / CGFloat(self.sections.count > 0 ? self.sections.count : 1)
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
         DispatchQueue.main.async {
-            self.collectionViewHeightConstraint?.update(offset: self.calculateCollectionViewHeight())
+            self.collectionViewHeightConstraint?.update(offset: self.collectionView.contentSize.height)
+            self.view.layoutIfNeeded()
         }
     }
 
@@ -98,26 +104,14 @@ class PokemonLevelDetailsViewController: UIViewController {
             
         self.contentView.addSubview(self.collectionView)
         self.collectionView.snp.makeConstraints { (make) in
-            make.top.equalTo(self.contentView.snp.top)
-            make.left.equalTo(self.contentView.snp.left).offset(10)
-            make.right.equalTo(self.contentView.snp.right).offset(-10)
-            make.bottom.equalTo(self.buttonClose.snp.top).offset(-5)
-            self.collectionViewHeightConstraint = make.height.equalTo(self.calculateCollectionViewHeight()).constraint
+            make.top.equalTo(self.contentView.snp.top).offset(10)
+            make.left.equalTo(self.contentView.snp.left).offset(20)
+            make.right.equalTo(self.contentView.snp.right).offset(-20)
+            make.bottom.equalTo(self.buttonClose.snp.top).offset(-10)
+            self.collectionViewHeightConstraint = make.height.equalTo(self.collectionView.contentSize.height).constraint
         }
-    }
-    
-    private func calculateCollectionViewHeight() -> CGFloat {
-        if (sections.count > 0 && self.cellHeight > 0) {
-            let maxHeight = UIScreen.main.bounds.size.height - 200
-            let desiredHeight = CGFloat(sections.count) * self.cellHeight
-            if (desiredHeight > maxHeight) {
-                return maxHeight
-            } else {
-                return desiredHeight
-            }
-        } else {
-            return 50
-        }
+        
+        self.adapter.performUpdates(animated: true, completion: nil)
     }
     
     @objc private func buttonClose_TouchUpInside(sender: UIButton) {
@@ -131,7 +125,12 @@ extension PokemonLevelDetailsViewController: ListAdapterDataSource {
     }
     
     public func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-
+        if object is LevelDetailsLevel {
+            return LevelDetailsLevelSectionController()
+        } else if object is LevelDetailsDesc {
+            return LevelDetailsDescSectionController()
+        }
+        
         return ListSectionController()
     }
     
