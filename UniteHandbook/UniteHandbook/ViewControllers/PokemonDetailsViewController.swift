@@ -165,7 +165,7 @@ class PokemonDetailsViewController: UIViewController {
         self.imageView.image = UIImage(named: self.pokemon.name.lowercased())
         self.labelName.text = self.pokemon.name
         self.labelAttackerStyle.setTitle(self.pokemon.attackStyle.lowercased() == "attack" ? "Physical Attacker" : "Special Attacker", for: .normal)
-        self.labelAttackerStyle.backgroundColor = self.pokemon.attackStyle.lowercased() == "attack" ? UIColor(hex: 0xEDB544) : UIColor(hex: 0xC974DB)
+        self.labelAttackerStyle.backgroundColor = self.pokemon.attackStyle.lowercased() == "attack" ? UIColor(hex: 0xF9CB53) : UIColor(hex: 0xC974DB)
         self.labelRole.setTitle(self.pokemon.role, for: .normal)
         self.labelStyle.setTitle(self.pokemon.style, for: .normal)
         self.labelDifficulty.setTitle(self.pokemon.difficulty, for: .normal)
