@@ -11,7 +11,7 @@ public class BattleItem : BaseListDiffable, Decodable {
     
     enum CodingKeys: String, CodingKey {
         case name = "Name"
-        case cooldown = "BonusStats"
+        case cooldown = "Cooldown"
         case desc = "Desc"
     }
     
