@@ -13,8 +13,8 @@ public class Build : Decodable {
         case name = "Name"
         case moveOrders = "MoveOrders"
         case heldItems = "HeldItems"
-        case altHeldItem = "AltHeldItem",
-        case battleItem = "BattleItem",
+        case altHeldItem = "AltHeldItem"
+        case battleItem = "BattleItem"
         case altBattleItem = "AltBattleItem"
     }
     
