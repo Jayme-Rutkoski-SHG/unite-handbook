@@ -1,12 +1,24 @@
 {
     "Name": "Razor Claw",
-    "Stat1Label": "Attack",
-    "Stat1Base": 0,
-    "Stat1Increment": 1,
-    "Stat2Label": "Critical-Hit Rate",
-    "Stat2Base": 0.006,
-    "Stat2Increment": 0.001,
-    "StatBoostLabel": "Attack",
-    "StatBoostValues": [0.4, 0.45, 0.5],
+    "BonusStats": [
+        {
+            "Label": "Attack",
+            "BaseValue": 0,
+            "IncrementValue": 1,
+            "IsPercent": false
+        },
+        {
+            "Label": "Critical-Hit Rate",
+            "BaseValue": 0.006,
+            "IncrementValue": 0.001,
+            "IsPercent": true
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Attack",
+        "BaseValue": 0.4,
+        "IncrementValue": 0.05,
+        "IsPercent": true
+    },
     "Desc": "After using a move, the next basic attack deals (10/15/20 + 40%/45%/50% Attack) additional damage to 1 target. This buff lasts for 3s. While this item is held by a Melee Pokémon, this basic attack also slows enemies by 30% for 1s (1.5s cooldown)."
 }
