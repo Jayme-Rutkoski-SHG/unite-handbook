@@ -1,0 +1,5 @@
+{
+    "Name": "Full Heal",
+    "Cooldown": 50,
+    "Desc": "Remove all status conditions and become immune to hindrances for a short time. (1.5s duration)"
+}

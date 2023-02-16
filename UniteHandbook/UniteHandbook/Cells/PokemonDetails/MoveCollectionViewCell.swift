@@ -50,6 +50,17 @@ class MoveCollectionViewCell: UICollectionViewCell {
             self.imageViewUpgrades.isHidden = !self.hasUpgrades
         }
     }
+    public var isShowingUpgrades: Bool = false {
+        didSet {
+            if (self.isShowingUpgrades == true) {
+                UIView.animate(withDuration: 0, delay: 0) {
+                    let angle = CGFloat(Double.pi)
+                    self.imageViewUpgrades.transform = CGAffineTransform(rotationAngle: angle)
+                    self.didRotate = true
+                }
+            }
+        }
+    }
     public var sectionController: MoveSectionController?
     
     private var viewContainer: UIView = {
@@ -133,6 +144,14 @@ class MoveCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         self.setup()
+    }
+    
+    override func prepareForReuse() {
+        self.didRotate = false
+        self.isShowingUpgrades = false
+        UIView.animate(withDuration: 0, delay: 0) {
+            self.imageViewUpgrades.transform = CGAffineTransform(rotationAngle: 0.0)
+        }
     }
     
     private func setup() {

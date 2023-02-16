@@ -1,0 +1,18 @@
+{
+    "Name": "Attack Weight",
+    "BonusStats": [
+        {
+            "Label": "Attack",
+            "BaseValue": 0,
+            "IncrementValue": 0.6,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Attack",
+        "BaseValue": 6,
+        "IncrementValue": 3,
+        "IsPercent": false
+    },
+    "Desc": "When you score a goal, your Attack is raised by 6/9/12 for the rest of the match. (This bonus caps at 6 stacks)"
+}

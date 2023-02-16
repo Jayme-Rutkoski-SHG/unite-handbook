@@ -37,6 +37,7 @@ class MoveSectionController: ListSectionController {
         cell.category = model.category
         cell.cooldown = model.cooldown
         cell.hasUpgrades = model.upgrades != nil && model.upgrades?.count ?? 0 > 0
+        cell.isShowingUpgrades = model.isShowingUpgrades
         cell.sectionController = self
         
         return cell
@@ -66,6 +67,7 @@ public class MoveDetails : BaseListDiffable {
     public var cooldown: Double
     public var levelDetails: [LevelDetails]
     public var upgrades: [MoveDetails]?
+    public var isShowingUpgrades: Bool = false
     
     public init(imageName: String, name: String, category: String, cooldown: Double, levelDetails: [LevelDetails], upgrades: [MoveDetails]?) {
         self.imageName = imageName

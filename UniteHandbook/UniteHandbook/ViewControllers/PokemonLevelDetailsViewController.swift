@@ -39,6 +39,7 @@ class PokemonLevelDetailsViewController: UIViewController {
     private lazy var buttonClose: UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("Close", for: .normal)
+        button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = UIFont(name: "Georgia-Bold", size: 14.0)
         button.addTarget(self, action: #selector(buttonClose_TouchUpInside), for: .touchUpInside)
         button.backgroundColor = UIColor(hex: 0xF9CB53)

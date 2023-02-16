@@ -165,7 +165,7 @@ class PokemonDetailsViewController: UIViewController {
         self.imageView.image = UIImage(named: self.pokemon.name.lowercased())
         self.labelName.text = self.pokemon.name
         self.labelAttackerStyle.setTitle(self.pokemon.attackStyle.lowercased() == "attack" ? "Physical Attacker" : "Special Attacker", for: .normal)
-        self.labelAttackerStyle.backgroundColor = self.pokemon.attackStyle.lowercased() == "attack" ? UIColor(hex: 0xEDB544) : UIColor(hex: 0xC974DB)
+        self.labelAttackerStyle.backgroundColor = self.pokemon.attackStyle.lowercased() == "attack" ? UIColor(hex: 0xF9CB53) : UIColor(hex: 0xC974DB)
         self.labelRole.setTitle(self.pokemon.role, for: .normal)
         self.labelStyle.setTitle(self.pokemon.style, for: .normal)
         self.labelDifficulty.setTitle(self.pokemon.difficulty, for: .normal)
@@ -260,6 +260,12 @@ class PokemonDetailsViewController: UIViewController {
             levelDetails: self.pokemon.unite.levelDetails,
             upgrades: nil))
         
+        // Builds
+        let builds = convertBuildsToBuildMovesArray(builds: self.pokemon.presetBuilds)
+        for build in builds {
+            self.buildsArray.append(build)
+        }
+        
         // Stats
         self.statsArray.append(StatSlider(currentLevel: self.currentLevel))
         self.setStatsForLevel(self.currentLevel)
@@ -278,6 +284,22 @@ class PokemonDetailsViewController: UIViewController {
                 upgrades: convertMovesToMoveDetailsArray(moves: move.upgrades)))
         }
         return result
+    }
+    
+    private func convertBuildsToBuildMovesArray(builds: [Build]) -> [BaseListDiffable] {
+        var results = [BaseListDiffable]()
+        for build in builds {
+            let section = BuildSection(
+                name: "Build: \(build.name)",
+                imagesMoves: build.moveOrders.map { UIImage(named: "\(self.pokemon.name.lowercased())_\($0.replacingOccurrences(of: " ", with: "").lowercased()).png") },
+                imagesHeldItems: build.heldItems.map { UIImage(named: "\($0.replacingOccurrences(of: " ", with: "_").lowercased()).png")},
+                imageBattleItem: UIImage(named: "\(build.battleItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"),
+                imageAltHeldItem: UIImage(named: "\(build.altHeldItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"),
+                imageAltBattleItem: UIImage(named: "\(build.altBattleItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"))
+            
+            results.append(section)
+        }
+        return results
     }
     
     private func setStatsForLevel(_ level: Int) {
@@ -323,6 +345,8 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
             return MoveSectionController(delegate: self)
         } else if object is HeaderDivider {
             return HeaderDividerSectionController()
+        } else if object is BuildSection {
+            return BuildSectionSectionController()
         } else if object is StatSection {
             return StatSectionController()
         } else if object is StatSlider {
@@ -358,6 +382,13 @@ extension PokemonDetailsViewController : MoveSectionControllerDelegate {
     }
     
     func showUpgrades(forMove: MoveDetails, upgrades: [MoveDetails], shouldAddUpgrades: Bool) {
+        for ability in self.abilitiesArray {
+            if ability.isEqual(forMove) {
+                if let move = ability as? MoveDetails {
+                    move.isShowingUpgrades = true
+                }
+            }
+        }
         let index: Int? = self.abilitiesArray.firstIndex(where: {$0 == forMove})
         var newObjects: [BaseListDiffable] = upgrades
         if index != nil {

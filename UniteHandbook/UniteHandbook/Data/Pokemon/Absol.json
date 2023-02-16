@@ -303,5 +303,58 @@
             "AtkSpd": 0.2999,
             "Speed": 3650
         }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Night Punch",
+            "MoveOrders": [
+                "Slash",
+                "Feint",
+                "Night Slash",
+                "Sucker Punch"
+            ],
+            "HeldItems": [
+                "Razor Claw",
+                "Scope Lens",
+                "Attack Weight"
+            ],
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Pursuit Punch",
+            "MoveOrders": [
+                "Slash",
+                "Feint",
+                "Pursuit",
+                "Sucker Punch"
+            ],
+            "HeldItems": [
+                "Razor Claw",
+                "Scope Lens",
+                "Attack Weight"
+            ],
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Night Cut",
+            "MoveOrders": [
+                "Slash",
+                "Feint",
+                "Night Slash",
+                "Psycho Cut"
+            ],
+            "HeldItems": [
+                "Razor Claw",
+                "Scope Lens",
+                "Attack Weight"
+            ],
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "Eject Button"
+        }
     ]
 }
