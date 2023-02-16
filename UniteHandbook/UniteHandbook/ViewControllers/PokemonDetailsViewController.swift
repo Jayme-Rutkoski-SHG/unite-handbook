@@ -289,7 +289,7 @@ class PokemonDetailsViewController: UIViewController {
     private func convertBuildsToBuildMovesArray(builds: [Build]) -> [BuildMoves] {
         var result = [BuildMoves]()
         for build in builds {
-            result.append(BuildMoves(name: build.name, imageMoves: build.moveOrders.map { UIImage(named: $0) }))
+            result.append(BuildMoves(name: build.name, imageMoves: build.moveOrders.map { UIImage(named: "\(self.pokemon.name.lowercased())_\($0.replacingOccurrences(of: " ", with: "").lowercased()).png") }))
         }
         return result
     }
