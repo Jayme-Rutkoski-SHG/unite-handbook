@@ -178,14 +178,7 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         self.setup()
-    }
-    
-    override func prepareForReuse() {
-        self.labelName.text = ""
-        for subview in stackViewMoves.arrangedSubviews {
-            subview.removeFromSuperview()
-        }
-    }
+    }gi
     
     private func setup() {
         self.contentView.addSubview(self.viewBackground)
