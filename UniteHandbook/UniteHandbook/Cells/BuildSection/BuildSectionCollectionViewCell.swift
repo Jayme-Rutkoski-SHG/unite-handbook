@@ -26,8 +26,9 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
                         make.width.equalTo(50)
                     }
                     
-                    let imageViewNext = UIImageView(image: UIImage(named: "next_arrow.png"))
+                    let imageViewNext = UIImageView(image: UIImage(named: "next_arrow.png")?.withRenderingMode(.alwaysTemplate))
                     imageViewNext.contentMode = .scaleAspectFit
+                    imageViewNext.tintColor = .black
                     imageViewNext.snp.makeConstraints { make in
                         make.height.equalTo(20)
                         make.width.equalTo(20)
@@ -79,22 +80,33 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    private var viewBackground: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = UIColor(hex: 0xF9CB53)
+        view.layer.cornerRadius = 15.0
+        //view.layer.borderColor = UIColor(hex: 0x44347B).cgColor
+        view.layer.borderColor = UIColor.black.cgColor
+        view.layer.borderWidth = 2
+        
+        return view
+    }()
     private var viewContainer: UIView = {
         let view = UIView(frame: .zero)
+        view.backgroundColor = .clear
         
         return view
     }()
     private var labelName: UILabel = {
         let label = UILabel(frame: .zero)
         label.textAlignment = .left
-        label.font = UIFont(name: "Georgia-Bold", size: 18.0)
+        label.font = UIFont(name: "Georgia-Bold", size: 20.0)
         
         return label
     }()
     private var labelHeldItems: UILabel = {
         let label = UILabel(frame: .zero)
         label.textAlignment = .left
-        label.font = UIFont(name: "Georgia-Bold", size: 18.0)
+        label.font = UIFont(name: "Georgia-Bold", size: 16.0)
         label.text = "Held Items"
         
         return label
@@ -102,7 +114,7 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
     private var labelAltHeldItem: UILabel = {
         let label = UILabel(frame: .zero)
         label.textAlignment = .left
-        label.font = UIFont(name: "Georgia-Bold", size: 18.0)
+        label.font = UIFont(name: "Georgia-Bold", size: 16.0)
         label.text = "Alt"
         
         return label
@@ -110,7 +122,7 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
     private var labelBattleItem: UILabel = {
         let label = UILabel(frame: .zero)
         label.textAlignment = .left
-        label.font = UIFont(name: "Georgia-Bold", size: 18.0)
+        label.font = UIFont(name: "Georgia-Bold", size: 16.0)
         label.text = "Battle Item"
         
         return label
@@ -118,14 +130,14 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
     private var labelAltBattleItem: UILabel = {
         let label = UILabel(frame: .zero)
         label.textAlignment = .left
-        label.font = UIFont(name: "Georgia-Bold", size: 18.0)
+        label.font = UIFont(name: "Georgia-Bold", size: 16.0)
         label.text = "Alt"
         
         return label
     }()
     private var stackViewMoves: UIStackView = {
         let stackView = UIStackView(frame: .zero)
-        stackView.spacing = 7
+        stackView.spacing = 4
         stackView.axis = .horizontal
         stackView.alignment = .center
         
@@ -135,7 +147,7 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         let stackView = UIStackView(frame: .zero)
         stackView.spacing = 7
         stackView.axis = .horizontal
-        stackView.alignment = .center
+        stackView.alignment = .leading
         
         return stackView
     }()
@@ -176,12 +188,19 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
     }
     
     private func setup() {
-        self.contentView.addSubview(self.viewContainer)
-        self.viewContainer.snp.makeConstraints { make in
+        self.contentView.addSubview(self.viewBackground)
+        self.viewBackground.snp.makeConstraints { make in
             make.top.equalTo(self.contentView.snp.top).offset(15)
             make.left.equalTo(self.contentView.snp.left).offset(15)
             make.right.equalTo(self.contentView.snp.right).offset(-15)
             make.bottom.equalTo(self.contentView.snp.bottom)
+        }
+        self.viewBackground.addSubview(self.viewContainer)
+        self.viewContainer.snp.makeConstraints { make in
+            make.top.equalTo(self.viewBackground.snp.top).offset(20)
+            make.left.equalTo(self.viewBackground.snp.left).offset(20)
+            make.right.equalTo(self.viewBackground.snp.right).offset(-20)
+            make.bottom.equalTo(self.viewBackground.snp.bottom).offset(-20)
         }
         
         // Moves
@@ -194,29 +213,32 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         self.stackViewMoves.snp.makeConstraints { make in
             make.top.equalTo(self.labelName.snp.bottom).offset(10)
             make.left.equalTo(self.viewContainer.snp.left)
+            make.right.equalTo(self.viewContainer.snp.right)
         }
         
         // Held Items
         self.viewContainer.addSubview(self.labelHeldItems)
         self.labelHeldItems.snp.makeConstraints { make in
-            make.top.equalTo(self.stackViewMoves.snp.bottom).offset(10)
+            make.top.equalTo(self.stackViewMoves.snp.bottom).offset(20)
             make.left.equalTo(self.viewContainer.snp.left)
         }
         self.viewContainer.addSubview(self.stackViewHeldItems)
         self.stackViewHeldItems.snp.makeConstraints { make in
-            make.top.equalTo(self.labelHeldItems.snp.bottom).offset(10)
+            make.top.equalTo(self.labelHeldItems.snp.bottom).offset(7)
             make.left.equalTo(self.viewContainer.snp.left)
+            make.height.equalTo(50)
         }
         
         // Alt Held Item
         self.viewContainer.addSubview(self.labelAltHeldItem)
         self.labelAltHeldItem.snp.makeConstraints { make in
-            make.top.equalTo(self.stackViewMoves.snp.bottom).offset(10)
+            make.top.equalTo(self.stackViewMoves.snp.bottom).offset(20)
             make.left.equalTo(self.stackViewHeldItems.snp.right).offset(40)
+            make.centerY.equalTo(self.labelHeldItems.snp.centerY)
         }
         self.viewContainer.addSubview(self.imageViewAltHeldItem)
         self.imageViewAltHeldItem.snp.makeConstraints { make in
-            make.top.equalTo(self.labelAltHeldItem.snp.bottom).offset(20)
+            make.top.equalTo(self.labelAltHeldItem.snp.bottom).offset(7)
             make.left.equalTo(self.labelAltHeldItem.snp.left)
             make.centerY.equalTo(self.stackViewHeldItems.snp.centerY)
             make.height.equalTo(50)
@@ -226,12 +248,12 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         // Battle Items
         self.viewContainer.addSubview(self.labelBattleItem)
         self.labelBattleItem.snp.makeConstraints { make in
-            make.top.equalTo(self.stackViewHeldItems.snp.bottom).offset(10)
+            make.top.equalTo(self.stackViewHeldItems.snp.bottom).offset(20)
             make.left.equalTo(self.viewContainer.snp.left)
         }
         self.viewContainer.addSubview(self.imageViewBattleItem)
         self.imageViewBattleItem.snp.makeConstraints { make in
-            make.top.equalTo(self.labelBattleItem.snp.bottom).offset(10)
+            make.top.equalTo(self.labelBattleItem.snp.bottom).offset(7)
             make.left.equalTo(self.viewContainer.snp.left)
             make.height.equalTo(50)
             make.width.equalTo(50)
@@ -240,12 +262,13 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         // Alt Battle Item
         self.viewContainer.addSubview(self.labelAltBattleItem)
         self.labelAltBattleItem.snp.makeConstraints { make in
-            make.top.equalTo(self.stackViewHeldItems.snp.bottom).offset(10)
+            make.top.equalTo(self.stackViewHeldItems.snp.bottom).offset(20)
             make.left.equalTo(self.labelBattleItem.snp.right).offset(40)
+            make.centerY.equalTo(self.labelBattleItem.snp.centerY)
         }
         self.viewContainer.addSubview(self.imageViewAltBattleItem)
         self.imageViewAltBattleItem.snp.makeConstraints { make in
-            make.top.equalTo(self.labelAltBattleItem.snp.bottom).offset(10)
+            make.top.equalTo(self.labelAltBattleItem.snp.bottom).offset(7)
             make.left.equalTo(self.labelAltBattleItem.snp.left)
             make.centerY.equalTo(self.imageViewBattleItem.snp.centerY)
             make.height.equalTo(50)
