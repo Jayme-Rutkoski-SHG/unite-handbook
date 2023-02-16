@@ -15,10 +15,10 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
             self.labelName.text = self.name
         }
     }
-    public var images: [UIImage?] = [UIImage?]() {
+    public var imagesMoves: [UIImage?] = [UIImage?]() {
         didSet {
             if (self.stackViewMoves.subviews.count == 0) {
-                for image in self.images {
+                for image in self.imagesMoves {
                     let imageView = UIImageView(image: image)
                     imageView.contentMode = .scaleAspectFit
                     imageView.snp.makeConstraints { make in
@@ -26,9 +26,56 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
                         make.width.equalTo(50)
                     }
                     
+                    let imageViewNext = UIImageView(image: UIImage(named: "next_arrow.png"))
+                    imageViewNext.contentMode = .scaleAspectFit
+                    imageViewNext.snp.makeConstraints { make in
+                        make.height.equalTo(20)
+                        make.width.equalTo(20)
+                    }
+                    
                     self.stackViewMoves.addArrangedSubview(imageView)
+                    if self.imagesMoves.firstIndex(of: image) ?? 0 < self.imagesMoves.count - 1 {
+                        self.stackViewMoves.addArrangedSubview(imageViewNext)
+                    }
                 }
             }
+        }
+    }
+    public var imagesHeldItems: [UIImage?] = [UIImage?]() {
+        didSet {
+            if (self.stackViewHeldItems.subviews.count == 0) {
+                for image in self.imagesHeldItems {
+                    let imageView = UIImageView(image: image)
+                    imageView.contentMode = .scaleAspectFit
+                    imageView.snp.makeConstraints { make in
+                        make.height.equalTo(50)
+                        make.width.equalTo(50)
+                    }
+                    
+                    self.stackViewHeldItems.addArrangedSubview(imageView)
+                }
+            }
+        }
+    }
+    public var imageBattleItem: UIImage? {
+        didSet {
+            self.imageViewBattleItem.image = self.imageBattleItem
+        }
+    }
+    public var imageAltHeldItem: UIImage? {
+        didSet {
+            if (self.imageAltHeldItem == nil) {
+                self.labelAltHeldItem.isHidden = true
+            }
+            self.imageViewAltHeldItem.image = self.imageAltHeldItem
+        }
+    }
+    public var imageAltBattleItem: UIImage? {
+        didSet {
+            if (self.imageAltBattleItem == nil) {
+                self.labelAltBattleItem.isHidden = true
+            }
+            self.imageViewAltBattleItem.image = self.imageAltBattleItem
         }
     }
     
@@ -44,6 +91,38 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         
         return label
     }()
+    private var labelHeldItems: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.textAlignment = .left
+        label.font = UIFont(name: "Georgia-Bold", size: 18.0)
+        label.text = "Held Items"
+        
+        return label
+    }()
+    private var labelAltHeldItem: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.textAlignment = .left
+        label.font = UIFont(name: "Georgia-Bold", size: 18.0)
+        label.text = "Alt"
+        
+        return label
+    }()
+    private var labelBattleItem: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.textAlignment = .left
+        label.font = UIFont(name: "Georgia-Bold", size: 18.0)
+        label.text = "Battle Item"
+        
+        return label
+    }()
+    private var labelAltBattleItem: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.textAlignment = .left
+        label.font = UIFont(name: "Georgia-Bold", size: 18.0)
+        label.text = "Alt"
+        
+        return label
+    }()
     private var stackViewMoves: UIStackView = {
         let stackView = UIStackView(frame: .zero)
         stackView.spacing = 7
@@ -51,6 +130,32 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         stackView.alignment = .center
         
         return stackView
+    }()
+    private var stackViewHeldItems: UIStackView = {
+        let stackView = UIStackView(frame: .zero)
+        stackView.spacing = 7
+        stackView.axis = .horizontal
+        stackView.alignment = .center
+        
+        return stackView
+    }()
+    private var imageViewAltHeldItem: UIImageView = {
+        let imageView = UIImageView(frame: .zero)
+        imageView.contentMode = .scaleAspectFit
+        
+        return imageView
+    }()
+    private var imageViewBattleItem: UIImageView = {
+        let imageView = UIImageView(frame: .zero)
+        imageView.contentMode = .scaleAspectFit
+        
+        return imageView
+    }()
+    private var imageViewAltBattleItem: UIImageView = {
+        let imageView = UIImageView(frame: .zero)
+        imageView.contentMode = .scaleAspectFit
+        
+        return imageView
     }()
     
     required init?(coder: NSCoder) {
@@ -78,6 +183,8 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
             make.right.equalTo(self.contentView.snp.right).offset(-15)
             make.bottom.equalTo(self.contentView.snp.bottom)
         }
+        
+        // Moves
         self.viewContainer.addSubview(self.labelName)
         self.labelName.snp.makeConstraints { make in
             make.top.equalTo(self.viewContainer.snp.top)
@@ -87,7 +194,62 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         self.stackViewMoves.snp.makeConstraints { make in
             make.top.equalTo(self.labelName.snp.bottom).offset(10)
             make.left.equalTo(self.viewContainer.snp.left)
-            make.bottom.equalTo(self.viewContainer.snp.bottom)
+        }
+        
+        // Held Items
+        self.viewContainer.addSubview(self.labelHeldItems)
+        self.labelHeldItems.snp.makeConstraints { make in
+            make.top.equalTo(self.stackViewMoves.snp.bottom).offset(10)
+            make.left.equalTo(self.viewContainer.snp.left)
+        }
+        self.viewContainer.addSubview(self.stackViewHeldItems)
+        self.stackViewHeldItems.snp.makeConstraints { make in
+            make.top.equalTo(self.labelHeldItems.snp.bottom).offset(10)
+            make.left.equalTo(self.viewContainer.snp.left)
+        }
+        
+        // Alt Held Item
+        self.viewContainer.addSubview(self.labelAltHeldItem)
+        self.labelAltHeldItem.snp.makeConstraints { make in
+            make.top.equalTo(self.stackViewMoves.snp.bottom).offset(10)
+            make.left.equalTo(self.stackViewHeldItems.snp.right).offset(40)
+        }
+        self.viewContainer.addSubview(self.imageViewAltHeldItem)
+        self.imageViewAltHeldItem.snp.makeConstraints { make in
+            make.top.equalTo(self.labelAltHeldItem.snp.bottom).offset(20)
+            make.left.equalTo(self.labelAltHeldItem.snp.left)
+            make.centerY.equalTo(self.stackViewHeldItems.snp.centerY)
+            make.height.equalTo(50)
+            make.width.equalTo(50)
+        }
+        
+        // Battle Items
+        self.viewContainer.addSubview(self.labelBattleItem)
+        self.labelBattleItem.snp.makeConstraints { make in
+            make.top.equalTo(self.stackViewHeldItems.snp.bottom).offset(10)
+            make.left.equalTo(self.viewContainer.snp.left)
+        }
+        self.viewContainer.addSubview(self.imageViewBattleItem)
+        self.imageViewBattleItem.snp.makeConstraints { make in
+            make.top.equalTo(self.labelBattleItem.snp.bottom).offset(10)
+            make.left.equalTo(self.viewContainer.snp.left)
+            make.height.equalTo(50)
+            make.width.equalTo(50)
+        }
+        
+        // Alt Battle Item
+        self.viewContainer.addSubview(self.labelAltBattleItem)
+        self.labelAltBattleItem.snp.makeConstraints { make in
+            make.top.equalTo(self.stackViewHeldItems.snp.bottom).offset(10)
+            make.left.equalTo(self.labelBattleItem.snp.right).offset(40)
+        }
+        self.viewContainer.addSubview(self.imageViewAltBattleItem)
+        self.imageViewAltBattleItem.snp.makeConstraints { make in
+            make.top.equalTo(self.labelAltBattleItem.snp.bottom).offset(10)
+            make.left.equalTo(self.labelAltBattleItem.snp.left)
+            make.centerY.equalTo(self.imageViewBattleItem.snp.centerY)
+            make.height.equalTo(50)
+            make.width.equalTo(50)
         }
     }
 }

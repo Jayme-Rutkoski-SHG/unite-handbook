@@ -320,7 +320,7 @@
             ],
             "AltHeldItem": "Energy Amplifier",
             "BattleItem": "Full Heal",
-            "AltBattleItem": "EjectButton"
+            "AltBattleItem": "Eject Button"
         },
         {
             "Name": "Pursuit Punch",
@@ -337,7 +337,7 @@
             ],
             "AltHeldItem": "Energy Amplifier",
             "BattleItem": "Full Heal",
-            "AltBattleItem": "EjectButton"
+            "AltBattleItem": "Eject Button"
         },
         {
             "Name": "Night Cut",
@@ -354,7 +354,7 @@
             ],
             "AltHeldItem": "Energy Amplifier",
             "BattleItem": "Full Heal",
-            "AltBattleItem": "EjectButton"
+            "AltBattleItem": "Eject Button"
         }
     ]
 }

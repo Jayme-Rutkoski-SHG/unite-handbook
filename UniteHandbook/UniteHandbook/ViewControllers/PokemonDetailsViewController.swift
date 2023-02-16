@@ -287,13 +287,19 @@ class PokemonDetailsViewController: UIViewController {
     }
     
     private func convertBuildsToBuildMovesArray(builds: [Build]) -> [BaseListDiffable] {
-        var result = [BaseListDiffable]()
+        var results = [BaseListDiffable]()
         for build in builds {
-            result.append(BuildMoves(name: "Build: \(build.name)", imageMoves: build.moveOrders.map { UIImage(named: "\(self.pokemon.name.lowercased())_\($0.replacingOccurrences(of: " ", with: "").lowercased()).png") }))
-            result.append(BuildSection(name: "Held Items", images: build.heldItems.map { UIImage(named: "\($0.replacingOccurrences(of: " ", with: "_").lowercased()).png")}))
-            result.append(BuildSection(name: "Battle Item", images: [UIImage(named: "\(build.battleItem.replacingOccurrences(of: " ", with: "_").lowercased()).png")]))
+            let section = BuildSection(
+                name: "Build: \(build.name)",
+                imagesMoves: build.moveOrders.map { UIImage(named: "\(self.pokemon.name.lowercased())_\($0.replacingOccurrences(of: " ", with: "").lowercased()).png") },
+                imagesHeldItems: build.heldItems.map { UIImage(named: "\($0.replacingOccurrences(of: " ", with: "_").lowercased()).png")},
+                imageBattleItem: UIImage(named: "\(build.battleItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"),
+                imageAltHeldItem: UIImage(named: "\(build.altHeldItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"),
+                imageAltBattleItem: UIImage(named: "\(build.altBattleItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"))
+            
+            results.append(section)
         }
-        return result
+        return results
     }
     
     private func setStatsForLevel(_ level: Int) {
@@ -339,8 +345,6 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
             return MoveSectionController(delegate: self)
         } else if object is HeaderDivider {
             return HeaderDividerSectionController()
-        } else if object is BuildMoves {
-            return BuildMovesSectionController()
         } else if object is BuildSection {
             return BuildSectionSectionController()
         } else if object is StatSection {
