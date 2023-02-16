@@ -1,0 +1,13 @@
+{
+    "Name": "Scope Lens",
+    "Stat1Label": "Critical-Hit Rate",
+    "Stat1Base": 0,
+    "Stat1Increment": 0.004,
+    "Stat2Label": "Critical-Hit Damage",
+    "Stat2Base": 0,
+    "Stat2Increment": 0.008,
+    "StatBoostLabel": "Of Attack Stat",
+    "StatBoostValues": [0.45, 0.6, 0.75],
+    "Desc": "Deals additional damage equal to 45%/60%/75% of your Attack stat when dealing a critical hit with a basic attack (1s cooldown)."
+}
+

@@ -1,0 +1,9 @@
+{
+    "Name": "Attack Weight",
+    "Stat1Label": "Attack",
+    "Stat1Base": 0,
+    "Stat1Increment": 0.6,
+    "StatBoostLabel": "Attack",
+    "StatBoostValues": [6, 9, 12],
+    "Desc": "When you score a goal, your Attack is raised by 6/9/12 for the rest of the match. (This bonus caps at 6 stacks)"
+}
