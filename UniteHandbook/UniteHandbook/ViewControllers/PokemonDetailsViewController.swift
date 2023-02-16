@@ -260,6 +260,12 @@ class PokemonDetailsViewController: UIViewController {
             levelDetails: self.pokemon.unite.levelDetails,
             upgrades: nil))
         
+        // Builds
+        let builds = convertBuildsToBuildMovesArray(builds: self.pokemon.presetBuilds)
+        for build in builds {
+            self.buildsArray.append(build)
+        }
+        
         // Stats
         self.statsArray.append(StatSlider(currentLevel: self.currentLevel))
         self.setStatsForLevel(self.currentLevel)
@@ -276,6 +282,14 @@ class PokemonDetailsViewController: UIViewController {
                 cooldown: move.cooldown,
                 levelDetails: move.levelDetails,
                 upgrades: convertMovesToMoveDetailsArray(moves: move.upgrades)))
+        }
+        return result
+    }
+    
+    private func convertBuildsToBuildMovesArray(builds: [Build]) -> [BuildMoves] {
+        var result = [BuildMoves]()
+        for build in builds {
+            result.append(BuildMoves(name: build.name, imageMoves: build.moveOrders.map { UIImage(named: $0) }))
         }
         return result
     }
