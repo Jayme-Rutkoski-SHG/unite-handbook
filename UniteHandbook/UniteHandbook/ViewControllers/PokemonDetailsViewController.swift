@@ -286,10 +286,12 @@ class PokemonDetailsViewController: UIViewController {
         return result
     }
     
-    private func convertBuildsToBuildMovesArray(builds: [Build]) -> [BuildMoves] {
-        var result = [BuildMoves]()
+    private func convertBuildsToBuildMovesArray(builds: [Build]) -> [BaseListDiffable] {
+        var result = [BaseListDiffable]()
         for build in builds {
-            result.append(BuildMoves(name: build.name, imageMoves: build.moveOrders.map { UIImage(named: "\(self.pokemon.name.lowercased())_\($0.replacingOccurrences(of: " ", with: "").lowercased()).png") }))
+            result.append(BuildMoves(name: "Build: \(build.name)", imageMoves: build.moveOrders.map { UIImage(named: "\(self.pokemon.name.lowercased())_\($0.replacingOccurrences(of: " ", with: "").lowercased()).png") }))
+            result.append(BuildSection(name: "Held Items", images: build.heldItems.map { UIImage(named: "\($0.replacingOccurrences(of: " ", with: "_").lowercased()).png")}))
+            result.append(BuildSection(name: "Battle Item", images: [UIImage(named: "\(build.battleItem.replacingOccurrences(of: " ", with: "_").lowercased()).png")]))
         }
         return result
     }
@@ -339,6 +341,8 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
             return HeaderDividerSectionController()
         } else if object is BuildMoves {
             return BuildMovesSectionController()
+        } else if object is BuildSection {
+            return BuildSectionSectionController()
         } else if object is StatSection {
             return StatSectionController()
         } else if object is StatSlider {
