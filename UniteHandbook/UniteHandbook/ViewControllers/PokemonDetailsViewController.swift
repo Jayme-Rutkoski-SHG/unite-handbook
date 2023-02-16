@@ -323,6 +323,8 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
             return MoveSectionController(delegate: self)
         } else if object is HeaderDivider {
             return HeaderDividerSectionController()
+        } else if object is BuildMoves {
+            return BuildMovesSectionController()
         } else if object is StatSection {
             return StatSectionController()
         } else if object is StatSlider {
