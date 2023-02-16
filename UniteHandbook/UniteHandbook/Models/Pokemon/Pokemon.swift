@@ -19,6 +19,7 @@ public class Pokemon : BaseListDiffable, Decodable {
         case moves = "Moves"
         case unite = "Unite"
         case stats = "Stats"
+        case presetBuilds = "PresetBuilds"
     }
     
     public var name: String = ""
@@ -30,6 +31,7 @@ public class Pokemon : BaseListDiffable, Decodable {
     public var moves: [Move] = [Move]()
     public var unite: Unite = Unite()
     public var stats: [StatDetails] = [StatDetails]()
+    public var presetBuilds: [Build] = [Build]()
     
     public override init() { }
     
@@ -44,6 +46,7 @@ public class Pokemon : BaseListDiffable, Decodable {
         self.moves = try container.decode([Move].self, forKey: .moves)
         self.unite = try container.decode(Unite.self, forKey: .unite)
         self.stats = try container.decode([StatDetails].self, forKey: .stats)
+        self.presetBuilds = try container.decode([Build].self, forKey: .presetBuilds)
     }
     
     static func loadJson(filename fileName: String) -> Pokemon {
