@@ -178,7 +178,7 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         self.setup()
-    }gi
+    }
     
     private func setup() {
         self.contentView.addSubview(self.viewBackground)
