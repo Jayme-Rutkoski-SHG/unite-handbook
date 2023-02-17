@@ -176,6 +176,14 @@ class PokemonDetailsViewController: UIViewController {
         self.view.layer.insertSublayer(self.gradientLayer, at: 0)
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        let newFrame = CGRect(x: 0, y: 0, width: abs(size.width), height: abs(size.height))
+        self.gradientLayer.frame = newFrame
+        self.view.layer.insertSublayer(self.gradientLayer, at: 0)
+    }
+    
     private func setup() {
         self.imageView.image = UIImage(named: self.pokemon.name.lowercased())
         self.labelName.text = self.pokemon.name
