@@ -356,7 +356,11 @@ class PokemonDetailsViewController: UIViewController {
     }
     
     @objc func buttonAddBuild_TouchUpInside(sender: UIButton) {
-
+        let vc = AddBuildViewController()
+        vc.modalPresentationStyle = .custom
+        vc.transitioningDelegate = self
+        
+        self.present(vc, animated: true)
     }
 }
 
@@ -458,4 +462,12 @@ extension PokemonDetailsViewController : StatSliderSectionControllerDelegate {
         self.adapter.performUpdates(animated: true)
         self.adapter.reloadObjects(self.statsArray.filter( { $0 is StatSection }))
     }
+}
+
+extension PokemonDetailsViewController : UIViewControllerTransitioningDelegate {
+    
+    public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return ModalSheetPresentationController.init(presentedViewController: presented, presenting: presenting)
+    }
+    
 }
