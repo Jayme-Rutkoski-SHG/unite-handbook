@@ -84,7 +84,6 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         let view = UIView(frame: .zero)
         view.backgroundColor = UIColor(hex: 0xF9CB53)
         view.layer.cornerRadius = 15.0
-        //view.layer.borderColor = UIColor(hex: 0x44347B).cgColor
         view.layer.borderColor = UIColor.black.cgColor
         view.layer.borderWidth = 2
         
