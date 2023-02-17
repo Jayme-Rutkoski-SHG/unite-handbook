@@ -123,6 +123,21 @@ class PokemonDetailsViewController: UIViewController {
         
         return control
     }()
+    private lazy var buttonAddBuild: UIButton = {
+        let button = UIButton(frame: .zero)
+        button.setTitle("Add Build", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = UIFont(name: "Georgia-Bold", size: 14.0)
+        button.setImage(UIImage(named: "add.png")?.withRenderingMode(.alwaysTemplate), for: .normal)
+        button.imageView?.tintColor = .white
+        button.imageView?.contentMode = .scaleAspectFit
+        button.addTarget(self, action: #selector(buttonAddBuild_TouchUpInside), for: .touchUpInside)
+        button.backgroundColor = UIColor(hex: 0x4AB438)
+        button.layer.cornerRadius = 20.0
+        button.imageEdgeInsets = UIEdgeInsets(top: 11, left: 0, bottom: 11, right: 8)
+        
+        return button
+    }()
     
     private lazy var adapter: ListAdapter = {
         let adapter = ListAdapter(updater: ListAdapterUpdater.init(), viewController: self, workingRangeSize: 0)
@@ -233,6 +248,14 @@ class PokemonDetailsViewController: UIViewController {
             make.right.equalTo(self.viewContainer.snp.right)
             make.bottom.equalTo(self.viewContainer.snp.bottom)
         }
+        
+        self.collectionView.addSubview(self.buttonAddBuild)
+        self.buttonAddBuild.snp.makeConstraints { make in
+            make.bottom.equalTo(self.viewContainer.snp.bottom).offset(-20)
+            make.right.equalTo(self.viewContainer.snp.right).offset(-20)
+            make.height.equalTo(40)
+            make.width.equalTo(135)
+        }
     }
     
     private func createSections() {
@@ -323,15 +346,22 @@ class PokemonDetailsViewController: UIViewController {
         self.adapter.performUpdates(animated: false)
         self.adapter.reloadData()
     }
+    
+    @objc func buttonAddBuild_TouchUpInside(sender: UIButton) {
+
+    }
 }
 
 extension PokemonDetailsViewController: ListAdapterDataSource {
     public func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
         if self.segmentedControl.selectedSegmentIndex == 0 {
+            self.buttonAddBuild.isHidden = true
             return self.abilitiesArray
         } else if self.segmentedControl.selectedSegmentIndex == 1 {
+            self.buttonAddBuild.isHidden = false
             return self.buildsArray
         } else if self.segmentedControl.selectedSegmentIndex == 2 {
+            self.buttonAddBuild.isHidden = true
             return self.statsArray
         }
         return [ListDiffable]()
