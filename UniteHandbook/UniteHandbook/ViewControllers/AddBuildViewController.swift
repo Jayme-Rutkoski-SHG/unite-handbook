@@ -14,7 +14,7 @@ class AddBuildViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = UIColor(hex: 0xB0A2D8)
         
         self.setup()
     }
