@@ -16,6 +16,7 @@ class AddBuildViewController: UIViewController {
         self.view.backgroundColor = UIColor(hex: 0xc0b5e0)
         
         self.setup()
+        self.setupTapGestureRecognizers()
     }
     
     private var stackViewMoves: UIStackView = {
@@ -153,12 +154,13 @@ class AddBuildViewController: UIViewController {
         
         return button
     }()
-
+    
     private func setup() {
+        
         // Moves
         self.view.addSubview(self.stackViewMoves)
         self.stackViewMoves.snp.makeConstraints { make in
-            make.top.equalTo(self.view.snp.top).offset(20)
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(20)
             make.centerX.equalTo(self.view.snp.centerX)
             make.height.equalTo(60)
         }
@@ -252,8 +254,20 @@ class AddBuildViewController: UIViewController {
         }
     }
     
-    @objc func buttonSubmit_TouchUpInside(sender: UIButton) {
+    private func setupTapGestureRecognizers() {
+        self.imageViewMove1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove1_Tapped)))
+    }
+    
+    private func displayOptions() {
         
+    }
+    
+    @objc func buttonSubmit_TouchUpInside(sender: UIButton) {
+        self.dismiss(animated: true)
+    }
+    
+    @objc func imageViewMove1_Tapped() {
+        displayOptions()
     }
 
 }

@@ -357,8 +357,7 @@ class PokemonDetailsViewController: UIViewController {
     
     @objc func buttonAddBuild_TouchUpInside(sender: UIButton) {
         let vc = AddBuildViewController()
-        vc.modalPresentationStyle = .custom
-        vc.transitioningDelegate = self
+        vc.modalPresentationStyle = .overFullScreen
         
         self.present(vc, animated: true)
     }
