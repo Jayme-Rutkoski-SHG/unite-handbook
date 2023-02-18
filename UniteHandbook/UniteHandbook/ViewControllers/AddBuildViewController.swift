@@ -274,8 +274,8 @@ class AddBuildViewController: UIViewController {
     private func displayMoveOptions(moves: [Move]) {
         self.modalPosition = .lower
         
-        var images: [UIImage?] = [UIImage?]()
-        images.append(contentsOf: moves.map { UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png") })
+        var images: [MultiImage] = [MultiImage]()
+        images.append(contentsOf: moves.map { MultiImage(image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"), key: $0) })
         
         self.navigateToSelectOptions(images: images)
     }
@@ -294,8 +294,8 @@ class AddBuildViewController: UIViewController {
         displayMoveOptions(moves: self.pokemonMoves[1].upgrades!)
     }
     
-    private func navigateToSelectOptions(images: [UIImage?]) {
-        let vc = SelectOptionsViewController(images: images)
+    private func navigateToSelectOptions(images: [MultiImage]) {
+        let vc = SelectOptionsViewController(images: images, delegate: self)
         vc.modalPresentationStyle = .custom
         vc.transitioningDelegate = self
         
@@ -311,4 +311,11 @@ extension AddBuildViewController : UIViewControllerTransitioningDelegate {
         return vc
     }
     
+}
+
+extension AddBuildViewController : SelectOptionsDelegate {
+    
+    func selectedOption(model: Any?) {
+        print("SELECTED")
+    }
 }

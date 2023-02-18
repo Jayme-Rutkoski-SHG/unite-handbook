@@ -8,9 +8,13 @@
 import Foundation
 import UIKit
 
+protocol MultiImageViewDelegate {
+    func imageSelected(forKey: Any?)
+}
 class MultiImageView: UIView {
     
-    var images: [UIImage?] = [] {
+    var delegate: MultiImageViewDelegate?
+    var images: [MultiImage] = [] {
         didSet {
             addImageViews()
         }
@@ -53,6 +57,7 @@ class MultiImageView: UIView {
             // set its properties (title, colors, corners, etc)
             newImageView.isUserInteractionEnabled = true
             newImageView.contentMode = .scaleAspectFit
+            newImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageTapped(tapGestureRecognizer:))))
 
             addSubview(newImageView)
             
@@ -63,7 +68,7 @@ class MultiImageView: UIView {
             guard let imageView = v as? UIImageView else {
                 fatalError("non-UIImageView subview found!")
             }
-            imageView.image = img
+            imageView.image = img.image
             imageView.frame.size.width = imageHeight
             imageView.frame.size.height = imageHeight
         }
@@ -116,4 +121,21 @@ class MultiImageView: UIView {
         displayTagLabels()
     }
     
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
+
+        self.delegate?.imageSelected(forKey: self.images.first(where: { $0.image == tappedImage.image} )?.key)
+    }
+}
+
+struct MultiImage {
+    
+    public var image: UIImage?
+    public var key: Any
+    
+    public init(image: UIImage? = nil, key: Any) {
+        self.image = image
+        self.key = key
+    }
 }
