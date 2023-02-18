@@ -280,6 +280,8 @@ class AddBuildViewController: UIViewController {
         self.imageViewHeldItem1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewHeldItem1_Tapped)))
         self.imageViewHeldItem2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewHeldItem2_Tapped)))
         self.imageViewHeldItem3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewHeldItem3_Tapped)))
+        
+        self.imageViewBattleItem.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewBattleItem_Tapped)))
     }
     
     private func displayMove1Options(moves: [Move]) {
@@ -401,6 +403,22 @@ class AddBuildViewController: UIViewController {
         self.navigateToSelectOptions(images: images)
     }
     
+    private func displayBattleItemOptions(options: [BattleItem]) {
+        self.modalPosition = .lower
+        
+        var images: [MultiImage] = [MultiImage]()
+        images.append(contentsOf: options.filter { self.currentBuild.battleItem != $0.name }.map { MultiImage(
+            image: UIImage(named: "\($0.name.replacingOccurrences(of: " ", with: "_").lowercased()).png"),
+            key: $0) { image, model in
+                self.imageViewBattleItem.image = image
+                guard let heldItem = model as? BattleItem else { return }
+                self.currentBuild.battleItem = heldItem.name
+            }
+        })
+        
+        self.navigateToSelectOptions(images: images)
+    }
+    
     @objc func buttonSubmit_TouchUpInside(sender: UIButton) {
         self.dismiss(animated: true)
     }
@@ -426,6 +444,10 @@ class AddBuildViewController: UIViewController {
     }
     @objc func imageViewHeldItem3_Tapped() {
         displayHeldItem3Options(options: self.heldItems)
+    }
+    
+    @objc func imageViewBattleItem_Tapped() {
+        displayBattleItemOptions(options: self.battleItems)
     }
     
     private func navigateToSelectOptions(images: [MultiImage]) {
