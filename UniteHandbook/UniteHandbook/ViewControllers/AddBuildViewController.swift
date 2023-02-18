@@ -21,6 +21,15 @@ class AddBuildViewController: UIViewController {
     private var currentBuild: Build = Build()
     private var delegate: AddBuildDelegate?
     
+    private lazy var buttonClose: UIButton = {
+        let button = UIButton(type: .custom)
+        button.setImage(UIImage(named: "close")?.withRenderingMode(.alwaysTemplate), for: .normal)
+        button.tintColor = .black
+        button.addTarget(self, action: #selector(buttonClose_TouchUpInside), for: .touchUpInside)
+        
+        return button
+    }()
+    
     private lazy var textField: UITextField = {
         let textField = UITextField(frame: .zero)
         textField.placeholder = "Enter Build Title:"
@@ -201,9 +210,18 @@ class AddBuildViewController: UIViewController {
     private func setup() {
         
         // TextField
+        self.view.addSubview(self.buttonClose)
+        self.buttonClose.snp.makeConstraints { make in
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(20)
+            make.left.equalTo(self.view.snp.left).offset(20)
+            make.width.equalTo(20)
+            make.height.equalTo(20)
+        }
+        
+        // TextField
         self.view.addSubview(self.textField)
         self.textField.snp.makeConstraints { make in
-            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(20)
+            make.top.equalTo(self.buttonClose.snp.bottom).offset(20)
             make.left.equalTo(self.view.snp.left).offset(20)
             make.right.equalTo(self.view.snp.right).offset(-20)
             make.height.equalTo(40)
@@ -460,8 +478,12 @@ class AddBuildViewController: UIViewController {
         self.navigateToSelectOptions(images: images)
     }
     
+    @objc private func buttonClose_TouchUpInside(sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @objc func buttonSubmit_TouchUpInside(sender: UIButton) {
-        self.currentBuild.name = self.textField.text
+        self.currentBuild.name = self.textField.text ?? ""
         
         self.delegate?.addBuild(build: self.currentBuild)
         self.dismiss(animated: true)
