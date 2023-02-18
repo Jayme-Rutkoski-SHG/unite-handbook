@@ -267,6 +267,8 @@ class AddBuildViewController: UIViewController {
     private func setupTapGestureRecognizers() {
         self.imageViewMove1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove1Or2_Tapped)))
         self.imageViewMove2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove1Or2_Tapped)))
+        self.imageViewMove3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove3_Tapped)))
+        self.imageViewMove4.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove4_Tapped)))
     }
     
     private func displayMoveOptions(moves: [Move]) {
@@ -284,6 +286,12 @@ class AddBuildViewController: UIViewController {
     
     @objc func imageViewMove1Or2_Tapped() {
         displayMoveOptions(moves: self.pokemonMoves)
+    }
+    @objc func imageViewMove3_Tapped() {
+        displayMoveOptions(moves: self.pokemonMoves[0].upgrades!)
+    }
+    @objc func imageViewMove4_Tapped() {
+        displayMoveOptions(moves: self.pokemonMoves[1].upgrades!)
     }
     
     private func navigateToSelectOptions(images: [UIImage?]) {
