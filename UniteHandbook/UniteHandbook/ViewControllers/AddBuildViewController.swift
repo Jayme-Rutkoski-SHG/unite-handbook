@@ -21,6 +21,27 @@ class AddBuildViewController: UIViewController {
     private var currentBuild: Build = Build()
     private var delegate: AddBuildDelegate?
     
+    private lazy var textField: UITextField = {
+        let textField = UITextField(frame: .zero)
+        textField.placeholder = "Enter Build Title:"
+        textField.backgroundColor = .white
+        textField.leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 10.0, height: 1.0))
+        textField.leftViewMode = .always
+        textField.rightView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 40.0, height: 1.0))
+        textField.rightViewMode = .always
+        textField.layer.cornerRadius = 6.0
+        textField.layer.borderWidth = 1.0
+        textField.layer.borderColor = UIColor.black.cgColor
+        textField.delegate = self
+        textField.returnKeyType = .next
+        textField.autocapitalizationType = .none
+        textField.autocorrectionType = .no
+        textField.spellCheckingType = .no
+        textField.font = UIFont(name: "Georgia", size: 14.0)
+        
+        return textField
+    }()
+    
     private var stackViewMoves: UIStackView = {
         let stackView = UIStackView(frame: .zero)
         stackView.spacing = 20
@@ -179,10 +200,19 @@ class AddBuildViewController: UIViewController {
     
     private func setup() {
         
+        // TextField
+        self.view.addSubview(self.textField)
+        self.textField.snp.makeConstraints { make in
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(20)
+            make.left.equalTo(self.view.snp.left).offset(20)
+            make.right.equalTo(self.view.snp.right).offset(-20)
+            make.height.equalTo(40)
+        }
+        
         // Moves
         self.view.addSubview(self.stackViewMoves)
         self.stackViewMoves.snp.makeConstraints { make in
-            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(20)
+            make.top.equalTo(self.textField.snp.bottom).offset(20)
             make.centerX.equalTo(self.view.snp.centerX)
             make.height.equalTo(60)
         }
@@ -277,6 +307,12 @@ class AddBuildViewController: UIViewController {
     }
     
     private func setupTapGestureRecognizers() {
+        // Tap Gesture
+        let gestureTap: UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(gestureTap(gesture:)))
+        gestureTap.cancelsTouchesInView = false
+        
+        self.view.addGestureRecognizer(gestureTap)
+        
         self.imageViewMove1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove1_Tapped)))
         self.imageViewMove2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove2_Tapped)))
         self.imageViewMove3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove3_Tapped)))
@@ -425,6 +461,8 @@ class AddBuildViewController: UIViewController {
     }
     
     @objc func buttonSubmit_TouchUpInside(sender: UIButton) {
+        self.currentBuild.name = self.textField.text
+        
         self.delegate?.addBuild(build: self.currentBuild)
         self.dismiss(animated: true)
     }
@@ -456,6 +494,10 @@ class AddBuildViewController: UIViewController {
         displayBattleItemOptions(options: self.battleItems)
     }
     
+    @objc private func gestureTap(gesture: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
     private func navigateToSelectOptions(images: [MultiImage]) {
         let vc = SelectOptionsViewController(images: images)
         vc.modalPresentationStyle = .custom
@@ -473,4 +515,22 @@ extension AddBuildViewController : UIViewControllerTransitioningDelegate {
         return vc
     }
     
+}
+
+extension AddBuildViewController : UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.layer.borderColor = UIColor.init(hex: 0x3C9ADC).cgColor
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.layer.borderColor = UIColor.black.cgColor
+        textField.resignFirstResponder()
+    }
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return true
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
+    }
 }
