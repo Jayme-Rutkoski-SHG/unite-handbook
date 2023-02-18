@@ -356,7 +356,7 @@ class PokemonDetailsViewController: UIViewController {
     }
     
     @objc func buttonAddBuild_TouchUpInside(sender: UIButton) {
-        let vc = AddBuildViewController(pokemonName: self.pokemon.name, pokemonMoves: self.pokemon.moves)
+        let vc = AddBuildViewController(pokemonName: self.pokemon.name, pokemonMoves: self.pokemon.moves, delegate: self)
         vc.modalPresentationStyle = .overFullScreen
         
         self.present(vc, animated: true)
@@ -460,5 +460,12 @@ extension PokemonDetailsViewController : StatSliderSectionControllerDelegate {
         
         self.adapter.performUpdates(animated: true)
         self.adapter.reloadObjects(self.statsArray.filter( { $0 is StatSection }))
+    }
+}
+
+extension PokemonDetailsViewController : AddBuildDelegate {
+    
+    func addBuild(build: Build) {
+        print("BUILD ADDED")
     }
 }

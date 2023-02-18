@@ -8,6 +8,9 @@
 import UIKit
 import SnapKit
 
+protocol AddBuildDelegate {
+    func addBuild(build: Build)
+}
 class AddBuildViewController: UIViewController {
 
     private var modalPosition: ModalSheetPresentationController.modalPosition = .middle
@@ -16,6 +19,7 @@ class AddBuildViewController: UIViewController {
     private var heldItems: [HeldItem] = [HeldItem]()
     private var battleItems: [BattleItem] = [BattleItem]()
     private var currentBuild: Build = Build()
+    private var delegate: AddBuildDelegate?
     
     private var stackViewMoves: UIStackView = {
         let stackView = UIStackView(frame: .zero)
@@ -162,10 +166,11 @@ class AddBuildViewController: UIViewController {
         self.setupTapGestureRecognizers()
     }
     
-    public convenience init(pokemonName: String, pokemonMoves: [Move]) {
+    public convenience init(pokemonName: String, pokemonMoves: [Move], delegate: AddBuildDelegate?) {
         self.init(nibName: nil, bundle: nil)
         self.pokemonName = pokemonName
         self.pokemonMoves = pokemonMoves
+        self.delegate = delegate
         self.currentBuild.moveOrders = ["", "", "", ""]
         self.currentBuild.heldItems = ["", "", ""]
         self.heldItems = HeldItemLoader.loadHeldItems()
@@ -420,6 +425,7 @@ class AddBuildViewController: UIViewController {
     }
     
     @objc func buttonSubmit_TouchUpInside(sender: UIButton) {
+        self.delegate?.addBuild(build: self.currentBuild)
         self.dismiss(animated: true)
     }
     
