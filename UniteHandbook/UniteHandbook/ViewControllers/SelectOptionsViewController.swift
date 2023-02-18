@@ -9,13 +9,9 @@ import Foundation
 import SnapKit
 import UIKit
 
-protocol SelectOptionsDelegate {
-    func selectedOption(model: Any?)
-}
 class SelectOptionsViewController: UIViewController {
     
     private var images: [MultiImage] = [MultiImage]()
-    private var delegate: SelectOptionsDelegate?
     
     private lazy var multiImageView: MultiImageView = {
         let view = MultiImageView(frame: .zero)
@@ -32,10 +28,9 @@ class SelectOptionsViewController: UIViewController {
         self.setup()
     }
     
-    public convenience init(images: [MultiImage], delegate: SelectOptionsDelegate?) {
+    public convenience init(images: [MultiImage]) {
         self.init(nibName: nil, bundle: nil)
         self.images = images
-        self.delegate = delegate
     }
     
     private func setup() {
@@ -55,8 +50,7 @@ class SelectOptionsViewController: UIViewController {
 
 extension SelectOptionsViewController : MultiImageViewDelegate {
     
-    func imageSelected(forKey: Any?) {
-        self.delegate?.selectedOption(model: forKey)
+    func imageSelected() {
         self.dismiss(animated: true)
     }
 }

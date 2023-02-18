@@ -13,6 +13,7 @@ class AddBuildViewController: UIViewController {
     private var modalPosition: ModalSheetPresentationController.modalPosition = .middle
     private var pokemonName: String = ""
     private var pokemonMoves: [Move] = [Move]()
+    private var currentBuild: Build = Build()
     
     private var stackViewMoves: UIStackView = {
         let stackView = UIStackView(frame: .zero)
@@ -163,6 +164,7 @@ class AddBuildViewController: UIViewController {
         self.init(nibName: nil, bundle: nil)
         self.pokemonName = pokemonName
         self.pokemonMoves = pokemonMoves
+        self.currentBuild.moveOrders = ["", "", "", ""]
     }
     
     private func setup() {
@@ -265,17 +267,81 @@ class AddBuildViewController: UIViewController {
     }
     
     private func setupTapGestureRecognizers() {
-        self.imageViewMove1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove1Or2_Tapped)))
-        self.imageViewMove2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove1Or2_Tapped)))
+        self.imageViewMove1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove1_Tapped)))
+        self.imageViewMove2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove2_Tapped)))
         self.imageViewMove3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove3_Tapped)))
         self.imageViewMove4.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove4_Tapped)))
     }
     
-    private func displayMoveOptions(moves: [Move]) {
+    private func displayMove1Options(moves: [Move]) {
         self.modalPosition = .lower
         
         var images: [MultiImage] = [MultiImage]()
-        images.append(contentsOf: moves.map { MultiImage(image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"), key: $0) })
+        images.append(contentsOf: moves.map { MultiImage(
+            image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"),
+            key: $0) { image, model in
+                self.imageViewMove1.image = image
+                guard let move = model as? Move else { return }
+                self.currentBuild.moveOrders[0] = move.name
+                if let secondMove = self.pokemonMoves.first(where: { $0.name != move.name }) {
+                    self.currentBuild.moveOrders[1] = secondMove.name
+                    self.imageViewMove2.image = UIImage(named: "\(self.pokemonName.lowercased())_\(secondMove.name.replacingOccurrences(of: " ", with: "").lowercased()).png")
+                }
+            }
+            
+        })
+        
+        self.navigateToSelectOptions(images: images)
+    }
+    private func displayMove2Options(moves: [Move]) {
+        self.modalPosition = .lower
+        
+        var images: [MultiImage] = [MultiImage]()
+        images.append(contentsOf: moves.map { MultiImage(
+            image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"),
+            key: $0) { image, model in
+                self.imageViewMove2.image = image
+                guard let move = model as? Move else { return }
+                self.currentBuild.moveOrders[1] = move.name
+                if let secondMove = self.pokemonMoves.first(where: { $0.name != move.name }) {
+                    self.currentBuild.moveOrders[0] = secondMove.name
+                    self.imageViewMove1.image = UIImage(named: "\(self.pokemonName.lowercased())_\(secondMove.name.replacingOccurrences(of: " ", with: "").lowercased()).png")
+                }
+            }
+            
+        })
+        
+        self.navigateToSelectOptions(images: images)
+    }
+    private func displayMove3Options(moves: [Move]) {
+        self.modalPosition = .lower
+        
+        var images: [MultiImage] = [MultiImage]()
+        images.append(contentsOf: moves.map { MultiImage(
+            image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"),
+            key: $0) { image, model in
+                self.imageViewMove3.image = image
+                guard let move = model as? Move else { return }
+                self.currentBuild.moveOrders[2] = move.name
+            }
+            
+        })
+        
+        self.navigateToSelectOptions(images: images)
+    }
+    private func displayMove4Options(moves: [Move]) {
+        self.modalPosition = .lower
+        
+        var images: [MultiImage] = [MultiImage]()
+        images.append(contentsOf: moves.map { MultiImage(
+            image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"),
+            key: $0) { image, model in
+                self.imageViewMove4.image = image
+                guard let move = model as? Move else { return }
+                self.currentBuild.moveOrders[3] = move.name
+            }
+            
+        })
         
         self.navigateToSelectOptions(images: images)
     }
@@ -284,18 +350,21 @@ class AddBuildViewController: UIViewController {
         self.dismiss(animated: true)
     }
     
-    @objc func imageViewMove1Or2_Tapped() {
-        displayMoveOptions(moves: self.pokemonMoves)
+    @objc func imageViewMove1_Tapped() {
+        displayMove1Options(moves: self.pokemonMoves)
+    }
+    @objc func imageViewMove2_Tapped() {
+        displayMove2Options(moves: self.pokemonMoves)
     }
     @objc func imageViewMove3_Tapped() {
-        displayMoveOptions(moves: self.pokemonMoves[0].upgrades!)
+        displayMove3Options(moves: self.pokemonMoves[0].upgrades!)
     }
     @objc func imageViewMove4_Tapped() {
-        displayMoveOptions(moves: self.pokemonMoves[1].upgrades!)
+        displayMove4Options(moves: self.pokemonMoves[1].upgrades!)
     }
     
     private func navigateToSelectOptions(images: [MultiImage]) {
-        let vc = SelectOptionsViewController(images: images, delegate: self)
+        let vc = SelectOptionsViewController(images: images)
         vc.modalPresentationStyle = .custom
         vc.transitioningDelegate = self
         
@@ -311,11 +380,4 @@ extension AddBuildViewController : UIViewControllerTransitioningDelegate {
         return vc
     }
     
-}
-
-extension AddBuildViewController : SelectOptionsDelegate {
-    
-    func selectedOption(model: Any?) {
-        print("SELECTED")
-    }
 }

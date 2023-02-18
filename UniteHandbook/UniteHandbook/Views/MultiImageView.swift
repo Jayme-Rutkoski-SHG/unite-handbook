@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol MultiImageViewDelegate {
-    func imageSelected(forKey: Any?)
+    func imageSelected()
 }
 class MultiImageView: UIView {
     
@@ -124,8 +124,11 @@ class MultiImageView: UIView {
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
         let tappedImage = tapGestureRecognizer.view as! UIImageView
-
-        self.delegate?.imageSelected(forKey: self.images.first(where: { $0.image == tappedImage.image} )?.key)
+        let currentTapped = self.images.first(where: { $0.image == tappedImage.image} )
+        if let currentTapped = currentTapped {
+            currentTapped.onSelected(currentTapped.image, currentTapped.key)
+        }
+        self.delegate?.imageSelected()
     }
 }
 
@@ -133,9 +136,11 @@ struct MultiImage {
     
     public var image: UIImage?
     public var key: Any
+    public var onSelected: ((UIImage?, Any) -> ())
     
-    public init(image: UIImage? = nil, key: Any) {
+    public init(image: UIImage? = nil, key: Any, onSelected: @escaping ((UIImage?, Any) -> ())) {
         self.image = image
         self.key = key
+        self.onSelected = onSelected
     }
 }
