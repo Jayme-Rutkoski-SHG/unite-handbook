@@ -269,5 +269,12 @@ class AddBuildViewController: UIViewController {
     @objc func imageViewMove1_Tapped() {
         displayOptions()
     }
+}
 
+extension AddBuildViewController : UIViewControllerTransitioningDelegate {
+    
+    public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return ModalSheetPresentationController.init(presentedViewController: presented, presenting: presenting)
+    }
+    
 }
