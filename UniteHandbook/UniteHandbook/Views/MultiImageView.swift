@@ -16,10 +16,10 @@ class MultiImageView: UIView {
         }
     }
     
-    let imageHeight:CGFloat = 50
+    let imageHeight:CGFloat = 60
     let imagePadding: CGFloat = 16
-    let imageSpacingX: CGFloat = 8
-    let imageSpacingY: CGFloat = 8
+    let imageSpacingX: CGFloat = 12
+    let imageSpacingY: CGFloat = 12
 
     var intrinsicHeight: CGFloat = 0
     
@@ -64,7 +64,7 @@ class MultiImageView: UIView {
                 fatalError("non-UIImageView subview found!")
             }
             imageView.image = img
-            imageView.frame.size.width = imageHeight + imagePadding
+            imageView.frame.size.width = imageHeight
             imageView.frame.size.height = imageHeight
         }
 

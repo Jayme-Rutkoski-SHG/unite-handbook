@@ -10,14 +10,9 @@ import SnapKit
 
 class AddBuildViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor(hex: 0xc0b5e0)
-        
-        self.setup()
-        self.setupTapGestureRecognizers()
-    }
+    private var modalPosition: ModalSheetPresentationController.modalPosition = .middle
+    private var pokemonName: String = ""
+    private var pokemonMoves: [Move] = [Move]()
     
     private var stackViewMoves: UIStackView = {
         let stackView = UIStackView(frame: .zero)
@@ -155,6 +150,21 @@ class AddBuildViewController: UIViewController {
         return button
     }()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(hex: 0xc0b5e0)
+        
+        self.setup()
+        self.setupTapGestureRecognizers()
+    }
+    
+    public convenience init(pokemonName: String, pokemonMoves: [Move]) {
+        self.init(nibName: nil, bundle: nil)
+        self.pokemonName = pokemonName
+        self.pokemonMoves = pokemonMoves
+    }
+    
     private func setup() {
         
         // Moves
@@ -258,8 +268,13 @@ class AddBuildViewController: UIViewController {
         self.imageViewMove1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove1_Tapped)))
     }
     
-    private func displayOptions() {
+    private func displayMoveOptions(moves: [Move]) {
+        self.modalPosition = .lower
         
+        var images: [UIImage?] = [UIImage?]()
+        images.append(contentsOf: moves.map { UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png") })
+        
+        self.navigateToSelectOptions(images: images)
     }
     
     @objc func buttonSubmit_TouchUpInside(sender: UIButton) {
@@ -267,14 +282,24 @@ class AddBuildViewController: UIViewController {
     }
     
     @objc func imageViewMove1_Tapped() {
-        displayOptions()
+        displayMoveOptions(moves: self.pokemonMoves)
+    }
+    
+    private func navigateToSelectOptions(images: [UIImage?]) {
+        let vc = SelectOptionsViewController(images: images)
+        vc.modalPresentationStyle = .custom
+        vc.transitioningDelegate = self
+        
+        self.present(vc, animated: true)
     }
 }
 
 extension AddBuildViewController : UIViewControllerTransitioningDelegate {
     
     public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return ModalSheetPresentationController.init(presentedViewController: presented, presenting: presenting)
+        let vc = ModalSheetPresentationController.init(presentedViewController: presented, presenting: presenting, position: self.modalPosition)
+
+        return vc
     }
     
 }

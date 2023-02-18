@@ -7,48 +7,42 @@
 
 import Foundation
 import SnapKit
-import IGListKit
+import UIKit
 
 class SelectOptionsViewController: UIViewController {
     
-    private var sections: [BaseListDiffable] = [BaseListDiffable]()
+    private var images: [UIImage?] = [UIImage?]()
     
-    private lazy var adapter: ListAdapter = {
-        let adapter = ListAdapter(updater: ListAdapterUpdater.init(), viewController: self, workingRangeSize: 0)
-        
-        return adapter
-    }()
-    private lazy var contentView: UIView = {
-        let view = UIView(frame: .zero)
-        view.backgroundColor = UIColor.white
-        view.layer.cornerRadius = 20.0
+    private lazy var multiImageView: MultiImageView = {
+        let view = MultiImageView(frame: .zero)
+        view.backgroundColor = .clear
         
         return view
     }()
-    private var collectionView: UICollectionView = {
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
-        collectionView.showsVerticalScrollIndicator = false
-        collectionView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        return collectionView
-    }()
-    
-    
-}
-
-extension SelectOptionsViewController: ListAdapterDataSource {
-    public func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        return self.sections
+        self.view.backgroundColor = UIColor(hex: 0xc0b5e0)
+        
+        self.setup()
     }
     
-    public func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-
-        return ListSectionController()
+    public convenience init(images: [UIImage?]) {
+        self.init(nibName: nil, bundle: nil)
+        self.images = images
     }
     
-    public func emptyView(for listAdapter: ListAdapter) -> UIView? {
-        return nil
+    private func setup() {
+        
+        self.view.addSubview(self.multiImageView)
+        self.multiImageView.snp.makeConstraints { make in
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(20)
+            make.left.equalTo(self.view.snp.left).offset(15)
+            make.right.equalTo(self.view.snp.right).offset(-15)
+            make.centerX.equalTo(self.view.snp.centerX)
+        }
+
+        self.multiImageView.images = self.images
     }
 }

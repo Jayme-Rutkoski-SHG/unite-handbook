@@ -10,8 +10,8 @@ import UIKit
 
 open class ModalSheetPresentationController : UIPresentationController {
     
-    private enum modalPosition {
-        case middle, top
+    public enum modalPosition {
+        case middle, top, lower
     }
     
     private var transparencyView: UIView = {
@@ -24,11 +24,21 @@ open class ModalSheetPresentationController : UIPresentationController {
     
     private var middlePoint: CGPoint?
     private var topPoint: CGPoint?
-    private var currentPosition: modalPosition = .middle
+    private var lowerPoint: CGPoint?
+    public var currentPosition: modalPosition = .middle
     
     public override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
         super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
 
+        self.transparencyView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissController)))
+        self.presentedViewController.view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizerAction)))
+        
+        registerForNotifications()
+    }
+    public convenience init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?, position: modalPosition) {
+        self.init(presentedViewController: presentedViewController, presenting: presentingViewController)
+
+        self.currentPosition = position
         self.transparencyView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissController)))
         self.presentedViewController.view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizerAction)))
         
@@ -40,12 +50,20 @@ open class ModalSheetPresentationController : UIPresentationController {
     }
     
     public override var frameOfPresentedViewInContainerView: CGRect {
-        self.middlePoint = CGPoint(x: 0, y: self.containerView!.frame.height * 0.5)
-        self.topPoint = CGPoint(x: 0, y: 1)
+        var currentPoint: CGPoint?
+        switch self.currentPosition {
+        case .top:
+            self.topPoint = CGPoint(x: 0, y: 1)
+            currentPoint = self.topPoint
+        case .middle:
+            self.middlePoint = CGPoint(x: 0, y: self.containerView!.frame.height * 0.5)
+            currentPoint = self.middlePoint
+        case .lower:
+            self.lowerPoint = CGPoint(x: 0, y: self.containerView!.frame.height * 0.7)
+            currentPoint = lowerPoint
+        }
         
-        self.currentPosition = .middle
-        
-        return CGRect(origin: self.middlePoint!, size: CGSize(width: self.containerView!.frame.width, height: self.containerView!.frame.height))
+        return CGRect(origin: currentPoint!, size: CGSize(width: self.containerView!.frame.width, height: self.containerView!.frame.height))
     }
     
     public override func presentationTransitionWillBegin() {
@@ -100,6 +118,9 @@ open class ModalSheetPresentationController : UIPresentationController {
             case .top:
                 self.presentedViewController.view.frame.origin = CGPoint(x: 0, y: self.topPoint?.y ?? 1)
                 break
+            case .lower:
+                self.presentedViewController.view.frame.origin = CGPoint(x: 0, y: self.lowerPoint?.y ?? 1)
+                break
             }
         }
     }
@@ -127,6 +148,9 @@ open class ModalSheetPresentationController : UIPresentationController {
             break
         case .top:
             self.presentedViewController.view.frame.origin = CGPoint(x: 0, y: self.topPoint!.y + translation.y)
+            break
+        case .lower:
+            self.presentedViewController.view.frame.origin = CGPoint(x: 0, y: self.lowerPoint!.y + translation.y)
             break
         }
         
