@@ -1,5 +1,5 @@
 //
-//  PokemonListService.swift
+//  PokemonLoader.swift
 //  UniteHandbook
 //
 //  Created by Jayme Rutkoski on 2/9/23.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class PokemonListService {
+public class PokemonLoader {
 
     public static func loadPokemon() -> [Pokemon] {
         var pokemonList = [Pokemon]()
