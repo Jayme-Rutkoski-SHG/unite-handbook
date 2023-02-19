@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class BonusStat : Decodable {
+public class BonusStat : Codable {
     
     enum CodingKeys: String, CodingKey {
         case label = "Label"
@@ -22,6 +22,14 @@ public class BonusStat : Decodable {
     public var isPercent: Bool = false
     
     public init() { }
+    
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(self.label, forKey: .label)
+        try container.encode(self.baseValue, forKey: .baseValue)
+        try container.encode(self.incrementValue, forKey: .incrementValue)
+        try container.encode(self.isPercent, forKey: .isPercent)
+    }
     
     required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

@@ -65,17 +65,13 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
     }
     public var imageAltHeldItem: UIImage? {
         didSet {
-            if (self.imageAltHeldItem == nil) {
-                self.labelAltHeldItem.isHidden = true
-            }
+            self.labelAltHeldItem.isHidden = self.imageAltHeldItem == nil
             self.imageViewAltHeldItem.image = self.imageAltHeldItem
         }
     }
     public var imageAltBattleItem: UIImage? {
         didSet {
-            if (self.imageAltBattleItem == nil) {
-                self.labelAltBattleItem.isHidden = true
-            }
+            self.labelAltBattleItem.isHidden = self.imageAltBattleItem == nil
             self.imageViewAltBattleItem.image = self.imageAltBattleItem
         }
     }

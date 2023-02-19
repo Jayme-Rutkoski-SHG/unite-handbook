@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Ability : Decodable {
+public class Ability : Codable {
     
     enum CodingKeys: String, CodingKey {
         case name = "Name"
@@ -18,6 +18,12 @@ public class Ability : Decodable {
     public var desc: String = ""
     
     public init() { }
+    
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(self.name, forKey: .name)
+        try container.encode(self.desc, forKey: .desc)
+    }
     
     required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

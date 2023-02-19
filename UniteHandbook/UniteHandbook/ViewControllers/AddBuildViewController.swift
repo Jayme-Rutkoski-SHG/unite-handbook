@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 protocol AddBuildDelegate {
-    func addBuild(build: Build)
+    func addBuild(pokemonName: String, build: Build)
 }
 class AddBuildViewController: UIViewController {
 
@@ -485,7 +485,7 @@ class AddBuildViewController: UIViewController {
     @objc func buttonSubmit_TouchUpInside(sender: UIButton) {
         self.currentBuild.name = self.textField.text ?? ""
         
-        self.delegate?.addBuild(build: self.currentBuild)
+        self.delegate?.addBuild(pokemonName: self.pokemonName, build: self.currentBuild)
         self.dismiss(animated: true)
     }
     

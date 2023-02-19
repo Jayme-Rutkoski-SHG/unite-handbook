@@ -292,8 +292,13 @@ class PokemonDetailsViewController: UIViewController {
             upgrades: nil))
         
         // Builds
-        let builds = convertBuildsToBuildMovesArray(builds: self.pokemon.presetBuilds)
+        var builds = convertBuildsToBuildMovesArray(builds: self.pokemon.presetBuilds)
+        var customBuilds = convertBuildsToBuildMovesArray(builds: SwiftAppDefaults.shared.customBuilds[self.pokemon.name] ?? [Build]())
+
         for build in builds {
+            self.buildsArray.append(build)
+        }
+        for build in customBuilds {
             self.buildsArray.append(build)
         }
         
@@ -465,7 +470,9 @@ extension PokemonDetailsViewController : StatSliderSectionControllerDelegate {
 
 extension PokemonDetailsViewController : AddBuildDelegate {
     
-    func addBuild(build: Build) {
-        print("BUILD ADDED")
+    func addBuild(pokemonName: String, build: Build) {
+        var buildsForPokemon = SwiftAppDefaults.shared.customBuilds[pokemonName] ?? [Build]()
+        buildsForPokemon.append(build)
+        SwiftAppDefaults.shared.customBuilds[pokemonName] = buildsForPokemon
     }
 }

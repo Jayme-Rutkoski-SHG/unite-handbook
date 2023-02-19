@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class HeldItem : BaseListDiffable, Decodable {
+public class HeldItem : BaseListDiffable, Codable {
     
     enum CodingKeys: String, CodingKey {
         case name = "Name"
@@ -23,6 +23,14 @@ public class HeldItem : BaseListDiffable, Decodable {
     
     public override init() { }
 
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(self.name, forKey: .name)
+        try container.encode(self.bonusStats, forKey: .bonusStats)
+        try container.encode(self.levelBonus, forKey: .levelBonus)
+        try container.encode(self.desc, forKey: .desc)
+    }
+    
     required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)

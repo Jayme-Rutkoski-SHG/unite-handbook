@@ -8,7 +8,7 @@
 import Foundation
 
 protocol SwiftAppDefaultsProtocol {
-    var customBuilds: [String : Build] { get set }
+    var customBuilds: [String : [Build]] { get set }
 }
 
 public class SwiftAppDefaults: SwiftAppDefaultsProtocol {
@@ -26,16 +26,28 @@ public class SwiftAppDefaults: SwiftAppDefaultsProtocol {
         public static let customBuilds = "AppDefaults.Keys.customBuilds"
     }
     
-    public var customBuilds: [String : Build] {
+    public var customBuilds: [String : [Build]] {
         get {
-            if let customBuilds = (defaults.dictionary(forKey: Keys.customBuilds) as? [String : Build]) {
-                return customBuilds
+            var decodedDict = [String : [Build]]()
+            
+            if let storedDict = defaults.object(forKey: Keys.customBuilds) as? [String : Data] {
+                for key in storedDict.keys {
+                    if let decoded = try? JSONDecoder().decode([Build].self, from: storedDict[key]!) {
+                        decodedDict[key] = decoded
+                    }
+                }
             }
             
-            return [String : Build]()
+            return decodedDict
         }
         set {
-            defaults.set(newValue, forKey: Keys.customBuilds)
+            var storedDict = [String : Data]()
+            for key in newValue.keys {
+                if let encoded = try? JSONEncoder().encode(newValue[key]) {
+                    storedDict[key] = encoded
+                }
+            }
+            defaults.set(storedDict, forKey: Keys.customBuilds)
         }
     }
 }
