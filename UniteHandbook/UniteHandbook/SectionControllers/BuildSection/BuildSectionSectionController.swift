@@ -45,14 +45,16 @@ public class BuildSection : BaseListDiffable {
     public var imageBattleItem: UIImage?
     public var imageAltHeldItem: UIImage?
     public var imageAltBattleItem: UIImage?
+    public var isCustomBuild: Bool = false
 
-    public init(name: String, imagesMoves: [UIImage?], imagesHeldItems: [UIImage?], imageBattleItem: UIImage?, imageAltHeldItem: UIImage?, imageAltBattleItem: UIImage?) {
+    public init(name: String, imagesMoves: [UIImage?], imagesHeldItems: [UIImage?], imageBattleItem: UIImage?, imageAltHeldItem: UIImage?, imageAltBattleItem: UIImage?, isCustomBuild: Bool) {
         self.name = name
         self.imagesMoves = imagesMoves
         self.imagesHeldItems = imagesHeldItems
         self.imageBattleItem = imageBattleItem
         self.imageAltHeldItem = imageAltHeldItem
         self.imageAltBattleItem = imageAltBattleItem
+        self.isCustomBuild = isCustomBuild
     }
 }
 

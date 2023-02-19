@@ -485,7 +485,6 @@ class AddBuildViewController: UIViewController {
     @objc func buttonSubmit_TouchUpInside(sender: UIButton) {
         self.currentBuild.name = self.textField.text ?? ""
         
-        self.currentBuild.isCustomBuild = true
         self.delegate?.addBuild(pokemonName: self.pokemonName, build: self.currentBuild)
         self.dismiss(animated: true)
     }

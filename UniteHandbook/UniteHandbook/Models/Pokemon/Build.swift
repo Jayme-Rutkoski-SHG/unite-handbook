@@ -16,7 +16,6 @@ public class Build : Codable {
         case altHeldItem = "AltHeldItem"
         case battleItem = "BattleItem"
         case altBattleItem = "AltBattleItem"
-        case isCustomBuild = "IsCustomBuild"
     }
     
     public var name: String = ""
@@ -25,7 +24,6 @@ public class Build : Codable {
     public var altHeldItem: String = ""
     public var battleItem: String = ""
     public var altBattleItem: String = ""
-    public var isCustomBuild: Bool? = false
     
     public init() { }
     
@@ -37,7 +35,6 @@ public class Build : Codable {
         try container.encode(self.altHeldItem, forKey: .altHeldItem)
         try container.encode(self.battleItem, forKey: .battleItem)
         try container.encode(self.altBattleItem, forKey: .altBattleItem)
-        try container.encodeIfPresent(self.isCustomBuild, forKey: .isCustomBuild)
     }
     required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

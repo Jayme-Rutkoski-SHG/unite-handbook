@@ -292,8 +292,8 @@ class PokemonDetailsViewController: UIViewController {
             upgrades: nil))
         
         // Builds
-        var builds = convertBuildsToBuildMovesArray(builds: self.pokemon.presetBuilds)
-        var customBuilds = convertBuildsToBuildMovesArray(builds: SwiftAppDefaults.shared.customBuilds[self.pokemon.name] ?? [Build]())
+        let builds = convertBuildsToBuildMovesArray(builds: self.pokemon.presetBuilds)
+        let customBuilds = convertBuildsToBuildMovesArray(builds: SwiftAppDefaults.shared.customBuilds[self.pokemon.name] ?? [Build](), isCustomBuild: true)
 
         for build in builds {
             self.buildsArray.append(build)
@@ -322,16 +322,18 @@ class PokemonDetailsViewController: UIViewController {
         return result
     }
     
-    private func convertBuildsToBuildMovesArray(builds: [Build]) -> [BaseListDiffable] {
+    private func convertBuildsToBuildMovesArray(builds: [Build], isCustomBuild: Bool = false) -> [BaseListDiffable] {
         var results = [BaseListDiffable]()
         for build in builds {
             let section = BuildSection(
+                
                 name: "Build: \(build.name)",
                 imagesMoves: build.moveOrders.map { UIImage(named: "\(self.pokemon.name.lowercased())_\($0.replacingOccurrences(of: " ", with: "").lowercased()).png") },
                 imagesHeldItems: build.heldItems.map { UIImage(named: "\($0.replacingOccurrences(of: " ", with: "_").lowercased()).png")},
                 imageBattleItem: UIImage(named: "\(build.battleItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"),
                 imageAltHeldItem: UIImage(named: "\(build.altHeldItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"),
-                imageAltBattleItem: UIImage(named: "\(build.altBattleItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"))
+                imageAltBattleItem: UIImage(named: "\(build.altBattleItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"),
+                isCustomBuild: isCustomBuild)
             
             results.append(section)
         }
