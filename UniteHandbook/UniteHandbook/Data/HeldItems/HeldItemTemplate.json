@@ -1,0 +1,24 @@
+{
+    "Name": "",
+    "BonusStats": [
+        {
+            "Label": "",
+            "BaseValue": 0,
+            "IncrementValue": 0,
+            "IsPercent": false
+        },
+        {
+            "Label": "",
+            "BaseValue": 0,
+            "IncrementValue": 0,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "",
+        "BaseValue": 0,
+        "IncrementValue": 0,
+        "IsPercent": false
+    },
+    "Desc": ""
+}

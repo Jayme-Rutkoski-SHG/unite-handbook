@@ -1,0 +1,6 @@
+{
+    "Name": "Slow Smoke",
+    "Cooldown": 45,
+    "Desc": "Create a ring of smoke around you, greatly slowing enemies movement speed by 80% and attack speed by 30% within the area. (2s duration)"
+}
+
