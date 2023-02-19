@@ -10,6 +10,8 @@ import SnapKit
 
 class BuildSectionCollectionViewCell: UICollectionViewCell {
     
+    public var sectionController: BuildSectionSectionController?
+    
     public var name: String = "" {
         didSet {
             self.labelName.text = self.name
@@ -292,7 +294,7 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
     }
     
     @objc private func buttonDelete_TouchUpInside(sender: UIButton) {
-        
+        self.sectionController?.didClickDelete()
     }
 }
 

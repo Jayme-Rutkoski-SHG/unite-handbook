@@ -7,9 +7,19 @@
 
 import IGListKit
 
+protocol BuildSectionSectionControllerDelegate {
+    func didClickDelete(section: BuildSection)
+}
+
 class BuildSectionSectionController: ListSectionController {
     
     private var model: BuildSection? = nil
+    private var delegate: BuildSectionSectionControllerDelegate?
+    
+    convenience init(delegate: BuildSectionSectionControllerDelegate) {
+        self.init()
+        self.delegate = delegate
+    }
     
     internal override func numberOfItems() -> Int {
         return 1
@@ -28,6 +38,7 @@ class BuildSectionSectionController: ListSectionController {
         cell.imageAltHeldItem = model.imageAltHeldItem
         cell.imageAltBattleItem = model.imageAltBattleItem
         cell.isCustomBuild = model.isCustomBuild
+        cell.sectionController = self
         
         return cell
     }
@@ -36,6 +47,10 @@ class BuildSectionSectionController: ListSectionController {
     }
     internal override func didSelectItem(at index: Int) {
 
+    }
+    internal func didClickDelete() {
+        guard let model = self.model else { return }
+        self.delegate?.didClickDelete(section: model)
     }
 }
 

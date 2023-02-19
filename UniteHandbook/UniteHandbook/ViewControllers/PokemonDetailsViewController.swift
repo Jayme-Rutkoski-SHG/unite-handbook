@@ -394,7 +394,7 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
         } else if object is HeaderDivider {
             return HeaderDividerSectionController()
         } else if object is BuildSection {
-            return BuildSectionSectionController()
+            return BuildSectionSectionController(delegate: self)
         } else if object is StatSection {
             return StatSectionController()
         } else if object is StatSlider {
@@ -451,6 +451,13 @@ extension PokemonDetailsViewController : MoveSectionControllerDelegate {
             self.adapter.performUpdates(animated: true)
             self.adapter.reloadObjects(newObjects)
         }
+    }
+}
+
+extension PokemonDetailsViewController : BuildSectionSectionControllerDelegate {
+    
+    func didClickDelete(section: BuildSection) {
+        
     }
 }
 
