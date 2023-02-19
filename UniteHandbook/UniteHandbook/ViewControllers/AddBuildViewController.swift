@@ -417,7 +417,7 @@ class AddBuildViewController: UIViewController {
     }
     
     private func displayHeldItem1Options(options: [HeldItem]) {
-        self.modalPosition = .lower
+        self.modalPosition = .middle
         
         var images: [MultiImage] = [MultiImage]()
         images.append(contentsOf: options.filter { !self.currentBuild.heldItems.contains($0.name) }.map { MultiImage(
@@ -432,7 +432,7 @@ class AddBuildViewController: UIViewController {
         self.navigateToSelectOptions(images: images)
     }
     private func displayHeldItem2Options(options: [HeldItem]) {
-        self.modalPosition = .lower
+        self.modalPosition = .middle
         
         var images: [MultiImage] = [MultiImage]()
         images.append(contentsOf: options.filter { !self.currentBuild.heldItems.contains($0.name) }.map { MultiImage(
@@ -447,7 +447,7 @@ class AddBuildViewController: UIViewController {
         self.navigateToSelectOptions(images: images)
     }
     private func displayHeldItem3Options(options: [HeldItem]) {
-        self.modalPosition = .lower
+        self.modalPosition = .middle
         
         var images: [MultiImage] = [MultiImage]()
         images.append(contentsOf: options.filter { !self.currentBuild.heldItems.contains($0.name) }.map { MultiImage(

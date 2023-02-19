@@ -13,10 +13,42 @@ public class PokemonJsonHelper {
         return ["Absol"]
     }
     public static func getAllBattleItemNames() -> [String] {
-        return ["FullHeal", "EjectButton"]
+        return [
+            "FullHeal",
+            "EjectButton",
+            "FluffyTail",
+            "FullHeal",
+            "GoalGetter",
+            "Potion",
+            "SlowSmoke",
+            "XAttack",
+            "XSpeed"
+        ]
     }
     public static func getAllHeldItemNames() -> [String] {
-        return ["RazorClaw", "ScopeLens", "AttackWeight"]
+        return [
+            "AttackWeight",
+            "AeosCookie",
+            "AssaultVest",
+            "BuddyBarrier",
+            "ChoiceSpecs",
+            "DrainCrown",
+            "EnergyAmplifier",
+            "ExpShare",
+            "FloatStone",
+            "FocusBand",
+            "Leftovers",
+            "MuscleBand",
+            "Rapid-FireScarf",
+            "RazorClaw",
+            "RockyHelmet",
+            "ScopeLens",
+            "ScoreShield",
+            "ShellBell",
+            "SpAtkSpecs",
+            "WeaknessPolicy",
+            "WiseGlasses"
+        ]
     }
 }
 
