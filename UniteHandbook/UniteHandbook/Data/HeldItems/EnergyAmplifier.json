@@ -1,0 +1,25 @@
+{
+    "Name": "Energy Amplifier",
+    "BonusStats": [
+        {
+            "Label": "Energy Rate",
+            "BaseValue": 0,
+            "IncrementValue": 0.004,
+            "IsPercent": true
+        },
+        {
+            "Label": "CD Reduction",
+            "BaseValue": 0,
+            "IncrementValue": 0.003,
+            "IsPercent": true
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Damage",
+        "BaseValue": 0.07,
+        "IncrementValue": 0.07,
+        "IsPercent": true
+    },
+    "Desc": "After activating your Unite move, deal increased damage by 7%/14%/21% for a short time. (4s duration - 15s cooldown)"
+}
+

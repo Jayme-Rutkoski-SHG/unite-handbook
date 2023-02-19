@@ -1,0 +1,25 @@
+{
+    "Name": "Rocky Helmet",
+    "BonusStats": [
+        {
+            "Label": "HP",
+            "BaseValue": 0,
+            "IncrementValue": 18,
+            "IsPercent": false
+        },
+        {
+            "Label": "Defense",
+            "BaseValue": 0,
+            "IncrementValue": 3.4,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Max HP",
+        "BaseValue": 0.03,
+        "IncrementValue": 0.01,
+        "IsPercent": true
+    },
+    "Desc": "After receiving damage equal to or higher than 10% max HP in a single attack, deal percent damage based on your max HP (3%/4%/5%) to nearby enemies (2s cooldown)."
+}
+

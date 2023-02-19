@@ -1,0 +1,25 @@
+{
+    "Name": "Shell Bell",
+    "BonusStats": [
+        {
+            "Label": "Sp Attack",
+            "BaseValue": 0,
+            "IncrementValue": 1.6,
+            "IsPercent": false
+        },
+        {
+            "Label": "CD Reduction",
+            "BaseValue": 0,
+            "IncrementValue": 0.003,
+            "IsPercent": true
+        }
+    ],
+    "LevelBonus": {
+        "Label": "HP",
+        "BaseValue": 45,
+        "IncrementValue": 15,
+        "IsPercent": false
+    },
+    "Desc": "Recover (45/60/75 + 35%/40%/45% Sp. Attack) HP when successfully landing a move (10s Cooldown)."
+}
+

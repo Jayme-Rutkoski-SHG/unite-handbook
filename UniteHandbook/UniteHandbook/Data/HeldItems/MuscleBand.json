@@ -1,0 +1,25 @@
+{
+    "Name": "Muscle Band",
+    "BonusStats": [
+        {
+            "Label": "Attack",
+            "BaseValue": 0,
+            "IncrementValue": 1,
+            "IsPercent": false
+        },
+        {
+            "Label": "Attack Speed",
+            "BaseValue": 0,
+            "IncrementValue": 0.005,
+            "IsPercent": true
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Remaining HP",
+        "BaseValue": 0.01,
+        "IncrementValue": 0.01,
+        "IsPercent": true
+    },
+    "Desc": "Deal additional damage with basic attacks by 1%/2%/3% of the targets remaining HP, capped against players at 120/240/360 . 0.35s internal cooldown, tracked separately for each enemy."
+}
+

@@ -1,0 +1,25 @@
+{
+    "Name": "Float Stone",
+    "BonusStats": [
+        {
+            "Label": "Attack",
+            "BaseValue": 0,
+            "IncrementValue": 1.6,
+            "IsPercent": false
+        },
+        {
+            "Label": "Speed",
+            "BaseValue": 0,
+            "IncrementValue": 10,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Speed",
+        "BaseValue": 0.1,
+        "IncrementValue": 0.05,
+        "IsPercent": true
+    },
+    "Desc": "Increases movement speed while out of combat by 10%/15%/20%. (OoC is 5s after leaving combat)"
+}
+

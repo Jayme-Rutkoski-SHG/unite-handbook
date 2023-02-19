@@ -1,0 +1,19 @@
+{
+    "Name": "Buddy Barrier",
+    "BonusStats": [
+        {
+            "Label": "HP",
+            "BaseValue": 0,
+            "IncrementValue": 15,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Max HP",
+        "BaseValue": 0.15,
+        "IncrementValue": 0.05,
+        "IsPercent": true
+    },
+    "Desc": "Grant a shield to you and a nearby ally with the lowest HP for 15%/20%/25% of your max HP when using your Unite Move. This shield does not get replaced if you are targeted from another ally, but instead refreshes the duration of your current shield. (5s duration - 30s cooldown)"
+}
+

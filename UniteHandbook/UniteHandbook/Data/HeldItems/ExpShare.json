@@ -1,0 +1,25 @@
+{
+    "Name": "Exp Share",
+    "BonusStats": [
+        {
+            "Label": "HP",
+            "BaseValue": 0,
+            "IncrementValue": 16,
+            "IsPercent": false
+        },
+        {
+            "Label": "Speed",
+            "BaseValue": 0,
+            "IncrementValue": 10,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "EXP/s",
+        "BaseValue": 3,
+        "IncrementValue": 1,
+        "IsPercent": false
+    },
+    "Desc": "Grants 3/4/5 experience points per second while the wearer has the fewest Exp. Points on their team. Additionally, when the wearer or nearby teammates defeat a wild Pokémon, nearby teammates gain slightly more Exp. Points from that wild Pokémon knockout."
+}
+

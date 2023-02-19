@@ -1,0 +1,25 @@
+{
+    "Name": "Focus Band",
+    "BonusStats": [
+        {
+            "Label": "Defense",
+            "BaseValue": 0,
+            "IncrementValue": 2,
+            "IsPercent": false
+        },
+        {
+            "Label": "Sp Defense",
+            "BaseValue": 0,
+            "IncrementValue": 2,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "HP Lost",
+        "BaseValue": 0.08,
+        "IncrementValue": 0.03,
+        "IsPercent": true
+    },
+    "Desc": "Upon reaching below 25% HP, recover HP each second for 3s by 8%/11%/14% of your missing HP. (100/90/80s cooldown)"
+}
+

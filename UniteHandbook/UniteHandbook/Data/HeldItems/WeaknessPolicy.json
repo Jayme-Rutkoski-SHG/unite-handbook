@@ -1,0 +1,25 @@
+{
+    "Name": "Weakness Policy",
+    "BonusStats": [
+        {
+            "Label": "HP",
+            "BaseValue": 0,
+            "IncrementValue": 70,
+            "IsPercent": false
+        },
+        {
+            "Label": "Attack",
+            "BaseValue": 0,
+            "IncrementValue": 1,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Attack",
+        "BaseValue": 0.02,
+        "IncrementValue": 0.005,
+        "IsPercent": true
+    },
+    "Desc": "Upon taking damage, apply a 2/2.5/3% Attack buff for up to 4s. Stacks up to 4 times and the duration can be refreshed before it expires."
+}
+
