@@ -462,6 +462,10 @@ extension PokemonDetailsViewController : BuildSectionSectionControllerDelegate {
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
             guard let sectionIndex = self.buildsArray.firstIndex(of: section) else { return }
             SwiftAppDefaults.shared.customBuilds[self.pokemon.name]?.remove(at: sectionIndex - self.pokemon.presetBuilds.count )
+            self.buildsArray.remove(at: sectionIndex)
+            
+            self.adapter.performUpdates(animated: true)
+            self.adapter.reloadObjects(self.buildsArray.filter( { $0 is BuildSection }))
           }))
 
         alert.addAction(UIAlertAction(title: "No", style: .cancel))
@@ -492,5 +496,9 @@ extension PokemonDetailsViewController : AddBuildDelegate {
         var buildsForPokemon = SwiftAppDefaults.shared.customBuilds[pokemonName] ?? [Build]()
         buildsForPokemon.append(build)
         SwiftAppDefaults.shared.customBuilds[pokemonName] = buildsForPokemon
+        self.buildsArray.append(contentsOf: convertBuildsToBuildMovesArray(builds: [build], isCustomBuild: true))
+        
+        self.adapter.performUpdates(animated: true)
+        self.adapter.reloadObjects(self.buildsArray.filter( { $0 is BuildSection }))
     }
 }
