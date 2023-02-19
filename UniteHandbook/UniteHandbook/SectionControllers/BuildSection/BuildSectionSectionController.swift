@@ -27,6 +27,7 @@ class BuildSectionSectionController: ListSectionController {
         cell.imageBattleItem = model.imageBattleItem
         cell.imageAltHeldItem = model.imageAltHeldItem
         cell.imageAltBattleItem = model.imageAltBattleItem
+        cell.isCustomBuild = model.isCustomBuild
         
         return cell
     }

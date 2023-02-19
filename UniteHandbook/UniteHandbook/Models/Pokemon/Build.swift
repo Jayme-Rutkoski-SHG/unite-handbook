@@ -44,6 +44,5 @@ public class Build : Codable {
         self.altHeldItem = try container.decode(String.self, forKey: .altHeldItem)
         self.battleItem = try container.decode(String.self, forKey: .battleItem)
         self.altBattleItem = try container.decode(String.self, forKey: .altBattleItem)
-        self.isCustomBuild = try container.decodeIfPresent(Bool.self, forKey: .isCustomBuild)
     }
 }
