@@ -19,7 +19,7 @@ class PokemonListViewController: UIViewController {
         layer.startPoint = CGPoint(x:0, y:0)
         layer.endPoint = CGPoint(x:0, y:1)
         layer.anchorPoint = CGPointZero;
-        layer.frame = self.collectionView.bounds
+        layer.frame = self.view.bounds
         
         return layer
     }()
@@ -50,7 +50,17 @@ class PokemonListViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        let bgView = UIView(frame: self.collectionView.bounds)
+        let bgView = UIView(frame: self.view.bounds)
+        bgView.layer.insertSublayer(self.gradientLayer, at: 0)
+        self.collectionView.backgroundView = bgView
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        let newFrame = CGRect(x: 0, y: 0, width: abs(size.width), height: abs(size.height))
+        let bgView = UIView(frame: newFrame)
+        self.gradientLayer.frame = newFrame
         bgView.layer.insertSublayer(self.gradientLayer, at: 0)
         self.collectionView.backgroundView = bgView
     }

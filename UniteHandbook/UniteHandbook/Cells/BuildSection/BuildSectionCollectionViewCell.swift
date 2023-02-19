@@ -10,6 +10,8 @@ import SnapKit
 
 class BuildSectionCollectionViewCell: UICollectionViewCell {
     
+    public var sectionController: BuildSectionSectionController?
+    
     public var name: String = "" {
         didSet {
             self.labelName.text = self.name
@@ -65,26 +67,35 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
     }
     public var imageAltHeldItem: UIImage? {
         didSet {
-            if (self.imageAltHeldItem == nil) {
-                self.labelAltHeldItem.isHidden = true
-            }
+            self.labelAltHeldItem.isHidden = self.imageAltHeldItem == nil
             self.imageViewAltHeldItem.image = self.imageAltHeldItem
         }
     }
     public var imageAltBattleItem: UIImage? {
         didSet {
-            if (self.imageAltBattleItem == nil) {
-                self.labelAltBattleItem.isHidden = true
-            }
+            self.labelAltBattleItem.isHidden = self.imageAltBattleItem == nil
             self.imageViewAltBattleItem.image = self.imageAltBattleItem
         }
     }
+    public var isCustomBuild: Bool = false {
+        didSet {
+            self.buttonDelete.isHidden = !self.isCustomBuild
+        }
+    }
+    
+    private lazy var buttonDelete: UIButton = {
+        let button = UIButton(type: .custom)
+        button.setImage(UIImage(named: "delete")?.withRenderingMode(.alwaysTemplate), for: .normal)
+        button.tintColor = UIColor(hex: 0xD10000)
+        button.addTarget(self, action: #selector(buttonDelete_TouchUpInside), for: .touchUpInside)
+        
+        return button
+    }()
     
     private var viewBackground: UIView = {
         let view = UIView(frame: .zero)
         view.backgroundColor = UIColor(hex: 0xF9CB53)
         view.layer.cornerRadius = 15.0
-        //view.layer.borderColor = UIColor(hex: 0x44347B).cgColor
         view.layer.borderColor = UIColor.black.cgColor
         view.layer.borderWidth = 2
         
@@ -100,6 +111,7 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         let label = UILabel(frame: .zero)
         label.textAlignment = .left
         label.font = UIFont(name: "Georgia-Bold", size: 20.0)
+        label.lineBreakMode = .byTruncatingTail
         
         return label
     }()
@@ -178,7 +190,7 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         self.setup()
-    }gi
+    }
     
     private func setup() {
         self.contentView.addSubview(self.viewBackground)
@@ -196,15 +208,26 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
             make.bottom.equalTo(self.viewBackground.snp.bottom).offset(-20)
         }
         
+        // Buttons
+        self.viewContainer.addSubview(self.buttonDelete)
+        self.buttonDelete.snp.makeConstraints { make in
+            make.top.equalTo(self.viewContainer.snp.top)
+            make.right.equalTo(self.viewContainer.snp.right)
+            make.height.equalTo(22)
+            make.width.equalTo(22)
+            
+        }
+        
         // Moves
         self.viewContainer.addSubview(self.labelName)
         self.labelName.snp.makeConstraints { make in
-            make.top.equalTo(self.viewContainer.snp.top)
+            make.top.equalTo(self.buttonDelete.snp.top)
             make.left.equalTo(self.viewContainer.snp.left)
+            make.right.equalTo(self.buttonDelete.snp.left).offset(10)
         }
         self.viewContainer.addSubview(self.stackViewMoves)
         self.stackViewMoves.snp.makeConstraints { make in
-            make.top.equalTo(self.labelName.snp.bottom).offset(10)
+            make.top.equalTo(self.labelName.snp.bottom).offset(15)
             make.left.equalTo(self.viewContainer.snp.left)
             make.right.equalTo(self.viewContainer.snp.right)
         }
@@ -267,6 +290,11 @@ class BuildSectionCollectionViewCell: UICollectionViewCell {
             make.height.equalTo(50)
             make.width.equalTo(50)
         }
+        
+    }
+    
+    @objc private func buttonDelete_TouchUpInside(sender: UIButton) {
+        self.sectionController?.didClickDelete()
     }
 }
 

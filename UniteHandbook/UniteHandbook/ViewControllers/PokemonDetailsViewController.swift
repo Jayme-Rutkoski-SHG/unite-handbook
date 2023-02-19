@@ -123,6 +123,21 @@ class PokemonDetailsViewController: UIViewController {
         
         return control
     }()
+    private lazy var buttonAddBuild: UIButton = {
+        let button = UIButton(frame: .zero)
+        button.setTitle("Add Build", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = UIFont(name: "Georgia-Bold", size: 14.0)
+        button.setImage(UIImage(named: "add.png")?.withRenderingMode(.alwaysTemplate), for: .normal)
+        button.imageView?.tintColor = .white
+        button.imageView?.contentMode = .scaleAspectFit
+        button.addTarget(self, action: #selector(buttonAddBuild_TouchUpInside), for: .touchUpInside)
+        button.backgroundColor = UIColor(hex: 0x4AB438)
+        button.layer.cornerRadius = 20.0
+        button.imageEdgeInsets = UIEdgeInsets(top: 11, left: 0, bottom: 11, right: 8)
+        
+        return button
+    }()
     
     private lazy var adapter: ListAdapter = {
         let adapter = ListAdapter(updater: ListAdapterUpdater.init(), viewController: self, workingRangeSize: 0)
@@ -158,6 +173,14 @@ class PokemonDetailsViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+        self.view.layer.insertSublayer(self.gradientLayer, at: 0)
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        let newFrame = CGRect(x: 0, y: 0, width: abs(size.width), height: abs(size.height))
+        self.gradientLayer.frame = newFrame
         self.view.layer.insertSublayer(self.gradientLayer, at: 0)
     }
     
@@ -233,6 +256,14 @@ class PokemonDetailsViewController: UIViewController {
             make.right.equalTo(self.viewContainer.snp.right)
             make.bottom.equalTo(self.viewContainer.snp.bottom)
         }
+        
+        self.collectionView.addSubview(self.buttonAddBuild)
+        self.buttonAddBuild.snp.makeConstraints { make in
+            make.bottom.equalTo(self.viewContainer.snp.bottom).offset(-20)
+            make.right.equalTo(self.viewContainer.snp.right).offset(-20)
+            make.height.equalTo(40)
+            make.width.equalTo(135)
+        }
     }
     
     private func createSections() {
@@ -262,7 +293,12 @@ class PokemonDetailsViewController: UIViewController {
         
         // Builds
         let builds = convertBuildsToBuildMovesArray(builds: self.pokemon.presetBuilds)
+        let customBuilds = convertBuildsToBuildMovesArray(builds: SwiftAppDefaults.shared.customBuilds[self.pokemon.name] ?? [Build](), isCustomBuild: true)
+
         for build in builds {
+            self.buildsArray.append(build)
+        }
+        for build in customBuilds {
             self.buildsArray.append(build)
         }
         
@@ -286,16 +322,18 @@ class PokemonDetailsViewController: UIViewController {
         return result
     }
     
-    private func convertBuildsToBuildMovesArray(builds: [Build]) -> [BaseListDiffable] {
+    private func convertBuildsToBuildMovesArray(builds: [Build], isCustomBuild: Bool = false) -> [BaseListDiffable] {
         var results = [BaseListDiffable]()
         for build in builds {
             let section = BuildSection(
+                
                 name: "Build: \(build.name)",
                 imagesMoves: build.moveOrders.map { UIImage(named: "\(self.pokemon.name.lowercased())_\($0.replacingOccurrences(of: " ", with: "").lowercased()).png") },
                 imagesHeldItems: build.heldItems.map { UIImage(named: "\($0.replacingOccurrences(of: " ", with: "_").lowercased()).png")},
                 imageBattleItem: UIImage(named: "\(build.battleItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"),
                 imageAltHeldItem: UIImage(named: "\(build.altHeldItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"),
-                imageAltBattleItem: UIImage(named: "\(build.altBattleItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"))
+                imageAltBattleItem: UIImage(named: "\(build.altBattleItem.replacingOccurrences(of: " ", with: "_").lowercased()).png"),
+                isCustomBuild: isCustomBuild)
             
             results.append(section)
         }
@@ -323,15 +361,25 @@ class PokemonDetailsViewController: UIViewController {
         self.adapter.performUpdates(animated: false)
         self.adapter.reloadData()
     }
+    
+    @objc func buttonAddBuild_TouchUpInside(sender: UIButton) {
+        let vc = AddBuildViewController(pokemonName: self.pokemon.name, pokemonMoves: self.pokemon.moves, delegate: self)
+        vc.modalPresentationStyle = .overFullScreen
+        
+        self.present(vc, animated: true)
+    }
 }
 
 extension PokemonDetailsViewController: ListAdapterDataSource {
     public func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
         if self.segmentedControl.selectedSegmentIndex == 0 {
+            self.buttonAddBuild.isHidden = true
             return self.abilitiesArray
         } else if self.segmentedControl.selectedSegmentIndex == 1 {
+            self.buttonAddBuild.isHidden = false
             return self.buildsArray
         } else if self.segmentedControl.selectedSegmentIndex == 2 {
+            self.buttonAddBuild.isHidden = true
             return self.statsArray
         }
         return [ListDiffable]()
@@ -346,7 +394,7 @@ extension PokemonDetailsViewController: ListAdapterDataSource {
         } else if object is HeaderDivider {
             return HeaderDividerSectionController()
         } else if object is BuildSection {
-            return BuildSectionSectionController()
+            return BuildSectionSectionController(delegate: self)
         } else if object is StatSection {
             return StatSectionController()
         } else if object is StatSlider {
@@ -406,6 +454,26 @@ extension PokemonDetailsViewController : MoveSectionControllerDelegate {
     }
 }
 
+extension PokemonDetailsViewController : BuildSectionSectionControllerDelegate {
+    
+    func didClickDelete(section: BuildSection) {
+        let alert = UIAlertController(title: "Delete Build", message: "Are you sure you want to delete this build?", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
+            guard let sectionIndex = self.buildsArray.firstIndex(of: section) else { return }
+            SwiftAppDefaults.shared.customBuilds[self.pokemon.name]?.remove(at: sectionIndex - self.pokemon.presetBuilds.count )
+            self.buildsArray.remove(at: sectionIndex)
+            
+            self.adapter.performUpdates(animated: true)
+            self.adapter.reloadObjects(self.buildsArray.filter( { $0 is BuildSection }))
+          }))
+
+        alert.addAction(UIAlertAction(title: "No", style: .cancel))
+
+        self.present(alert, animated: true, completion: nil)
+    }
+}
+
 extension PokemonDetailsViewController : StatSliderSectionControllerDelegate {
     
     func didChangeLevel(level: Int) {
@@ -419,5 +487,18 @@ extension PokemonDetailsViewController : StatSliderSectionControllerDelegate {
         
         self.adapter.performUpdates(animated: true)
         self.adapter.reloadObjects(self.statsArray.filter( { $0 is StatSection }))
+    }
+}
+
+extension PokemonDetailsViewController : AddBuildDelegate {
+    
+    func addBuild(pokemonName: String, build: Build) {
+        var buildsForPokemon = SwiftAppDefaults.shared.customBuilds[pokemonName] ?? [Build]()
+        buildsForPokemon.append(build)
+        SwiftAppDefaults.shared.customBuilds[pokemonName] = buildsForPokemon
+        self.buildsArray.append(contentsOf: convertBuildsToBuildMovesArray(builds: [build], isCustomBuild: true))
+        
+        self.adapter.performUpdates(animated: true)
+        self.adapter.reloadObjects(self.buildsArray.filter( { $0 is BuildSection }))
     }
 }

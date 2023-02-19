@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Pokemon : BaseListDiffable, Decodable {
+public class Pokemon : BaseListDiffable, Codable {
     
     enum CodingKeys: String, CodingKey {
         case name = "Name"
@@ -34,6 +34,20 @@ public class Pokemon : BaseListDiffable, Decodable {
     public var presetBuilds: [Build] = [Build]()
     
     public override init() { }
+    
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(self.name, forKey: .name)
+        try container.encode(self.attackStyle, forKey: .attackStyle)
+        try container.encode(self.role, forKey: .role)
+        try container.encode(self.style, forKey: .style)
+        try container.encode(self.difficulty, forKey: .difficulty)
+        try container.encode(self.ability, forKey: .ability)
+        try container.encode(self.moves, forKey: .moves)
+        try container.encode(self.unite, forKey: .unite)
+        try container.encode(self.stats, forKey: .stats)
+        try container.encode(self.presetBuilds, forKey: .presetBuilds)
+    }
     
     required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

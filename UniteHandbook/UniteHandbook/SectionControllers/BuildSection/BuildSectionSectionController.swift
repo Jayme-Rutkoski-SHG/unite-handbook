@@ -7,9 +7,19 @@
 
 import IGListKit
 
+protocol BuildSectionSectionControllerDelegate {
+    func didClickDelete(section: BuildSection)
+}
+
 class BuildSectionSectionController: ListSectionController {
     
     private var model: BuildSection? = nil
+    private var delegate: BuildSectionSectionControllerDelegate?
+    
+    convenience init(delegate: BuildSectionSectionControllerDelegate) {
+        self.init()
+        self.delegate = delegate
+    }
     
     internal override func numberOfItems() -> Int {
         return 1
@@ -27,6 +37,8 @@ class BuildSectionSectionController: ListSectionController {
         cell.imageBattleItem = model.imageBattleItem
         cell.imageAltHeldItem = model.imageAltHeldItem
         cell.imageAltBattleItem = model.imageAltBattleItem
+        cell.isCustomBuild = model.isCustomBuild
+        cell.sectionController = self
         
         return cell
     }
@@ -35,6 +47,10 @@ class BuildSectionSectionController: ListSectionController {
     }
     internal override func didSelectItem(at index: Int) {
 
+    }
+    internal func didClickDelete() {
+        guard let model = self.model else { return }
+        self.delegate?.didClickDelete(section: model)
     }
 }
 
@@ -45,14 +61,16 @@ public class BuildSection : BaseListDiffable {
     public var imageBattleItem: UIImage?
     public var imageAltHeldItem: UIImage?
     public var imageAltBattleItem: UIImage?
+    public var isCustomBuild: Bool = false
 
-    public init(name: String, imagesMoves: [UIImage?], imagesHeldItems: [UIImage?], imageBattleItem: UIImage?, imageAltHeldItem: UIImage?, imageAltBattleItem: UIImage?) {
+    public init(name: String, imagesMoves: [UIImage?], imagesHeldItems: [UIImage?], imageBattleItem: UIImage?, imageAltHeldItem: UIImage?, imageAltBattleItem: UIImage?, isCustomBuild: Bool) {
         self.name = name
         self.imagesMoves = imagesMoves
         self.imagesHeldItems = imagesHeldItems
         self.imageBattleItem = imageBattleItem
         self.imageAltHeldItem = imageAltHeldItem
         self.imageAltBattleItem = imageAltBattleItem
+        self.isCustomBuild = isCustomBuild
     }
 }
 

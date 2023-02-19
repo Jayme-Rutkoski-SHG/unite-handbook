@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Move : Decodable {
+public class Move : Codable {
     
     enum CodingKeys: String, CodingKey {
         case name = "Name"
@@ -24,6 +24,15 @@ public class Move : Decodable {
     public var cooldown: Double = 0
     public var levelDetails: [LevelDetails] = [LevelDetails]()
     public var upgrades: [Move]?
+    
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(self.name, forKey: .name)
+        try container.encode(self.category, forKey: .category)
+        try container.encode(self.cooldown, forKey: .cooldown)
+        try container.encode(self.levelDetails, forKey: .levelDetails)
+        try container.encode(self.upgrades, forKey: .upgrades)
+    }
     
     required public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
