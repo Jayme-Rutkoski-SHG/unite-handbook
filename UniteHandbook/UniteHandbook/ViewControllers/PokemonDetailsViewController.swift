@@ -457,7 +457,16 @@ extension PokemonDetailsViewController : MoveSectionControllerDelegate {
 extension PokemonDetailsViewController : BuildSectionSectionControllerDelegate {
     
     func didClickDelete(section: BuildSection) {
-        
+        let alert = UIAlertController(title: "Delete Build", message: "Are you sure you want to delete this build?", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { (action: UIAlertAction!) in
+            guard let sectionIndex = self.buildsArray.firstIndex(of: section) else { return }
+            SwiftAppDefaults.shared.customBuilds[self.pokemon.name]?.remove(at: sectionIndex - self.pokemon.presetBuilds.count )
+          }))
+
+        alert.addAction(UIAlertAction(title: "No", style: .cancel))
+
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
