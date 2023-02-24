@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Mr Mime",
+    "AttackStyle": "Special",
+    "Role": "Supporter",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Filter",
+            "Desc": "Upon casting a Move, Mr. Mime takes 10% less damage for 2s."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Fake Out",
+            "Category": "Melee",
+            "Cooldown": 7.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Mr. Mime claps, damaging and knocking back enemies hit."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Confusion",
+                    "Category": "Ranged",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Mr. Mime fires a wave of psychic energy, damaging and knocking enemies back. Enemies hit into a wall take bonus damage and are stunned for 1.5s. Enemies debuffed by Power Swap take bonus damage and are stunned, but are not knocked back./n/nNormal damage will apply to targets that are unstoppable or unstunnable. (Example: Drednaw & Zapdos)"
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increased damage."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Psychic",
+                    "Category": "Area",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Mr. Mime. pulses energy, dealing damage in an area around themself, any target affected by Power Swap, and any Barriers or Light Screens. After three pulses, a final pulse will damage enemies and stun them for 1s. Enemies hit by the pulses have their SpDef lowered by 5% for 3s with each hit (maximum 8 stacks)."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Enemies hit by the pulses are additionally slowed by 30%."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Light Screen",
+            "Category": "Hindrance",
+            "Cooldown": 8.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Mr. Mime creates a wall that prevents enemies from passing. If an enemy is near the location where the wall is created, they are shoved and left unable to act for a short time."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Barrier",
+                    "Category": "Hindrance",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Mr. Mime creates a wall that prevents enemies from passing. If an enemy is near the location where the wall is created, they are shoved and left unable to act for a short time. Holds 2 uses in reserve and cannot be used more than once every 2s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Stores 3 uses in reserve instead."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Power Swap",
+                    "Category": "Debuff",
+                    "Cooldown": 4.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Creates a link between Mr. Mime and the target this move hits. While the link holds, Mr. Mime's movement speed increases by 8% and their HP is continually restored. The link will continue to hold for as long as the linked target stays in range or until another target is Power Swapped. Damage and healing ticks at a rate of 0.5s./n/nIf the linked target is an ally, this move increases their movement speed by 15%, increases the amount of damage they deal by 15%, and continually restores their HP. If the linked target is an enemy, this move decreases their movement speed by 8%, decreases the amount of damage they deal by 15% and deals damage over time to them. Power Swap can be cleansed."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Increases the amount of damage dealt by allies to 20% and decreases the amount of damage dealt by enemies to 20%."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Showtime",
+            "Category": "Area",
+            "Cooldown": 100,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Mr. Mime leaps forward and begins a performance; stunning enemies for 0.5s, dealing damage in a large area around him 4 times, and becomes unstoppable for the duration. The final hit deals double damage."
                 }
             ]
         }

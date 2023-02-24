@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Talonflame",
+    "AttackStyle": "Attack",
+    "Role": "Speedster",
+    "Style": "Melee",
+    "Difficulty": "Novice",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Gale Wings",
+            "Desc": "While above 85% HP; movement speed is increased by 10%."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Peck",
+            "Category": "Melee",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Talonflame flies toward a target Pokémon and attacks it three times."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Flame Charge",
+                    "Category": "Dash",
+                    "Cooldown": 6.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Talonflame dashes forward; damaging enemies in its path. Talonflame gains 30% movement speed for 1.5s after dashing."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "For 3s after this move hits; Talonflame's abilities and auto attacks partially ignore the enemies' defense (capped at 0) and enemies hit are slowed by 30% for 5s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Aerial Ace",
+                    "Category": "Dash",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Talonflame dashes through a targeted enemy; damaging them and healing Talonflame. Talonflame's next auto attack is boosted."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increased damage."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Acrobatics",
+            "Category": "Dash",
+            "Cooldown": 8.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Talonflame flies toward a targeted area; attacking all Pokémon in the area up to three times. Talonflame can choose a direction to dash after the move ends."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Fly",
+                    "Category": "Dash",
+                    "Cooldown": 12.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Talonflame flies up into the sky; becoming untargetable and increasing movement speed by 65%. After 3s, Talonflame dives at the targeted area, damaging all enemies in the area. Fly can be recast to dive early. This move's cooldown is reduced by 40% if it hits an enemy player. After using this move, the next attack becomes a boosted attack."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Enemies hit are also thrown in the air for 0.4s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Brave Bird",
+                    "Category": "Dash",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Talonflame dives at the targeted area; taking 5% of remaining HP as recoil damage and damaging all enemies in the area. If Talonflame uses a boosted attack on an enemy hit by Brave Bird within 4s, the cooldown of Flame Charge or Aerial Ace is reset. The cooldown of Flame Charge and Aerial Ace can only be reset once per target hit by Brave bird."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Talonflame takes 15% less damage per enemy hit for 5s when this move hits. This damage reduction stacks up to 3 times (capped at 45%)."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Flame Sweep",
+            "Category": "Dash",
+            "Cooldown": 100,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Talonflame charges forward; damaging and shoving all enemies in its path. Flame Sweep deals damage up to 2 times and Talonflame takes 50% less damage during the sweep."
                 }
             ]
         }

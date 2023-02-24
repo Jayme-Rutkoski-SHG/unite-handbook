@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Hoopa",
+    "AttackStyle": "Special",
+    "Role": "Supporter",
+    "Style": "Ranged",
+    "Difficulty": "Expert",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Magician",
+            "Desc": "In battles where the map is divided into an ally team side and an opposing team side, this ability creates a hole under one of the berries on the opposing team's side (chosen at random) and warps it in front of Hoopa (40s cooldown). If there are no berries, but there is Aeos Energy on the ground, then some energy is warped in front of Hoopa instead. In the event that no berries from the opposing team's side are warped, the cooldown of this ability is reduced to 20s."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Astonish",
+            "Category": "Hindrance",
+            "Cooldown": 6.50,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Deals damage to enemies in the designated area of effect, leaving them unable to act for .75s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Phantom Force",
+                    "Category": "Hindrance",
+                    "Cooldown": 4.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Hoopa creates a portal ring under themself and warps to a designated location, dealing damage to nearby enemies at that location and shoving them. Hoopa then shoots two sinister flames that deal damage to enemies hit and decreases their movement speed by 40% for 2s. This move can be activated a second time within 5s and if activated, Hoopa can return to the initial ring's location. If there is a nearby ally that is also linked by Trick, that ally can warp to the initial ring's location and recover 30% max HP."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Become invincible for .6s when this move is used."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Shadow Ball",
+                    "Category": "Ranged",
+                    "Cooldown": 4.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Unleash a shadowy blob in front of Hoopa, dealing damage to enemies hit and decreasing their movement speed by 50% for 1s and Sp. Defense by 30% for 3s. If Hoopa then hits the same enemy with a move or boosted attack within 4s, deal additional damage and leave the enemy unable to act for .8s. When using this move, if there is a nearby ally linked by Trick, this move will also unleash a shadowy blob at the same target from that ally's location."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "The shadowy blob will now explode before disappearing. Enemies hit by the explosion are affected as if they were hit by the shadowy blob itself."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Confusion",
+            "Category": "Ranged",
+            "Cooldown": 9.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Unleash a telekinetic force in the designated direction, dealing damage to the first enemy hit. The telekinetic force clings to that enemy and then causes a delayed explosion. The explosion deals damage to enemies in the area of effect and decreases their movement speed for a short time."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Hyperspace Hole",
+                    "Category": "Dash",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Hoopa creates a large ring at the designated location, dealing damage to enemies in the area of effect. After 3s, Hoopa and any allies in the area of effect will return to their base, and their movement speed will be increased for a short time. These allies can also manually warp back to where the ring was created within 3s. An intact ally forwardmost goal zone can also be designated as the location where the ring is created. Creating a ring on the goal zone of the top path will also create a ring on the forwardmost goal zone of the bottom path for 6.5s, and vice versa. All allies (including Hoopa) can use these rings to manually warp between the two goal zones, and their movement speed will be increased for a short time after warping. After an ally or Hoopa warps, there is a 10s cooldown before that Pokémon can manually warp again. If a path's forwardmost goal zone is destroyed, the middle goal zone on the same path will take its place. This move cannot be used on base goal zones./n/nHyperspace Hole's portal usage cooldown applies only to Hyperspace Hole teleports, and is reset upon usage of ult if there are multiple effects that would allow you to teleport (ie Phantom Force and Rings Unbound), Rings Unbound will take priority."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Also increases the movement speed of allies near the ring when they are heading towards it."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Trick",
+                    "Category": "Buff",
+                    "Cooldown": 7.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Hoopa creates a link between itself and an ally, increasing both of their movement speeds by 70% for 2s and granting them each a shield for 3s. For the next 7s, when Hoopa uses Shadow Ball or performs an auto attack, the ring on the linked ally also unleashes the same move or attack and if both attacks hit the same target, the second deals 50% damage. Hoopa can also use this move on themself, increasing movement speed and granting a shield for a short time. Additionally, increase the damage dealt by Shadow Ball while Trick is active."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Hoopa and the linked ally each heal for 25% of their own damage dealt. This effect lasts for 3s."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Rings Unbound",
+            "Category": "Buff",
+            "Cooldown": 112,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Transforms Hoopa into Hoopa Unbound for 15s, increasing max HP by 40% and creating a ring at the designated location. Each ally can warp to the ring's location one time within 10s. As Hoopa Unbound, moves change to Hyperspace Fury and Psybeam. Every attack also becomes a boosted attack that deals damage to up to 2 nearby enemies. If only one target is in range then both beams hit the same target, but 1 beam deals 50% damage. Hoopa Unbound cannot score goals or activate the Magician ability."
                 }
             ]
         }

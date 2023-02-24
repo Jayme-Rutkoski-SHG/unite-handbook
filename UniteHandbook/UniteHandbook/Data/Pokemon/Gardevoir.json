@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Gardevoir",
+    "AttackStyle": "Special",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Synchronize",
+            "Desc": "When an enemy inflicts decreased movement speed or a damage-over-time effect on Gardevoir; damage that enemy one time and slow them by 40% for 3s, when triggered. This ability goes on a 8s cooldown when triggered."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Confusion",
+            "Category": "Ranged",
+            "Cooldown": 4.50,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Gardevoir fires a piercing bolt; damaging enemies and slowing them by 35% for 1s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Psychic",
+                    "Category": "Ranged",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Gardevoir fires a blast; damaging enemies in an area on impact. The blast creates a lingering field that damages and slows enemies by 50% for 1s. Each time Psychic deals damage it reduces the target’s Special Defense by 20% for 4s, up to 60%."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Cooldown reduced by 1s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Moonblast",
+                    "Category": "Ranged",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Gardevoir moves back while firing a blast; stunning the first enemy hit for 1.2s and damaging all enemies in a cone behind it."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Grants Gardevoir a shield for 3s."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Teleport",
+            "Category": "Dash",
+            "Cooldown": 11.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Gardevoir teleports to a targeted area and gains a boosted attack."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Psyshock",
+                    "Category": "Area",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Gardevoir channels three attacks at the targeted area; damaging enemies. Gardevoir's moves' cooldowns are reduced by 15% each time Psyshock hits an enemy."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Each hit of Psyshock also increases the damage of the next hit."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Future Sight",
+                    "Category": "Area",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Gardevoir creates a delayed explosion at the targeted area; damaging enemies. If Future Sight hits an enemy player (not wild), the cooldown is reduced by 75% and Gardevoir gains 40% movement speed for 1.5s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Cooldown is reset on successful hits."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Fairy Singularity",
+            "Category": "Hindrance",
+            "Cooldown": 112,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Gardevoir warps space in a large area, creating a field, damaging all enemies in the radius and pulling them towards the center 4 times. When it expires, the field damages and shoves enemies."
                 }
             ]
         }

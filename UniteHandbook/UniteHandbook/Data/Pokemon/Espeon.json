@@ -1,97 +1,101 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Espeon",
+    "AttackStyle": "Special",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Novice",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Anticipation",
+            "Desc": "When Eevee would be affected by a hindrance, the hindrance is negated and Eevee becomes immune to hindrances for a short time (45s cd). Note: Hindrances include slows; multi-layered hindrance moves such as Pikachu's Volt Tackle will only have the very first launch negated."
+        },
+        {
+            "Name": "Magic Bounce",
+            "Desc": "When Espeon would be affected by a hindrance, the hindrance is negated and Espeon becomes immune to hindrances for a short time. At the same time, this ability deals damage to the enemy that attempted to inflict the hindrance and applies a 30% slow for 1s (45s cd). Note: Hindrances include slows; multi-layered hindrance moves such as Pikachu's Volt Tackle will only have the very first launch negated."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Swift",
+            "Category": "Ranged",
+            "Cooldown": 6.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Eevee launches three stars at target location. Stars start in a horizontal line perpendicular to Eevee's facing. Stars continue to fly in the direction once past the target location until the maximum range is reached. When an enemy is hit by a star, subsequent stars deal 70% less damage."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Psyshock",
+                    "Category": "Ranged",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Espeon materializes psychic projectiles and launches them at a designated location; dealing damage to enemies hit by the projectiles and decreasing their movement speed for each projectile hit by 15% for 3s (maximum 75%). Orbs start in a horizontal line perpendicular to Espeon's facing and continue flying in the designated direction until the maximum range of the move. Targets hit by all five projectiles are stunned for 1.25s. When an enemy is hit by a projectile, subsequent projectiles deal 70% less damage./n/nWhen Psyshock is enhanced via Future Sight reset, it launches stronger psychic projectiles at a designated location. These projectiles at their point of convergence cause an explosion, dealing damage to enemies in the area-of-effect. There is no damage increase."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Increase the speed at which projectiles travel."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Stored Power",
+                    "Category": "Sure Hit",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Unleash blasts of psychic power at random enemies within an area; dealing damage to enemies hit and decreasing their movement speed from each projectile hit by 10% for 2s (maximum 50%). Espeon stores one blast of psychic power every 2s, or after hitting an enemy with a boosted attack (gaining 1 stored blast per enemy hit). Up to five blasts can be stored at once. After this move is used, Espeon's movement speed is increased by 70% for 1.2s. Targets hit by a psychic blast will take 70% less damage from subsequent hits./n/nWhen Stored Power is enhanced via Future Sight reset, it unleashes an increased number of psychic blasts (8 total) and restores Espeon's HP by 150 per blast."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Also deals additional damage to enemies below 50% max HP."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Growl",
+            "Category": "Sure Hit",
+            "Cooldown": 7.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Growl at a designated enemy; dealing damage and decreasing their movement speed by 30% for 2s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Psybeam",
+                    "Category": "Ranged",
+                    "Cooldown": 7.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Fires a peculiar ray in the designated direction. If the beam hits an enemy, it will then split beyond the first enemy hit and deal damage to other enemies in range. The initial enemy hit and these split rays deal more damage based on the max HP of the first enemy hit by the ray. If the first enemy hit by the ray is slowed or is stunned, those same effects will be applied to the enemies hit by the split rays. The split rays will never go towards Espeon and will refract at a maximum of a 90 degree angle. Distance from initial target to split ray hit is 75% of the max range. Stun copied duration is the maximum duration of the stun causing the initial Pokémon to be stunned./n/nFor the split ray, the damage component from the initial target's max HP damage is capped at 1000 against Wild Pokémon and capped at 2000 against Player Pokémon."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Deals additional damage to enemies that are unable to act. If Psybeam hits an unable to act initial target, the split rays will also deal the additional damage to other enemies hit and leaves them unable to act./n/n5% max HP of the enemy hit as additional damage if the initial target was stunned."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Future Sight",
+                    "Category": "Sure Hit",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Espeon locks-on to an enemy, dealing damage 2 seconds later in an area centered on the locked-on target. Deal more damage based on the locked-on targets remaining HP. While locked-on to an enemy, Espeon's other moves will target that enemy whenever possible. If the center of Psyshock is within the area-of-effect of Future Sight when released, Psyshock will home in on the Future Sight affected target. Each time Espeon deals damage through Psyshock, Stored Power, auto attacks, Future Sight's cooldown is reduced by 0.8 seconds. If the locked-on target is on the opposing team and is knocked out before the area damage is dealt but not the percentage missing HP damage, a single powered-up use of Psyshock or Stored Power becomes available for a short time./n/nFull Heal and other cleanses such as Blissey's Natural cure remove Future Sight."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Espeon deals 10% additional damage to locked-on targets."
                         }
                     ]
                 }
@@ -100,13 +104,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Psychic Solaire",
+            "Category": "Area",
+            "Cooldown": 100,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 8,
+                    "Desc": "Espeon throws enemies in the area of effect into the air and suspends them using psychic power. After a delay, an explosion occurs that deals damage to all enemies in the area of effect and shoves them."
                 }
             ]
         }

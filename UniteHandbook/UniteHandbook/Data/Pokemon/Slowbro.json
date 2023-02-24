@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Slowbro",
+    "AttackStyle": "Special",
+    "Role": "Defender",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Oblivious",
+            "Desc": "Slowbro stores up lost HP for a short time (blue HP). Slowbro's Oblivious health remains for 6s and then decreases by 3% max HP every second. When dealing damage to an enemy with Water Gun, Scald, Surf, or Slowbeam - decrease the enemy's Sp.Def by 4% for 5s, stacking up to 5 times."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Water Gun",
+            "Category": "Ranged",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Slowbro fires a stream of water, damaging and slowing enemies hit by 35% for 1s. This move can be channeled to increase its range and damage. Slowbro's movement speed is reduced while channeling. Restore some of Slowbro's Oblivious health (blue HP) once, after hitting an enemy."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Scald",
+                    "Category": "Ranged",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Slowbro fires a stream of boiling water; damaging enemies hit, slowing them by 80% for0.5s and creating a cloud of steam centered on the first enemy hit, which slows by 30% for 3s and applies a burn to all enemies inside. This burn reduces Attack by 40% for 3s. Restore 10% of Slowbro's Oblivious health (blue HP) once per stream instance after hitting an enemy (maximum 3 times)."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increases the size of the steam cloud."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Surf",
+                    "Category": "Hindrance",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Slowbro rides on a wave, damaging, knocking enemies back, and throwing them in the air for .4s. Two more waves follow after the first, damaging and slowing enemies by 25% for 1s. Restore 10% of Slowbro's Oblivious health (blue HP) per wave, when hitting at least one enemy (maximum 3 times)."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "The second and third waves will now also throw enemies in the air for .75s, and the second wave will knock them back."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Slack Off",
+            "Category": "Recovery",
+            "Cooldown": 11.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Slowbro begins channeling a nap and gains a heal over time, healing 1.5% max HP every 0.5s for 3s. While Slowbro remains channeling its nap, all self-healing is doubled (including Slack Off healing)."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Amnesia",
+                    "Category": "Recovery",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Slowbro briefly becomes unstoppable, gaining +300 Defense for 4s and restoring 22.5% of Slowbro's Oblivious health (blue HP) every second for 4s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Also increases Slowbro's Sp. Defense by 150."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Telekinesis",
+                    "Category": "Hindrance",
+                    "Cooldown": 7.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Slowbro shoots a beam, causing the first enemy hit to float in the air for 2.3s, restoring 15% of Slowbro's Oblivious health (blue HP) every second for 5s. Slowbro can reactivate the ability to pull the enemy to themself, but otherwise cannot act for the duration."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Increases the range and speed of the beam."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Slowbeam",
+            "Category": "Hindrance",
+            "Cooldown": 112,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Stare at an enemy and attack continually, dealing damage every .5 seconds for 3s and applying 'Bound' to them. This ability counters unstoppable. Grants a shield (10% max HP) and makes Slowbro immune to hindrances while using this move."
                 }
             ]
         }

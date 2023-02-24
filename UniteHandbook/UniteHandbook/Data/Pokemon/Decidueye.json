@@ -1,97 +1,99 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Decidueye",
+    "AttackStyle": "Attack",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Long Reach",
+            "Desc": "Deals 20% increased damage to distant enemies. Additional damage added per level from each move's damage formula is excluded from this bonus."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Leafage",
+            "Category": "Area",
+            "Cooldown": 8.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Pelts leaves in the designated direction, dealing damage in a cone to enemies hit (only hits once). For a short time after using this move, Decidueye’s Attack is increased by 10% (this also affects Leafage) and auto attack speed is increased by 25% for 3s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Razor Leaf",
+                    "Category": "Buff",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Summons whirling razor leaves. While active, Decidueye's auto attack is replaced by a new auto attack that targets up to 2 additional enemies in range, as well as increasing Attack by 10% and auto attack speed. This buff lasts for 5.5s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increases auto attack damage by 2% of the primary target's remaining HP and 1% for secondary targets. This damage only applies once per attack, not on each of the 3 boosted quills./n/nAgainst All Enemies: The additional damage from remaining HP is capped at 240 on the primary target and 120 on secondary targets.
+                            
+"
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Spirit Shackle",
+                    "Category": "Ranged",
+                    "Cooldown": 8.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Charges power before firing a large arrow in the designated direction. Damage dealt increases the longer power is charged (with 6 breakpoints), but movement speed is decreased by 25% while charging. If this move hits after power is charged to the maximum, it can stitch enemies to the ground. The affected enemy has their movement speed decreased by 80% for a short time when exiting the area, and receives damage upon leaving the area. A maximum of 3 uses can be kept in reserve for this move. There is a 2s cooldown between uses."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Deals 15% increased damage to enemies with less than 50% remaining HP."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Astonish",
+            "Category": "Sure Hit",
+            "Cooldown": 8.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Deals damage to enemies and decreases their movement speed by 80% for a short time."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Leaf Storm",
+                    "Category": "Ranged",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 8,
+                            "Desc": "Creates a tempest of sharp leaves, dealing damage to enemies it hits and decreases their movement speed by 45% for 2s. At point-blank range, it also shoves and stuns enemies hit."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Movement speed decrease now lasts 3s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Shadow Sneak",
+                    "Category": "Sure Hit",
+                    "Cooldown": 12.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 8,
+                            "Desc": "Creates a shadow that takes hold of one enemy in the area of effect, dealing damage and decreasing their movement speed by 30%, decreasing their Defense by 60%, and increasing Decidueye’s movement speed by 70% for 3s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Defense reduction of enemies is increased to 80%."
                         }
                     ]
                 }
@@ -100,13 +102,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Nock Nock",
+            "Category": "Ranged",
+            "Cooldown": 150,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Fires quills in the designated direction, dealing damage to enemies but does not pierce through them. The move ends by unleashing a large quill that deals damage to all enemies it hits (30% more damage if the target is below 50% HP). While using this move, Decidueye becomes immune to hindrances but is unable to move."
                 }
             ]
         }

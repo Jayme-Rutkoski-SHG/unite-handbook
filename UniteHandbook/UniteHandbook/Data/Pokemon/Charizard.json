@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Charizard",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Novice",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Blaze",
+            "Desc": "Increases Critical-Hit Rate by 20% while at half HP or less."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Flame Burst",
+            "Category": "Ranged",
+            "Cooldown": 6.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Charizard attacks with a bursting flame forward, exploding on the first enemy hit, dealing damage and burning enemies in a small radius. Charizard gains a 20% movement speed bonus for 3s when hitting an enemy. The burn lasts 4s and reduces enemy Attack by 5%."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Flamethrower",
+                    "Category": "Ranged",
+                    "Cooldown": 5.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Attacks with a blast of fire while moving, damaging and burning enemies in a line. Charizard gains a small movement speed bonus by 40% for 4s if they hit. The burn lasts 4s and reduces enemy Attack by 5%."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Deals increased damage."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Fire Punch",
+                    "Category": "Melee",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Charizard punches forward, damaging and shoving enemies in their path. The first enemy hit is burned. The burn lasts 4s and reduces enemy Attack by 5%."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Cooldown reduces by .3s per target, every time Charizard damages an enemy with an auto attack (1.2s total for an entire auto attack animation on a single target)."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Fire Spin",
+            "Category": "area",
+            "Cooldown": 10.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Charizard shoots a burst of fire forward, exploding on the first enemy hit or after traveling max distance, dealing damage over time every 0.5s and slowing enemies within the radius by 25% for 1s (refreshing on every damage tick)."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Fire Blast",
+                    "Category": "Area",
+                    "Cooldown": 6.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Charizard shoots a blast of fire forward while moving, exploding on the first enemy hit or after a short distance, damaging enemies and leaving a fire area for 5s that deals damage over time every 0.5s and slows enemies within the radius by 35% for 1s (refreshing on every damage tick)."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Increased damage."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Flare Blitz",
+                    "Category": "Sure Hit",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Charizard charges forward, shielding themself for 5s, throwing the targeted enemy and dealing damage in an area."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Also slows enemies by 40% for 3s after thrown."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Seismic Slam",
+            "Category": "Sure Hit",
+            "Cooldown": 123,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Grab an enemy and slam it onto the ground, damaging the target and nearby enemies and deal additional damage based on their max HP. Then, fly up into the air moving freely over obstacles for 7.5s and gaining Hindrance Resistance. While this move is active, auto attacks apply a burn to the target which lasts for 1s, dealing 2 instances of damage and is refreshed by each instance of damage from auto attacks. When dealing damage with auto attacks to an enemy (not from burn or additional damage), recover HP equal to 80% of the damage dealt."
                 }
             ]
         }

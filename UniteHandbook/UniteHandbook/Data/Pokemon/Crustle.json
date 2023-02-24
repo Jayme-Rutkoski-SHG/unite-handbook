@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Crustle",
+    "AttackStyle": "Attack",
+    "Role": "Defender",
+    "Style": "Melee",
+    "Difficulty": "Novice",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Sturdy",
+            "Desc": "Gain Defense and Sp. Defense for every 7% of Crustle's missing HP. Stacks 10 times."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Rock Slide",
+            "Category": "Hindrance",
+            "Cooldown": 6.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Crustle drops rocks in a small radius, stunning enemies hit for 1s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Rock Tomb",
+                    "Category": "Hindrance",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Crustle emits a beam that deals damage to enemies hit and briefly slow their movement speed by 60% for 2s, then create a curved wall at the designated location. When the wall rises or despawns, nearby enemies are damaged and have their movement speed slowed by 60% for 2s. The wall lasts for 3s and can be cancelled early."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Movement speed reduction increased to 80%."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Shell Smash",
+                    "Category": "Buff",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Crustle smashes their shell, setting Def and SpD to 0, gaining a boost to Atk and SpA equal to 40% of the Def and SpD lost, respectively. Additional Def and SpD from items and buffs (including Crustle's passive) are exempt. Crustle also gains 75% movement speed (decreasing by 5% every 1s) and becomes unstoppable for 0.8s while activating this move. This buff lasts for 4.5s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Def and SpD conversion is increased from 40% to 50%."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Fury Cutter",
+            "Category": "Melee",
+            "Cooldown": 3.50,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Crustle attacks once with his claws. Enemies hit by Fury Cutter receive a debuff for 9s that causes subsequent Fury Cutter attacks to deal 20% additional damage. Maximum 2 debuff stacks. Additional damage from this debuff is always rounded up."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Stealth Rock",
+                    "Category": "Area",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Crustle launches a pile of rocks in the designated direction. Upon hitting an enemy, a wall, or reaching maximum distance, create a radius in which rocks deal damage to enemies up to 8 times every 0.5s over 4s. Each hit applies a stack of a debuff which causes subsequent hits to deal 15% more damage for 1.5s, stacking up to 10 times. Additional damage from this debuff is always rounded up."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Duration of rocks increased by 1s. Number of hits increased from 8 to 10. In addition, slow enemy movement speed by 35% for 1s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "X-Scissor",
+                    "Category": "Melee",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Crustle attacks three times with his claws, dealing increased damage with each hit and shoving enemies for .2s with each hit. Stuns for 1.5s if the enemy is against a wall when the third hit lands."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Cooldown reduced by 1s."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Rubble Rouser",
+            "Category": "Buff",
+            "Cooldown": 112,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Summon a whirlwind of rocks. At the beginning leave nearby enemies stunned for 1s and gain a shield (40% max HP + 600 HP). Then deal damage to nearby enemies every 1s for 10s, and if Crustle receives damage while this move is in effect deal additional revenge damage (this cannot happen more than once every 2s)."
                 }
             ]
         }

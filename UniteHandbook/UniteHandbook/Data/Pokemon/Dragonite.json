@@ -1,97 +1,101 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Dragonite",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Ranged",
+    "Difficulty": "Novice",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Marvel Scale",
+            "Desc": "Increases Defense by 100 for 1.5s when afflicted by a status condition (Dratini and Dragonair only)."
+        },
+        {
+            "Name": "Multiscale",
+            "Desc": "When damaged by an enemy player, gain a buff that reduces damage taken by 25% for 2.5 seconds. This ability has a 15 second cooldown."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Twister",
+            "Category": "Ranged",
+            "Cooldown": 7.50,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Creates a twister and releases it in the designated direction, dealing damage to enemies hit and decreases their movement speed by 50% for 1s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Dragon Dance",
+                    "Category": "Dash",
+                    "Cooldown": 5.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Dash in a designated direction, alternating each use between a left arc, right arc and a direct dash. After using this move, grant a buff increasing attack speed of the next 3 auto attacks by 80% for 4.5s, increasing movement speed by 30% for 1s, increasing Attack by 8% (capping at 24%), as well as increasing the stage of Hyper Beam. This buff stacks up to 3 times, and the duration is reset to full on reuse. All stacks are removed after a few seconds. Auto attacks reduce the cooldown of this ability by 1s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Further increases Dragonite's movement speed by 10% for 4.5s if there are enemies nearby when the dance ends."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Extreme Dance",
+                    "Category": "Hindrance",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Dash toward the designated enemy, damaging and slowing all enemies in a small radius around the target upon impact by 50% for 2s, throwing the primary target and shoving others away. Using this move resets the cooldown of Multiscale."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "If Dragonite's movement speed is currently decreased when it uses this move, that movement speed decrease is negated before the move is used."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Dragon Breath",
+            "Category": "Area",
+            "Cooldown": 7.50,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Exhale a mighty gust in the designated direction. If this move hits an enemy, Dragonite's next attack becomes a boosted attack."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Hyper Beam",
+                    "Category": "Ranged",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 8,
+                            "Desc": "Fires a beam of energy toward the targeted enemy after a delay, dealing damage to all enemies that it hits, as well as additional damage based on their Max HP. The move changes Stages based on the number of stacks of Dragon Dance that Dragonite has, from 0 to 3. The max HP damage is 0%/5%/10%/20%, determined by the current Stage. Dragonite cannot act while releasing the beam./n/nAgainst Wild Pokémon: The additional damage from max HP is capped at 600/1200/1800/2400 depending on the stage."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Reduces damage taken by 50% while charging this move."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Outrage",
+                    "Category": "Melee",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 8,
+                            "Desc": "Dragonite stomps the ground, dealing damage to enemies in an area around Dragonite with the bonus effect of the last Boosted Attack he used. Additionally, Dragonite gains a buff for 5.5s, increasing auto attack speed by 30% for 5.5s, converting all of their attacks into melee Boosted Attacks, and alternating through the water, electric, and fire Boosted Attacks in order. When the buff ends, Dragonite is stunned for .7s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Reduce the duration of hindrances inflicted on Dragonite while rampaging by 40% for 5.5s."
                         }
                     ]
                 }
@@ -100,13 +104,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Draco Impact",
+            "Category": "Dash",
+            "Cooldown": 134,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Briefly fly up in the air, becoming untargetable, before crashing down, approximately 2s after activating, with several comets on a designated area, dealing damage and throwing enemies in the area for 0.5s. The farther Dragonite flies, the more the Unite gauge is consumed (50% at min distance and 100% at max). Dragonite is unstoppable while using this move."
                 }
             ]
         }

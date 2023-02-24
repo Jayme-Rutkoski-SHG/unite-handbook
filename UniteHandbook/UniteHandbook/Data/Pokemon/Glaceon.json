@@ -1,97 +1,101 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Glaceon",
+    "AttackStyle": "Special",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Run Away",
+            "Desc": "When Eevee would be affected by a hindrance, the hindrance is negated and becomes invincible for 1s. This Ability goes on cooldown after it’s triggered (70s cd)."
+        },
+        {
+            "Name": "Snow Cloak",
+            "Desc": "When Glaceon would be affected by a hindrance, the hindrance is negated. Glaceon then starts sneaking and becomes invincible for 0.5s. This Ability goes on cooldown after it’s triggered (70s cd) and is reset after respawning."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Swift",
+            "Category": "Buff",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Creates 4 stars around the user. For a short time afterward, each time the user hits an enemy with a basic attack or boosted attack, one or two of the stars respectively will shoot out and deal additional damage to the target."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Icicle Spear",
+                    "Category": "Sure Hit",
+                    "Cooldown": 5.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Glaceon launches all of its stored ice crystals in rapid succession at the designated enemy. If Glaceon has no ice crystals when this move is used, 2 ice crystals are instantly created and are launched. Launched ice crystals can hit enemies on the opposing team that are not the designated target of this move. The crystals shatter when they hit any enemy, dealing damage to all enemies in the area. Ice crystals launched by this move deal 5% increased damage each time they hit the same enemy. When this move is used, the cooldown of Ice Shard or Freeze-Dry is reduced./n/nA maximum of 12 ice crystals will be launched during this move."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Each launched ice crystal also deals additional damage to enemies hit equal to 2% of their remaining HP./n/nAgainst Wild Pokémon: The additional damage from maximum HP is capped at 300."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Icy Wind",
+                    "Category": "Dash",
+                    "Cooldown": 6.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Jump a short distance in the designated direction; Glaceon's next auto attack within 5s gains increased range and launches all stored ice crystals at an enemy, dealing damage to them. Glaceon then regains the same number of ice crystals that were launched. If an enemy is hit by 4 or more ice crystals, that enemy's movement speed is decreased by 8% per shard (stacking up to 6 times) for 1s. If Glaceon has no ice crystals when this move is used, gain 2 ice crystals."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Each launched ice crystal also deals additional damage to enemies hit equal to 1.5% of their remaining HP./n/nAgainst Wild Pokémon: The additional damage from maximum HP is capped at 300."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Tail Whip",
+            "Category": "Sure Hit",
+            "Cooldown": 8.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Has the user wag its tail at an enemy, dealing damage and decreasing their Defense and Sp. Def by 30% for 2s, and movement speed by 20% for 1.5s. The next auto attack after using this move becomes a boosted attack."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Ice Shard",
+                    "Category": "Buff",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Increases movement speed by 50% for 0.5s. Afterward, the Glaceon's basic attack speed is increased by 25% for 2s, and basic attacks change into attacks that hurl chunks of ice for 2.5s. These chunks of ice deal damage to enemies they hit and decrease their movement speed by 30% for 1s. Each time a chunk of ice hits, Glaceon gains 2 ice crystals. Gain 2 ice crystals if this move is used while launching crystals with Icicle Spear, or if this move is used after Icy Wind but before launching all crystals with the next auto attack."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increases basic attack speed further to 50% for the duration of the move's effect."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Freeze Dry",
+                    "Category": "Ranged",
+                    "Cooldown": 8.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Shoot out a freezing burst of air in a forward direction. This burst explodes upon hitting an enemy or after traveling a set distance; dealing damage to all enemies in the area. Upon hitting an enemy, increase Glaceon's Sp. Atk by 50% for 3s. For each enemy hit by the explosion, Glaceon gains 2 ice crystals. The explosion also leaves behind an ice zone which slows enemies that enter by 20% for 3s. If they remain in the ice zone for 2.5s, they become frozen for 0.6s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "For each enemy hit by this move's explosions, Glaceon gains 1 additional ice crystal."
                         }
                     ]
                 }
@@ -100,13 +104,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Glacial Stage",
+            "Category": "Area",
+            "Cooldown": 100,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 8,
+                    "Desc": "Glaceon leaps up high, creating an ice zone in front of themself that deals damage to enemies in the area-of-effect. While Glaceon is in the ice zone, their movement speed is increased by 50% for 6s, and Glaceon gains 2 ice crystals every second while on the center and 1 ice crystal every second while on the perimeter. The movement speed of enemies in the ice zone is decreased by 50% for 1s."
                 }
             ]
         }

@@ -1,97 +1,84 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Scizor",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Technician",
+            "Desc": "After this Pokémon uses a move, the next auto attack will deal two consecutive auto attacks instead. The second of these deals decreased damage. Technician lasts 5s and has no internal cooldown."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Fury Cutter",
+            "Category": "Melee",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Slashes twice dealing damage with its scythes in a cone. The second slash deals more damage than the first."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Bullet Punch",
+                    "Category": "Melee",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Dash in the designated direction and strike enemies, reducing this move's cooldown by 40% if the attack animation completes and recovering a portion of HP with each hit. If Bullet Punch is used again within 8s, the number of punches increases. The number of punches increases from 3 to a maximum of 5."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
-                        }
-                    ]
-                },
-                {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
-                    "LevelDetails": [
-                        {
-                            "Level": 0,
-                            "Desc": ""
-                        },
-                        {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Also grants a shield for 3s if this move hits an enemy."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Quick Attack",
+            "Category": "Dash",
+            "Cooldown": 8.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Dashes in designated direction dealing damage to enemies hit along the way.
+                    
+"
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Double Hit",
+                    "Category": "Dash",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Jumps in the designated direction, dealing damage to enemies during the jump and applying a mark to that enemy until they leave combat. After hitting an enemy, jump again. An enhanced auto attack is prepared on landing that charges at the enemy being attacked. This enhanced attack is available for 5s./n/nIf a marked enemy is knocked out, all of the user's move cooldowns are reset. The mark may be cleansed."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Reduces cooldown by 1s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Swords Dance",
+                    "Category": "Buff",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Dashes a short distance, increasing attack by 12% for 5s. While Swords Dance's attack buff is active, after basic attacks or abilities make contact 8 times, the user launches an area-of-effect attack that pierces through enemies in a line."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Reduces the damage the user receives by 50% while dashing (0.3s)."
                         }
                     ]
                 }
@@ -100,13 +87,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Red Illusion Dive",
+            "Category": "Sure Hit",
+            "Cooldown": 112,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Target an enemy and punch them, dealing an initial hit of damage, decreasing their movement speed by 40% for 3s. Then create 5 copies that dash away from Scizor. If a copy hits an enemy while dashing out, it deals damage, decreases that enemy's movement speed by 40% for 3s, then disappears. For 8s after activation, this move may be used again, dashing in a designated direction dealing damage to enemies hit. The enemies hit are also grabbed and carried while Scizor continues dashing. At the end of the dash, Scizor punches the ground dealing damage in an area-of-effect. If a grabbed enemy makes contact with an illusory copy, they will be dealt damage and be left incapacitated for 2s."
                 }
             ]
         }

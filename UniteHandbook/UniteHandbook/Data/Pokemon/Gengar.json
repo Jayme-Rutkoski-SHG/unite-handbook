@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Gengar",
+    "AttackStyle": "Special",
+    "Role": "Speedster",
+    "Style": "Melee",
+    "Difficulty": "Expert",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Levitate",
+            "Desc": "Increases movement speed by 10% when out of combat for 5s."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Will-o-Wisp",
+            "Category": "Ranged",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Gengar shoots 3 wisps of flame in a cone, damaging and burning enemies hit for 2s. This burn reduces enemy Attack and Sp. Attack by 10% for 4s. A single enemy can only be damaged by a maximum of 2 wisps. Damage is halved if the target is burning."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Shadow Ball",
+                    "Category": "Ranged",
+                    "Cooldown": 4.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Gengar hurls a shadowy ball forward in a line; damaging, slowing their movement speed by 90% for 1s, and reducing the Sp. Defense of enemies hit for 3s. This ball pierces through wild Pokémon."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Increased damage."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Sludge Bomb",
+                    "Category": "Area",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Gengar hurls unsanitary sludge to the designated area, damaging enemies and poisoning them for 5s. Poison deals 1% of the Pokemon's max HP per tick./n/nAgainst Wild Pokémon: The poison damage is capped at 120 per tick."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Increased area duration by 1s (adds 2 additional ticks)"
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Lick",
+            "Category": "Hindrance",
+            "Cooldown": 7.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Gengar attacks forward in a line with their tongue, damaging enemies hit, and pulling them to Gengar. The next auto attack is boosted."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Dream Eater",
+                    "Category": "Dash",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Gengar shoots forward a mysterious orb, sleeping enemies for 1s when it hits. If used again when a nearby enemy is affected by Dream Eater, Gengar teleports behind them and attacks; dealing damage to the enemy, healing Gengar, and reducing the cooldown of Will-o-Wisp, Shadow Ball or Sludge Bomb by 2s. Before and after teleporting, the next auto attack is boosted. If Gengar knocks out an enemy player, the cooldown of this move is reset."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increased damage and healing."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Hex",
+                    "Category": "Dash",
+                    "Cooldown": 7.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Gengar vanishes and teleports to a designated location, damaging enemies in a radius where Gengar appears. If this hits an enemy afflicted with a status condition, damage dealt is doubled and Hex cooldown is reduced by 85%. The next auto attack is boosted."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increased damage."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Phantom Ambush",
+            "Category": "Dash",
+            "Cooldown": 134,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Jump to the designated area and start sneaking for 7s - gaining 30% increased movement speed, become invisible, and the next auto attack is boosted. Moves and auto attacks can be used while invisible, but bring you above the ground. While above the ground, become visible to the enemies. If this move is used again, deal damage to enemies in the area of effect and decrease their movement speed by 50% for 1.5s."
                 }
             ]
         }

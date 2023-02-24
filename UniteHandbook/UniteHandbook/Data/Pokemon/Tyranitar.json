@@ -1,97 +1,105 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Tyranitar",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Guts",
+            "Desc": "When Larvitar receives damage equal to at least 10% of max HP, Attack is increased by 30% for 3s. This Ability goes on cooldown after it’s triggered (40s cd)."
+        },
+        {
+            "Name": "Shed Skin",
+            "Desc": "When Pupitar receives damage equal to at least 10% max HP, all status conditions are nullified and Pupitar is granted a shield worth 10% Max HP. This Ability goes on cooldown after it’s triggered (40s cd)."
+        },
+        {
+            "Name": "Sand Stream",
+            "Desc": "Summons a sandstorm around Tyranitar for 3s after using a move. This sandstorm increases Defense and Sp. Defense by 65% for 3s and deals damage to nearby enemies every .5s."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Bite",
+            "Category": "Melee",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Deals damage to enemies in front of the user. If the enemy HP is below 50%—or falls below that percentage as a result of this move—they become unable to move for a short time."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Dark Pulse",
+                    "Category": "Area",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Exhale a mist of darkness in a horizontal sweeping motion, dealing damage to any enemy hit. If the remaining HP of an enemy hit by this move falls below 50%, they become unable to move for a short time. If this move hits an enemy again within a set amount of time, it deals additional damage./n/nIf this move is used while Tyranitar's piercing strength is activated by Ancient Power, the 8s duration of piercing damage is refreshed."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Reduces this move's cooldown by 1s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Stone Edge",
+                    "Category": "Area",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Deals damage to enemies in a 90 degree cone, dealing more damage the closer the enemies are to the user. This move can be used up to 3 times with the cone widening to 135 and 180 degrees."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increased damage."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Rock Polish",
+            "Category": "Dash",
+            "Cooldown": 8.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Charge ahead in the designated direction, dealing damage to any enemies hit. If this move hits any enemy, Attack is increased by 15% for 3s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Ancient Power",
+                    "Category": "Buff",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 9,
+                            "Desc": "Charge power before releasing a shock wave. The shock wave deals damage to nearby enemies and leaves them unable to act for a short time. While charging power: Tyranitar becomes resistant to hindrances for 4s, movement speed is increased by 20% for 3s (stacking 3 times), and Tyranitar gains a shield (stacking 3 times and lasting up to 5s). If any enemies are hit by the shock wave, Tyranitar is granted piercing strength allowing damage dealt to ignore enemy Defense and shield effects for 8s./n/nIf this move hits an enemy, a second shock wave can be released in front of Tyranitar; dealing damage to enemies and decreasing their movement speed by 30% for 2s. If this second shock wave hits successfully, Tyranitar is granted another shield. The strength of this shield increases for each enemy hit, capping at 3 stacks."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Strengthens the effect of the shields granted by this move."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Sand Tomb",
+                    "Category": "Hindrance",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 9,
+                            "Desc": "Leap in a designated direction; dealing damage to any enemies hit and leaving them unable to act for a short time. When Tyranitar lands, the shock from landing creates a cloud of dust at the point of impact for 6s; dealing damage-over-time every 0.5s and decreasing movement speed of enemies hit by 25% for 1s every second./n/nIf this move is used again while Tyranitar is in the cloud of dust, enemies in front of Tyranitar will be pulled closer to it. Furthermore, while the user is in the cloud of dust, they take 25% reduced damage and can ignore the Defense and shield effects of enemies."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Increases the length of time the cloud of dust remains at the point of impact."
                         }
                     ]
                 }
@@ -100,13 +108,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Tyrannical Rampage",
+            "Category": "Buff",
+            "Cooldown": 134,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Explode with anger and go on a rampage for 10s. While rampaging, Tyranitar also gains 50% Tenacity and the basic attack pattern changes, dealing increased damage. If the HP of an enemy hit by these basic attacks is below 20% it is immediately knocked out (enemy players only)./n/nAttacks during this move cannot critically-hit."
                 }
             ]
         }

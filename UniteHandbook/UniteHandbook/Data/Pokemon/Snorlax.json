@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Snorlax",
+    "AttackStyle": "Attack",
+    "Role": "Defender",
+    "Style": "Melee",
+    "Difficulty": "Novice",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Gluttony",
+            "Desc": "Increases the effects gained from eating berries. 25% increased movement speed when near berries and doubles the amount healed from the Sitrus berry (yellow berry)."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Tackle",
+            "Category": "Dash",
+            "Cooldown": 6.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Snorlax dashes a short distance forward, dealing damage, stunning the first target hit for 1s, and slightly throwing them. Snorlax’s next auto attack is boosted."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Heavy Slam",
+                    "Category": "Dash",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Snorlax jumps to the target location, dealing damage and throwing enemies within the landing radius into the air for 1s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increased damage."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Flail",
+                    "Category": "Buff",
+                    "Cooldown": 6.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Snorlax buffs themselves for 5s causing auto attacks to deal increased damage and slow enemies hit. Damage increase is strengthened for every 20% HP Snorlax is missing. Snorlax also gains a short burst of increased movement speed by 70% for 2s, decreasing every .4s by 14%, and slows nearby enemies by 50% for 1.5s when Flail is activated."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increased damage. In addition, if Snorlax is below 40% HP, auto attacks will also gain 30% lifesteal."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Rest",
+            "Category": "Recovery",
+            "Cooldown": 10.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Snorlax falls asleep for 3s, becoming unstoppable, and healing 3 times for 8% Max HP. While asleep enemies cannot pass through Snorlax’s hitbox."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Block",
+                    "Category": "Hindrance",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Snorlax creates and holds a wall in a targeted direction for 4s and gains a shield. The shield lasts 3.5s even if Block is cancelled early. Enemies that contact the wall are knocked back and stunned for .45s. This knockback can occur every 1s (max 4 times). Snorlax cannot attack or use abilities while Blocking but can move with a 45% reduced movement speed."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "The Block becomes larger and the knockback and stun occurs every 0.5s (max 8 times). While blocking, Snorlax’s Def and SpDef are increased by 25%."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Yawn",
+                    "Category": "Hindrance",
+                    "Cooldown": 12.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Snorlax sends out a slow short-range projectile that puts all targets hit to Sleep for 3s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Enemy movement speed reduced by 35% for 3s upon waking up."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Power Nap",
+            "Category": "Recovery",
+            "Cooldown": 112,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Go to sleep and begin snoring, dealing damage to enemies in the area of effect and throws them in the air for 1s. While sleeping enemies cannot pass through Snorlax’s hitbox, Snorlax becomes immune to hindrances, deals damage over time to nearby enemies, slow enemies hit by 30% for 1s, and continually restore 7% of max HP, 9 times. This move can be recasted to flip over, dealing an extra instance of the DoT damage and throwing enemies in the air for 1s."
                 }
             ]
         }

@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Greninja",
+    "AttackStyle": "Attack",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Expert",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Torrent",
+            "Desc": "While HP is at 50% or less, Attack is increased by 5% and movement speed is increased by 12%."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Bubble",
+            "Category": "Ranged",
+            "Cooldown": 9.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Greninja launches 2 bubbles which pop when they hit an enemy, damaging and slowing them by 25% for 1s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Water Shuriken",
+                    "Category": "Ranged",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Greninja throws 4 shurikens made of water which explode when they hit an enemy, damaging and slowing enemies by 25% for 1s in a small area while healing Greninja. While using this move, Greninja's movement speed is increased by 15% for 3s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Throws 5 shurikens instead."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Surf",
+                    "Category": "Melee",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Greninja dashes on a wave, damaging enemies and healing themself for each enemy hit. Enemies below half health are dealt bonus damage, and if this move KOs an enemy the cooldown is reset./n/nAgainst Wild Pokémon: The first hit is capped at 1200 and the second hit is capped at 600."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increased healing."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Substitute",
+            "Category": "Dash",
+            "Cooldown": 8.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Greninja dashes while leaving behind a targetable decoy. Greninja is unstoppable while dashing."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Double Team",
+                    "Category": "Dash",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Greninja briefly vanishes before dashing and sending clones in different directions. The clones attack nearby targets, have the same HP and defenses as Greninja, deal 18% of Greninja's damage (clones use Surf or Water Shuriken - whichever is learned by Greninja), and last for 3s. Greninja is unstoppable while dashing."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Cooldown reduced by 1s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Smokescreen",
+                    "Category": "Buff",
+                    "Cooldown": 13.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Greninja becomes invisible for 3s, gaining 10% bonus movement speed, and leaving behind a cloud of smoke. Enemies that stay in the smoke cloud have their vision range reduced by 60%. Greninja's next attack is boosted and deals increased damage, melee and ranged bonus effects apply. Greninja is unstoppable while dashing."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Also increases Greninja's attack by 20% for 2s when leaving stealth."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Waterburst Shuriken",
+            "Category": "Area",
+            "Cooldown": 134,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Throw a giant water shuriken toward the designated area, dealing damage to enemies in the area of effect and those in the line shown by arrowed reticule but are outside Greninja's melee attack range. Pokémon damaged by the designated circular area have their movement speed decreased by 50% for 2s when this move hits. The water shuriken then immediately explodes, dealing damage to enemies in the area of effect and throws them in the air. Once this move ends, Greninja may jump in a designated direction."
                 }
             ]
         }

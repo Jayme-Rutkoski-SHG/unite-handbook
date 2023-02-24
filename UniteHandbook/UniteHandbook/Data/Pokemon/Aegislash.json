@@ -1,97 +1,101 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Aegislash",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Expert",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "No Guard",
+            "Desc": "Honedge and Doublade do not gain the stat benefits of Stance Change. However, their boosted attack functions like Aegislash's Sword Stance boosted attack."
+        },
+        {
+            "Name": "Stance Change",
+            "Desc": "Aegislash can switch between Sword Stance and Shield Stance. Using a blade move switches stance to Sword Stance; which increases Attack, movement speed by 5%, and Attack Speed by 15%. Using a shield move switches stance to Shield Stance; which increases Defense and Sp. Defense and reduces Attack Speed by 20%. After switching stances, movement speed and basic attack speed are further increased by 15% for 3.5s."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Shadow Sneak",
+            "Category": "Dash",
+            "Cooldown": 6.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Cast a shadow in the designated direction dealing damage to enemies hit. After the shadow hits an enemy or travels its maximum distance, Aegislash warps to the shadow’s location, dealing damage to nearby enemies and increase boost count by 1."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Sacred Sword",
+                    "Category": "Area",
+                    "Cooldown": 7.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Aegislash thrusts its blade into the ground creating a triangular zone. This zone erupts with a hidden power, dealing damage to enemies in the area and throws them in the air for .6s. Also increases boost count by 1 for each enemy hit (capped at 2 for wilds, 4 for players). At the same time as the eruption, Aegislash slashes forward, dealing additional damage to enemies hit. For 3s after this slash hits, damage dealt by Aegislash ignores 25% of the enemy's Defense."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increase Attack by 50 for 3s after hitting enemies with the triangle attack."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Shadow Claw",
+                    "Category": "Dash",
+                    "Cooldown": 5.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Aegislash slashes with its blade twice in the designated direction, dealing damage to enemies hit. Follow up with a final rising slash that deals damage to enemies hit and throws them in the air for .75s. Boost count increases by 1 when at least one of the three slashes hits."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increases Critical-Hit Rate by 20% for 1s (This move does not benefit)."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Iron Defense",
+            "Category": "Buff",
+            "Cooldown": 7.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Envelops Aegislash in a powerful protective force for 3s or after blocking one attack. If this move blocks an attack, increase boost count by 1."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Wide Guard",
+                    "Category": "Buff",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Focus in place for a short time to create a great shield on Aegislash for 1.2s. When this great shield appears, boost count increases by 1, granting a shield to Aegislash and shoves enemies in front. While this great shield is active, enemy player attacks increase boost count by 1 for each different enemy (capping at 2). When this move ends, shove enemies for .75s in front of Aegislash once again and slow them by 45% for 2s.\n\nGain 1 boosted count if the shove at the end hits at least one enemy. If the great shield is depleted before the duration of this move ends, the boosted count is granted regardless of whether an enemy is hit."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Cooldown reduced by 1s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Iron Head",
+                    "Category": "Buff",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Dash in the designated direction dealing damage to enemies hit. Also increases boost count by 1, and protects Aegislash with a special shield for 1s afterward. This shield doesn’t protect from hindrances, but it can nullify damage. When the shield blocks an attack, it disappears, the cooldown is reduced by 3s, and boost count is increased by 1."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "If an attack is blocked with this move, Aegislash gains +10% Attack for 3s."
                         }
                     ]
                 }
@@ -100,13 +104,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Coup de Grace",
+            "Category": "Area",
+            "Cooldown": 100,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Unleash a ground-splitting slash in the designated direction dealing damage to enemies hit and switching to Sword Stance. The lower their remaining HP, the more damage this move deals. If this slash knocks out an enemy, boost count increases by 2."
                 }
             ]
         }
@@ -362,4 +366,5 @@
         }
     ]
 }
+
 

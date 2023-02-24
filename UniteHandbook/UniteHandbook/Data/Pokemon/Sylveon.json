@@ -1,97 +1,101 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Sylveon",
+    "AttackStyle": "Attack",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Adaptability",
+            "Desc": "Every time Eevee deals or receives damage, increase Sp. Attack by 5% for 1.5s, stacking up to 4 times."
+        },
+        {
+            "Name": "Pixilate",
+            "Desc": "Every time Sylveon deals or receives damage, increase Sp. Atk and Sp. Defense by 2.5% for 1.5s, stacking up to 6 times."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Swift",
+            "Category": "Ranged",
+            "Cooldown": 7.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Shoots 4 star-shaped rays at enemies, dealing damage to them."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Mystical Fire",
+                    "Category": "Dash",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Create four small flames while leaping in the designated direction. These flames shoot towards enemies one by one, dealing damage and decreasing their Sp. Attack by 15% for 1s, stacking up to 4 times. Each time a flame hits, reduce the cooldown of this move by 15% of the current cooldown. After the first flame hits, subsequent flames on the same target deal 25% damage. Wild Pokémon will only be prioritized if no enemy players are in range."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Increases the number of flames by one."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Hyper Voice",
+                    "Category": "Area",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Unleashes an attack of multiple sound waves that deal damage when they hit. The damage dealt increases the farther the target is from Sylveon. Every sound wave reduces enemy Sp. Defense by 20% for 1.5s (capping at 80%)."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Increases the number of sound waves by one."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Baby-Doll Eyes",
+            "Category": "Ranged",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Stare at an enemy with baby-doll eyes, dealing damage and decreasing their Attack by 15% and decreasing their movement speed for a short time when this move hits."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Draining Kiss",
+                    "Category": "Sure Hit",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Blow a kiss at an enemy that goes back and forth between Sylveon and the target multiple times. When the kiss touches Sylveon, restore HP. When it hits the enemy, deal damage and decrease their movement speed by 20% for a short time. If Sylveon and the enemy move too far away from each other, the kiss will disappear faster than normal."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increased healing"
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Calm Mind",
+                    "Category": "Buff",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Sylveon quietly focuses their mind and calms their spirit, increasing movement speed, Sp. Attack by 40% and Sp. Defense by 10% for 3s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Up to 3s after using this move, if Sylveon is hit by an Enemy's move, the damage is completely nullified and Sylveon is granted a shield."
                         }
                     ]
                 }
@@ -100,13 +104,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Fairy Frolic",
+            "Category": "Buff",
+            "Cooldown": 139,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 8,
+                    "Desc": "Jump into the air, removing most statuses and becoming invincible. The moment Sylveon lands, lose invincibility and immediately gain Fairy Frolic buff, while dealing damage to enemies in the area of effect. Fairy Frolic buff: for 10s, 50% of the damage dealt by Sylveon is converted into HP. No HP is recovered if the damage is dealt to shields."
                 }
             ]
         }

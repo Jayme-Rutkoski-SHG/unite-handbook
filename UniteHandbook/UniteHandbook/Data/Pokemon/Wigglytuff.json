@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Wigglytuff",
+    "AttackStyle": "Special",
+    "Role": "Supporter",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Cute Charm",
+            "Desc": "When hit by an enemy attack at close range, make that enemy infatuated for a short time. Infatuated enemies become enthralled and approach Wigglytuff against their will. This ability goes on a 10s cooldown when triggered."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Pound",
+            "Category": "Melee",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Wigglytuff slaps the area in front of them twice (.3s apart), damaging enemies in a cone and slowing them by 40% for0.5s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Double Slap",
+                    "Category": "Melee",
+                    "Cooldown": 4.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Wigglytuff unleashes a barrage of slaps, damaging enemies in a cone 3-5 times and slowing them by 45% for 1.5s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Slaps 4-6 times instead."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Dazzling Gleam",
+                    "Category": "Area",
+                    "Cooldown": 4.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Wigglytuff emits a flash of fairy energy, dealing a small amount of damage in a cone after 0.6s followed by a large amount of damage."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Slows enemies hit by the first flash by 40% for 1s."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Defense Curl",
+            "Category": "Hindrance",
+            "Cooldown": 8.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Wigglytuff gains a 25% max HP shield for 0.5s and rolls forward a short distance, throwing enemies hit in the air for0.5s. Hitting an obstacle while rolling will change the direction Wigglytuff is moving and reset the cooldown of Pound, Double Slap, or Dazzling Gleam."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Rollout",
+                    "Category": "Hindrance",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Wigglytuff gains a 25% max HP shield for 1s, becomes unstoppable for 1.2s and rolls forward, damaging and throwing enemies hit in the air for0.5s. Hitting an obstacle while rolling will change the direction Wigglytuff is moving up to 5 times and reset the cooldown of Pound, Double Slap, or Dazzling Gleam."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increases the amount of time enemies are thrown in the air to 0.7s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Sing",
+                    "Category": "Area",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Wigglytuff begins singing, slowing enemies around them by 10% for 2s per "Note" and increasing Wigglytuff's movement speed by 30% for 2.5s. Enemies that stay inside the song's effect will be put to sleep (when reaching 4 Notes) for 1.5s, and have their Defense and Special Defense reduced by 25% for 1.25s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increases the amount of time enemies are asleep to 1.75s and the duration of Defense and Sp. Defense to 1.5s."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Starlight Recital",
+            "Category": "Buff",
+            "Cooldown": 112,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 8,
+                    "Desc": "Begin performing a recital and become unstoppable for 3s, granting Wigglytuff and nearby allies a shield for 2.5s as well as removing all status conditions from the affected allies and granting them immunity to hindrances for as long as the shield is active."
                 }
             ]
         }

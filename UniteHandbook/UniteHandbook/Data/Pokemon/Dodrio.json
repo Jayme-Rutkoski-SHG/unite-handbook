@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Dodrio",
+    "AttackStyle": "Attack",
+    "Role": "Speedster",
+    "Style": "Melee",
+    "Difficulty": "Expert",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Run Away",
+            "Desc": "While moving, the sprint gauge charges and at full, Dodrio runs at increased movement speed. If movement speed is decreased below a threshold, the sprint gauge will rapidly deplete. When Doduo scores a goal, it evenly divides its collected Aeos energy into two portions and deposits them into the goal one at a time. As Dodrio, this is split into three portions to deposit in the goal one at a time. Only goals made by a full channel will count towards stacking items."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Peck",
+            "Category": "Melee",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Jabs forward with Doduo's beaks. When using the move, Doduo stops moving and loses sprint gauge due to dropping below the sprint gauge gaining threshold. When the sprint gauge is full, Doduo charges forward to jab the in the facing direction and fully consumes the sprint gauge."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Tri Attack",
+                    "Category": "Melee",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Dodrio attacks with their beaks in a cone in front of themself, dealing damage to enemies and applying one of the following random effects to enemies hit: decrease Attack and Burn, decrease attack speed, or decrease movement speed. When the sprint gauge is full, Dodrio instead shoots out 3 projectiles in the facing direction. If a projectile hits an enemy, the projectile deals damage and applies one of the aforementioned effects based on its color. After this move is used, Dodrio's next basic attack deals additional damage and restores HP. Holds 2 uses in reserve and cannot be used more than once every 1s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "The next auto attack gains additional healing by 3% of max HP. When used with a full sprint gauge the charge time for this move is reduced by 1s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Drill Peck",
+                    "Category": "Melee",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Dodrio strikes forward with their sharp beaks multiple times, dealing damage to enemies hit. If used with a full sprint gauge, consume the sprint gauge and dash forward while striking with their sharp beaks multiple times, dealing damage to enemies hit and shoving them."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Reduces base cd by 2.5s and restores a portion of Dodrio's HP equal to 30% of damage dealt by the flat damage (percent damage excluded)."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Quick Attack",
+            "Category": "Dash",
+            "Cooldown": 10.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Dash forward, increasing the user's movement speed for a short time and dealing damage to enemies hit. This move's cooldown is reduced by 1s if it hits an enemy."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Agility",
+                    "Category": "Buff",
+                    "Cooldown": 11.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Become immune to hindrances for a short time and adds to the sprint gauge. Afterward, movement speed is increased by 20% for 4s, and the sprint gauge charges faster."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Fully charges the sprint gauge on use."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Jump Kick",
+                    "Category": "Dash",
+                    "Cooldown": 6.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Dodrio leaps forward while kicking. If this move makes contact with an enemy or obstacle, Dodrio leaps over it and stomps the ground when landing, dealing damage to enemies in the area-of-effect, slowing by 25% for 2s, and the sprint gauge charges by 75%. If this move makes contact with an enemy, this move's cooldown is reduced by 3s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Enemies in the area of the landing are also stunned for 1s."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Triple Trample",
+            "Category": "Dash",
+            "Cooldown": 134,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Dodrio runs to a designated location. While running, Dodrio is immune to hindrances. If Dodrio makes contact with an enemy while running, they are dealt damage and thrown into the air for 1s. When Dodrio arrives at the designated location, Dodrio gains 30% increased Attack and loses 5% Sp. Attack for 3s, is granted a 10% Max HP shield for 3s, and the sprint gauge charges faster for 6s. Damage dealt at the designated location is affected by the 30% Attack bonus."
                 }
             ]
         }

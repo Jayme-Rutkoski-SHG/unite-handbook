@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Blastoise",
+    "AttackStyle": "Special",
+    "Role": "Defender",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Torrent",
+            "Desc": "Increases Attack and Sp. Attack by 20% while at half HP or less."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Water Gun",
+            "Category": "Ranged",
+            "Cooldown": 9.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Blastoise shoots a jet of water in a straight line; damaging, knocking back, and stunning enemies hit for0.5s. Enemies hit are also slowed by 30% for 1s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Hydro Pump",
+                    "Category": "Ranged",
+                    "Cooldown": 7.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Blastoise shoots a large amount of water, damaging, knocking back, and stunning enemies hit for 0.5s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increased damage."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Water Spout",
+                    "Category": "Area",
+                    "Cooldown": 7.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Blastoise calls down a barrage of water in a targeted radius. Enemies within the radius are struck 6 times over 3s, damaging and slowing them by 30% for 1s (refreshing every hit)."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increased damage."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Skull Bash",
+            "Category": "Dash",
+            "Cooldown": 10.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Blastoise dashes forward damaging and stunning all enemies hit for 0.5s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Surf",
+                    "Category": "Dash",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Blastoise rides a large wave in the designated direction damaging, knocking back, and stunning enemies hit for 1.6s. Blastoise is unstoppable while surfing, and once it ends, Blastoise can jump in a designated direction. The wave continues for a short duration after leaping off and the wave continues to knock back enemies hit but inflicts no damage."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Blastoise gains a small shield for 4s when hitting an enemy with Surf."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Rapid Spin",
+                    "Category": "Area",
+                    "Cooldown": 11.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Blastoise withdraws into its shell and begins rapidly spinning for 5.5s resetting the cooldown of its other move. Blastoise resists hindrances for the duration of Rapid Spin and can freely move about the battlefield. While spinning, Blastoise will damage nearby enemies. Blastoise’s next auto attack after Rapid Spin ends becomes boosted. For the duration of Rapid Spin, the mechanics of Blastoise’s auto attacks as well as Hydro Pump and Water Spout are changed."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Blastoise gains a massive amount of Def and SpDef for 7s."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Hydro Typhoon",
+            "Category": "Hindrance",
+            "Cooldown": 100,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Blastoise gains a shield for 4s and sweeps powerful water jets in a large circle around itself dealing massive damage and throwing enemies hit into the air for 1.5s."
                 }
             ]
         }

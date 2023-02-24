@@ -1,97 +1,101 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Tsareena",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Expert",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Oblivious",
+            "Desc": "When a hindrance is inflicted on Bounsweet or Steenee, decrease the duration of the effect."
+        },
+        {
+            "Name": "Queenly Majesty",
+            "Desc": "When a hindrance is inflicted on Tsareena; decrease the duration of the effect. Using a boosted attack or move grants 1 stack of Queenly Majesty to Tsareena. After gaining 3 stacks, the Queenly Majesty buff is applied to Tsareena for a short time, which allows one of Tsareena's moves to be reused (these uses do not share the same cooldown as the base moves), dealing increased damage and applying an additional effect based on the move used."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Razor Leaf",
+            "Category": "Area",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Pelts leaves in the designated direction; dealing damage to enemies hit. The critical-hit rate of this move is increased by 15%."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Triple Axel",
+                    "Category": "Dash",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Tsareena spin-kicks 3 times in the designated direction; dealing damage to enemies. Landed hits add a Triple Axel Buff stack. The stacks last for 5s and decay together. During the duration of the buff, auto attack speed is increased depending upon the number of stacks (caps at 3 stacks). In addition, all damage dealt by auto attacks or Triple Axel during the buff is increased by 5% per stack (caps at 6 stacks)./n/nQueenly Majesty Effect: Restores HP each time a kick hits."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Increased damage."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Stomp",
+                    "Category": "Area",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Tsareena jumps up high and attacks enemies with their feet. When this move hits, deal damage to enemies and leave them unable to act for .1s./n/nQueenly Majesty Effect: Restores HP when this move hits."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Increased damage."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Rapid Spin",
+            "Category": "Dash",
+            "Cooldown": 7.50,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Tsareena spins in the designated direction; dealing damage to any enemy hit. When this move hits, increase Tsareena's movement speed by 30% for 1.5s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Trop Kick",
+                    "Category": "Dash",
+                    "Cooldown": 8.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Perform a flying kick in the designated direction, dealing damage to enemies hit and decreasing their Attack by 25% for a 2s. Enemies that make contact with the flying kick's wake receive damage and have their movement speed decreased by 35% for 1s (re-applicable)./n/nQueenly Majesty Effect: Grants Tsareena a shield for 3s when this move is used."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increased damage."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Grassy Glide",
+                    "Category": "Dash",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Tsareena slides in the designated direction; dealing damage to enemies hit. This is followed by an attack in the opposite direction, dealing damage and shoving enemies hit./n/nQueenly Majesty Effect: Grants Tsareena a shield for 3s when this move is used."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increased damage."
                         }
                     ]
                 }
@@ -100,13 +104,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Queen Ascendant",
+            "Category": "Sure Hit",
+            "Cooldown": 112,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Tsareena leaps toward an enemy from the opposing team and kicks it high into the air before showering it with a series of kicks while airborne, dealing damage to them. The moment Tsareena lands on the ground, recover HP. While airborne, the enemy that is being kicked and Tsareena are not affected by other moves."
                 }
             ]
         }

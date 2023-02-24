@@ -1,97 +1,82 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Scyther",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Technician",
+            "Desc": "After this Pokémon uses a move, the next auto attack will deal two consecutive auto attacks instead. The second of these deals decreased damage. Technician lasts 5s and has no internal cooldown."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Fury Cutter",
+            "Category": "Melee",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Slashes twice dealing damage with its scythes in a cone. The second slash deals more damage than the first."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Dual Wingbeat",
+                    "Category": "Area",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Slashes in front with scythes, dealing damage in an X-shaped area-of-effect. If the second slash deals damage to an enemy in the center, restore the user's HP. If this move hits an enemy, it can be activated again within a set amount of time. If this move is used again, the user dashes in the designated direction, dealing damage to enemies hit. The dash deals more damage the lower the enemy's HP is."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
-                        }
-                    ]
-                },
-                {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
-                    "LevelDetails": [
-                        {
-                            "Level": 0,
-                            "Desc": ""
-                        },
-                        {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increases the damage dealt by this move."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Quick Attack",
+            "Category": "Dash",
+            "Cooldown": 8.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Dashes in designated direction dealing damage to enemies hit along the way."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Double Hit",
+                    "Category": "Dash",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Jumps in the designated direction, dealing damage to enemies during the jump and applying a mark to that enemy until they leave combat. After hitting an enemy, jump again. An enhanced auto attack is prepared on landing that charges at the enemy being attacked. This enhanced attack is available for 5s./n/nIf a marked enemy is knocked out, all of the user's move cooldowns are reset. The mark may be cleansed."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Reduces cooldown by 1s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Swords Dance",
+                    "Category": "Buff",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Dashes a short distance, increasing attack by 12% for 5s. While Swords Dance's attack buff is active, after basic attacks or abilities make contact 8 times, the user launches an area-of-effect attack that pierces through enemies in a line."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Reduces the damage the user receives by 50% while dashing (0.3s)."
                         }
                     ]
                 }
@@ -100,13 +85,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Green Illusion Dive",
+            "Category": "Sure Hit",
+            "Cooldown": 112,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Target an enemy, slashing through them dealing an initial hit of damage and creating 5 copies a set distance away. Copies deal damage to enemies they make contact with and apply a mark to them for 5s. After 5s, the copies return to Scyther, dealing damage to enemies they make contact with and healing Scyther for each hit. This move may be used again within 5s of activating as a dash in a designated direction dealing damage to enemies hit. The copies then dash to the end location of the user's dash. If a copy makes contact with an enemy while returning to Scyther, the copy deals damage to that enemy and disappears. If a marked enemy is knocked out, all of Scyther's move cooldowns are reset. Subsequent copies hitting the same target take 70% reduced damage."
                 }
             ]
         }

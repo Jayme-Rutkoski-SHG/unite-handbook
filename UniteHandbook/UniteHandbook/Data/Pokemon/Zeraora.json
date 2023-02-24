@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Zeraora",
+    "AttackStyle": "Attack",
+    "Role": "Speedster",
+    "Style": "Melee",
+    "Difficulty": "Expert",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Volt Absorb",
+            "Desc": "Converts 8% of the damage Zeraora was dealt as Atk, up to 200 Atk. Resets after not taking damage for 4s."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Agility",
+            "Category": "Dash",
+            "Cooldown": 6.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Zeraora quickly dashes forward, increasing auto attack speed by 45% for 3s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Volt Switch",
+                    "Category": "Dash",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Zeraora charges forward, damaging enemies in the path and increasing Zeraora's auto attack speed by 45% for 3s. Activating this ability again within 3s will teleport Zeraora to their original location, dealing damage to enemies in the path back."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increased damage and further increasing attack speed to 60% for 3s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Spark",
+                    "Category": "Dash",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Zeraora leaps in a selected direction, damaging all enemies in their path and becoming unstoppable for 0.2s. If an auto attack is used before the leap ends, Zeraora will jump to the closest enemy, dealing additional damage to the target. Holds 3 uses in reserve - after the first use the next use must be executed within 4s or this move goes on cooldown. The second use resets this timer."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "15% missing HP is restored if performing an auto attack before reaching the enemy."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Slash",
+            "Category": "Melee",
+            "Cooldown": 8.50,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Zeraora charges toward an enemy and attacks them with multiple swipes, ending with an interrupt that knocks the enemy into the air for 0.5s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Discharge",
+                    "Category": "Area",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 8,
+                            "Desc": "Zeraora emits an electric aura, damaging all enemies within the aura every 0.3s for 1.5s (6 ticks) followed after 0.4s by a final tick and granting a shield to Zeraora for 3s when it hits. Any paralyzed enemies within the area of effect are pulled towards Zeraora with the final tick, damaging them with an extra tick of damage and stunning them for 1s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 14,
+                            "Desc": "Enemies hit are slowed by 25% for 1s, refreshing every tick."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Wild Charge",
+                    "Category": "Melee",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 8,
+                            "Desc": "Zeraora charges towards an enemy, damaging them multiple times and switching to the nearest enemy if the initial target's HP drops to zero before all hits are used. Initially Wild Charge has 3 hits, but hitting any enemies with abilities or boosted attacks previously within 5s provides up to 3 stacks, each stack adding an additional hit to Wild Charge (capped at 6 hits). Stacks have to be consumed within 5s. The first hit deals full damage and subsequent hits deal half damage. Zeraora is untargetable for the duration of this move (1.2s at 0 stacks, 1.5s at 1 stack, 1.8s at 2 stacks and 2s at 3 stacks)."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 14,
+                            "Desc": "Also deals damage to nearby enemies when it hits."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Plasma Gale",
+            "Category": "Sure Hit",
+            "Cooldown": 112,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Become unstoppable for 0.5s and launch a bolt of lightning that travels towards the target enemy; dealing damage and knocking up enemies hit along the path for 0.5s and then once again in an area when reaching the target, knocking all enemies hit into the air. Creates an area of electricity for 5s centered on the initial target that paralyzes enemies caught within, increasing Zeraora's auto attack range and auto attack damage by 20% while inside the area."
                 }
             ]
         }

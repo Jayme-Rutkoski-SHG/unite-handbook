@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Azumarill",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Novice",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Huge Power",
+            "Desc": "When this Pokémon hits only a single enemy with an auto attack, a move, or their Unite Move, the hit is always a critical hit. However, when hitting two or more enemies at once with an auto attack, a move, or its Unite Move, the hits are never critical hits.\n\nCritical hits deal 150% rather than 200%."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Tackle",
+            "Category": "Dash",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Charge forward; dealing damage to any enemy hit and leave them unable to act for a short time."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Play Rough",
+                    "Category": "Buff",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Increase movement speed by 35% for 4s and change the next auto attack. When performing the next auto attack, lunge at one enemy in range and deliver repeated blows dealing damage to that target and leave it unable to act for .75s.\n\nUsing Play Rough will overwrite any active Aqua Tail attack change. Play Rough attacks count as auto attacks for the purpose of items, lifesteal and other benefits."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Further increases movement speed when this move is used, and also reduces this move’s cooldown by 1s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Water Pulse",
+                    "Category": "Ranged",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Shoot a pulsing blast of water in front of Azumarill. When the blast of water hits an enemy, decrease their movement speed for 2s and deal damage to all enemies in an area of effect around the initial target.\n\nThe blast of water then automatically bounces to another target if one is available. Including the first target, the blast of water can bounce between up to three targets consecutively, and each hit behaves in the same way as the first. While the blast of water is traveling, Azumarill can perform a short rolling dash in a designated direction."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increase the maximum number of targets that the blast of water can bounce between by 2."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Bubble",
+            "Category": "Area",
+            "Cooldown": 6.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Spray bubbles in a cone dealing damage to enemies in the area of effect and decreasing their movement speed for a short time. This move can be used while moving."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Whirlpool",
+                    "Category": "Area",
+                    "Cooldown": 11.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "For a short time, four small whirlpools appear that swirl around Azumarill as it moves. If a whirlpool hits an enemy, the whirlpool deals damage to them and restores Azumarill's HP. If a whirlpool hits an enemy player, an increased amount of HP is restored.\n\nNote: Moving clockwise against your target will grant more hits against that target, and counter-clockwise will reduce the number of hits."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Reduces this move’s cooldown by 2s and increases the amount of HP restored."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Aqua Tail",
+                    "Category": "Buff",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Increases the speed and area of effect of the next three auto attacks for 5s. If these auto attacks hit from a distance, they also deal increased damage and restore HP.\n\nUsing Aqua Tail will overwrite any active Play Rough attack change. Aqua Tail attacks count as auto attacks for the purpose of items, lifesteal and other benefits."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Aqua Tail attacks that hit an enemy from a distance reduce the cooldown of all moves by 0.8s per enemy hit."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Belly Bash",
+            "Category": "Sure Hit",
+            "Cooldown": 89,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 8,
+                    "Desc": "Azumarill targets a Pokémon and then pounds their belly three times; losing 5% remaining HP with each pound in exchange for a 5% max HP shield that stacks with each pound and lasts 6s. Azumarill also gains increased Attack for 5s and can move while pounding their belly. Azumarill then charges at the target damaging and throwing all Pokémon hit while charging and Pokémon within the area effect around the target.\n\nBonus Attack lasts for 5s and the shield lasts for 6s."
                 }
             ]
         }

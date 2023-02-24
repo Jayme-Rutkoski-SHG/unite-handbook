@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Machamp",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Guts",
+            "Desc": "Increases Attack by 10% for 5s when afflicted by any debuff."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Karate Chop",
+            "Category": "Melee",
+            "Cooldown": 6.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Machamp attacks in a straight line dealing damage to enemies hit."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Close Combat",
+                    "Category": "Melee",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Machamp unleashes a barrage of blows in a targeted direction for 1s, hitting multiple times and finishing with a single large strike. Machamp is unstoppable for the duration and can move while using Close Combat."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Deals 25% additional damage if the target is affected by a status condition."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Cross Chop",
+                    "Category": "Melee",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 7,
+                            "Desc": "Machamp dashes forward, dealing damage to enemies hit. Cross Chop may critically hit and has a 5% higher Critical-Hit Rate. Cross Chop further increases Critical-Hit Rate by 5% for 3s on hit."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Machamp’s auto attacks increases Atk by 2 per target hit, permanently stacking up to 40 times."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Bulk Up",
+            "Category": "Buff",
+            "Cooldown": 9.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Machop buffs themselves for 3s becoming unstoppable, increasing attack by 15%, attack speed by 40% and movement speed by 30% inititally, diminishing gradually every 1s. Machop's next attack is boosted."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Dynamic Punch",
+                    "Category": "Hindrance",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Machamp jumps to target location, becoming unstoppable for 0.5s, stunning enemies hit for 0.5s, slowing them by 40% for 3s, and dealing damage four times in quick succession to the landing radius. Machamp’s Atk is increased by 15% for 5s and gains bonus movement speed of 40% inititally, diminishing gradually, for 3s when using Dynamic Punch. Machamp’s next auto attack is boosted."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Further increases movement speed by 30% and Atk bonus by 5%."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Submission",
+                    "Category": "Buff",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 5,
+                            "Desc": "Machamp becomes unstoppable for 5s and gains 70% increased movement speed (diminishing every 1s by 20%) or until the next auto attack. Machamp’s next auto attack during submission is enhanced, hitting twice and slamming the target down behind Machamp. If this attack hits, Machamp also gains 5% increased Critical-Hit Rate and 50% Attack Speed for 3s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Further increases Critical-Hit Rate by 5% and Attack Speed by 10%."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Barrage Blow",
+            "Category": "Buff",
+            "Cooldown": 134,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Increases Machamp's movement speed by 5%, Attack by 30%, Defense by 200, and Sp. Defense by 200 for 10s. If used again, unleash a combo attack, dealing damage to enemies in the area of effect and shoving them. The final blow deals double the damage of the previous hits."
                 }
             ]
         }

@@ -1,97 +1,109 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Mew",
+    "AttackStyle": "Special",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Novice",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Synchronize",
+            "Desc": "Each time Mew uses a move, Mew and nearby allies have their movement speed increased by 15% for 2s."
+        },
+        {
+            "Name": "Move Reset",
+            "Desc": "When Mew reaches level 5, the Move Reset icon can be used to reset Mew's moves and learn new moves. This ability goes on a 20s cooldown after it's used. Each time Mew knocks out or makes an assist on an enemy player, or scores a goal, the Move Reset cooldown is reduced (Knockout: 40%, Assist: 20%, Goal: 5%). Using Move Reset adds 5000 Unite Move energy to Mystical Mirage."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Electro Ball",
+            "Category": "Sure Hit",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Hurl an electric orb, dealing damage to enemies in the area-of-effect and leaving them paralyzed (40% slow) for 2s. This move deals more damage the lower the enemies' remaining HP is./n/nThrough Light Screen: Damage dealt and area-of-effect radius are increased."
+                },
+                {
+                    "Level": 10,
+                    "Desc": "Strengthens the effect of the paralysis inflicted by this move to 60%."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Solar Beam",
+                    "Category": "Area",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 1,
+                            "Desc": "Blast a bundled beam of light, dealing damage 3 times to enemies in the area-of-effect. If this move hits an enemy, Mew gains an additional boost counter./n/nThrough Light Screen: Damage dealt and area-of-effect radius are increased."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Reduce this move's cooldown by 0.7s for each enemy hit."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Surf",
+                    "Category": "Hindrance",
+                    "Cooldown": 12.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 1,
+                            "Desc": "Charge forward on a wave, shoving enemies for 0.5s and leaving them unable to act for 0.5s. Mew gains a shield for 3s and becomes immune to hindrances while using this move. At the end of this move, Mew can jump in a designated direction and becomes immune to hindrances for a short time. If this move hits an enemy, Mew gains an additional boost counter./n/nThrough Light Screen: Distance the wave travels is increased and Light Screen attaches to Mew."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Strengthens the shield effect of this move."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Coaching",
+            "Category": "Buff",
+            "Cooldown": 7.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 3,
+                    "Desc": "Teleport to an ally, granting them a shield for 3s and increased basic attack speed by 40% for 2s. If this move is used on an ally who hasn't been coached within 7s, the cooldown of this move is reduced by 90%. If this move is used on an ally who has been recently coached, this move goes on cooldown. The cooldown of Electro Ball, Solar Beam, and Surf is reduced by 1s each time this move is used."
+                },
+                {
+                    "Level": 12,
+                    "Desc": "Reduce this move's cooldown by 1s and reduces the timer of recently coached on allies to 6s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Light Screen",
+                    "Category": "Buff",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 3,
+                            "Desc": "Create a translucent wall in the designated location for 4s that prevents enemies from passing and shoves them for 0.5s if they make contact with the wall. If Mew's Electro Ball, Solar Beam, or Surf passes through the wall, the effects of those moves will be enhanced (such as increased damage, range, and area-of-effect). If this move is used again within 4s, the wall is pulled towards Mew and follows them as they move for an additional 4s. While the wall moves with Mew, enemy attacks that pass through it will deal 25% reduced damage but will not prevent enemies from passing and does not shove them anymore."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increases the size of the wall."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Agility",
+                    "Category": "Dash",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 3,
+                            "Desc": "Move quickly in a designated direction, increasing Mew's movement speed by 5% for 2s. Holds 2 uses in reserve and cannot be used more than once every 2s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increases the distance Mew moves in the designated direction."
                         }
                     ]
                 }
@@ -100,13 +112,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Mystical Mirage",
+            "Category": "Area",
+            "Cooldown": 123,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 8,
+                    "Desc": "Mew floats in the air for 1s, becoming invincible for 6s or until using an attack or move and creating a field around their location for 5s. This field travels with Mew. Mew and all allies within the area become stealthed for 4s. After the field expires, this move deals damage to enemies within the area-of-effect."
                 }
             ]
         }

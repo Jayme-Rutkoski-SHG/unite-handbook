@@ -4,10 +4,12 @@
     "Role": "Speedster",
     "Style": "Melee",
     "Difficulty": "Expert",
-    "Ability": {
-        "Name": "Super Luck",
-        "Desc": "Increases Critical-Hit rate by 15%."
-    },
+    "Ability": [
+        {
+            "Name": "Super Luck",
+            "Desc": "Increases Critical-Hit rate by 15%."
+        }
+    ],
     "Moves": [
         {
             "Name": "Feint",
@@ -96,17 +98,19 @@
             ]
         }
     ],
-    "Unite": {
-        "Name": "Midnight Slash",
-        "Category": "Area",
-        "Cooldown": 134,
-        "LevelDetails": [
-            {
-                "Level": 9,
-                "Desc": "Unleash a flurry of 5 slashes in front of Absol and become untargetable for 1.15s. This move ends by unleashing powerful blades of energy, shoving enemies and dealing damage up to 4 times at melee range and down to 1 time at maximum range. Only the first ending hit connecting with an enemy does full damage, the others, deal 30% damage to the same target."
-            }
-        ]
-    },
+    "Unite": [
+        {
+            "Name": "Midnight Slash",
+            "Category": "Area",
+            "Cooldown": 134,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Unleash a flurry of 5 slashes in front of Absol and become untargetable for 1.15s. This move ends by unleashing powerful blades of energy, shoving enemies and dealing damage up to 4 times at melee range and down to 1 time at maximum range. Only the first ending hit connecting with an enemy does full damage, the others, deal 30% damage to the same target."
+                }
+            ]
+        }
+    ],
     "Stats": [
         {
             "Level": 1,

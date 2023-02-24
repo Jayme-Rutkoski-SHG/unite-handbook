@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Comfey",
+    "AttackStyle": "Special",
+    "Role": "Supporter",
+    "Style": "Ranged",
+    "Difficulty": "Novice",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Triage",
+            "Desc": "Comfey gains one flower every 1.5 seconds. Comfey gains four flowers when entering tall grass on its own. This has an internal cooldown of 5s. Comfey can have a maximum of eight flowers. Also, Comfey moves 25% faster when near ally Pokémon that are at 50% remaining HP or less. Comfey can attach itself to an ally Pokémon when it uses Synthesis, Floral Healing, or Sweet Kiss, applying a base shield of 15% of Comfey's Max HP./n/nWhile attached, Comfey is unable to be affected by attacks and gradually restores HP. When the ally Pokémon this Pokémon is attached to gains more Aeos energy than the maximum it can hold, Comfey takes the excess. When the ally Pokémon this Pokémon is attached to scores a goal, Comfey also scores with the same amount of energy. If Comfey uses a Move during the scoring charge up, Comfey's portion of the score will be cancelled. Comfey may Release from an ally Pokémon, then moves in the designated direction. If the ally Pokémon attached to was being granted a shield via Triage, the Triage portion of the shield is removed. After this Pokémon releases, its next basic attack becomes a boosted basic attack. Release direction is controlled by Right Stick on Switch and uses the D-Pad's down button on Switch or an individual button for Mobile."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Synthesis",
+            "Category": "Recovery",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "If unattached, attach to the designated ally Pokémon and grants it a shield (see Triage). If attached, heal the attached ally Pokémon. All flowers are consumed when used. The more flowers that are consumed, the more HP that is restored."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Floral Healing",
+                    "Category": "Recovery",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "If unattached, attach to the designated ally Pokémon and grant them a shield (See Triage). If attached, heal the attached ally Pokémon’s. All flowers are consumed when used. The more flowers that are consumed, the more HP that is restored. Any HP restored in excess of the ally Pokémon’s maximum is converted into a shield. This overheal shield can stack up to 4 times and lasts 5 seconds, refreshing duration on additional uses"
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Also increases the movement speed of the ally Pokémon attached to by 30% for 2s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Sweet Kiss",
+                    "Category": "Hindrance",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "If unattached, attach to the designated ally Pokémon and grant them a shield (see Triage). Additional shield is provided if attaching with Sweet Kiss. If attached to an ally Pokémon, charge power for up to 2.5s by holding and release to make opposing Pokémon in the area of effect infatuated. Charging beyond 2.5s cancels the move. Infatuated Pokémon approach Comfey against their will. The longer power is charged, the larger the area of effect reaching maximum charge after 1.5s. All flowers are consumed when using Sweet Kiss while attached. The more flowers that are consumed, the longer Pokémon are infatuated at a rate of 0.1s per flower with a minimum of 0.8s at 2 flowers (Note: It is impossible to use Sweet Kiss at less than 2 flowers due to cooldown cap and flower generation speed)."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Also increases the movement speed of the ally Pokémon attached to by 30% for 2s while charging."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Vine Whip",
+            "Category": "Ranged",
+            "Cooldown": 9.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Strikes out with whiplike vines in front of itself, dealing damage to Pokémon in the area of effect and slowing them by 40% for 2s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Magical Leaf",
+                    "Category": "Area",
+                    "Cooldown": 10.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Launch three curious, scattering leaves each second for 5s. The leaves target opposing Pokémon in the area of effect and deal damage when they hit. These leaves can even deal damage to Pokémon hiding in tall grass. When Pokémon are damaged they are marked for 4s refreshing on being hit with another leaf. If a Pokémon receives six marks, that Pokémon will be stunned for 0.75s. If this move is used when the user is attached to an ally Pokémon, its area of effect is increased. Magical Leaf prioritized enemy Pokémon."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increases the number of leaves launched each second to four."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Grass Knot",
+                    "Category": "Hindrance",
+                    "Cooldown": 6.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Unleashes vines in the designated direction, dealing damage to opposing Pokémon it hits and rooting them. This move can hit up to two opposing Pokémon. If it hits two opposing Pokémon that are within 75% of the full range, Grass Knot pulls the second Pokémon to the first’s location and deals additional damage to both."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increases this move’s area of effect."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Flowery Fields Forever",
+            "Category": "Area",
+            "Cooldown": 89,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 8,
+                    "Desc": "Creates a large area of tall grass around itself for 6s. Pokémon in this tall grass cannot be seen, just as with other tall grass on the map. If ally Pokémon enter this tall grass, they will continually heal every 0.5s. Comfey gains special flowers from this tall grass. Flowers from this grass grant access to an empowered Floral Healing and Sweet Kiss."
                 }
             ]
         }

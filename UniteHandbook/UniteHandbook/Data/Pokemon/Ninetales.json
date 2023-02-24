@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Ninetales",
+    "AttackStyle": "Special",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Snow Warning",
+            "Desc": "Causes snow to fall on an enemy, dealing damage to it and decreasing their movement speed by 30% for .75s. Boosted attacks, Snow Warning, and all moves (except Aurora Veil) sling snow; hitting the same target with snow 4 times will freeze them for 1s. This ability has an 8s cooldown."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Powder Snow",
+            "Category": "Area",
+            "Cooldown": 5.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Ninetales attacks with a chilly gust of powdery snow; dealing damage to enemies and slowing them by 50% for 1s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Avalanche",
+                    "Category": "Area",
+                    "Cooldown": 7.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Ninetales attacks with a gust of chilly ice toward the designated direction. The ice damages enemies and forms a wall that can't be walked through. After a short time, this wall melts and collapses; further damaging enemies in a radius around the wall."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Also decreases the movement speed of enemies by 50% for 1s when this move hits."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Dazzling Gleam",
+                    "Category": "Hindrance",
+                    "Cooldown": 7.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Ninetales attacks with a powerful cone of blinding light; damaging and stunning enemies hit for .8s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 11,
+                            "Desc": "Increased damage and stun duration to 1s."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Icy Wind",
+            "Category": "Ranged",
+            "Cooldown": 8.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Ninetales attacks with a gust of freezing air; damaging, shoving, and slowing enemies hit."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Blizzard",
+                    "Category": "Ranged",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Ninetales blasts twice in a line. The first blast penetrates walls and slows enemies. The second blast deals double damage, shoves enemies back, and if it hits a wall it creates a frost area at the impact location for 4s; dealing damage every 0.5s and slowing enemies in the area by 20% for 1s on each tick."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Increased damage."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Aurora Veil",
+                    "Category": "Buff",
+                    "Cooldown": 13.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Ninetales dashes a short distance and creates an aurora centered on their position for 5s; reducing damage received by Ninetales and allies within the veil by 30%, healing Ninetales with each boosted attack, and increasing Attack Speed by 15%. While Ninetales is inside the aurora, movement speed is increased by 10% and all auto attacks are boosted."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 13,
+                            "Desc": "Damage reduction increased to 35% and cooldown reduced by 2s."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Snow Globe",
+            "Category": "Area",
+            "Cooldown": 134,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 9,
+                    "Desc": "Attack with a chilly blast of snow and ice; dealing damage to enemies in the area of effect around Ninetales when it hits. Deals increased damage to enemies that are frozen."
                 }
             ]
         }

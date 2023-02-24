@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Blissey",
+    "AttackStyle": "Spec",
+    "Role": "Supporter",
+    "Style": "Melee",
+    "Difficulty": "Novice",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Natural Cure",
+            "Desc": "Every 6s Blissey will automatically cleanse themselves. Natural Cure will activate even if Blissey has no active debuffs."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Pound",
+            "Category": "Melee",
+            "Cooldown": 6.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Blissey pounds in a designated direction damaging and slowing enemies hit by 40% for 2s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Egg Bomb",
+                    "Category": "Ranged",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Blissey hurls an egg at a location which explodes; damaging and throwing enemies in the radius for .8s. Holds 2 uses in reserve and cannot be used more than once every 2s.\n\nWhen learning Soft-Boiled and Egg Bomb, gain 2 additional charges for Soft-Boiled. Charges are shared between both moves. Base cooldown becomes 5s for both moves and time between using the same move remains a 2s cooldown."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Also slows enemies by 40% for 2s after they're thrown."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Helping Hand",
+                    "Category": "Buff",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Blissey greatly improves movement speed and auto attack speed for self and allies by 35% for 3s. During this duration, all of Blissey's auto attacks are boosted. After this bonus expires, Blissey loses any boosted attack that was granted."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Also increases auto attack damage for all those affected by 15% for 3s."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Heal Pulse",
+            "Category": "Recovery",
+            "Cooldown": 10.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Blissey continually restores HP as well as the HP of a designated ally for 2s, healing every 0.5s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Soft-Boiled",
+                    "Category": "Recovery",
+                    "Cooldown": 12.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Blissey throws an egg to an ally, healing Blissey and the designated ally. Additionally healing every 1s for 2s afterwards. Additional Soft Boiled uses before these 2s will overwrite the previous egg's additional healing over time. Holds 2 uses in reserve and cannot be used more than once every 2s.\n\nWhen learning Soft-Boiled and Egg Bomb, gain 2 additional charges for Soft-Boiled. Charges are shared between both moves. Base cooldown becomes 5s for both moves and time between using the same move remains a 2s cooldown."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Gain an additional charge."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Safeguard",
+                    "Category": "Buff",
+                    "Cooldown": 9.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Blissey grants both the targeted ally and themself a shield for 3s, purging hindrances and making both immune to hindrances until the shield is removed (3s shield duration)."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Shield value increased."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Bliss Assistance",
+            "Category": "Buff",
+            "Cooldown": 134,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 8,
+                    "Desc": "Blissey dashes to the designated ally to give it an egg, granting that ally a shield and increasing their Attack and Sp. Attack by 20% for 6s. Blissey also intercepts 50% of the damage received by that ally for 6s. While dashing, throw hit enemies into the air for .8s. When reaching the target ally, deal additional damage to all nearby enemies."
                 }
             ]
         }

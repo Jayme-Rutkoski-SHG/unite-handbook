@@ -1,97 +1,97 @@
 {
-    "Name": "",
-    "AttackStyle": "",
-    "Role": "",
-    "Style": "",
-    "Difficulty": "",
+    "Name": "Clefable",
+    "AttackStyle": "Special",
+    "Role": "Supporter",
+    "Style": "Melee",
+    "Difficulty": "Novice",
     "Ability": [
         {
-            "Name": "",
-            "Desc": ""
+            "Name": "Magic Guard",
+            "Desc": "This Pokémon receives a shield when restoring an ally Pokémon's HP. The strength of this shield is proportional to 50% of the amount of HP restored."
         }
     ],
     "Moves": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Heal Pulse",
+            "Category": "Recovery",
+            "Cooldown": 7.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Immediately restores HP to itself and nearby allies."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Moonlight",
+                    "Category": "Recovery",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Continually restores HP to Clefable and nearby allies for 3s at one tick per half second excluding activation at 0s. Clefable’s movement speed is increased by 20% while this move is active."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Widens this move’s area-of-effect and increases the duration of its effects by 1s."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Draining Kiss",
+                    "Category": "Recovery",
+                    "Cooldown": 5.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 4,
+                            "Desc": "Attacks nearby enemies with an energy-draining kiss. Each enemy hit by the kiss receives damage and releases an air kiss. These air kisses will travel to a nearby ally with the lowest HP and restore their HP. If no allies are near, the air kisses will return to Clefable and restore its HP for 80% of the damage dealt."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 10,
+                            "Desc": "Widens this move’s area-of-effect and increases the amount of HP restored to 100% of the damage dealt."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Disarming Voice",
+            "Category": "Area",
+            "Cooldown": 9.00,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 1,
+                    "Desc": "Let out a charming cry, dealing damage to nearby enemies and decreasing their movement speed by 40% for 2s."
                 }
             ],
             "Upgrades": [
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Gravity",
+                    "Category": "Hindrance",
+                    "Cooldown": 8.00,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Create a gravity zone centered on Clefable that persists for a set amount of time. Inside the gravity zone, auto attacks change and deal increased damage. Enemies in the gravity zone have their movement speed decreased by 15% stacking up to 3 times gaining a stack whenever a set amount of time passes. These enemies are also unable to use Dash moves. If an enemy attempts to enter the gravity zone with a dash move, the dash move is stopped and that enemy is left unable to act for 1s."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Widens this move’s area-of-effect and increases the duration of its effects."
                         }
                     ]
                 },
                 {
-                    "Name": "",
-                    "Category": "",
-                    "Cooldown": 0,
+                    "Name": "Follow Me",
+                    "Category": "Hindrance",
+                    "Cooldown": 7.50,
                     "LevelDetails": [
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 6,
+                            "Desc": "Clefable moves to the designated location while waving its finger receiving a 3s shield. Attention of enemies hit and enemies near the designated location are drawn. These drawn enemies are forced to approach the user and attack Clefable with their auto attacks."
                         },
                         {
-                            "Level": 0,
-                            "Desc": ""
+                            "Level": 12,
+                            "Desc": "Increases Clefable's Defense by 150 for 3s and Sp. Def by 100 for 3s when this move is used."
                         }
                     ]
                 }
@@ -100,13 +100,13 @@
     ],
     "Unite": [
         {
-            "Name": "",
-            "Category": "",
-            "Cooldown": 0,
+            "Name": "Wonder Wish",
+            "Category": "Recovery",
+            "Cooldown": 89,
             "LevelDetails": [
                 {
-                    "Level": 0,
-                    "Desc": ""
+                    "Level": 8,
+                    "Desc": "Clefable waggles their finger, restoring HP to allies in the area-of-effect. The lower an ally's HP is, the more HP this move restores to that ally. Afterward, Clefable gets a random move that can be performed by using the Unite Move again within 10s./n/nNote: Some random moves will activate immediately."
                 }
             ]
         }
