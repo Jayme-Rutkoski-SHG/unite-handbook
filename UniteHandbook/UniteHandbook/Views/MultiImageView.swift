@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-protocol MultiImageViewDelegate {
+protocol MultiImageViewDelegate: AnyObject {
     func imageSelected()
 }
 class MultiImageView: UIView {
     
-    var delegate: MultiImageViewDelegate?
+    weak var delegate: MultiImageViewDelegate?
     var images: [MultiImage] = [] {
         didSet {
             addImageViews()

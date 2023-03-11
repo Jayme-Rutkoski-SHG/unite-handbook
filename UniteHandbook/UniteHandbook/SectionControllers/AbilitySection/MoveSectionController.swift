@@ -7,7 +7,7 @@
 
 import IGListKit
 
-protocol MoveSectionControllerDelegate {
+protocol MoveSectionControllerDelegate: AnyObject {
     func didSelectMoveInfo(levelDetails: [LevelDetails])
     func showUpgrades(forMove: MoveDetails, upgrades: [MoveDetails], shouldAddUpgrades: Bool)
 }
@@ -15,7 +15,7 @@ protocol MoveSectionControllerDelegate {
 class MoveSectionController: ListSectionController {
     
     private var model: MoveDetails? = nil
-    private var delegate: MoveSectionControllerDelegate?
+    private weak var delegate: MoveSectionControllerDelegate?
     
     convenience init(delegate: MoveSectionControllerDelegate) {
         self.init()

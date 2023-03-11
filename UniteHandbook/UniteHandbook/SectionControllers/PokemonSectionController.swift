@@ -7,14 +7,14 @@
 
 import IGListKit
 
-protocol PokemonSectionControllerDelegate {
+protocol PokemonSectionControllerDelegate: AnyObject {
     func didSelectPokemon(pokemon: Pokemon)
 }
 
 class PokemonSectionController: ListSectionController {
     
     private var model: Pokemon? = nil
-    private var delegate: PokemonSectionControllerDelegate?
+    private weak var delegate: PokemonSectionControllerDelegate?
     
     convenience init(delegate: PokemonSectionControllerDelegate) {
         self.init()

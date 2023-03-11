@@ -268,10 +268,13 @@ class PokemonDetailsViewController: UIViewController {
     
     private func createSections() {
         // Abilities
-        self.abilitiesArray.append(AbilityDetails(
-            imageName: "\(self.pokemon.name.lowercased())_\(self.pokemon.ability.name.replacingOccurrences(of: " ", with: "").lowercased()).png",
-            name: self.pokemon.ability.name,
-            desc: self.pokemon.ability.desc))
+        for ability in self.pokemon.ability {
+            self.abilitiesArray.append(AbilityDetails(
+                imageName: "\(self.pokemon.name.lowercased())_\(ability.name.replacingOccurrences(of: " ", with: "").lowercased()).png",
+                name: ability.name,
+                desc: ability.desc))
+        }
+        
         
         if let moves = convertMovesToMoveDetailsArray(moves: self.pokemon.moves) {
             var count = 0
@@ -283,13 +286,16 @@ class PokemonDetailsViewController: UIViewController {
         }
         
         self.abilitiesArray.append(HeaderDivider(title: "Unite Move"))
-        self.abilitiesArray.append(MoveDetails(
-            imageName: "\(self.pokemon.name.lowercased())_\(self.pokemon.unite.name.replacingOccurrences(of: " ", with: "").lowercased()).png",
-            name: self.pokemon.unite.name,
-            category: self.pokemon.unite.category,
-            cooldown: self.pokemon.unite.cooldown,
-            levelDetails: self.pokemon.unite.levelDetails,
-            upgrades: nil))
+        for unite in self.pokemon.unite {
+            self.abilitiesArray.append(MoveDetails(
+                imageName: "\(self.pokemon.name.lowercased())_\(unite.name.replacingOccurrences(of: " ", with: "").lowercased()).png",
+                name: unite.name,
+                category: unite.category,
+                cooldown: unite.cooldown,
+                levelDetails: unite.levelDetails,
+                upgrades: nil))
+        }
+        
         
         // Builds
         let builds = convertBuildsToBuildMovesArray(builds: self.pokemon.presetBuilds)

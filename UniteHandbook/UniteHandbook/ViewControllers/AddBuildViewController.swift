@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-protocol AddBuildDelegate {
+protocol AddBuildDelegate: AnyObject {
     func addBuild(pokemonName: String, build: Build)
 }
 class AddBuildViewController: UIViewController {
@@ -19,7 +19,7 @@ class AddBuildViewController: UIViewController {
     private var heldItems: [HeldItem] = [HeldItem]()
     private var battleItems: [BattleItem] = [BattleItem]()
     private var currentBuild: Build = Build()
-    private var delegate: AddBuildDelegate?
+    private weak var delegate: AddBuildDelegate?
     
     private lazy var buttonClose: UIButton = {
         let button = UIButton(type: .custom)
