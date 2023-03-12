@@ -1,14 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "lucario@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "lucario@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "lucario@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

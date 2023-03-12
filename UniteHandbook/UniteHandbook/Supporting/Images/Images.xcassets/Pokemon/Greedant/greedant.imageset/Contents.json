@@ -1,14 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "greedant@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "greedant@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "greedant@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,14 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "dodrio@1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "dodrio@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "dodrio@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
