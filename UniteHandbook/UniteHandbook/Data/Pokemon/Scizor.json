@@ -46,9 +46,7 @@
             "LevelDetails": [
                 {
                     "Level": 1,
-                    "Desc": "Dashes in designated direction dealing damage to enemies hit along the way.
-                    
-"
+                    "Desc": "Dashes in designated direction dealing damage to enemies hit along the way."
                 }
             ],
             "Upgrades": [
@@ -107,7 +105,7 @@
             "SpAttack": 0,
             "SpDefense": 0,
             "CritRate": 0.00,
-            "CDR": 0.00
+            "CDR": 0.00,
             "Lifesteal": 0.00,
             "AtkSpd": 0.00,
             "Speed": 0

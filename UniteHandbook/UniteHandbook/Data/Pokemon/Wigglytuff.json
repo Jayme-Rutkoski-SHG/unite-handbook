@@ -87,7 +87,7 @@
                     "LevelDetails": [
                         {
                             "Level": 4,
-                            "Desc": "Wigglytuff begins singing, slowing enemies around them by 10% for 2s per "Note" and increasing Wigglytuff's movement speed by 30% for 2.5s. Enemies that stay inside the song's effect will be put to sleep (when reaching 4 Notes) for 1.5s, and have their Defense and Special Defense reduced by 25% for 1.25s."
+                            "Desc": "Wigglytuff begins singing, slowing enemies around them by 10% for 2s per \"Note\" and increasing Wigglytuff's movement speed by 30% for 2.5s. Enemies that stay inside the song's effect will be put to sleep (when reaching 4 Notes) for 1.5s, and have their Defense and Special Defense reduced by 25% for 1.25s."
                         },
                         {
                             "Level": 12,
@@ -120,7 +120,7 @@
             "SpAttack": 0,
             "SpDefense": 0,
             "CritRate": 0.00,
-            "CDR": 0.00
+            "CDR": 0.00,
             "Lifesteal": 0.00,
             "AtkSpd": 0.00,
             "Speed": 0

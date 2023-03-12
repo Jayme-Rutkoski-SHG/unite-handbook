@@ -29,7 +29,7 @@
                     "LevelDetails": [
                         {
                             "Level": 5,
-                            "Desc": "Duraludon ruptures the ground in the designated direction; dealing damage to enemies in the area of effect and decreasing their movement speed for a short time. Afterward, go into "Cannon Mode" rooting Duraludon for 6s or if a basic attack is not made for 2.5s. While in Cannon Mode, basic attacks have longer range, deal increased damage, and deal splash damage. Metal Claw, Stealth Rock, Dragon Tail, and boosted attacks can be used while in this mode and boosted attacks decrease the movement speed of enemies hit for a short time and also pierce."
+                            "Desc": "Duraludon ruptures the ground in the designated direction; dealing damage to enemies in the area of effect and decreasing their movement speed for a short time. Afterward, go into \"Cannon Mode\" rooting Duraludon for 6s or if a basic attack is not made for 2.5s. While in Cannon Mode, basic attacks have longer range, deal increased damage, and deal splash damage. Metal Claw, Stealth Rock, Dragon Tail, and boosted attacks can be used while in this mode and boosted attacks decrease the movement speed of enemies hit for a short time and also pierce."
                         },
                         {
                             "Level": 11,
@@ -120,7 +120,7 @@
             "SpAttack": 0,
             "SpDefense": 0,
             "CritRate": 0.00,
-            "CDR": 0.00
+            "CDR": 0.00,
             "Lifesteal": 0.00,
             "AtkSpd": 0.00,
             "Speed": 0

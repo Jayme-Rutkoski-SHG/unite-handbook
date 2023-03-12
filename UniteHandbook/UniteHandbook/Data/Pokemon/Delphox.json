@@ -105,7 +105,7 @@
             "Cooldown": 84,
             "LevelDetails": [
                 {
-                    "Level": 89
+                    "Level": 9,
                     "Desc": "Deals damage-over-time to enemies in the designated area for 8s. Enemies that are hit have 50% decreased movement speed and 50% reduced HP recovery effects for 1.75s. Recovery effects are weakened within the zone and cannot be cleansed while in the zone. Leaving the zone will have the weakened HP recovery effects linger for 1.75s and may be cleansed after leaving the zone. 8s duration (ticks at 0.5s intervals)."
                 }
             ]
@@ -120,7 +120,7 @@
             "SpAttack": 0,
             "SpDefense": 0,
             "CritRate": 0.00,
-            "CDR": 0.00
+            "CDR": 0.00,
             "Lifesteal": 0.00,
             "AtkSpd": 0.00,
             "Speed": 0

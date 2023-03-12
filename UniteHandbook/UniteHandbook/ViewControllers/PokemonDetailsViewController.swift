@@ -55,6 +55,15 @@ class PokemonDetailsViewController: UIViewController {
         return label
     }()
     
+    private var stackViewInformation: UIStackView = {
+        let stackView = UIStackView(frame: .zero)
+        stackView.spacing = 5
+        stackView.axis = .vertical
+        stackView.alignment = .trailing
+        
+        return stackView
+    }()
+    
     private var labelAttackerStyle: UIButton = {
         let button = UIButton(frame: .zero)
         button.titleLabel?.textAlignment = .left
@@ -186,7 +195,8 @@ class PokemonDetailsViewController: UIViewController {
     
     private func setup() {
         self.imageView.image = UIImage(named: self.pokemon.name.lowercased())
-        self.labelName.text = self.pokemon.name
+        self.title = self.pokemon.name
+        //self.labelName.text = self.pokemon.name
         self.labelAttackerStyle.setTitle(self.pokemon.attackStyle.lowercased() == "attack" ? "Physical Attacker" : "Special Attacker", for: .normal)
         self.labelAttackerStyle.backgroundColor = self.pokemon.attackStyle.lowercased() == "attack" ? UIColor(hex: 0xF9CB53) : UIColor(hex: 0xC974DB)
         self.labelRole.setTitle(self.pokemon.role, for: .normal)
@@ -204,49 +214,51 @@ class PokemonDetailsViewController: UIViewController {
             make.bottom.equalTo(self.view.snp.bottom)
         }
         
-        self.viewContainer.addSubview(self.imageView)
-        self.imageView.snp.makeConstraints { make in
-            make.top.equalTo(self.viewContainer.snp.top)
-            make.left.equalTo(self.viewContainer.snp.left)
-            make.height.equalTo(115)
-            make.width.equalTo(115)
-        }
-        self.viewContainer.addSubview(self.labelName)
+        
+        /*self.viewContainer.addSubview(self.labelName)
         self.labelName.snp.makeConstraints { make in
             make.top.equalTo(self.viewContainer.snp.top)
             make.left.equalTo(self.imageView.snp.right).offset(12)
-        }
+        }*/
         
-        self.viewContainer.addSubview(self.labelAttackerStyle)
-        self.labelAttackerStyle.snp.makeConstraints { make in
+        self.viewContainer.addSubview(self.stackViewInformation)
+        self.stackViewInformation.snp.makeConstraints { make in
             make.top.equalTo(self.viewContainer.snp.top)
             make.right.equalTo(self.viewContainer.snp.right)
+        }
+        
+        self.stackViewInformation.addArrangedSubview(self.labelAttackerStyle)
+        self.labelAttackerStyle.snp.makeConstraints { make in
             make.height.equalTo(25)
         }
-        self.viewContainer.addSubview(self.labelRole)
+        self.stackViewInformation.addArrangedSubview(self.labelRole)
         self.labelRole.snp.makeConstraints { make in
-            make.top.equalTo(self.labelAttackerStyle.snp.bottom).offset(5)
-            make.right.equalTo(self.viewContainer.snp.right)
             make.height.equalTo(25)
         }
-        self.viewContainer.addSubview(self.labelStyle)
+        self.stackViewInformation.addArrangedSubview(self.labelStyle)
         self.labelStyle.snp.makeConstraints { make in
-            make.top.equalTo(self.labelRole.snp.bottom).offset(5)
-            make.right.equalTo(self.viewContainer.snp.right)
             make.height.equalTo(25)
         }
-        self.viewContainer.addSubview(self.labelDifficulty)
+        self.stackViewInformation.addArrangedSubview(self.labelDifficulty)
         self.labelDifficulty.snp.makeConstraints { make in
-            make.top.equalTo(self.labelStyle.snp.bottom).offset(5)
-            make.right.equalTo(self.viewContainer.snp.right)
             make.height.equalTo(25)
         }
         
         self.viewContainer.addSubview(self.segmentedControl)
         self.segmentedControl.snp.makeConstraints { make in
-            make.top.equalTo(self.imageView.snp.bottom).offset(10)
+            make.top.equalTo(self.stackViewInformation.snp.bottom).offset(10)
             make.left.equalTo(self.viewContainer.snp.left)
             make.right.equalTo(self.viewContainer.snp.right)
+        }
+        
+        self.viewContainer.addSubview(self.imageView)
+        self.imageView.snp.makeConstraints { make in
+            make.top.equalTo(self.viewContainer.snp.top)
+            make.left.equalTo(self.viewContainer.snp.left)
+            make.bottom.equalTo(self.segmentedControl.snp.top).offset(-10)
+            make.width.equalTo(self.imageView.snp.height)
+            //make.height.equalTo(155)
+            //make.width.equalTo(155)
         }
         
         self.viewContainer.addSubview(self.collectionView)
