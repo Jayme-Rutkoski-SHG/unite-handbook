@@ -114,9 +114,9 @@
     "Stats": [
         {
             "Level": 1,
-            "HP": 0,
-            "Attack": 0,
-            "Defense": 0,
+            "HP": 3300,
+            "Attack": 134,
+            "Defense": 35,
             "SpAttack": 0,
             "SpDefense": 0,
             "CritRate": 0.00,
