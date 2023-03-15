@@ -117,7 +117,7 @@
     ],
     "Stats": [
         {
-            "Level": 0,
+            "Level": 1,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -130,7 +130,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 2,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -156,7 +156,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 4,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -169,7 +169,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 5,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -182,7 +182,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 6,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -195,7 +195,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 7,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -208,7 +208,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 8,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -221,7 +221,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 9,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -234,7 +234,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 10,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -247,7 +247,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 11,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -260,7 +260,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 12,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -273,7 +273,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 13,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -286,7 +286,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 14,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
@@ -299,7 +299,7 @@
             "Speed": 0
         },
         {
-            "Level": 0,
+            "Level": 15,
             "HP": 0,
             "Attack": 0,
             "Defense": 0,
