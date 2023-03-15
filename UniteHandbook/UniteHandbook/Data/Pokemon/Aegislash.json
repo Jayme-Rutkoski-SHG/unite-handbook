@@ -126,7 +126,7 @@
             "CritRate": 0.00,
             "CDR": 0.00,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.15,
             "Speed": 0
         },
         {
@@ -139,7 +139,7 @@
             "CritRate": 0.00,
             "CDR": 0.00,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.1598,
             "Speed": 0
         },
         {
@@ -152,7 +152,7 @@
             "CritRate": 0.00,
             "CDR": 0.00,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.1716,
             "Speed": 0
         },
         {
@@ -165,7 +165,7 @@
             "CritRate": 0.00,
             "CDR": 0.00,
             "Lifesteal":0.000,
-            "AtkSpd": 0.000,
+            "AtkSpd": 0.1857,
             "Speed": 0
         },
         {
@@ -178,7 +178,7 @@
             "CritRate": 0.05,
             "CDR": 0.10,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.2177,
             "Speed": 0
         },
         {
@@ -191,7 +191,7 @@
             "CritRate": 0.05,
             "CDR": 0.10,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.2382,
             "Speed": 0
         },
         {
@@ -204,7 +204,7 @@
             "CritRate": 0.05,
             "CDR": 0.10,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.2925,
             "Speed": 0
         },
         {
@@ -217,7 +217,7 @@
             "CritRate": 0.05,
             "CDR": 0.10,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.3518,
             "Speed": 0
         },
         {
@@ -230,7 +230,7 @@
             "CritRate": 0.10,
             "CDR": 0.20,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.357,
             "Speed": 0
         },
         {
@@ -243,7 +243,7 @@
             "CritRate": 0.10,
             "CDR": 0.20,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.3992,
             "Speed": 0
         },
         {
@@ -256,7 +256,7 @@
             "CritRate": 0.10,
             "CDR": 0.20,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.4499,
             "Speed": 0
         },
         {
@@ -269,7 +269,7 @@
             "CritRate": 0.10,
             "CDR": 0.20,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.4499,
             "Speed": 0
         },
         {
@@ -282,7 +282,7 @@
             "CritRate": 0.10,
             "CDR": 0.20,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.4499,
             "Speed": 0
         },
         {
@@ -295,7 +295,7 @@
             "CritRate": 0.10,
             "CDR": 0.20,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.4499,
             "Speed": 0
         },
         {
@@ -308,7 +308,7 @@
             "CritRate": 0.10,
             "CDR": 0.20,
             "Lifesteal": 0.00,
-            "AtkSpd": 0.00,
+            "AtkSpd": 0.4499,
             "Speed": 0
         }
     ],
