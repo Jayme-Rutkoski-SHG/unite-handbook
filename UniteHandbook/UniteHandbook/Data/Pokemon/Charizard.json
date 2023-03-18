@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Ranged DPS",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Flame Burst",
+                "Fire Spin",
+                "Flamethrower",
+                "Fire Blast"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "High-Mobility",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Flame Burst",
+                "Fire Spin",
+                "Flamethrower",
+                "Flare Blitz"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Focus Band",
+                "Attack Weight"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Seismic Slam",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Flame Burst",
+                "Fire Spin",
+                "Fire Punch",
+                "Flare Blitz"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Energy Amplifier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Speed"
         }
     ]
 }

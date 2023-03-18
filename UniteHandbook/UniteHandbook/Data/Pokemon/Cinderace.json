@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Carry",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Ember",
+                "Low Sweep",
+                "Blaze Kick",
+                "Flame Charge"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Scope Lens"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "Pyro Ball",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Ember",
+                "Low Sweep",
+                "Pyro Ball",
+                "Feint"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Drain Crown",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "Damage Stack",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Ember",
+                "Low Sweep",
+                "Blaze Kick",
+                "Flame Charge"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Attack Weight",
+                "Energy Amplifier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Rapid-Fire Scarf",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }
