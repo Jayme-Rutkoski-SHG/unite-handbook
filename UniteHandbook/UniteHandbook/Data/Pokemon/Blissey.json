@@ -310,55 +310,38 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Double Egg",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Pound",
+                "Heal Pulse",
+                "Soft-Boiled",
+                "Egg Bomb"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Exp Share",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Rescue Hood",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Slow Smoke"
         },
         {
-            "Name": "",
+            "Name": "Full Support",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Pound",
+                "Heal Pulse",
+                "Safeguard",
+                "Helping Hand"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Exp Share",
+                "Rescue Hood",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
-        },
-        {
-            "Name": "",
-            "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
-            ],
-            "HeldItems": [
-                "",
-                "",
-                ""
-            ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Potion"
         }
     ]
 }

@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "High Burst",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Tackle",
+                "Bubble",
+                "Aqua Tail",
+                "Water Pulse"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Scope Lens",
+                "Razor Claw"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "Full Offense",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Tackle",
+                "Bubble",
+                "Aqua Tail",
+                "Water Pulse"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Weakness Policy",
+                "Energy Amplifier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "Whirlpool",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Tackle",
+                "Bubble",
+                "Whirlpool",
+                "Water Pulse"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Weakness Policy",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Full Heal"
         }
     ]
 }

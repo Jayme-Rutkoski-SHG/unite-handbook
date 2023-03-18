@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Rapid Spin",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Water Gun",
+                "Skull Bash",
+                "Water Spout",
+                "Rapid Spin"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Sp Atk Specs",
+                "Slick Spoon",
+                "Energy Amplifier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Choice Specs",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Slow Smoke"
         },
         {
-            "Name": "",
+            "Name": "Disruptor",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Water Gun",
+                "Skull Bash",
+                "Hydro Pump",
+                "Surf"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Choice Specs",
+                "Slick Spoon",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Slow Smoke"
         },
         {
-            "Name": "",
+            "Name": "Tank",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Water Gun",
+                "Skull Bash",
+                "Water Spout",
+                "Rapid Spin"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Slick Spoon",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }

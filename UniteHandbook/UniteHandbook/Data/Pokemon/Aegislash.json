@@ -314,55 +314,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Bruiser",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Shadow Sneak",
+                "Iron Defense",
+                "Sacred Sword",
+                "Wide Guard"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Razor Claw",
+                "Weakness Policy",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Critical-Hit",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Shadow Sneak",
+                "Iron Defense",
+                "Shadow Claw",
+                "Wide Guard"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Razor Claw"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "Full Stack",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Shadow Sneak",
+                "Iron Defense",
+                "Sacred Sword",
+                "Iron Head"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Aeos Cookie",
+                "Score Shield"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }

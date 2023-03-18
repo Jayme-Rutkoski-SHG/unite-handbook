@@ -310,7 +310,24 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "Night Punch",
+            "Name": "Full Offense",
+            "MoveOrders": [
+                "Slash",
+                "Feint",
+                "Night Slash",
+                "Psycho Cut"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Scope Lens",
+                "Razor Claw"
+            ],
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
+        },
+        {
+            "Name": "Blink-Striker",
             "MoveOrders": [
                 "Slash",
                 "Feint",
@@ -320,31 +337,14 @@
             "HeldItems": [
                 "Razor Claw",
                 "Scope Lens",
-                "Attack Weight"
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "Energy Amplifier",
-            "BattleItem": "Full Heal",
-            "AltBattleItem": "Eject Button"
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "Pursuit Punch",
-            "MoveOrders": [
-                "Slash",
-                "Feint",
-                "Pursuit",
-                "Sucker Punch"
-            ],
-            "HeldItems": [
-                "Razor Claw",
-                "Scope Lens",
-                "Attack Weight"
-            ],
-            "AltHeldItem": "Energy Amplifier",
-            "BattleItem": "Full Heal",
-            "AltBattleItem": "Eject Button"
-        },
-        {
-            "Name": "Night Cut",
+            "Name": "Attack Stack",
             "MoveOrders": [
                 "Slash",
                 "Feint",
@@ -356,9 +356,9 @@
                 "Scope Lens",
                 "Attack Weight"
             ],
-            "AltHeldItem": "Energy Amplifier",
-            "BattleItem": "Full Heal",
-            "AltBattleItem": "Eject Button"
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         }
     ]
 }

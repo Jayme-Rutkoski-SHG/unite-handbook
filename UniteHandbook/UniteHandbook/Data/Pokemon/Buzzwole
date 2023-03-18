@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Jungle-Brawler",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fell Stinger",
+                "Mega Punch",
+                "Super Power",
+                "Lunge"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Weakness Policy"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Grappler",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fell Stinger",
+                "Mega Punch",
+                "Super Power",
+                "Smack Down"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Attack Weight",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "Sustain",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fell Stinger",
+                "Mega Punch",
+                "Leech Life",
+                "Lunge"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Weakness Policy",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }
