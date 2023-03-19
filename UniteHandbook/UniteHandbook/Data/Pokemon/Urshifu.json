@@ -325,55 +325,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Single Strike",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Rock Smash",
+                "Headbutt",
+                "Wicked Blow",
+                "Throat Chop"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Razor Claw",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Drain Crown",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "Rapid Strike",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Rock Smash",
+                "Headbutt",
+                "Surging Strikes",
+                "Liquidation"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Weakness Policy",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Rapid-Fire Scarf",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "Full Offense",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Rock Smash",
+                "Headbutt",
+                "Wicked Blow",
+                "Throat Chop"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Weakness Policy",
+                "Energy Amplifier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Full Heal"
         }
     ]
 }

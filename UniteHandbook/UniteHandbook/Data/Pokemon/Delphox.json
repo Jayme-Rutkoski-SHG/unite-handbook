@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Flame Charge",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Ember",
+                "Will-o-Wisp",
+                "Mystical Fire",
+                "Flame Charge"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "Disabler",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Ember",
+                "Will-o-Wisp",
+                "Mystical Fire",
+                "Fire Spin"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Choice Specs",
+                "Slick Spoon",
+                "Energy Amplifier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "AoE",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Ember",
+                "Will-o-Wisp",
+                "Fire Blast",
+                "Fire Spin"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Choice Specs",
+                "Wise Glasses",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }

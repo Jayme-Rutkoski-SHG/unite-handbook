@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Boosted Attack",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Powder Snow",
+                "Icy Wind",
+                "Dazzling Gleam",
+                "Aurora Veil"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Choice Specs",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Freeze-Burst",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Powder Snow",
+                "Icy Wind",
+                "Avalanche",
+                "Blizzard"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Support",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Powder Snow",
+                "Icy Wind",
+                "Dazzling Gleam",
+                "Aurora Veil"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Buddy Barrier",
+                "Exp Share",
+                "Shell Bell"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Full Heal"
         }
     ]
 }

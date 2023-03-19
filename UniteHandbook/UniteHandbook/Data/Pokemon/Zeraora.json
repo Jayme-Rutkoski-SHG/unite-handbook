@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Discharge AoE",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Slash",
+                "Agility",
+                "Volt Switch",
+                "Discharge"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Weakness Policy",
+                "Muscle Band",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Fluffy Tail"
         },
         {
-            "Name": "",
+            "Name": "Single Target Burst",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Slash",
+                "Agility",
+                "Spark",
+                "Wild Charge"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Full Damage",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Slash",
+                "Agility",
+                "Spark",
+                "Discharge"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Muscle Band",
+                "Razor Claw"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
         }
     ]
 }

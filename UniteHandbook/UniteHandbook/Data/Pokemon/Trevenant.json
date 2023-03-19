@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Displacer",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Will-o-Wisp",
+                "Branch Poke",
+                "Curse",
+                "Horn Leech"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Weakness Policy",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Rocky Helmet",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Slow Smoke"
         },
         {
-            "Name": "",
+            "Name": "Crowd Control",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Will-o-Wisp",
+                "Branch Poke",
+                "Wood Hammer",
+                "Horn Leech"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Rocky Helmet,
+            "BattleItem": "Slow Smoke",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Debilitator Tank",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Will-o-Wisp",
+                "Branch Poke",
+                "Curse",
+                "Pain Split"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Score Shield",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Slow Smoke"
         }
     ]
 }

@@ -310,55 +310,38 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Healer",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Vine Whip",
+                "Synthesis",
+                "Floral Healing",
+                "Magical Leaf"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Exp Share",
+                "Rescue Hood",
+                "Wise Glasses"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Slow Smoke",
+            "AltBattleItem": "Fluffy Tail"
         },
         {
-            "Name": "",
+            "Name": "Disabler",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Vine Whip",
+                "Synthesis",
+                "Sweet Kiss",
+                "Grass Knot"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Exp Share",
+                "Slick Spoon",
+                "Wise Glasses"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
-        },
-        {
-            "Name": "",
-            "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
-            ],
-            "HeldItems": [
-                "",
-                "",
-                ""
-            ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Slow Smoke",
+            "AltBattleItem": "Fluffy Tail"
         }
     ]
 }

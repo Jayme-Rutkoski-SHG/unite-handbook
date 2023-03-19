@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Brawler",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Karate Chop",
+                "Bulk Up",
+                "Close Combat",
+                "Dynamic Punch"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Focus Band",
+                "Weakness Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "Potion",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Initiator",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Karate Chop",
+                "Bulk Up",
+                "Close Combat",
+                "Submission"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Weakness Policy",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Critical-Hit",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Karate Chop",
+                "Bulk Up",
+                "Cross Chop",
+                "Submission"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Scope Lens",
+                "Razor Claw",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         }
     ]
 }

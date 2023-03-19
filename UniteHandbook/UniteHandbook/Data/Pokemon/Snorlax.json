@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Frontline",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Tackle",
+                "Rest",
+                "Heavy Slam",
+                "Block"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Focus Band",
+                "Buddy Barrier",
+                "Weakness Policy"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Potion"
         },
         {
-            "Name": "",
+            "Name": "Disabler",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Tackle",
+                "Rest",
+                "Heavy Slam",
+                "Yawn"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Focus Band",
+                "Energy Amplifier",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Potion"
         },
         {
-            "Name": "",
+            "Name": "Offense",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Tackle",
+                "Rest",
+                "Flail",
+                "Yawn"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Focus Band",
+                "Scope Lens"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Slow Smoke",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }

@@ -314,55 +314,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Icicle Spear",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Swift",
+                "Tail Whip",
+                "Icicle Spear",
+                "Ice Shard"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Slick Spoon",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Icy Wind",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Swift",
+                "Tail Whip",
+                "Icy Wind",
+                "Freeze Dry"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Choice Specs",
+                "Slick Spoon",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Sp Atk Specs",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Full Offense",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Swift",
+                "Tail Whip",
+                "Icy Wind",
+                "Freeze Dry"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
         }
     ]
 }

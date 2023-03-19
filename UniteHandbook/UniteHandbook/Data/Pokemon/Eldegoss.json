@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Healer",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Leafage",
+                "Synthesis",
+                "Pollen Puff",
+                "Cotton Guard"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Exp Share",
+                "Rescue Hood",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Utility",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Leafage",
+                "Synthesis",
+                "Leaf Tornado",
+                "Cotton Guard"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Rescue Hood",
+                "Exp Share"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Offense",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Leafage",
+                "Synthesis",
+                "Leaf Tornado",
+                "Cotton Spore"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
         }
     ]
 }

@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "High Mobility",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Meteor Mash",
+                "Quick Attack",
+                "Extreme Speed",
+                "Bone Rush"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Attack Weight",
+                "Weakness Policy"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Punch Burst",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Meteor Mash",
+                "Quick Attack",
+                "Power-Up Punch",
+                "Close Combat"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Attack Weight",
+                "Razor Claw"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "Damage Amplification",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Meteor Mash",
+                "Quick Attack",
+                "Power-Up Punch",
+                "Close Combat"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Energy Amplifier",
+                "Weakness Policy"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Razor Claw",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Slow Smoke"
         }
     ]
 }

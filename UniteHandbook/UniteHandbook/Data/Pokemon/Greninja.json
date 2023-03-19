@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Carry",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Bubble",
+                "Substitute",
+                "Double Team",
+                "Water Shuriken"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Assassin",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Bubble",
+                "Substitute",
+                "Smokescreen",
+                "Surf"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "Balanced",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Bubble",
+                "Substitute",
+                "Smokescreen",
+                "Water Shuriken"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         }
     ]
 }

@@ -310,55 +310,38 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Utility",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Astonish",
+                "Confusion",
+                "Phantom Force",
+                "Hyperspace Hole"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Exp Share",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Support",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Astonish",
+                "Confusion",
+                "Shadow Ball",
+                "Trick"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Exp Share",
+                "Shell Bell",
+                "Energy Amplifier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
-        },
-        {
-            "Name": "",
-            "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
-            ],
-            "HeldItems": [
-                "",
-                "",
-                ""
-            ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Rescue Hood",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }

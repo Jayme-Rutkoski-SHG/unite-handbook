@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Tank",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Ice Shard",
+                "Tackle",
+                "Icicle Crash",
+                "High Horsepower"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Score Shield",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "Potion"
         },
         {
-            "Name": "",
+            "Name": "Initiator",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Ice Shard",
+                "Tackle",
+                "Icicle Crash",
+                "Earthquake"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Weakness Policy",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "Disabler",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Ice Shard",
+                "Tackle",
+                "Ice Fang",
+                "High Horsepower"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
         }
     ]
 }

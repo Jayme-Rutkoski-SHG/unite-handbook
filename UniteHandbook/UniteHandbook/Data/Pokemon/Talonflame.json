@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Burst",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Peck",
+                "Aerobatics",
+                "Aerial Ace",
+                "Fly"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Razor Claw"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "Sniper",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Peck",
+                "Aerobatics",
+                "Aerial Ace",
+                "Brave Bird"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "High-Mobility",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Peck",
+                "Aerobatics",
+                "Flame Charge",
+                "Fly"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Razor Claw",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
         }
     ]
 }

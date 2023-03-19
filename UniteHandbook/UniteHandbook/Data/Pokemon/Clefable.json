@@ -310,55 +310,38 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Full Support",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Disarming Voice",
+                "Heal Pulse",
+                "Moonlight",
+                "Gravity"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Exp Share",
+                "Rescue Hood",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Potion"
         },
         {
-            "Name": "",
+            "Name": "Provoke",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Disarming Voice",
+                "Heal Pulse",
+                "Draining Kiss",
+                "Follow Me"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
-        },
-        {
-            "Name": "",
-            "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
-            ],
-            "HeldItems": [
-                "",
-                "",
-                ""
-            ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Sp Atk Specs",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Slow Smoke"
         }
     ]
 }

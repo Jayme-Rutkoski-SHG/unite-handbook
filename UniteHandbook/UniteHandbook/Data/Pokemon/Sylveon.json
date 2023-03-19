@@ -314,55 +314,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Sustain",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Swift",
+                "Baby-Doll Eyes",
+                "Mystical Fire",
+                "Draining Kiss"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Slick Spoon",
+            "BattleItem": "Potion",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Hyper Voice",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Swift",
+                "Baby-Doll Eyes",
+                "Hyper Voice",
+                "Calm Mind"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "CDR",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Swift",
+                "Baby-Doll Eyes",
+                "Hyper Voice",
+                "Calm Mind"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Shell Bell",
+                "Energy Amplifier",
+                "Wise Glasses"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Choice Specs",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }

@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "CDR",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Thunder Shock",
+                "Electroweb",
+                "Electro Ball",
+                "Thunderbolt"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Choice Specs",
+                "Shell Bell",
+                "Energy Amplifier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Disruptor",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Thunder Shock",
+                "Electroweb",
+                "Electro Ball",
+                "Volt Tackle"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Choice Specs",
+                "Wise Glasses",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Slick Spoon",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Artillery",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Thunder Shock",
+                "Electroweb",
+                "Thunder",
+                "Thunderbolt"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Shell Bell",
+                "Choice Specs",
+                "Wise Glasses"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         }
     ]
 }

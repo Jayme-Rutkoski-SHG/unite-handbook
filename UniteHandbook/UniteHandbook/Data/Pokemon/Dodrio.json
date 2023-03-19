@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Scoring",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Peck",
+                "Quick Attack",
+                "Tri Attack",
+                "Agility"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Float Stone",
+                "Aeos Cookie"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "Hit and Run",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Peck",
+                "Quick Attack",
+                "Tri Attack",
+                "Jump Kick"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Float Stone",
+                "Razor Claw"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "Drill Burst",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Peck",
+                "Quick Attack",
+                "Drill Peck",
+                "Jump Kick"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Float Stone",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Speed"
         }
     ]
 }

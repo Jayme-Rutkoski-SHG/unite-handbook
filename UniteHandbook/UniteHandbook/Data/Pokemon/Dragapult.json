@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Jungle",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Quick Attack",
+                "Astonish",
+                "Dragon Dance",
+                "Dragon Breath"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Scope Lens"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "High Offense",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Quick Attack",
+                "Astonish",
+                "Phantom Force",
+                "Shadow Ball"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Rapid-Fire Scarf",
+                "Attack Weight",
+                "Energy Amplifier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "Stealth Scorer",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Quick Attack",
+                "Astonish",
+                "Dragon Dance",
+                "Phantom Force"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Float Stone",
+                "Rapid-Fire Scarf"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         }
     ]
 }

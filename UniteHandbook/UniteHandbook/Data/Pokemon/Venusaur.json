@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "CDR",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Seed Bomb",
+                "Razor Leaf",
+                "Giga Drain",
+                "Petal Dance"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Shell Bell",
+                "Energy Amplifier",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "Sniper",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Seed Bomb",
+                "Razor Leaf",
+                "Sludge Bomb",
+                "Solar Beam"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Sustain Tank",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Seed Bomb",
+                "Razor Leaf",
+                "Giga Drain",
+                "Petal Dance"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Focus Band",
+                "Assault Vest",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Potion"
         }
     ]
 }

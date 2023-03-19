@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Dragon Pulse",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Metal Claw",
+                "Laser Focus",
+                "Dragon Pulse",
+                "Stealth Rock"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Flash Cannon",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Metal Claw",
+                "Laser Focus",
+                "Flash Cannon",
+                "Dragon Tail"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Attack Damage",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Metal Claw",
+                "Laser Focus",
+                "Dragon Pulse",
+                "Dragon Tail"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Scope Lens"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         }
     ]
 }

@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Full Offense",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fake Out",
+                "Light Screen",
+                "Confusion",
+                "Power Swap"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Sp Atk Specs",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Support",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fake Out",
+                "Light Screen",
+                "Confusion",
+                "Power Swap"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Exp Share",
+                "Rescue Hood",
+                "Slick Spoon"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Slow Smoke"
         },
         {
-            "Name": "",
+            "Name": "Blocker",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fake Out",
+                "Light Screen",
+                "Psychic",
+                "Barrier"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Choice Specs",
+                "Slick Spoon",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Potion"
         }
     ]
 }

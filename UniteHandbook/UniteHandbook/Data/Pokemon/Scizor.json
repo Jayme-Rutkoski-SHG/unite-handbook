@@ -295,55 +295,38 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Brawler",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fury Cutter",
+                "Quick Attack",
+                "Bullet Punch",
+                "Swords Dance"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Razor Claw",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weaknesss Policy",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Potion"
         },
         {
-            "Name": "",
+            "Name": "High Sustain",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fury Cutter",
+                "Quick Attack",
+                "Bullet Punch",
+                "Swords Dance"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Weakness Policy",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
-        },
-        {
-            "Name": "",
-            "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
-            ],
-            "HeldItems": [
-                "",
-                "",
-                ""
-            ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Assault Vest",
+            "BattleItem": "Potion",
+            "AltBattleItem": "X Attack"
         }
     ]
 }

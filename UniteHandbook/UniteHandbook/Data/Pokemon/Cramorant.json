@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Mobility",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Whirlpool",
+                "Feather Dance",
+                "Dive",
+                "Air Slash"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Slick Spoon",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "AoE Disabler",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Whirlpool",
+                "Feather Dance",
+                "Hurricane",
+                "Surf"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Shell Bell",
+                "Energy Amplifier",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "High-Burst",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Whirlpool",
+                "Feather Dance",
+                "Hurricane",
+                "Surf"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Speed"
         }
     ]
 }

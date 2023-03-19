@@ -314,55 +314,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Psy-Shooter",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Swift",
+                "Growl",
+                "Psyshock",
+                "Psybeam"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Stored Power",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Swift",
+                "Growl",
+                "Stored Power",
+                "Future Sight"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Slick Spoon",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Single-Target Burst",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Swift",
+                "Growl",
+                "Psyshock",
+                "Future Sight"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Choice Specs",
+                "Slick Spoon",
+                "Energy Amplifier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }

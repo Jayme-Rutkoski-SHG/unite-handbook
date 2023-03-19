@@ -314,55 +314,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Ranged Burst",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Dragon Breath",
+                "Twister",
+                "Dragon Dance",
+                "Hyper Beam"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Razor Claw",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Melee Jungle",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Dragon Breath",
+                "Twister",
+                "Extreme Speed",
+                "Outrage"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Drain Crown"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Slow Smoke"
         },
         {
-            "Name": "",
+            "Name": "Brawler",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Dragon Breath",
+                "Twister",
+                "Extreme Speed",
+                "Outrage"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Rapid-Fire Scarf",
+                "Drain Crown",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Slow Smoke"
         }
     ]
 }

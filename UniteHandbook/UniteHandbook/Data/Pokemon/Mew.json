@@ -322,55 +322,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Offense-Powered",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Electro Ball",
+                "Agility",
+                "Solar Beam",
+                "Light Screen"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Defense-Powered",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Electro Ball",
+                "Coaching",
+                "Surf",
+                "Light Screen"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Slick Spoon",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Assault Vest",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Support-Focused",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Solar Beam",
+                "Coaching",
+                "Surf",
+                "Light Screen"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Exp Share",
+                "Rescue Hood",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }

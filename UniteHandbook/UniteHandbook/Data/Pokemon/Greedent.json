@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Score Stack",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Tackle",
+                "Defense Curl",
+                "Belch",
+                "Covet"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Aeos Cookie",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Slow Smoke"
         },
         {
-            "Name": "",
+            "Name": "Bruiser",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Tackle",
+                "Defense Curl",
+                "Belch",
+                "Stuff Cheeks"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Weakness Policy",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "Tank DPS",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Tackle",
+                "Defense Curl",
+                "Bullet Seed",
+                "Stuff Cheeks"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Assault Vest",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "Slow Smoke"
         }
     ]
 }

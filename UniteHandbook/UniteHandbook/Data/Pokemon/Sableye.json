@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Hindrance",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Astonish",
+                "Thief",
+                "Knock Off",
+                "Confuse Ray"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Razor Claw",
+                "Float Stone"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Scouting",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Astonish",
+                "Thief",
+                "Shadow Sneak",
+                "Feint Attack"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Float Stone",
+                "Exp Share",
+                "Attack Weight"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Aeos Cookie",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Goal Getter"
         },
         {
-            "Name": "",
+            "Name": "Scoring",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Astonish",
+                "Thief",
+                "Shadow Sneak",
+                "Confuse Ray"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Float Stone",
+                "Score Shield"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Aeos Cookie",
+            "BattleItem": "Goal Getter",
+            "AltBattleItem": "X Speed"
         }
     ]
 }

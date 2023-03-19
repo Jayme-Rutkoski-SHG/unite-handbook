@@ -314,55 +314,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "High Sustain",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Razor Leaf",
+                "Rapid Spin",
+                "Stomp",
+                "Trop Kick"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Weakness Policy",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Brawler",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Razor Leaf",
+                "Rapid Spin",
+                "Triple Axel",
+                "Trop Kick"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Razor Claw",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Slow Smoke"
         },
         {
-            "Name": "",
+            "Name": "Jungle",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Razor Leaf",
+                "Rapid Spin",
+                "Triple Axel",
+                "Grassy Glide"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "Slow Smoke",
+            "AltBattleItem": "X Attack"
         }
     ]
 }

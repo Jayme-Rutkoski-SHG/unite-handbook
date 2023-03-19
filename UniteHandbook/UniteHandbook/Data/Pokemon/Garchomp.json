@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Boosted Attack",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Bulldoze",
+                "Sand Attack",
+                "Dragon Rush",
+                "Earthquake"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "Defensive",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Bulldoze",
+                "Sand Attack",
+                "Dragon Rush",
+                "Dragon Claw"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Initiator",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Bulldoze",
+                "Sand Attack",
+                "Dig",
+                "Earthquake"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Weakness Policy",
+                "Muscle Band",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Full Heal"
         }
     ]
 }

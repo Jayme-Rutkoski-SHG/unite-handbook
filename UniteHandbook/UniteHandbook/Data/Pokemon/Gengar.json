@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Dream Eater",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Will-o-Wisp",
+                "Lick",
+                "Shadow Ball",
+                "Dream Eater"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Sp Atk Specs",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Sludge-Hex",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Will-o-Wisp",
+                "Lick",
+                "Sludge Bomb",
+                "Hex"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Choice Specs",
+                "Shell Bell"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Sp Atk Specs",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         },
         {
-            "Name": "",
+            "Name": "Lane-Scorer",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Will-o-Wisp",
+                "Lick",
+                "Sludge Bomb",
+                "Hex"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Sp Atk Specs",
+                "Choice Specs",
+                "Score Shield"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }

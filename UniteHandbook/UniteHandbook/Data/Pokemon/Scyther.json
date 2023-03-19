@@ -295,55 +295,38 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Jungle",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fury Cutter",
+                "Quick Attack",
+                "Dual Wingbeat",
+                "Double Hit"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Razor Claw",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Float Stone",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "Wingbeat Burst",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fury Cutter",
+                "Quick Attack",
+                "Dual Wingbeat",
+                "Double Hit"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Razor Claw",
+                "Energy Amplifier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
-        },
-        {
-            "Name": "",
-            "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
-            ],
-            "HeldItems": [
-                "",
-                "",
-                ""
-            ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Potion"
         }
     ]
 }

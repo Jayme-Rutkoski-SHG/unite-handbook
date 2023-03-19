@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Singing Support",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Pound",
+                "Defense Curl",
+                "Dazzling Gleam",
+                "Sing"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Exp Share",
+                "Rescue Hood",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "",
+            "Name": "Damage Dealer",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Pound",
+                "Defense Curl",
+                "Rollout",
+                "Double Slap"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Choice Specs",
+                "Slick Spoon",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Fluffy Tail"
         },
         {
-            "Name": "",
+            "Name": "Initiator",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Pound",
+                "Defense Curl",
+                "Sing",
+                "Double Slap"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Slick Spoon",
+                "Rescue Hood",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Choice Specs",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         }
     ]
 }

@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Spirit Shackle",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Leafage",
+                "Astonish",
+                "Spirit Shackle",
+                "Shadow Sneak"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Float Stone",
+                "Attack Weight"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "Carry",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Leafage",
+                "Astonish",
+                "Razor Leaf",
+                "Leaf Storm"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Drain Crown"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "Balanced",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Leafage",
+                "Astonish",
+                "Razor Leaf",
+                "Shadow Sneak"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }

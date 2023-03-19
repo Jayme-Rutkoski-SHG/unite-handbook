@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Damage Soaker",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Water Gun",
+                "Slack Off",
+                "Scald",
+                "Amnesia"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Choice Specs",
+                "Slick Spoon",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Potion"
         },
         {
-            "Name": "",
+            "Name": "Support",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Water Gun",
+                "Slack Off",
+                "Surf",
+                "Telekinesis"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Exp Share",
+                "Slick Spoon",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Slow Smoke"
         },
         {
-            "Name": "",
+            "Name": "Tank",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Water Gun",
+                "Slack Off",
+                "Surf",
+                "Amnesia"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Assault Vest",
+                "Focus Band",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Slow Smoke"
         }
     ]
 }

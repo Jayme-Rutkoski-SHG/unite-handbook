@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Dash and Slash",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Slash",
+                "Fury Swipes",
+                "Cut",
+                "Feint Attack"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Razor Claw,
+                "Attack Weight",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "High Burst",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Slash",
+                "Fury Swipes",
+                "Shadow Claw",
+                "Night Slash"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Scope Lens",
+                "Razor Claw"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "High Mobility",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Slash",
+                "Fury Swipes",
+                "Cut",
+                "Feint Attack"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Float Stone",
+                "Attack Weight",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "Fluffy Tail",
+            "AltBattleItem": "X Speed"
         }
     ]
 }

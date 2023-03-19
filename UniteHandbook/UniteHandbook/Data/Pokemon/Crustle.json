@@ -310,55 +310,55 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Brawler",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fury Cutter",
+                "Rock Tomb",
+                "Shell Smash",
+                "X-Scissor"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Weakness Policy",
+                "Assault Vest",
+                "Rocky Helmet"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Slow Smoke"
         },
         {
-            "Name": "",
+            "Name": "Item-Stacker",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fury Cutter",
+                "Rock Tomb",
+                "Shell Smash",
+                "X-Scissor"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Attack Weight",
+                "Aeos Cookie",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Goal Getter"
         },
         {
-            "Name": "",
+            "Name": "Disruptor",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Fury Cutter",
+                "Rock Tomb",
+                "Rock Tomb",
+                "Stealth Rock"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Muscle Band",
+                "Attack Weight",
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Slow Smoke",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }
