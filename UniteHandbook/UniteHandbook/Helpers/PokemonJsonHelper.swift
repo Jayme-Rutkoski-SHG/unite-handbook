@@ -35,6 +35,7 @@ public class PokemonJsonHelper {
             "Gardevoir",
             "Gengar",
             "Glaceon",
+            "Goodra",
             "Greedent",
             "Greninja",
             "Hoopa",
@@ -58,6 +59,7 @@ public class PokemonJsonHelper {
             "Urshifu",
             "Venusaur",
             "Wigglytuff",
+            "Zacian",
             "Zeraora",
             "Zoroark"
         ]
@@ -92,6 +94,7 @@ public class PokemonJsonHelper {
             "Rapid-FireScarf",
             "RazorClaw",
             "RescueHood",
+            "RustedSword",
             "RockyHelmet",
             "ScopeLens",
             "ScoreShield",

@@ -331,12 +331,19 @@ class AddBuildViewController: UIViewController {
         
         self.view.addGestureRecognizer(gestureTap)
         
+        
         self.imageViewMove1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove1_Tapped)))
         self.imageViewMove2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove2_Tapped)))
         self.imageViewMove3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove3_Tapped)))
         self.imageViewMove4.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewMove4_Tapped)))
         
-        self.imageViewHeldItem1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewHeldItem1_Tapped)))
+        if (self.pokemonName.lowercased() == "zacian") {
+            self.imageViewHeldItem1.image = UIImage(named: "rusted_sword")
+            self.currentBuild.heldItems[0] = "Rusted Sword"
+        } else {
+            self.heldItems.removeAll(where: { $0.name.lowercased() == "rusted sword" })
+            self.imageViewHeldItem1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewHeldItem1_Tapped)))
+        }
         self.imageViewHeldItem2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewHeldItem2_Tapped)))
         self.imageViewHeldItem3.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageViewHeldItem3_Tapped)))
         

@@ -1,0 +1,349 @@
+{
+    "Name": "Zacian",
+    "AttackStyle": "Physical",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Intrepid Sword",
+            "Desc": "If the goal scoring button is held down, Zacian charges its sword with Aeos energy. For a short time, its basic attacks become boosted attacks. In addition, during this time, Zacian can use a boosted version of one of its moves once. The longer the goal scoring button is held down, the more Aeos energy is charged into the sword, lengthening the duration of the boost effect on basic attacks and moves. This Ability goes on cooldown after it’s triggered. When this Pokémon knocks out or assists (within 4 seconds) in knocking out a Pokémon on the opposing team, that Pokémon will drop an additional 5 more Aeos energy than it normally would. This effect has an 8 second cooldown./n/nMinimum 5 energy is required to charge with a maximum of 10 (except for Unite Move). Duration for buff window is 3s for 5 energy, 6s for 8 energy, 10s for 10 energy. Charging occurs at a rate of 1 energy per 0.1s."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Slash",
+            "Category": "Sure Hit",
+            "Cooldown": 7.50,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Slashes target Pokémon and deals a small amount of damage to nearby Pokémon. When this move is boosted with Aeos energy, its area of effect is increased, deals increased damage and also slows of Pokémon hit by 60% for 0.5s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Metal Claw",
+                    "Category": "Dash",
+                    "Cooldown": 8.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Releases a shock wave in the designated direction, dealing damage to Pokémon, decreasing their movement speed by 30% for 3s. As the shock wave moves forward, projectiles from non-allied Pokémon it hits are negated. After releasing the shock wave, Zacian charges in that direction and deals damage to Pokémon. If the charge hits an enemy, Zacian's attack speed is increased by 100% for 4s or 6 attacks, whichever comes first. When this move is boosted with Aeos energy, the shock wave's size and travel distance are increased and the intensity of the slow is increased to 45% for 3s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Reduces this move's cooldown by 1s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sacred Sword",
+                    "Category": "Area",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Has the user slash around itself as if drawing a circle with the tip of its sword, dealing damage to opposing Pokémon in the area of effect and slowing them by 30% for 3s. During this slash, Zacian briefly becomes unstoppable and reduces damage taken by 50%. The user then unleashes a slashing attack inside the circle, dealing damage to opposing Pokémon it hits and leaving them unable to act for 0.6s. After a flurry attack hits an opposing Pokémon, the user’s Attack is increased by 20% for 3s, and damage dealt by the user’s moves and basic attacks ignores 15% of the opposing Pokémon’s Defense. When this move is boosted with Aeos energy, its area of effect is increased, and the time until the slashing attack is unleashed is reduced."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Reduce the time until the flurry of slashes is unleashed to 1.2s for the base Sacred Sword+ and 0.45s for Boosted Sacred Sword+"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Quick Attack",
+            "Category": "Dash",
+            "Cooldown": 9.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Zacian charges in the designated direction, stopping at the first Pokémon it hits and dealing damage. When this move is boosted with Aeos energy, it also leaves opposing Pokémon unable to act for 1s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Agility",
+                    "Category": "Dash",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Removes any hindrances applied to the user and increases the user’s movement speed by 50% decaying every 1s by 15% down to a minimum of 10% for 3s. Dealing or taking any damage extends the haste duration by 1 second per attack up to 6 seconds and bypasses the movement speed decay. When this move is boosted with Aeos energy, the user’s movement speed decay is reduced to 10% per second, and the user is also granted a shield./n/nBoosted Shield (3s): 20% Max HP + 50 Shield"
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Further increases movement speed gain to 60% on use."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Play Rough",
+                    "Category": "Dash",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Leaps in the designated direction stopping at the first Pokémon hit. The Pokémon hit is dealt damage and is stunned for 0.7s. Zacian lands near that Pokémon it hits and deals damage to nearby Pokémon stunning them as well. Zacian receives 25% reduced damage for 3s after landing. When this move is boosted with Aeos energy, Zacian leaps further and through all Pokémon hit along the leap’s path. Pokémon hit will receive damage and be left stunned for the same amount as the base stun duration."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increases the stun duration to 1s."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Sovereign Sword",
+            "Category": "Area",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Has the user ready its giant sword, charge the sword with Aeos energy, and then slash in front of itself. The user becomes Unstoppable, applying a 10% self slow while the Unite Move button is held down and the user is in its ready stance. The longer the user is in this stance, the more Aeos energy is charged into the sword, and the more damage this move deals. If a set amount of Aeos energy or more is charged into the sword, the Unite Move becomes boosted, and the slash’s area of effect increases. This boosted Unite Move deals increased damage to opposing Pokémon it hits who have been buffed by their own Unite Move."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3600,
+            "Attack": 220,
+            "Defense": 100,
+            "SpAttack": 20,
+            "SpDefense": 80,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3757,
+            "Attack": 232,
+            "Defense": 112,
+            "SpAttack": 23,
+            "SpDefense": 90,
+            "CritRate": 0.05,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1053,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3929,
+            "Attack": 245,
+            "Defense": 125,
+            "SpAttack": 27,
+            "SpDefense": 101,
+            "CritRate": 0.05,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1112,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 4118,
+            "Attack": 260,
+            "Defense": 140,
+            "SpAttack": 31,
+            "SpDefense": 113,
+            "CritRate": 0.05,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1177,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4326,
+            "Attack": 276,
+            "Defense": 156,
+            "SpAttack": 35,
+            "SpDefense": 126,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1248,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4555,
+            "Attack": 294,
+            "Defense": 174,
+            "SpAttack": 40,
+            "SpDefense": 140,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1326,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4807,
+            "Attack": 313,
+            "Defense": 193,
+            "SpAttack": 45,
+            "SpDefense": 155,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1412,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 5085,
+            "Attack": 334,
+            "Defense": 214,
+            "SpAttack": 51,
+            "SpDefense": 172,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1507,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5391,
+            "Attack": 358,
+            "Defense": 238,
+            "SpAttack": 58,
+            "SpDefense": 191,
+            "CritRate": 0.25,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1611,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5728,
+            "Attack": 384,
+            "Defense": 264,
+            "SpAttack": 65,
+            "SpDefense": 212,
+            "CritRate": 0.25,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1726,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 6100,
+            "Attack": 413,
+            "Defense": 293,
+            "SpAttack": 73,
+            "SpDefense": 235,
+            "CritRate": 0.25,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1853,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 6509,
+            "Attack": 445,
+            "Defense": 325,
+            "SpAttack": 82,
+            "SpDefense": 260,
+            "CritRate": 0.25,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1992,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 6959,
+            "Attack": 480,
+            "Defense": 360,
+            "SpAttack": 92,
+            "SpDefense": 287,
+            "CritRate": 0.25,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2145,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 7455,
+            "Attack": 518,
+            "Defense": 398,
+            "SpAttack": 103,
+            "SpDefense": 317,
+            "CritRate": 0.25,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2314,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 8000,
+            "Attack": 560,
+            "Defense": 440,
+            "SpAttack": 115,
+            "SpDefense": 350,
+            "CritRate": 0.25,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.25,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "AoE",
+            "MoveOrders": [
+                "Slash",
+                "Quick Attack",
+                "Sacred Sword",
+                "Play Rough"
+            ],
+            "HeldItems": [
+                "Rusted Sword",
+                "Muscle Band",
+                "Razor Claw"
+            ],
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
+        },
+        {
+            "Name": "Jungle",
+            "MoveOrders": [
+                "Slash",
+                "Quick Attack",
+                "Metal Claw",
+                "Agility"
+            ],
+            "HeldItems": [
+                "Rusted Sword",
+                "Muscle Band",
+                "Scope Lens"
+            ],
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
+        }
+    ]
+}
+
+

@@ -56,7 +56,7 @@
         },
         {
             "Name": "Fire Spin",
-            "Category": "area",
+            "Category": "Area",
             "Cooldown": 10.00,
             "LevelDetails": [
                 {
