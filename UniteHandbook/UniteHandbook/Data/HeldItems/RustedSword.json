@@ -1,0 +1,12 @@
+{
+    "Name": "Rusted Sword",
+    "BonusStats": [
+    ],
+    "LevelBonus": {
+        "Label": "",
+        "BaseValue": 0,
+        "IncrementValue": 0,
+        "IsPercent": false
+    },
+    "Desc": "Rusted Sword must be used and can only be used while playing Zacian. Has no effect."
+}
