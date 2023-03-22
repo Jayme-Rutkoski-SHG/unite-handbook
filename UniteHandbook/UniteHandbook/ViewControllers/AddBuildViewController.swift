@@ -347,7 +347,7 @@ class AddBuildViewController: UIViewController {
         self.modalPosition = .lower
         
         var images: [MultiImage] = [MultiImage]()
-        images.append(contentsOf: moves.map { MultiImage(
+        images.append(contentsOf: moves.filter { self.pokemonName.lowercased() == "mew" ? !self.currentBuild.moveOrders.contains($0.name) : true }.map { MultiImage(
             image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"),
             text: $0.name,
             key: $0) { image, model in
@@ -355,8 +355,10 @@ class AddBuildViewController: UIViewController {
                 guard let move = model as? Move else { return }
                 self.currentBuild.moveOrders[0] = move.name
                 if let secondMove = self.pokemonMoves.first(where: { $0.name != move.name }) {
-                    self.currentBuild.moveOrders[1] = secondMove.name
-                    self.imageViewMove2.image = UIImage(named: "\(self.pokemonName.lowercased())_\(secondMove.name.replacingOccurrences(of: " ", with: "").lowercased()).png")
+                    if secondMove.upgrades != nil {
+                        self.currentBuild.moveOrders[1] = secondMove.name
+                        self.imageViewMove2.image = UIImage(named: "\(self.pokemonName.lowercased())_\(secondMove.name.replacingOccurrences(of: " ", with: "").lowercased()).png")
+                    }
                 }
             }
             
@@ -368,7 +370,7 @@ class AddBuildViewController: UIViewController {
         self.modalPosition = .lower
         
         var images: [MultiImage] = [MultiImage]()
-        images.append(contentsOf: moves.map { MultiImage(
+        images.append(contentsOf: moves.filter { self.pokemonName.lowercased() == "mew" ? !self.currentBuild.moveOrders.contains($0.name) : true }.map { MultiImage(
             image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"),
             text: $0.name,
             key: $0) { image, model in
@@ -389,7 +391,7 @@ class AddBuildViewController: UIViewController {
         self.modalPosition = .lower
         
         var images: [MultiImage] = [MultiImage]()
-        images.append(contentsOf: moves.map { MultiImage(
+        images.append(contentsOf: moves.filter { self.pokemonName.lowercased() == "mew" ? !self.currentBuild.moveOrders.contains($0.name) : true }.map { MultiImage(
             image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"),
             text: $0.name,
             key: $0) { image, model in
@@ -406,7 +408,7 @@ class AddBuildViewController: UIViewController {
         self.modalPosition = .lower
         
         var images: [MultiImage] = [MultiImage]()
-        images.append(contentsOf: moves.map { MultiImage(
+        images.append(contentsOf: moves.filter { self.pokemonName.lowercased() == "mew" ? !self.currentBuild.moveOrders.contains($0.name) : true }.map { MultiImage(
             image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"),
             text: $0.name,
             key: $0) { image, model in
@@ -500,10 +502,18 @@ class AddBuildViewController: UIViewController {
         displayMove2Options(moves: self.pokemonMoves)
     }
     @objc func imageViewMove3_Tapped() {
-        displayMove3Options(moves: self.pokemonMoves[0].upgrades!)
+        if let moves = self.pokemonMoves[0].upgrades {
+            displayMove3Options(moves: moves)
+        } else {
+            displayMove3Options(moves: self.pokemonMoves)
+        }
     }
     @objc func imageViewMove4_Tapped() {
-        displayMove4Options(moves: self.pokemonMoves[1].upgrades!)
+        if let moves = self.pokemonMoves[1].upgrades {
+            displayMove4Options(moves: moves)
+        } else {
+            displayMove4Options(moves: self.pokemonMoves)
+        }
     }
     
     @objc func imageViewHeldItem1_Tapped() {
