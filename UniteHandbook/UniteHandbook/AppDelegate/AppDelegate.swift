@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = UINavigationController(rootViewController: PokemonListViewController(pokemonList: PokemonLoader.loadPokemon()))
         window?.makeKeyAndVisible()
         
+        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "back_button")
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "back_button")
+        UINavigationBar.appearance().tintColor = .black
+        
         if #available(iOS 15, *) {
             let navigationBarAppearance = UINavigationBarAppearance()
             navigationBarAppearance.configureWithOpaqueBackground()
@@ -37,6 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             tabBarApperance.backgroundColor = UIColor(hex:0xF0A181)
             UITabBar.appearance().scrollEdgeAppearance = tabBarApperance
             UITabBar.appearance().standardAppearance = tabBarApperance
+            
         }
         
         return true

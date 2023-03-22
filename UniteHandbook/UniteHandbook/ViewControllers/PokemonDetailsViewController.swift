@@ -174,6 +174,9 @@ class PokemonDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.leftItemsSupplementBackButton = true
+        navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        
         self.view.backgroundColor = .white
         self.createSections()
         self.setup()
