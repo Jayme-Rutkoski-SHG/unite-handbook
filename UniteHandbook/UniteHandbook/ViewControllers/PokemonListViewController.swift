@@ -55,6 +55,11 @@ class PokemonListViewController: UIViewController {
         self.collectionView.backgroundView = bgView
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         
@@ -66,6 +71,8 @@ class PokemonListViewController: UIViewController {
     }
     
     private func setup() {
+        self.title = "Pokemon"
+        
         self.adapter.collectionView = self.collectionView
         self.adapter.dataSource = self
         
@@ -77,6 +84,17 @@ class PokemonListViewController: UIViewController {
             make.bottom.equalTo(self.view.snp.bottom)
         }
     }
+    
+    private func getImageFrom(gradientLayer:CAGradientLayer) -> UIImage? {
+            var gradientImage:UIImage?
+            UIGraphicsBeginImageContext(gradientLayer.frame.size)
+            if let context = UIGraphicsGetCurrentContext() {
+                gradientLayer.render(in: context)
+                gradientImage = UIGraphicsGetImageFromCurrentImageContext()?.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch)
+            }
+            UIGraphicsEndImageContext()
+            return gradientImage
+        }
 }
 
 extension PokemonListViewController: ListAdapterDataSource {
