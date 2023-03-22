@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import GoogleMobileAds
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -43,6 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UITabBar.appearance().standardAppearance = tabBarApperance
             
         }
+        
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         
         return true
     }

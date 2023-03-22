@@ -9,6 +9,7 @@ import Foundation
 
 protocol SwiftAppDefaultsProtocol {
     var customBuilds: [String : [Build]] { get set }
+    var addBuildCredits: Int { get set }
 }
 
 public class SwiftAppDefaults: SwiftAppDefaultsProtocol {
@@ -24,6 +25,7 @@ public class SwiftAppDefaults: SwiftAppDefaultsProtocol {
     }
     private struct Keys {
         public static let customBuilds = "AppDefaults.Keys.customBuilds"
+        public static let addBuildCredits = "AppDefaults.Keys.addBuildCredits"
     }
     
     public var customBuilds: [String : [Build]] {
@@ -48,6 +50,15 @@ public class SwiftAppDefaults: SwiftAppDefaultsProtocol {
                 }
             }
             defaults.set(storedDict, forKey: Keys.customBuilds)
+        }
+    }
+    
+    public var addBuildCredits: Int {
+        get {
+            return defaults.object(forKey: Keys.addBuildCredits) as? Int ?? 1
+        }
+        set {
+            defaults.set(newValue, forKey: Keys.addBuildCredits)
         }
     }
 }
