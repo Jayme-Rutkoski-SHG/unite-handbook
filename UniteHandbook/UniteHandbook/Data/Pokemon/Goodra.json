@@ -1,0 +1,367 @@
+{
+    "Name": "Goodra",
+    "AttackStyle": "Special",
+    "Role": "Defender",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Gooey",
+            "Desc": "When this Pokémon is hit by an attack, there is a chance it will spread slime around itself. The slime deals damage to Pokémon and applies a Gooey debuff for a short time. The Gooey debuff slows Pokémon by 8% for 6s, can stack up to 4 times per Pokémon and decreases attack speed by 30% for 2s. Gooey is a debuff that is applicable to Wild Pokémon and enemy players only./n/nWhen this Pokémon enters tall grass, it continually recovers HP for up to 3s, until it leaves the tall grass or makes a boosted attack. When this Pokémon recovers HP due to Gooey, its attack gauge is progressed towards a boosted attack. This HP recovery goes on a 12s cooldown after being triggered."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Bubble",
+            "Category": "Area",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Cover itself in a bubble, granting it a shield for 3s. When the shield’s effect duration ends or if this move is used again, the bubble shield pops, dealing damage to nearby opposing Pokémon and slowing them by 30% for 2s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Muddy Water",
+                    "Category": "Area",
+                    "Cooldown": 4.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Splashes muddy water around itself, dealing damage to opposing Pokémon in the area of effect and applying an effect to them that decreases the amount of damage they deal by 10% for 3s. If the user deals damage to opposing Pokémon with this move, the user’s Defense and Sp. Def are increased for 2s. If Muddy Water is used within 6 seconds, the defense bonus effect is increased in intensity. The defenses bonus effect can stack up to four times."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Further increases the user’s Defense and Sp. Def when this move deals damage to opposing Pokémon."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Dragon Pulse",
+                    "Category": "Area",
+                    "Cooldown": 7.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Unleashes a shock wave in the designated direction, dealing damage to Pokémon it hits up to 4 times. If the center of the shock wave hits enemy Pokémon, it deals increased damage to them and restores the user’s HP. More HP is restored when the center of the pulse deals damage to enemy Pokémon that have a Gooey slowing effect applied to them./n/nThe fourth tick of damage can be animation cancelled by inputs (attack or movement). It is undetermined if this is a bug or not."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Restores more HP if the center of the shock wave hits Pokémon, and even more on Pokémon that have a Gooey debuff applied to them."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Tackle",
+            "Category": "Hindrance",
+            "Cooldown": 10.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Charges at a Pokémon, dealing damage and throwing it. If this move hits, the user bounces back a short distance."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Power Whip",
+                    "Category": "Hindrance",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 8,
+                            "Desc": "Lashes out with its horns in the designated direction, dealing damage to Pokémon in the area of effect and slowing them by 50% for 2s. If this move hits distant Pokémon, those Pokémon are pulled toward Goodra."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Also applies a Gooey slowing effect when this move hits."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Acid Spray",
+                    "Category": "Hindrance",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 8,
+                            "Desc": "Spits acidic fluid at target Pokémon, dealing damage to Pokémon in an area of effect centered on the target slowing them by 40% for 2s. If this move is used again, Goodra charges in the designated direction and deals damage to opposing Pokémon it hits. If this charge hits a Pokémon that has been marked by acidic fluid, that Pokémon is thrown, and damage is also dealt to nearby opposing Pokémon."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Also applies a Gooey slowing effect to opposing Pokémon that receive damage from either the acidic fluid or the charge."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Right as Rain",
+            "Category": "Buff",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Causes rain to fall around the user, gradually restoring the user’s HP over 6s. While this move is active, all of the user’s basic attacks become boosted attacks."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3225,
+            "Attack": 150,
+            "Defense": 100,
+            "SpAttack": 50,
+            "SpDefense": 100,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3319,
+            "Attack": 152,
+            "Defense": 107,
+            "SpAttack": 56,
+            "SpDefense": 106,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1029,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3432,
+            "Attack": 155,
+            "Defense": 116,
+            "SpAttack": 63,
+            "SpDefense": 1113,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1063,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3568,
+            "Attack": 158,
+            "Defense": 126,
+            "SpAttack": 71,
+            "SpDefense": 121,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1104,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4060,
+            "Attack": 169,
+            "Defense": 163,
+            "SpAttack": 101,
+            "SpDefense": 151,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1254,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4256,
+            "Attack": 174,
+            "Defense": 178,
+            "SpAttack": 113,
+            "SpDefense": 163,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1314,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4491,
+            "Attack": 179,
+            "Defense": 196,
+            "SpAttack": 127,
+            "SpDefense": 177,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1386,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 5430,
+            "Attack": 201,
+            "Defense": 268,
+            "SpAttack": 184,
+            "SpDefense": 234,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1672,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5769,
+            "Attack": 209,
+            "Defense": 294,
+            "SpAttack": 205,
+            "SpDefense": 255,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1775,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 6175,
+            "Attack": 218,
+            "Defense": 325,
+            "SpAttack": 230,
+            "SpDefense": 280,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1898,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 6662,
+            "Attack": 229,
+            "Defense": 362,
+            "SpAttack": 260,
+            "SpDefense": 310,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2046,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 7247,
+            "Attack": 242,
+            "Defense": 406,
+            "SpAttack": 295,
+            "SpDefense": 345,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2224,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 7948,
+            "Attack": 258,
+            "Defense": 459,
+            "SpAttack": 338,
+            "SpDefense": 388,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2437,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 8790,
+            "Attack": 277,
+            "Defense": 523,
+            "SpAttack": 389,
+            "SpDefense": 439,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2693,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 9800,
+            "Attack": 300,
+            "Defense": 600,
+            "SpAttack": 450,
+            "SpDefense": 500,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "",
+            "MoveOrders": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "HeldItems": [
+                "",
+                "",
+                ""
+            ],
+            "AltHeldItem": "",
+            "BattleItem": "",
+            "AltBattleItem": ""
+        },
+        {
+            "Name": "",
+            "MoveOrders": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "HeldItems": [
+                "",
+                "",
+                ""
+            ],
+            "AltHeldItem": "",
+            "BattleItem": "",
+            "AltBattleItem": ""
+        },
+        {
+            "Name": "",
+            "MoveOrders": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "HeldItems": [
+                "",
+                "",
+                ""
+            ],
+            "AltHeldItem": "",
+            "BattleItem": "",
+            "AltBattleItem": ""
+        }
+    ]
+}
+
+
+
