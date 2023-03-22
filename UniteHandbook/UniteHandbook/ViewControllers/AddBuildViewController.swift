@@ -349,6 +349,7 @@ class AddBuildViewController: UIViewController {
         var images: [MultiImage] = [MultiImage]()
         images.append(contentsOf: moves.map { MultiImage(
             image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"),
+            text: $0.name,
             key: $0) { image, model in
                 self.imageViewMove1.image = image
                 guard let move = model as? Move else { return }
@@ -369,6 +370,7 @@ class AddBuildViewController: UIViewController {
         var images: [MultiImage] = [MultiImage]()
         images.append(contentsOf: moves.map { MultiImage(
             image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"),
+            text: $0.name,
             key: $0) { image, model in
                 self.imageViewMove2.image = image
                 guard let move = model as? Move else { return }
@@ -389,6 +391,7 @@ class AddBuildViewController: UIViewController {
         var images: [MultiImage] = [MultiImage]()
         images.append(contentsOf: moves.map { MultiImage(
             image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"),
+            text: $0.name,
             key: $0) { image, model in
                 self.imageViewMove3.image = image
                 guard let move = model as? Move else { return }
@@ -405,6 +408,7 @@ class AddBuildViewController: UIViewController {
         var images: [MultiImage] = [MultiImage]()
         images.append(contentsOf: moves.map { MultiImage(
             image: UIImage(named: "\(self.pokemonName.lowercased())_\($0.name.replacingOccurrences(of: " ", with: "").lowercased()).png"),
+            text: $0.name,
             key: $0) { image, model in
                 self.imageViewMove4.image = image
                 guard let move = model as? Move else { return }
