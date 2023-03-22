@@ -405,15 +405,18 @@ class PokemonDetailsViewController: UIViewController, GADFullScreenContentDelega
     
     @objc func buttonAddBuild_TouchUpInside(sender: UIButton) {
         if SwiftAppDefaults.shared.addBuildCredits == 0 {
-            if let ad = rewardedAd {
-                ad.present(fromRootViewController: self) {
-                    let reward = ad.adReward
-                    print("Reward received with currency \(reward.amount), amount \(reward.amount.doubleValue)")
-                    SwiftAppDefaults.shared.addBuildCredits = SwiftAppDefaults.shared.addBuildCredits + reward.amount.intValue
+            self.navigateToPopUpAd(title: "Watch Ad", message: "Please watch this video ad to add a new build! (This helps supports the developer, thank-you!)") { [weak self] in
+                guard let self = self else { return }
+                if let ad = self.rewardedAd {
+                    ad.present(fromRootViewController: self) {
+                        let reward = ad.adReward
+                        print("Reward received with currency \(reward.amount), amount \(reward.amount.doubleValue)")
+                        SwiftAppDefaults.shared.addBuildCredits = SwiftAppDefaults.shared.addBuildCredits + reward.amount.intValue
+                    }
+                } else {
+                    print("Ad wasn't ready")
+                    self.navigateToAddBuild()
                 }
-            } else {
-                print("Ad wasn't ready")
-                self.navigateToAddBuild()
             }
         } else {
             self.navigateToAddBuild()
@@ -442,6 +445,14 @@ class PokemonDetailsViewController: UIViewController, GADFullScreenContentDelega
     private func navigateToAddBuild() {
         let vc = AddBuildViewController(pokemonName: self.pokemon.name, pokemonMoves: self.pokemon.moves, delegate: self)
         vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true)
+    }
+    
+    private func navigateToPopUpAd(title: String, message: String, willWatch: @escaping (() -> ())) {
+        let vm = PopUpAdViewModel(title: title, message: message, headerBackgroundColor: UIColor(hex:0xA971A2), headerTextColor: .white, willWatch: willWatch)
+        let vc = PopUpAdViewController(viewModel: vm)
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
         self.present(vc, animated: true)
     }
 }

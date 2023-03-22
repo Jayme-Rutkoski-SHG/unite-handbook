@@ -55,7 +55,7 @@ public class SwiftAppDefaults: SwiftAppDefaultsProtocol {
     
     public var addBuildCredits: Int {
         get {
-            return defaults.object(forKey: Keys.addBuildCredits) as? Int ?? 2
+            return defaults.object(forKey: Keys.addBuildCredits) as? Int ?? 1
         }
         set {
             defaults.set(newValue, forKey: Keys.addBuildCredits)
