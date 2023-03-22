@@ -310,55 +310,38 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "Tank",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Bubble",
+                "Tackle",
+                "Muddy Water",
+                "Power Whip"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Rocky Helmet",
+                "Assault Vest",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
         },
         {
-            "Name": "",
+            "Name": "Sustain",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Bubble",
+                "Tackle",
+                "Dragon Pulse",
+                "Acid Spray"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Wise Glasses",
+                "Slick Spoon",
+                "Focus Band"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
-        },
-        {
-            "Name": "",
-            "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
-            ],
-            "HeldItems": [
-                "",
-                "",
-                ""
-            ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Eject Button"
         }
     ]
 }

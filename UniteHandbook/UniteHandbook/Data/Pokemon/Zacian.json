@@ -310,55 +310,38 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "",
+            "Name": "AoE",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Slash",
+                "Quick Attack",
+                "Sacred Sword",
+                "Play Rough"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Rusted Sword",
+                "Muscle Band",
+                "Razor Claw"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         },
         {
-            "Name": "",
+            "Name": "Jungle",
             "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
+                "Slash",
+                "Quick Attack",
+                "Metal Claw",
+                "Agility"
             ],
             "HeldItems": [
-                "",
-                "",
-                ""
+                "Rusted Sword",
+                "Muscle Band",
+                "Scope Lens"
             ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
-        },
-        {
-            "Name": "",
-            "MoveOrders": [
-                "",
-                "",
-                "",
-                ""
-            ],
-            "HeldItems": [
-                "",
-                "",
-                ""
-            ],
-            "AltHeldItem": "",
-            "BattleItem": "",
-            "AltBattleItem": ""
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
         }
     ]
 }
