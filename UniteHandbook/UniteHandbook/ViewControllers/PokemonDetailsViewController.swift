@@ -8,9 +8,11 @@
 import UIKit
 import SnapKit
 import IGListKit
+import GoogleMobileAds
 
-class PokemonDetailsViewController: UIViewController {
+class PokemonDetailsViewController: UIViewController, GADFullScreenContentDelegate {
 
+    private var rewardedAd: GADRewardedAd?
     private var currentLevel: Int = 1
     private var pokemon: Pokemon = Pokemon()
     private var abilitiesArray: [BaseListDiffable] = [BaseListDiffable]()
@@ -180,6 +182,7 @@ class PokemonDetailsViewController: UIViewController {
         self.view.backgroundColor = .white
         self.createSections()
         self.setup()
+        self.loadRewardedAd()
     }
     
     override func viewDidLayoutSubviews() {
@@ -378,15 +381,67 @@ class PokemonDetailsViewController: UIViewController {
         }
     }
     
+    
+
+   func loadRewardedAd() {
+       let request = GADRequest()
+       GADRewardedAd.load(withAdUnitID:"ca-app-pub-7088839014127907/9930370848",
+                       request: request,
+                       completionHandler: { [self] ad, error in
+           if let error = error {
+               print("Failed to load rewarded ad with error: \(error.localizedDescription)")
+               return
+           }
+           rewardedAd = ad
+           print("Rewarded ad loaded.")
+           rewardedAd?.fullScreenContentDelegate = self
+       })
+   }
+    
     @objc func segmentedControlValueChanged(_ sender: UISegmentedControl) {
         self.adapter.performUpdates(animated: false)
         self.adapter.reloadData()
     }
     
     @objc func buttonAddBuild_TouchUpInside(sender: UIButton) {
+        if SwiftAppDefaults.shared.addBuildCredits == 0 {
+            if let ad = rewardedAd {
+                ad.present(fromRootViewController: self) {
+                    let reward = ad.adReward
+                    print("Reward received with currency \(reward.amount), amount \(reward.amount.doubleValue)")
+                    SwiftAppDefaults.shared.addBuildCredits = SwiftAppDefaults.shared.addBuildCredits + reward.amount.intValue
+                }
+            } else {
+                print("Ad wasn't ready")
+                self.navigateToAddBuild()
+            }
+        } else {
+            self.navigateToAddBuild()
+        }
+    }
+    
+    /// Tells the delegate that the ad failed to present full screen content.
+    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+        print("Ad did fail to present full screen content.")
+    }
+
+    /// Tells the delegate that the ad will present full screen content.
+    func adWillPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print("Ad will present full screen content.")
+    }
+
+    /// Tells the delegate that the ad dismissed full screen content.
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        self.loadRewardedAd()
+        if SwiftAppDefaults.shared.addBuildCredits > 0 {
+            self.navigateToAddBuild()
+        }
+        print("Ad did dismiss full screen content.")
+    }
+    
+    private func navigateToAddBuild() {
         let vc = AddBuildViewController(pokemonName: self.pokemon.name, pokemonMoves: self.pokemon.moves, delegate: self)
         vc.modalPresentationStyle = .overFullScreen
-        
         self.present(vc, animated: true)
     }
 }
@@ -514,6 +569,8 @@ extension PokemonDetailsViewController : StatSliderSectionControllerDelegate {
 extension PokemonDetailsViewController : AddBuildDelegate {
     
     func addBuild(pokemonName: String, build: Build) {
+        SwiftAppDefaults.shared.addBuildCredits = SwiftAppDefaults.shared.addBuildCredits - 1
+        
         var buildsForPokemon = SwiftAppDefaults.shared.customBuilds[pokemonName] ?? [Build]()
         buildsForPokemon.append(build)
         SwiftAppDefaults.shared.customBuilds[pokemonName] = buildsForPokemon
