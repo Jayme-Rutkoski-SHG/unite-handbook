@@ -1,0 +1,365 @@
+{
+    "Name": "Sableye",
+    "AttackStyle": "Attack",
+    "Role": "Supporter",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Prankseter",
+            "Desc": "When Sableye is outside the visual range of enemy players, Sableye enters stealth and gains 10% increased movement speed. When Sableye enters the visual range of a enemy players, Sableye does not immediately become visible but instead remains in stealth for 1.8s. Sableye exits stealth when attacking."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Thief",
+            "Category": "Dash",
+            "Cooldown": 7.50,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Dashes in the designated direction, dealing damage to any enemies hit and decreasing their movement speed for a short time. If this move hits an enemy, Sableye steals a small amount of their Aeos energy (maximum 5). If those enemies do not have any Aeos energy, they will be left unable to act for 0.5s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Knock Off",
+                    "Category": "Hindrance",
+                    "Cooldown": 7.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Sableye dashes in the designated direction and then back again while attacking around themself, dealing damage to enemies hit and leaving them unable to act for 0.5s. This move can be used again within 7.5s attacking in front of Sableye with their claws, dealing damage to enemies hit, pushing them away and leaving them unable to act for 1.2s. When either the first or second activation of this move hits an enemy, they will drop 5 Aeos energy (total 15: 10 from first activation, 5 from second) and be left unable to pick up Aeos energy for 4s. When either activation of this move hits enemies that do not have Aeos energy (or are wild Pokémon), those enemies will be left unable to act for 1s. While using this move, Sableye receives 40% reduced damage."
+                        },
+                        {
+                            "Level": 10,
+                            "Desc": "Aeos energy picked up within 5s of using this move recovers 9% Max HP and increases movement speed by 40% for 2s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Shadow Sneak",
+                    "Category": "Buff",
+                    "Cooldown": 13.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Apply a 6.5s duration buff that stealths Sableye after 1.5s increasing Sableye's movement speed by 10%. If the initial stealthing is interrupted by a hindrance, Sableye will not enter stealth. When the buff first stealth's Sableye, Sableye is granted a readied boosted attack that deals additional damage. While the buff is still active, if Sableye exits stealth and is not immobilized or incapacitated by a hindrance, they will enter stealth again after 2s."
+                        },
+                        {
+                            "Level": 10,
+                            "Desc": "Increases the duration of this move’s effects to 7.5s. While this move is active and Sableye is in stealth, Sableye will also restore 1% max HP every 0.5s."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Astonish",
+            "Category": "Area",
+            "Cooldown": 9.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Sableye attacks in a cone in front of themself, dealing damage to enemies hit and decreasing their movement speed by 30% for 2s. If this move hits enemies from behind, this move deals increased damage and applies a greater decrease in movement speed to 60%."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Feint Attack",
+                    "Category": "Area",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Throw dummy Aeos energy to a designated location. While dummy Aeos energy remains at a location, that location and the area around it will be visible to the user. Dummy Aeos energy can remain at up to five locations at a time. If an enemy walks on top of dummy Aeos energy, that energy explodes, dealing damage-over-time 9 times over 4s in an area and decreases the movement speed of enemies hit for 4s by 70% initially and decreasing gradually. Holds 3 uses in reserve and cannot be used more than once every 1s./n/nNote: Placing the dummy energy does not break stealth. Stealth is only broken when an enemy takes damage from the dummy energy."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "If an enemy is knocked out while affected by this move, they will drop more Aeos energy than they normally would."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Confuse Ray",
+                    "Category": "Hindrance",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Fires a sinister ray in the designated direction, dealing damage to enemies hit. If this move hits enemy players, they are also left confused for 2.5s. While confused, enemies are unable to act and continuously attack nearby enemies with basic attacks. Confused enemies will target nearby enemies in the following order of priority: first, their allies; then, wild Pokémon; last, Pokémon on Sableye's team. Knock outs for wild Pokémon will be attributed to Sableye, stealing the effects of the wild Pokémon being knocked out as well as the Aeos energy./n/nWhile confused, outgoing damage is decreased for auto attacks and move 1 by 50%."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "Also increases movement speed by 30% and attack speed by 50% from enemies of the opposing team while this move has left them confused."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Chaos Glower",
+            "Category": "Hindrance",
+            "Cooldown": 100,
+            "LevelDetails": [
+                {
+                    "Level": 8,
+                    "Desc": "Sableye becomes unstoppable for 1.2s and shoots light from both eyes, dealing damage to enemies in a cone in front of themself. Enemy players hit by this move who are facing Sableye are left unable to act for 3s and start preparing to return to base. If they take damage before returning to base, the return effect is cancelled, and they are left unable to act for 1.5s. Enemies hit by this move who are not facing Sableye have their movement speed decreased by 50% for 2s."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3300,
+            "Attack": 140,
+            "Defense": 40,
+            "SpAttack": 20,
+            "SpDefense": 30,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3464,
+            "Attack": 148,
+            "Defense": 46,
+            "SpAttack": 24,
+            "SpDefense": 34,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1036,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3644,
+            "Attack": 157,
+            "Defense": 52,
+            "SpAttack": 28,
+            "SpDefense": 39,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1075,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3842,
+            "Attack": 167,
+            "Defense": 59,
+            "SpAttack": 32,
+            "SpDefense": 44,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1118,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4059,
+            "Attack": 178,
+            "Defense": 67,
+            "SpAttack": 37,
+            "SpDefense": 50,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1165,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4299,
+            "Attack": 190,
+            "Defense": 75,
+            "SpAttack": 42,
+            "SpDefense": 56,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1217,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4563,
+            "Attack": 203,
+            "Defense": 84,
+            "SpAttack": 48,
+            "SpDefense": 63,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1274,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4853,
+            "Attack": 217,
+            "Defense": 94,
+            "SpAttack": 54,
+            "SpDefense": 71,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1337,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5173,
+            "Attack": 232,
+            "Defense": 105,
+            "SpAttack": 61,
+            "SpDefense": 79,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1407,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5526,
+            "Attack": 249,
+            "Defense": 117,
+            "SpAttack": 69,
+            "SpDefense": 88,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1484,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5915,
+            "Attack": 268,
+            "Defense": 131,
+            "SpAttack": 78,
+            "SpDefense": 98,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1568,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 6342,
+            "Attack": 289,
+            "Defense": 146,
+            "SpAttack": 87,
+            "SpDefense": 109,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1661,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 6812,
+            "Attack": 312,
+            "Defense": 162,
+            "SpAttack": 97,
+            "SpDefense": 121,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1763,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 7330,
+            "Attack": 337,
+            "Defense": 180,
+            "SpAttack": 108,
+            "SpDefense": 135,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1876,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 7900,
+            "Attack": 365,
+            "Defense": 200,
+            "SpAttack": 120,
+            "SpDefense": 150,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.20,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Hindrance",
+            "MoveOrders": [
+                "Astonish",
+                "Thief",
+                "Knock Off",
+                "Confuse Ray"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Razor Claw",
+                "Float Stone"
+            ],
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Scouting",
+            "MoveOrders": [
+                "Astonish",
+                "Thief",
+                "Shadow Sneak",
+                "Feint Attack"
+            ],
+            "HeldItems": [
+                "Float Stone",
+                "Exp Share",
+                "Attack Weight"
+            ],
+            "AltHeldItem": "Aeos Cookie",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Goal Getter"
+        },
+        {
+            "Name": "Scoring",
+            "MoveOrders": [
+                "Astonish",
+                "Thief",
+                "Shadow Sneak",
+                "Confuse Ray"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Float Stone",
+                "Score Shield"
+            ],
+            "AltHeldItem": "Aeos Cookie",
+            "BattleItem": "Goal Getter",
+            "AltBattleItem": "X Speed"
+        }
+    ]
+}
+

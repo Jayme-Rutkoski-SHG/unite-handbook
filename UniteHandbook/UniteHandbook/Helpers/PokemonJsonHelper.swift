@@ -10,13 +10,97 @@ import Foundation
 public class PokemonJsonHelper {
     
     public static func getAllPokemonNames() -> [String] {
-        return ["Absol"]
+        return [
+            "Absol",
+            "Aegislash",
+            "Azumarill",
+            "Blastoise",
+            "Blissey",
+            "Buzzwole",
+            "Charizard",
+            "Cinderace",
+            "Clefable",
+            "Comfey",
+            "Cramorant",
+            "Crustle",
+            "Decidueye",
+            "Delphox",
+            "Dodrio",
+            "Dragapult",
+            "Dragonite",
+            "Duraludon",
+            "Eldegoss",
+            "Espeon",
+            "Garchomp",
+            "Gardevoir",
+            "Gengar",
+            "Glaceon",
+            "Greedent",
+            "Greninja",
+            "Hoopa",
+            "Lucario",
+            "Machamp",
+            "Mamoswine",
+            "Mew",
+            "Mr Mime",
+            "Ninetales",
+            "Pikachu",
+            "Sableye",
+            "Scizor",
+            "Scyther",
+            "Slowbro",
+            "Snorlax",
+            "Sylveon",
+            "Talonflame",
+            "Terevenant",
+            "Tsareena",
+            "Tyranitar",
+            "Urshifu",
+            "Venusaur",
+            "Wigglytuff",
+            "Zeraora",
+            "Zoroark"
+        ]
     }
     public static func getAllBattleItemNames() -> [String] {
-        return ["FullHeal", "EjectButton"]
+        return [
+            "FullHeal",
+            "EjectButton",
+            "FluffyTail",
+            "FullHeal",
+            "GoalGetter",
+            "Potion",
+            "SlowSmoke",
+            "XAttack",
+            "XSpeed"
+        ]
     }
     public static func getAllHeldItemNames() -> [String] {
-        return ["RazorClaw", "ScopeLens", "AttackWeight"]
+        return [
+            "AttackWeight",
+            "AeosCookie",
+            "AssaultVest",
+            "BuddyBarrier",
+            "ChoiceSpecs",
+            "DrainCrown",
+            "EnergyAmplifier",
+            "ExpShare",
+            "FloatStone",
+            "FocusBand",
+            "Leftovers",
+            "MuscleBand",
+            "Rapid-FireScarf",
+            "RazorClaw",
+            "RescueHood",
+            "RockyHelmet",
+            "ScopeLens",
+            "ScoreShield",
+            "SlickSpoon",
+            "ShellBell",
+            "SpAtkSpecs",
+            "WeaknessPolicy",
+            "WiseGlasses"
+        ]
     }
 }
 

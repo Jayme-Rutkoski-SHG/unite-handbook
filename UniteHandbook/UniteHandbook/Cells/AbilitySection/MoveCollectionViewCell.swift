@@ -30,6 +30,7 @@ class MoveCollectionViewCell: UICollectionViewCell {
                 make.height.equalTo(20)
                 make.width.equalTo(20)
                 make.right.equalTo(self.labelCategory.titleLabel!.snp.left).offset(-5)
+                make.centerY.equalTo(self.labelCategory.titleLabel!.snp.centerY)
             }
         }
     }

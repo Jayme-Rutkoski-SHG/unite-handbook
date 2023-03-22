@@ -1,0 +1,365 @@
+{
+    "Name": "",
+    "AttackStyle": "",
+    "Role": "",
+    "Style": "",
+    "Difficulty": "",
+    "Ability": [
+        {
+            "Name": "",
+            "Desc": ""
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "",
+            "Category": "",
+            "Cooldown": 0,
+            "LevelDetails": [
+                {
+                    "Level": 0,
+                    "Desc": ""
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "",
+                    "Category": "",
+                    "Cooldown": 0,
+                    "LevelDetails": [
+                        {
+                            "Level": 0,
+                            "Desc": ""
+                        },
+                        {
+                            "Level": 0,
+                            "Desc": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "",
+                    "Category": "",
+                    "Cooldown": 0,
+                    "LevelDetails": [
+                        {
+                            "Level": 0,
+                            "Desc": ""
+                        },
+                        {
+                            "Level": 0,
+                            "Desc": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "",
+            "Category": "",
+            "Cooldown": 0,
+            "LevelDetails": [
+                {
+                    "Level": 0,
+                    "Desc": ""
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "",
+                    "Category": "",
+                    "Cooldown": 0,
+                    "LevelDetails": [
+                        {
+                            "Level": 0,
+                            "Desc": ""
+                        },
+                        {
+                            "Level": 0,
+                            "Desc": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "",
+                    "Category": "",
+                    "Cooldown": 0,
+                    "LevelDetails": [
+                        {
+                            "Level": 0,
+                            "Desc": ""
+                        },
+                        {
+                            "Level": 0,
+                            "Desc": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "",
+            "Category": "",
+            "Cooldown": 0,
+            "LevelDetails": [
+                {
+                    "Level": 0,
+                    "Desc": ""
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "",
+            "MoveOrders": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "HeldItems": [
+                "",
+                "",
+                ""
+            ],
+            "AltHeldItem": "",
+            "BattleItem": "",
+            "AltBattleItem": ""
+        },
+        {
+            "Name": "",
+            "MoveOrders": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "HeldItems": [
+                "",
+                "",
+                ""
+            ],
+            "AltHeldItem": "",
+            "BattleItem": "",
+            "AltBattleItem": ""
+        },
+        {
+            "Name": "",
+            "MoveOrders": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "HeldItems": [
+                "",
+                "",
+                ""
+            ],
+            "AltHeldItem": "",
+            "BattleItem": "",
+            "AltBattleItem": ""
+        }
+    ]
+}
+

@@ -1,0 +1,369 @@
+{
+    "Name": "Espeon",
+    "AttackStyle": "Special",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Novice",
+    "Ability": [
+        {
+            "Name": "Anticipation",
+            "Desc": "When Eevee would be affected by a hindrance, the hindrance is negated and Eevee becomes immune to hindrances for a short time (45s cd). Note: Hindrances include slows; multi-layered hindrance moves such as Pikachu's Volt Tackle will only have the very first launch negated."
+        },
+        {
+            "Name": "Magic Bounce",
+            "Desc": "When Espeon would be affected by a hindrance, the hindrance is negated and Espeon becomes immune to hindrances for a short time. At the same time, this ability deals damage to the enemy that attempted to inflict the hindrance and applies a 30% slow for 1s (45s cd). Note: Hindrances include slows; multi-layered hindrance moves such as Pikachu's Volt Tackle will only have the very first launch negated."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Swift",
+            "Category": "Ranged",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Eevee launches three stars at target location. Stars start in a horizontal line perpendicular to Eevee's facing. Stars continue to fly in the direction once past the target location until the maximum range is reached. When an enemy is hit by a star, subsequent stars deal 70% less damage."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Psyshock",
+                    "Category": "Ranged",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Espeon materializes psychic projectiles and launches them at a designated location; dealing damage to enemies hit by the projectiles and decreasing their movement speed for each projectile hit by 15% for 3s (maximum 75%). Orbs start in a horizontal line perpendicular to Espeon's facing and continue flying in the designated direction until the maximum range of the move. Targets hit by all five projectiles are stunned for 1.25s. When an enemy is hit by a projectile, subsequent projectiles deal 70% less damage./n/nWhen Psyshock is enhanced via Future Sight reset, it launches stronger psychic projectiles at a designated location. These projectiles at their point of convergence cause an explosion, dealing damage to enemies in the area-of-effect. There is no damage increase."
+                        },
+                        {
+                            "Level": 10,
+                            "Desc": "Increase the speed at which projectiles travel."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Stored Power",
+                    "Category": "Sure Hit",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Unleash blasts of psychic power at random enemies within an area; dealing damage to enemies hit and decreasing their movement speed from each projectile hit by 10% for 2s (maximum 50%). Espeon stores one blast of psychic power every 2s, or after hitting an enemy with a boosted attack (gaining 1 stored blast per enemy hit). Up to five blasts can be stored at once. After this move is used, Espeon's movement speed is increased by 70% for 1.2s. Targets hit by a psychic blast will take 70% less damage from subsequent hits./n/nWhen Stored Power is enhanced via Future Sight reset, it unleashes an increased number of psychic blasts (8 total) and restores Espeon's HP by 150 per blast."
+                        },
+                        {
+                            "Level": 10,
+                            "Desc": "Also deals additional damage to enemies below 50% max HP."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Growl",
+            "Category": "Sure Hit",
+            "Cooldown": 7.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Growl at a designated enemy; dealing damage and decreasing their movement speed by 30% for 2s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Psybeam",
+                    "Category": "Ranged",
+                    "Cooldown": 7.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Fires a peculiar ray in the designated direction. If the beam hits an enemy, it will then split beyond the first enemy hit and deal damage to other enemies in range. The initial enemy hit and these split rays deal more damage based on the max HP of the first enemy hit by the ray. If the first enemy hit by the ray is slowed or is stunned, those same effects will be applied to the enemies hit by the split rays. The split rays will never go towards Espeon and will refract at a maximum of a 90 degree angle. Distance from initial target to split ray hit is 75% of the max range. Stun copied duration is the maximum duration of the stun causing the initial Pokémon to be stunned./n/nFor the split ray, the damage component from the initial target's max HP damage is capped at 1000 against Wild Pokémon and capped at 2000 against Player Pokémon."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "Deals additional damage to enemies that are unable to act. If Psybeam hits an unable to act initial target, the split rays will also deal the additional damage to other enemies hit and leaves them unable to act./n/n5% max HP of the enemy hit as additional damage if the initial target was stunned."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Future Sight",
+                    "Category": "Sure Hit",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Espeon locks-on to an enemy, dealing damage 2 seconds later in an area centered on the locked-on target. Deal more damage based on the locked-on targets remaining HP. While locked-on to an enemy, Espeon's other moves will target that enemy whenever possible. If the center of Psyshock is within the area-of-effect of Future Sight when released, Psyshock will home in on the Future Sight affected target. Each time Espeon deals damage through Psyshock, Stored Power, auto attacks, Future Sight's cooldown is reduced by 0.8 seconds. If the locked-on target is on the opposing team and is knocked out before the area damage is dealt but not the percentage missing HP damage, a single powered-up use of Psyshock or Stored Power becomes available for a short time./n/nFull Heal and other cleanses such as Blissey's Natural cure remove Future Sight."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "Espeon deals 10% additional damage to locked-on targets."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Psychic Solaire",
+            "Category": "Area",
+            "Cooldown": 100,
+            "LevelDetails": [
+                {
+                    "Level": 8,
+                    "Desc": "Espeon throws enemies in the area of effect into the air and suspends them using psychic power. After a delay, an explosion occurs that deals damage to all enemies in the area of effect and shoves them."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3200,
+            "Attack": 134,
+            "Defense": 35,
+            "SpAttack": 50,
+            "SpDefense": 27,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3269,
+            "Attack": 137,
+            "Defense": 38,
+            "SpAttack": 71,
+            "SpDefense": 29,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3349,
+            "Attack": 141,
+            "Defense": 42,
+            "SpAttack": 95,
+            "SpDefense": 32,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3753,
+            "Attack": 161,
+            "Defense": 60,
+            "SpAttack": 218,
+            "SpDefense": 46,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3858,
+            "Attack": 166,
+            "Defense": 65,
+            "SpAttack": 250,
+            "SpDefense": 50,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3979,
+            "Attack": 172,
+            "Defense": 70,
+            "SpAttack": 287,
+            "SpDefense": 54,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4118,
+            "Attack": 179,
+            "Defense": 76,
+            "SpAttack": 329,
+            "SpDefense": 59,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4278,
+            "Attack": 187,
+            "Defense": 83,
+            "SpAttack": 378,
+            "SpDefense": 65,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4462,
+            "Attack": 196,
+            "Defense": 91,
+            "SpAttack": 434,
+            "SpDefense": 71,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4674,
+            "Attack": 207,
+            "Defense": 101,
+            "SpAttack": 499,
+            "SpDefense": 78,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4918,
+            "Attack": 219,
+            "Defense": 112,
+            "SpAttack": 573,
+            "SpDefense": 86,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5199,
+            "Attack": 233,
+            "Defense": 125,
+            "SpAttack": 658,
+            "SpDefense": 96,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 5522,
+            "Attack": 249,
+            "Defense": 139,
+            "SpAttack": 756,
+            "SpDefense": 107,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5893,
+            "Attack": 268,
+            "Defense": 156,
+            "SpAttack": 869,
+            "SpDefense": 120,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 6320,
+            "Attack": 289,
+            "Defense": 175,
+            "SpAttack": 999,
+            "SpDefense": 135,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Psy-Shooter",
+            "MoveOrders": [
+                "Swift",
+                "Growl",
+                "Psyshock",
+                "Psybeam"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
+            ],
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Stored Power",
+            "MoveOrders": [
+                "Swift",
+                "Growl",
+                "Stored Power",
+                "Future Sight"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Slick Spoon",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Single-Target Burst",
+            "MoveOrders": [
+                "Swift",
+                "Growl",
+                "Psyshock",
+                "Future Sight"
+            ],
+            "HeldItems": [
+                "Choice Specs",
+                "Slick Spoon",
+                "Energy Amplifier"
+            ],
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        }
+    ]
+}
+

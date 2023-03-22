@@ -1,0 +1,365 @@
+{
+    "Name": "Zoroark",
+    "AttackStyle": "Attack",
+    "Role": "Speedster",
+    "Style": "Melee",
+    "Difficulty": "Expert",
+    "Ability": [
+        {
+            "Name": "Illusion",
+            "Desc": "Zoroark takes the form of a random wild Pokémon or Pokémon from the opposing team. Zoroark returns to their original form when taking damage, using an auto attack or move, when attempting to score, or when recalling to base. Applying the illusion applies Invulnerable for 20 frames (1/3s). This ability has a 15s cooldown."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Slash",
+            "Category": "Melee",
+            "Cooldown": 5.50,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Dashes in the designated direction, dealing damage to enemies hit."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Shadow Claw",
+                    "Category": "Dash",
+                    "Cooldown": 4.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Dash in the designated direction, dealing damage to enemies, and leaving them unable to act for 0.1s. If this move hits an enemy near the end point of the dash, they will be thrown for 0.3s instead of being left unable to act."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increases the length of time enemies are thrown to 0.6s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Cut",
+                    "Category": "Dash",
+                    "Cooldown": 5.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Dashes in the designated direction, dealing damage to enemies, and restoring Zoroark's HP."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increases the amount of HP this move restores."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Fury Swipes",
+            "Category": "Ranged",
+            "Cooldown": 7.50,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Dashes in the designated direction, dealing damage to enemies. If this move hits an enemy, for a short time, this move can be used again."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Night Slash",
+                    "Category": "Dash",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "For 2s, changes the user’s normal movement to dash attacks. After performing a dash attack, the user’s next auto attack changes to a unique boosted attack. During this move’s effect duration, whenever Zoroark hits enemies with other moves or unique boosted attack, this move’s effect duration is reset to 2s and the user is able to use Night Slash again. This move’s effect duration ends if the user moves when they're unable to use Night Slash. During this move’s effect duration, if Zoroark hits enemies with a total of six moves and/or unique boosted attacks, the user will jump into the air becoming invincible, and then while landing, slash a set area-of-effect, dealing damage to enemies. Zoroark recovers HP if hitting enemies with this slashing attack. While jumping, the user is able to use Shadow Claw or Cut to move a set distance."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Reduces this move's cooldown by 1s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Feint Attack",
+                    "Category": "Dash",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Dashes in the designated direction, dealing damage to enemies and resetting all of the user’s move cooldowns. If this move hits an enemy, for 3s, the location where the dash started is marked, and the user is able to use this move again, returning to the marked location, dealing damage to enemies. A new mark is left where that dash started. As long as there is a mark, if the user uses another move, the mark will move to where the move was used. If the user hits enemies four times with either Feint Attack or other moves without interrupting the chain of marking, the next use of Feint Attack changes. If this changed form of Feint Attack is used, the user leaps at the designated enemy and deals damage to them before landing in the designated direction."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Reduces this move's cooldown by 1s."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Nightfall Daze",
+            "Category": "Area",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Release dark shockwaves, dealing damage to enemies hit. Three shockwaves are released, and each one has an increasingly larger area-of-effect. The user is immune to hindrances while releasing shockwaves."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3030,
+            "Attack": 150,
+            "Defense": 55,
+            "SpAttack": 20,
+            "SpDefense": 45,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3100,
+            "Attack": 162,
+            "Defense": 60,
+            "SpAttack": 22,
+            "SpDefense": 48,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1044,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3181,
+            "Attack": 176,
+            "Defense": 65,
+            "SpAttack": 25,
+            "SpDefense": 51,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1095,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3274,
+            "Attack": 192,
+            "Defense": 71,
+            "SpAttack": 28,
+            "SpDefense": 55,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1154,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3698,
+            "Attack": 266,
+            "Defense": 99,
+            "SpAttack": 41,
+            "SpDefense": 73,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1422,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3821,
+            "Attack": 287,
+            "Defense": 107,
+            "SpAttack": 45,
+            "SpDefense": 78,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.15,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 3962,
+            "Attack": 312,
+            "Defense": 116,
+            "SpAttack": 49,
+            "SpDefense": 84,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1589,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4125,
+            "Attack": 340,
+            "Defense": 127,
+            "SpAttack": 54,
+            "SpDefense": 91,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1692,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4312,
+            "Attack": 373,
+            "Defense": 139,
+            "SpAttack": 60,
+            "SpDefense": 99,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.181,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4528,
+            "Attack": 410,
+            "Defense": 153,
+            "SpAttack": 67,
+            "SpDefense": 108,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1946,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4776,
+            "Attack": 453,
+            "Defense": 169,
+            "SpAttack": 75,
+            "SpDefense": 119,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2102,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5061,
+            "Attack": 503,
+            "Defense": 187,
+            "SpAttack": 84,
+            "SpDefense": 131,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2282,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 5389,
+            "Attack": 560,
+            "Defense": 208,
+            "SpAttack": 94,
+            "SpDefense": 145,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2489,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5766,
+            "Attack": 625,
+            "Defense": 232,
+            "SpAttack": 106,
+            "SpDefense": 161,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2727,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 6200,
+            "Attack": 700,
+            "Defense": 260,
+            "SpAttack": 120,
+            "SpDefense": 180,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Dash and Slash",
+            "MoveOrders": [
+                "Slash",
+                "Fury Swipes",
+                "Cut",
+                "Feint Attack"
+            ],
+            "HeldItems": [
+                "Razor Claw",
+                "Attack Weight",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Attack"
+        },
+        {
+            "Name": "High Burst",
+            "MoveOrders": [
+                "Slash",
+                "Fury Swipes",
+                "Shadow Claw",
+                "Night Slash"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Scope Lens",
+                "Razor Claw"
+            ],
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Attack"
+        },
+        {
+            "Name": "High Mobility",
+            "MoveOrders": [
+                "Slash",
+                "Fury Swipes",
+                "Cut",
+                "Feint Attack"
+            ],
+            "HeldItems": [
+                "Float Stone",
+                "Attack Weight",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "Fluffy Tail",
+            "AltBattleItem": "X Speed"
+        }
+    ]
+}
+

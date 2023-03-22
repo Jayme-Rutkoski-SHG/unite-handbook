@@ -7,14 +7,14 @@
 
 import IGListKit
 
-protocol StatSliderSectionControllerDelegate {
+protocol StatSliderSectionControllerDelegate : AnyObject {
     func didChangeLevel(level: Int)
 }
 
 class StatSliderSectionController: ListSectionController {
     
     private var model: StatSlider? = nil
-    private var delegate: StatSliderSectionControllerDelegate?
+    private weak var delegate: StatSliderSectionControllerDelegate?
     
     convenience init(delegate: StatSliderSectionControllerDelegate) {
         self.init()

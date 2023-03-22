@@ -1,0 +1,365 @@
+{
+    "Name": "Cramorant",
+    "AttackStyle": "Special",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Expert",
+    "Ability": [
+        {
+            "Name": "Gulp Missile",
+            "Desc": "When Cramorant has prey in its mouth, it will counterattack upon taking damage from an enemy. Alternatively, Cramorant can shoot the prey at his enemy as a boosted attack. The prey bounces to 1 nearby enemy./n/nWhile above 50% HP, caught prey will be Arrokuda which deals damage and reduces enemy Defense by 20% and Sp. Def by 5% for 3s. While below 50% HP, the prey will be Pikachu which deals damage to the enemy and slows them by 50% for 1s."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Whirlpool",
+            "Category": "Area",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Cramorant creates a whirlpool at a designated location, damaging all enemies in the radius 10 times over a 1.8s duration. The area contracts over time to where enemies at the outer edge of the pool will only be hit three times. It also slows enemies by 50% for 0.2s, refreshing every damage tick. Cramorant can enter the whirlpool to catch prey for Gulp Missile (you can catch up to 2 prey)."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Surf",
+                    "Category": "Ranged",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Cramorant sends a wave in a designated direction, damaging enemies that make contact with the wave. The wave reaches its maximum distance after 0.8s and then returns to its starting point at the same speed. Enemies caught in the outgoing or returning wave are dealt damage up to two times. Enemies caught in the returning wave pulled in the direction of the returning wave, being incapacitated for the duration of the pull for 0.4s. Cramorant catches prey with the first wave, and can enter the wave that returns to catch prey for Gulp Missile."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "The wave also slows by 40% for 2s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Dive",
+                    "Category": "Dash",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Cramorant turns the designated area into a puddle, then dives to that area; becoming unstoppable for 0.5s, shoving and damaging enemies in the area for 0.5s. Cramorant catches prey for Gulp Missile as they emerge from the puddle and the next boosted attack deals additional damage but only for the next 5s; boosted attacks after this 5s are treated as regular boosted attacks. Holds 3 uses in reserve./n/nThere is a 1.5 sec cooldown between each use, which is reduced with cooldown reduction."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Feather Dance",
+            "Category": "Debuff",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Cramorant throws a circle of feathers at a designated area, slowing enemies by 20% in the radius and reducing their Attack by 30% for 4s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Hurricane",
+                    "Category": "Hindrance",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Cramorant creates a fierce wind at a location. After 0.5s enemies caught in the area are damaged and thrown for 1s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increases Cramorant's movement speed by 20% for 3s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Air Slash",
+                    "Category": "Ranged",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Cramorant shoots 5 blades of air while moving backwards, dealing damage to enemies within the cone in a 0.33s time frame. This move's cooldown is reduced by .5s for each blade that hits (maximum 2.5s)."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Heals Cramorant every time a blade of air hits an enemy."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Gatling Gulp Missile",
+            "Category": "Area",
+            "Cooldown": 123,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Cramorant becomes unstoppable and fires a series of prey at the nearest enemy up to 10 times, becoming immobile for the up to 6.5s. The prey that is fired will be Arrokuda while above 50% HP and Pikachu while under 50% HP. Gatling Gulp Missile can be cancelled early. If a boosted attack is ready when starting this move, it will be shot out first as a regular boosted attack, followed by 10 Gatling Gulp Missiles."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3292,
+            "Attack": 134,
+            "Defense": 60,
+            "SpAttack": 50,
+            "SpDefense": 40,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3399,
+            "Attack": 69,
+            "Defense": 75,
+            "SpAttack": 46,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1142,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3517,
+            "Attack": 145,
+            "Defense": 78,
+            "SpAttack": 102,
+            "SpDefense": 52,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1299,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3647,
+            "Attack": 151,
+            "Defense": 88,
+            "SpAttack": 132,
+            "SpDefense": 59,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1471,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3789,
+            "Attack": 158,
+            "Defense": 99,
+            "SpAttack": 165,
+            "SpDefense": 67,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.166,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3946,
+            "Attack": 166,
+            "Defense": 112,
+            "SpAttack": 201,
+            "SpDefense": 75,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1868,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4118,
+            "Attack": 175,
+            "Defense": 126,
+            "SpAttack": 240,
+            "SpDefense": 84,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2097,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4308,
+            "Attack": 185,
+            "Defense": 141,
+            "SpAttack": 283,
+            "SpDefense": 94,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2349,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4517,
+            "Attack": 196,
+            "Defense": 158,
+            "SpAttack": 331,
+            "SpDefense": 105,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2627,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4748,
+            "Attack": 208,
+            "Defense": 176,
+            "SpAttack": 384,
+            "SpDefense": 117,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2934,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5002,
+            "Attack": 221,
+            "Defense": 196,
+            "SpAttack": 442,
+            "SpDefense": 131,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.3272,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5281,
+            "Attack": 235,
+            "Defense": 218,
+            "SpAttack": 506,
+            "SpDefense": 146,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.3644,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 5589,
+            "Attack": 250,
+            "Defense": 243,
+            "SpAttack": 576,
+            "SpDefense": 162,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.4053,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5928,
+            "Attack": 267,
+            "Defense": 270,
+            "SpAttack": 654,
+            "SpDefense": 180,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.4503,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 6301,
+            "Attack": 286,
+            "Defense": 300,
+            "SpAttack": 739,
+            "SpDefense": 200,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.4949,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Mobility",
+            "MoveOrders": [
+                "Whirlpool",
+                "Feather Dance",
+                "Dive",
+                "Air Slash"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Slick Spoon",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "AoE Disabler",
+            "MoveOrders": [
+                "Whirlpool",
+                "Feather Dance",
+                "Hurricane",
+                "Surf"
+            ],
+            "HeldItems": [
+                "Shell Bell",
+                "Energy Amplifier",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "High-Burst",
+            "MoveOrders": [
+                "Whirlpool",
+                "Feather Dance",
+                "Hurricane",
+                "Surf"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
+            ],
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Speed"
+        }
+    ]
+}
+

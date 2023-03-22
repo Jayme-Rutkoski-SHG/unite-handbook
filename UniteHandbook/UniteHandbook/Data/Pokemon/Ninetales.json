@@ -1,0 +1,365 @@
+{
+    "Name": "Ninetales",
+    "AttackStyle": "Special",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Snow Warning",
+            "Desc": "Causes snow to fall on an enemy, dealing damage to it and decreasing their movement speed by 30% for .75s. Boosted attacks, Snow Warning, and all moves (except Aurora Veil) sling snow; hitting the same target with snow 4 times will freeze them for 1s. This ability has an 8s cooldown."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Powder Snow",
+            "Category": "Area",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Ninetales attacks with a chilly gust of powdery snow; dealing damage to enemies and slowing them by 50% for 1s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Avalanche",
+                    "Category": "Area",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Ninetales attacks with a gust of chilly ice toward the designated direction. The ice damages enemies and forms a wall that can't be walked through. After a short time, this wall melts and collapses; further damaging enemies in a radius around the wall."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Also decreases the movement speed of enemies by 50% for 1s when this move hits."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Dazzling Gleam",
+                    "Category": "Hindrance",
+                    "Cooldown": 7.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Ninetales attacks with a powerful cone of blinding light; damaging and stunning enemies hit for .8s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased damage and stun duration to 1s."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Icy Wind",
+            "Category": "Ranged",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Ninetales attacks with a gust of freezing air; damaging, shoving, and slowing enemies hit."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Blizzard",
+                    "Category": "Ranged",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Ninetales blasts twice in a line. The first blast penetrates walls and slows enemies. The second blast deals double damage, shoves enemies back, and if it hits a wall it creates a frost area at the impact location for 4s; dealing damage every 0.5s and slowing enemies in the area by 20% for 1s on each tick."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Aurora Veil",
+                    "Category": "Buff",
+                    "Cooldown": 13.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Ninetales dashes a short distance and creates an aurora centered on their position for 5s; reducing damage received by Ninetales and allies within the veil by 30%, healing Ninetales with each boosted attack, and increasing Attack Speed by 15%. While Ninetales is inside the aurora, movement speed is increased by 10% and all auto attacks are boosted."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Damage reduction increased to 35% and cooldown reduced by 2s."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Snow Globe",
+            "Category": "Area",
+            "Cooldown": 134,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Attack with a chilly blast of snow and ice; dealing damage to enemies in the area of effect around Ninetales when it hits. Deals increased damage to enemies that are frozen."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3197,
+            "Attack": 134,
+            "Defense": 35,
+            "SpAttack": 51,
+            "SpDefense": 27,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3266,
+            "Attack": 137,
+            "Defense": 38,
+            "SpAttack": 72,
+            "SpDefense": 29,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1044,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3345,
+            "Attack": 141,
+            "Defense": 42,
+            "SpAttack": 96,
+            "SpDefense": 32,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1095,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3747,
+            "Attack": 161,
+            "Defense": 60,
+            "SpAttack": 219,
+            "SpDefense": 46,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1354,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3852,
+            "Attack": 166,
+            "Defense": 65,
+            "SpAttack": 251,
+            "SpDefense": 50,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1422,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3972,
+            "Attack": 172,
+            "Defense": 70,
+            "SpAttack": 288,
+            "SpDefense": 54,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1500,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4110,
+            "Attack": 179,
+            "Defense": 76,
+            "SpAttack": 330,
+            "SpDefense": 59,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1589,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4269,
+            "Attack": 187,
+            "Defense": 83,
+            "SpAttack": 379,
+            "SpDefense": 65,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1692,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4452,
+            "Attack": 196,
+            "Defense": 91,
+            "SpAttack": 435,
+            "SpDefense": 71,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.181,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4663,
+            "Attack": 207,
+            "Defense": 101,
+            "SpAttack": 500,
+            "SpDefense": 78,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1946,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4906,
+            "Attack": 219,
+            "Defense": 112,
+            "SpAttack": 574,
+            "SpDefense": 86,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2102,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5185,
+            "Attack": 233,
+            "Defense": 125,
+            "SpAttack": 660,
+            "SpDefense": 96,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2282,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 5506,
+            "Attack": 249,
+            "Defense": 139,
+            "SpAttack": 759,
+            "SpDefense": 107,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2489,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5875,
+            "Attack": 268,
+            "Defense": 156,
+            "SpAttack": 872,
+            "SpDefense": 120,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2727,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 6299,
+            "Attack": 289,
+            "Defense": 175,
+            "SpAttack": 1002,
+            "SpDefense": 135,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Boosted Attack",
+            "MoveOrders": [
+                "Powder Snow",
+                "Icy Wind",
+                "Dazzling Gleam",
+                "Aurora Veil"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Choice Specs",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Freeze-Burst",
+            "MoveOrders": [
+                "Powder Snow",
+                "Icy Wind",
+                "Avalanche",
+                "Blizzard"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
+            ],
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Support",
+            "MoveOrders": [
+                "Powder Snow",
+                "Icy Wind",
+                "Dazzling Gleam",
+                "Aurora Veil"
+            ],
+            "HeldItems": [
+                "Buddy Barrier",
+                "Exp Share",
+                "Shell Bell"
+            ],
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Full Heal"
+        }
+    ]
+}
+

@@ -1,0 +1,369 @@
+{
+    "Name": "Glaceon",
+    "AttackStyle": "Special",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Run Away",
+            "Desc": "When Eevee would be affected by a hindrance, the hindrance is negated and becomes invincible for 1s. This Ability goes on cooldown after it’s triggered (70s cd)."
+        },
+        {
+            "Name": "Snow Cloak",
+            "Desc": "When Glaceon would be affected by a hindrance, the hindrance is negated. Glaceon then starts sneaking and becomes invincible for 0.5s. This Ability goes on cooldown after it’s triggered (70s cd) and is reset after respawning."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Swift",
+            "Category": "Buff",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Creates 4 stars around the user. For a short time afterward, each time the user hits an enemy with a basic attack or boosted attack, one or two of the stars respectively will shoot out and deal additional damage to the target."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Icicle Spear",
+                    "Category": "Sure Hit",
+                    "Cooldown": 5.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Glaceon launches all of its stored ice crystals in rapid succession at the designated enemy. If Glaceon has no ice crystals when this move is used, 2 ice crystals are instantly created and are launched. Launched ice crystals can hit enemies on the opposing team that are not the designated target of this move. The crystals shatter when they hit any enemy, dealing damage to all enemies in the area. Ice crystals launched by this move deal 5% increased damage each time they hit the same enemy. When this move is used, the cooldown of Ice Shard or Freeze-Dry is reduced./n/nA maximum of 12 ice crystals will be launched during this move."
+                        },
+                        {
+                            "Level": 10,
+                            "Desc": "Each launched ice crystal also deals additional damage to enemies hit equal to 2% of their remaining HP./n/nAgainst Wild Pokémon: The additional damage from maximum HP is capped at 300."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Icy Wind",
+                    "Category": "Dash",
+                    "Cooldown": 6.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Jump a short distance in the designated direction; Glaceon's next auto attack within 5s gains increased range and launches all stored ice crystals at an enemy, dealing damage to them. Glaceon then regains the same number of ice crystals that were launched. If an enemy is hit by 4 or more ice crystals, that enemy's movement speed is decreased by 8% per shard (stacking up to 6 times) for 1s. If Glaceon has no ice crystals when this move is used, gain 2 ice crystals."
+                        },
+                        {
+                            "Level": 10,
+                            "Desc": "Each launched ice crystal also deals additional damage to enemies hit equal to 1.5% of their remaining HP./n/nAgainst Wild Pokémon: The additional damage from maximum HP is capped at 300."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Tail Whip",
+            "Category": "Sure Hit",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Has the user wag its tail at an enemy, dealing damage and decreasing their Defense and Sp. Def by 30% for 2s, and movement speed by 20% for 1.5s. The next auto attack after using this move becomes a boosted attack."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Ice Shard",
+                    "Category": "Buff",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Increases movement speed by 50% for 0.5s. Afterward, the Glaceon's basic attack speed is increased by 25% for 2s, and basic attacks change into attacks that hurl chunks of ice for 2.5s. These chunks of ice deal damage to enemies they hit and decrease their movement speed by 30% for 1s. Each time a chunk of ice hits, Glaceon gains 2 ice crystals. Gain 2 ice crystals if this move is used while launching crystals with Icicle Spear, or if this move is used after Icy Wind but before launching all crystals with the next auto attack."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "Increases basic attack speed further to 50% for the duration of the move's effect."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Freeze Dry",
+                    "Category": "Ranged",
+                    "Cooldown": 8.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Shoot out a freezing burst of air in a forward direction. This burst explodes upon hitting an enemy or after traveling a set distance; dealing damage to all enemies in the area. Upon hitting an enemy, increase Glaceon's Sp. Atk by 50% for 3s. For each enemy hit by the explosion, Glaceon gains 2 ice crystals. The explosion also leaves behind an ice zone which slows enemies that enter by 20% for 3s. If they remain in the ice zone for 2.5s, they become frozen for 0.6s."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "For each enemy hit by this move's explosions, Glaceon gains 1 additional ice crystal."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Glacial Stage",
+            "Category": "Area",
+            "Cooldown": 100,
+            "LevelDetails": [
+                {
+                    "Level": 8,
+                    "Desc": "Glaceon leaps up high, creating an ice zone in front of themself that deals damage to enemies in the area-of-effect. While Glaceon is in the ice zone, their movement speed is increased by 50% for 6s, and Glaceon gains 2 ice crystals every second while on the center and 1 ice crystal every second while on the perimeter. The movement speed of enemies in the ice zone is decreased by 50% for 1s."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3200,
+            "Attack": 20,
+            "Defense": 35,
+            "SpAttack": 100,
+            "SpDefense": 25,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3270,
+            "Attack": 22,
+            "Defense": 38,
+            "SpAttack": 117,
+            "SpDefense": 27,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.12,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3350,
+            "Attack": 24,
+            "Defense": 42,
+            "SpAttack": 137,
+            "SpDefense": 30,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1429,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3758,
+            "Attack": 36,
+            "Defense": 60,
+            "SpAttack": 238,
+            "SpDefense": 44,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.2593,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3854,
+            "Attack": 39,
+            "Defense": 65,
+            "SpAttack": 264,
+            "SpDefense": 48,
+            "CritRate": 0.10,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2897,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3986,
+            "Attack": 43,
+            "Defense": 70,
+            "SpAttack": 294,
+            "SpDefense": 52,
+            "CritRate": 0.10,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.3246,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4127,
+            "Attack": 47,
+            "Defense": 76,
+            "SpAttack": 329,
+            "SpDefense": 57,
+            "CritRate": 0.10,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.3647,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4289,
+            "Attack": 52,
+            "Defense": 83,
+            "SpAttack": 369,
+            "SpDefense": 63,
+            "CritRate": 0.10,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.4109,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4475,
+            "Attack": 58,
+            "Defense": 91,
+            "SpAttack": 415,
+            "SpDefense": 69,
+            "CritRate": 0.20,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.4641,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4689,
+            "Attack": 65,
+            "Defense": 101,
+            "SpAttack": 468,
+            "SpDefense": 76,
+            "CritRate": 0.20,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.5253,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4935,
+            "Attack": 73,
+            "Defense": 112,
+            "SpAttack": 529,
+            "SpDefense": 85,
+            "CritRate": 0.20,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.5957,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5218,
+            "Attack": 82,
+            "Defense": 125,
+            "SpAttack": 599,
+            "SpDefense": 95,
+            "CritRate": 0.20,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.6767,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 5544,
+            "Attack": 92,
+            "Defense": 139,
+            "SpAttack": 680,
+            "SpDefense": 106,
+            "CritRate": 0.20,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.7699,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5919,
+            "Attack": 103,
+            "Defense": 156,
+            "SpAttack": 773,
+            "SpDefense": 119,
+            "CritRate": 0.20,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.877,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 6350,
+            "Attack": 116,
+            "Defense": 175,
+            "SpAttack": 880,
+            "SpDefense": 134,
+            "CritRate": 0.20,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 1.00,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Icicle Spear",
+            "MoveOrders": [
+                "Swift",
+                "Tail Whip",
+                "Icicle Spear",
+                "Ice Shard"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Slick Spoon",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Icy Wind",
+            "MoveOrders": [
+                "Swift",
+                "Tail Whip",
+                "Icy Wind",
+                "Freeze Dry"
+            ],
+            "HeldItems": [
+                "Choice Specs",
+                "Slick Spoon",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Sp Atk Specs",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Full Offense",
+            "MoveOrders": [
+                "Swift",
+                "Tail Whip",
+                "Icy Wind",
+                "Freeze Dry"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
+            ],
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
+        }
+    ]
+}
+

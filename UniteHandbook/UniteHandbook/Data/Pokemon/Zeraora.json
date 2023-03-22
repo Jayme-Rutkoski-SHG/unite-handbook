@@ -1,0 +1,365 @@
+{
+    "Name": "Zeraora",
+    "AttackStyle": "Attack",
+    "Role": "Speedster",
+    "Style": "Melee",
+    "Difficulty": "Expert",
+    "Ability": [
+        {
+            "Name": "Volt Absorb",
+            "Desc": "Converts 8% of the damage Zeraora was dealt as Atk, up to 200 Atk. Resets after not taking damage for 4s."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Agility",
+            "Category": "Dash",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Zeraora quickly dashes forward, increasing auto attack speed by 45% for 3s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Volt Switch",
+                    "Category": "Dash",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Zeraora charges forward, damaging enemies in the path and increasing Zeraora's auto attack speed by 45% for 3s. Activating this ability again within 3s will teleport Zeraora to their original location, dealing damage to enemies in the path back."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "Increased damage and further increasing attack speed to 60% for 3s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Spark",
+                    "Category": "Dash",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Zeraora leaps in a selected direction, damaging all enemies in their path and becoming unstoppable for 0.2s. If an auto attack is used before the leap ends, Zeraora will jump to the closest enemy, dealing additional damage to the target. Holds 3 uses in reserve - after the first use the next use must be executed within 4s or this move goes on cooldown. The second use resets this timer."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "15% missing HP is restored if performing an auto attack before reaching the enemy."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Slash",
+            "Category": "Melee",
+            "Cooldown": 8.50,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Zeraora charges toward an enemy and attacks them with multiple swipes, ending with an interrupt that knocks the enemy into the air for 0.5s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Discharge",
+                    "Category": "Area",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 8,
+                            "Desc": "Zeraora emits an electric aura, damaging all enemies within the aura every 0.3s for 1.5s (6 ticks) followed after 0.4s by a final tick and granting a shield to Zeraora for 3s when it hits. Any paralyzed enemies within the area of effect are pulled towards Zeraora with the final tick, damaging them with an extra tick of damage and stunning them for 1s."
+                        },
+                        {
+                            "Level": 14,
+                            "Desc": "Enemies hit are slowed by 25% for 1s, refreshing every tick."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Wild Charge",
+                    "Category": "Melee",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 8,
+                            "Desc": "Zeraora charges towards an enemy, damaging them multiple times and switching to the nearest enemy if the initial target's HP drops to zero before all hits are used. Initially Wild Charge has 3 hits, but hitting any enemies with abilities or boosted attacks previously within 5s provides up to 3 stacks, each stack adding an additional hit to Wild Charge (capped at 6 hits). Stacks have to be consumed within 5s. The first hit deals full damage and subsequent hits deal half damage. Zeraora is untargetable for the duration of this move (1.2s at 0 stacks, 1.5s at 1 stack, 1.8s at 2 stacks and 2s at 3 stacks)."
+                        },
+                        {
+                            "Level": 14,
+                            "Desc": "Also deals damage to nearby enemies when it hits."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Plasma Gale",
+            "Category": "Sure Hit",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Become unstoppable for 0.5s and launch a bolt of lightning that travels towards the target enemy; dealing damage and knocking up enemies hit along the path for 0.5s and then once again in an area when reaching the target, knocking all enemies hit into the air. Creates an area of electricity for 5s centered on the initial target that paralyzes enemies caught within, increasing Zeraora's auto attack range and auto attack damage by 20% while inside the area."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3002,
+            "Attack": 159,
+            "Defense": 60,
+            "SpAttack": 20,
+            "SpDefense": 40,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3120,
+            "Attack": 176,
+            "Defense": 69,
+            "SpAttack": 23,
+            "SpDefense": 46,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1071,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3250,
+            "Attack": 195,
+            "Defense": 78,
+            "SpAttack": 27,
+            "SpDefense": 52,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1149,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3393,
+            "Attack": 216,
+            "Defense": 88,
+            "SpAttack": 31,
+            "SpDefense": 59,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1235,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3550,
+            "Attack": 239,
+            "Defense": 99,
+            "SpAttack": 36,
+            "SpDefense": 67,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1329,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3723,
+            "Attack": 265,
+            "Defense": 112,
+            "SpAttack": 41,
+            "SpDefense": 75,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1433,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 3913,
+            "Attack": 293,
+            "Defense": 126,
+            "SpAttack": 47,
+            "SpDefense": 84,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1548,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4122,
+            "Attack": 324,
+            "Defense": 141,
+            "SpAttack": 53,
+            "SpDefense": 94,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1674,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4353,
+            "Attack": 358,
+            "Defense": 158,
+            "SpAttack": 60,
+            "SpDefense": 105,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1813,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4607,
+            "Attack": 396,
+            "Defense": 176,
+            "SpAttack": 68,
+            "SpDefense": 117,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1966,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4887,
+            "Attack": 437,
+            "Defense": 196,
+            "SpAttack": 76,
+            "SpDefense": 131,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2135,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5195,
+            "Attack": 483,
+            "Defense": 218,
+            "SpAttack": 85,
+            "SpDefense": 146,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2321,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 5534,
+            "Attack": 533,
+            "Defense": 243,
+            "SpAttack": 98,
+            "SpDefense": 162,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2526,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5908,
+            "Attack": 588,
+            "Defense": 270,
+            "SpAttack": 106,
+            "SpDefense": 180,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2751,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 6319,
+            "Attack": 649,
+            "Defense": 300,
+            "SpAttack": 118,
+            "SpDefense": 200,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2999,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Discharge AoE",
+            "MoveOrders": [
+                "Slash",
+                "Agility",
+                "Volt Switch",
+                "Discharge"
+            ],
+            "HeldItems": [
+                "Weakness Policy",
+                "Muscle Band",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Fluffy Tail"
+        },
+        {
+            "Name": "Single Target Burst",
+            "MoveOrders": [
+                "Slash",
+                "Agility",
+                "Spark",
+                "Wild Charge"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Full Damage",
+            "MoveOrders": [
+                "Slash",
+                "Agility",
+                "Spark",
+                "Discharge"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Muscle Band",
+                "Razor Claw"
+            ],
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
+        }
+    ]
+}
+

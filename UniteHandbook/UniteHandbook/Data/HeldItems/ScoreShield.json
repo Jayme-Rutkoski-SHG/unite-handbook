@@ -1,0 +1,19 @@
+{
+    "Name": "Score Shield",
+    "BonusStats": [
+        {
+            "Label": "HP",
+            "BaseValue": 0,
+            "IncrementValue": 15,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Max HP",
+        "BaseValue": 0.05,
+        "IncrementValue": 0.025,
+        "IsPercent": true
+    },
+    "Desc": "Shields you while you attempt to score a goal. This shield will break before all other shields. Scoring cannot be interrupted while the shield remains active. (20s cooldown). Shield value is dependent on item level and Pokémon level."
+}
+

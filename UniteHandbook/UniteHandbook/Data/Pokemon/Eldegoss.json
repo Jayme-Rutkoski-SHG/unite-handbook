@@ -1,0 +1,365 @@
+{
+    "Name": "Eldegoss",
+    "AttackStyle": "Special",
+    "Role": "Supporter",
+    "Style": "Ranged",
+    "Difficulty": "Novice",
+    "Ability": [
+        {
+            "Name": "Cotton Down",
+            "Desc": "When receiving at least 5% max HP as damage in a single attack; recover HP, deal revenge damage in an area around Eldegoss, and decrease the enemies movement speed in this area effect by 30% for 1.5s. This ability has a 10s cooldown."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Leafage",
+            "Category": "Ranged",
+            "Cooldown": 4.50,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Eldegoss shoots a bundle of leaves that explode on the first enemy hit; damaging and slowing movement speed by 40% for 2s in an area."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Pollen Puff",
+                    "Category": "Ranged",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Eldegoss throws a puff of pollen. This puff attaches to any Pokémon that touches it within 0.5s of landing on the ground or directly to a Pokémon as aimed by Eldegoss. If attached the puff will explode after 2s, damaging enemies and healing allies around it. If the puff has not been attached to any Pokémon within the landing pick up window, the puff detonates after 1s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "If attached to an ally or Eldegoss, it will reduce the damage they receive by 20% for 2s. If attached directly to an enemy, the puff will deal damage over time. Enemies in contact with the small puff while attached to allies also take the damage over time."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Leaf Tornado",
+                    "Category": "Ranged",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Eldegoss conjures a tornado full of leaves launching it in a designated direction. The tornado damages enemies and creates a path of wind that increases the movement speed of allies that touch it by 55% for 1.5s, refreshing as long as they are on the path. When the tornado reaches max distance, the path damages enemies on the path a second time. The haste path lasts for 4s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Enemies hit by the tornado will miss all of their auto attacks for 2.5s."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Synthesis",
+            "Category": "Recovery",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Eldegoss uses sunlight to heal themself and nearby allies."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Cotton Guard",
+                    "Category": "Buff",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Eldegoss creates barriers out of cotton; granting Eldegoss and all nearby allies a shield for 3s. When the shield expires, it restores HP equal to 15% of the remaining shield value."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Also increases allies and Eldegoss's movement speed by 30% for 2s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Cotton Spore",
+                    "Category": "Area",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Eldegoss channels for 2s, gathering spores while increasing its movement speed by 30% for 2s. At the end of the channel the spores are released; damaging and throwing nearby enemies into the air for 0.5s, then slowing their movement speed by 30% for 2s when they land./n/nThe 2s channel can be finished prematurely by using Cotton Cloud Crash."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Eldegoss gains 40% increased Defense and Special Defense while channeling."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Cotton Cloud Crash",
+            "Category": "Area",
+            "Cooldown": 100,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Float into the air for 3s; becoming invincible and increasing movement speed by 10% for 6s. If used again or after 3s, pound the ground, attacking and shoving enemies for .7s while restoring HP to Eldegoss and allies in the radius."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3278,
+            "Attack": 130,
+            "Defense": 40,
+            "SpAttack": 40,
+            "SpDefense": 30,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3383,
+            "Attack": 134,
+            "Defense": 44,
+            "SpAttack": 54,
+            "SpDefense": 33,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1022,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3503,
+            "Attack": 139,
+            "Defense": 48,
+            "SpAttack": 70,
+            "SpDefense": 36,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1047,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 4114,
+            "Attack": 162,
+            "Defense": 69,
+            "SpAttack": 152,
+            "SpDefense": 52,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1176,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4274,
+            "Attack": 168,
+            "Defense": 74,
+            "SpAttack": 173,
+            "SpDefense": 56,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.121,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4457,
+            "Attack": 175,
+            "Defense": 80,
+            "SpAttack": 198,
+            "SpDefense": 61,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1249,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4668,
+            "Attack": 183,
+            "Defense": 87,
+            "SpAttack": 226,
+            "SpDefense": 66,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1294,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4911,
+            "Attack": 192,
+            "Defense": 95,
+            "SpAttack": 258,
+            "SpDefense": 72,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1345,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5190,
+            "Attack": 203,
+            "Defense": 104,
+            "SpAttack": 295,
+            "SpDefense": 79,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1404,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5511,
+            "Attack": 215,
+            "Defense": 115,
+            "SpAttack": 338,
+            "SpDefense": 87,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1472,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5880,
+            "Attack": 229,
+            "Defense": 128,
+            "SpAttack": 387,
+            "SpDefense": 96,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.155,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 6305,
+            "Attack": 245,
+            "Defense": 142,
+            "SpAttack": 444,
+            "SpDefense": 107,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.164,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 6794,
+            "Attack": 264,
+            "Defense": 159,
+            "SpAttack": 509,
+            "SpDefense": 119,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1743,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 7356,
+            "Attack": 285,
+            "Defense": 178,
+            "SpAttack": 584,
+            "SpDefense": 133,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1862,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 8002,
+            "Attack": 310,
+            "Defense": 200,
+            "SpAttack": 670,
+            "SpDefense": 149,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1999,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Healer",
+            "MoveOrders": [
+                "Leafage",
+                "Synthesis",
+                "Pollen Puff",
+                "Cotton Guard"
+            ],
+            "HeldItems": [
+                "Exp Share",
+                "Rescue Hood",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Utility",
+            "MoveOrders": [
+                "Leafage",
+                "Synthesis",
+                "Leaf Tornado",
+                "Cotton Guard"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Rescue Hood",
+                "Exp Share"
+            ],
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Offense",
+            "MoveOrders": [
+                "Leafage",
+                "Synthesis",
+                "Leaf Tornado",
+                "Cotton Spore"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
+        }
+    ]
+}
+

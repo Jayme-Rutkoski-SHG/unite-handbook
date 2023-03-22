@@ -7,14 +7,14 @@
 
 import IGListKit
 
-protocol AbilitiesSectionControllerDelegate {
+protocol AbilitiesSectionControllerDelegate: AnyObject {
     func didSelectAbilityInfo(desc: String)
 }
 
 class AbilitiesSectionController: ListSectionController {
     
     private var model: AbilityDetails? = nil
-    private var delegate: AbilitiesSectionControllerDelegate?
+    private weak var delegate: AbilitiesSectionControllerDelegate?
     
     convenience init(delegate: AbilitiesSectionControllerDelegate) {
         self.init()

@@ -1,0 +1,25 @@
+{
+    "Name": "Assault Vest",
+    "BonusStats": [
+        {
+            "Label": "HP",
+            "BaseValue": 0,
+            "IncrementValue": 18,
+            "IsPercent": false
+        },
+        {
+            "Label": "Sp Defense",
+            "BaseValue": 0,
+            "IncrementValue": 3.4,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "",
+        "BaseValue": 0.09,
+        "IncrementValue": 0.03,
+        "IsPercent": true
+    },
+    "Desc": "Gain a shield against Sp. Attack damage while out of combat for 9%/12%/15% max HP (OoC is 5s after leaving combat). This shield must be fully broken before receiving another from Assault Vest."
+}
+

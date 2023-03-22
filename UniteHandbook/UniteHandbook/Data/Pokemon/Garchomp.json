@@ -1,0 +1,365 @@
+{
+    "Name": "Garchomp",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Rough Skin",
+            "Desc": "When Garchomp takes a hit from a melee Pokémon; 30% of that damage is also dealt to the attacker. 2s cooldown and this damage is subject to defense reduction."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Sand Attack",
+            "Category": "Debuff",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Garchomp hurls sand toward a designated area; reducing enemy visibility by 50% and slowing them by 20% for 2s. Garchomp's movement speed is increased by 30% for 2s and auto attack speed is increased by 30% for 3s if an enemy is hit."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Dig",
+                    "Category": "Dash",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Garchomp quickly dives underground in a short dash; then bursts from the ground at the end of the designated area or beneath the first enemy hit, dealing damage in a small radius and throwing enemies into the air for 0.5s. Defense and Sp. Def. are increased for 3s after jumping out of the ground."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased throw duration to 1s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Dragon Rush",
+                    "Category": "Dash",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Garchomp jumps back and briefly channels before diving forward; dragging all enemies within a small radius to the designated area and reducing damage taken by 30% for .9s; then deals damage in a radius. Garchomp can use Dragon Claw during the first half of the channel to add the Dragon Claw hits as a combo attack, replacing the radial damage at the end of the move with a damaging stun and slow."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Become unstoppable during this move."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Bulldoze",
+            "Category": "Area",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Garchomp stomps the ground forcefully; dealing damage in a radius."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Earthquake",
+                    "Category": "Area",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Garchomp jumps and crashes forcefully to the ground; dealing damage in a wide radius and slowing enemies by 30% for 2s. After the initial damage, two aftershocks occur in the designated area; each dealing less damage than the initial move."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Slow increased to 45% near the center."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Dragon Claw",
+                    "Category": "Melee",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Garchomp viciously claws everything in the designated area twice. The first attack deals damage and pushes enemies. The second attack deals increased damage and slows movement speed by 45%. When using Dragon Rush combo with this move, increase the slow to 60%."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Livid Outrage",
+            "Category": "Melee",
+            "Cooldown": 134,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Garchomp goes berserk, taking 30% less damage for 5s and unleashes a powerful, unstoppable chain attack. Garchomp dashes and deals damage in the designated area five times; taking a brief moment to aim before every attack. Every attack has a different designated area and does more damage than the last. The fifth and final attack stuns Garchomp for0.5s and throws all enemies hit into the air. Enemies hit are slowed by 30% for 1s."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3050,
+            "Attack": 165,
+            "Defense": 90,
+            "SpAttack": 20,
+            "SpDefense": 67,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3117,
+            "Attack": 170,
+            "Defense": 95,
+            "SpAttack": 21,
+            "SpDefense": 71,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1064,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3198,
+            "Attack": 176,
+            "Defense": 102,
+            "SpAttack": 23,
+            "SpDefense": 76,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1141,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3295,
+            "Attack": 183,
+            "Defense": 110,
+            "SpAttack": 25,
+            "SpDefense": 82,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1234,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3647,
+            "Attack": 209,
+            "Defense": 138,
+            "SpAttack": 32,
+            "SpDefense": 104,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1571,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3787,
+            "Attack": 219,
+            "Defense": 149,
+            "SpAttack": 35,
+            "SpDefense": 113,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1705,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 3955,
+            "Attack": 232,
+            "Defense": 163,
+            "SpAttack": 38,
+            "SpDefense": 124,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1866,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4157,
+            "Attack": 247,
+            "Defense": 179,
+            "SpAttack": 42,
+            "SpDefense": 137,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.2059,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4869,
+            "Attack": 300,
+            "Defense": 237,
+            "SpAttack": 56,
+            "SpDefense": 183,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2741,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5159,
+            "Attack": 322,
+            "Defense": 261,
+            "SpAttack": 62,
+            "SpDefense": 202,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.3019,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5507,
+            "Attack": 348,
+            "Defense": 289,
+            "SpAttack": 69,
+            "SpDefense": 224,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.3353,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5925,
+            "Attack": 379,
+            "Defense": 323,
+            "SpAttack": 77,
+            "SpDefense": 251,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.3753,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 6426,
+            "Attack": 417,
+            "Defense": 364,
+            "SpAttack": 87,
+            "SpDefense": 283,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.4233,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 7028,
+            "Attack": 462,
+            "Defense": 413,
+            "SpAttack": 99,
+            "SpDefense": 321,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.4809,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 7750,
+            "Attack": 516,
+            "Defense": 472,
+            "SpAttack": 114,
+            "SpDefense": 367,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.55,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Boosted Attack",
+            "MoveOrders": [
+                "Bulldoze",
+                "Sand Attack",
+                "Dragon Rush",
+                "Earthquake"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
+        },
+        {
+            "Name": "Defensive",
+            "MoveOrders": [
+                "Bulldoze",
+                "Sand Attack",
+                "Dragon Rush",
+                "Dragon Claw"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Initiator",
+            "MoveOrders": [
+                "Bulldoze",
+                "Sand Attack",
+                "Dig",
+                "Earthquake"
+            ],
+            "HeldItems": [
+                "Weakness Policy",
+                "Muscle Band",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Full Heal"
+        }
+    ]
+}
+

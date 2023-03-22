@@ -1,0 +1,365 @@
+{
+    "Name": "Cinderace",
+    "AttackStyle": "Attack",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Novice",
+    "Ability": [
+        {
+            "Name": "Blaze",
+            "Desc": "When at half HP or less, critical-hit rate is increased by 10% and auto attack speed is increased by 20% for 5s (30s cooldown). When hitting an enemy with an auto attack, a cinder is placed on that enemy for 5s. Boosted Attacks and moves apply 2 cinders. When the target receives it's 5th cinder, they will all be consumed to deal additional damage to the enemy./n/nAgainst Wild Pokemon: The total damage is capped at 500."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Ember",
+            "Category": "Sure Hit",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Cinderace shoots out a small flame, damaging and applying burn to hit enemies. The burn lasts 3s ticking damage once every second and reduces enemy Attack and Sp. Attack by 5% for 2s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Pyro Ball",
+                    "Category": "Ranged",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Cinderace kicks a ball of flame in a designated direction, burning and damaging enemies hit. The burn lasts 3s ticking damage once every second and reduces enemy Attack and Sp. Attack by 5% for 2s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Reduces the cooldown of Flame Charge or Feint by 3.5s when this move hits."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Blaze Kick",
+                    "Category": "Sure Hit",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Perform a fiery flying kick, jumping towards a designated enemy, shoving and burning them. Cinderace can land in a targeted direction after this move hits. In addition, Cinderace is immune to hindrances during this move and is always a critical-hit. The burn lasts 3s ticking damage once every second and reduces enemy Attack and Sp. Attack by 5% for 2s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased auto attack speed by 65% for 3s after this move hits."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Low Sweep",
+            "Category": "Dash",
+            "Cooldown": 7.50,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Cinderace makes a swift low sweep in the designated direction, damaging any enemy it hits."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Flame Charge",
+                    "Category": "Dash",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 8,
+                            "Desc": "Cinderace charges forward, damaging all enemies hit."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "The next boosted attack after this move ends also slows enemies hit by 30% for 2s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Feint",
+                    "Category": "Buff",
+                    "Cooldown": 11.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 8,
+                            "Desc": "Cinderace dodges, increasing movement speed by 25% for 2s and becoming briefly invincible for 44 frames (.73s)."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "After dodging, the next 3 auto attacks that hit restore HP equal to 30% of damage dealt."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Blazing Bicycle Kick",
+            "Category": "Sure Hit",
+            "Cooldown": 150,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Create a giant ball of flame and kick it toward the designated location. The ball releases a fierce shock wave that deals damage to enemies in the area of effect. Also increases movement speed by 10% (stacks with the Unite Buffs) for 5s when it hits."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3000,
+            "Attack": 135,
+            "Defense": 50,
+            "SpAttack": 20,
+            "SpDefense": 30,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3034,
+            "Attack": 140,
+            "Defense": 53,
+            "SpAttack": 21,
+            "SpDefense": 32,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1187,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3075,
+            "Attack": 145,
+            "Defense": 56,
+            "SpAttack": 23,
+            "SpDefense": 34,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1411,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3125,
+            "Attack": 151,
+            "Defense": 60,
+            "SpAttack": 25,
+            "SpDefense": 36,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.168,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3304,
+            "Attack": 174,
+            "Defense": 75,
+            "SpAttack": 32,
+            "SpDefense": 45,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.2653,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3376,
+            "Attack": 183,
+            "Defense": 81,
+            "SpAttack": 35,
+            "SpDefense": 49,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.304,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 3702,
+            "Attack": 221,
+            "Defense": 108,
+            "SpAttack": 49,
+            "SpDefense": 65,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.4804,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 3805,
+            "Attack": 233,
+            "Defense": 117,
+            "SpAttack": 53,
+            "SpDefense": 70,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.5361,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 3929,
+            "Attack": 247,
+            "Defense": 127,
+            "SpAttack": 58,
+            "SpDefense": 76,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.603,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4077,
+            "Attack": 264,
+            "Defense": 139,
+            "SpAttack": 64,
+            "SpDefense": 83,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4225,
+            "Attack": 284,
+            "Defense": 154,
+            "SpAttack": 71,
+            "SpDefense": 92,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.776833,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 4468,
+            "Attack": 309,
+            "Defense": 172,
+            "SpAttack": 80,
+            "SpDefense": 103,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.8952,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 4724,
+            "Attack": 339,
+            "Defense": 193,
+            "SpAttack": 91,
+            "SpDefense": 116,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 1.0339,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5031,
+            "Attack": 375,
+            "Defense": 219,
+            "SpAttack": 104,
+            "SpDefense": 131,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 1.2003,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 5400,
+            "Attack": 418,
+            "Defense": 250,
+            "SpAttack": 119,
+            "SpDefense": 149,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 1.40,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Carry",
+            "MoveOrders": [
+                "Ember",
+                "Low Sweep",
+                "Blaze Kick",
+                "Flame Charge"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Scope Lens"
+            ],
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
+        },
+        {
+            "Name": "Pyro Ball",
+            "MoveOrders": [
+                "Ember",
+                "Low Sweep",
+                "Pyro Ball",
+                "Feint"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Drain Crown",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
+        },
+        {
+            "Name": "Damage Stack",
+            "MoveOrders": [
+                "Ember",
+                "Low Sweep",
+                "Blaze Kick",
+                "Flame Charge"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Attack Weight",
+                "Energy Amplifier"
+            ],
+            "AltHeldItem": "Rapid-Fire Scarf",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Eject Button"
+        }
+    ]
+}
+

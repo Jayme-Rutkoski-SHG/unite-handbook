@@ -1,0 +1,365 @@
+{
+    "Name": "Dodrio",
+    "AttackStyle": "Attack",
+    "Role": "Speedster",
+    "Style": "Melee",
+    "Difficulty": "Expert",
+    "Ability": [
+        {
+            "Name": "Run Away",
+            "Desc": "While moving, the sprint gauge charges and at full, Dodrio runs at increased movement speed. If movement speed is decreased below a threshold, the sprint gauge will rapidly deplete. When Doduo scores a goal, it evenly divides its collected Aeos energy into two portions and deposits them into the goal one at a time. As Dodrio, this is split into three portions to deposit in the goal one at a time. Only goals made by a full channel will count towards stacking items."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Peck",
+            "Category": "Melee",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Jabs forward with Doduo's beaks. When using the move, Doduo stops moving and loses sprint gauge due to dropping below the sprint gauge gaining threshold. When the sprint gauge is full, Doduo charges forward to jab the in the facing direction and fully consumes the sprint gauge."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Tri Attack",
+                    "Category": "Melee",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Dodrio attacks with their beaks in a cone in front of themself, dealing damage to enemies and applying one of the following random effects to enemies hit: decrease Attack and Burn, decrease attack speed, or decrease movement speed. When the sprint gauge is full, Dodrio instead shoots out 3 projectiles in the facing direction. If a projectile hits an enemy, the projectile deals damage and applies one of the aforementioned effects based on its color. After this move is used, Dodrio's next basic attack deals additional damage and restores HP. Holds 2 uses in reserve and cannot be used more than once every 1s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "The next auto attack gains additional healing by 3% of max HP. When used with a full sprint gauge the charge time for this move is reduced by 1s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Drill Peck",
+                    "Category": "Melee",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Dodrio strikes forward with their sharp beaks multiple times, dealing damage to enemies hit. If used with a full sprint gauge, consume the sprint gauge and dash forward while striking with their sharp beaks multiple times, dealing damage to enemies hit and shoving them."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Reduces base cd by 2.5s and restores a portion of Dodrio's HP equal to 30% of damage dealt by the flat damage (percent damage excluded)."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Quick Attack",
+            "Category": "Dash",
+            "Cooldown": 10.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Dash forward, increasing the user's movement speed for a short time and dealing damage to enemies hit. This move's cooldown is reduced by 1s if it hits an enemy."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Agility",
+                    "Category": "Buff",
+                    "Cooldown": 11.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Become immune to hindrances for a short time and adds to the sprint gauge. Afterward, movement speed is increased by 20% for 4s, and the sprint gauge charges faster."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Fully charges the sprint gauge on use."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Jump Kick",
+                    "Category": "Dash",
+                    "Cooldown": 6.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Dodrio leaps forward while kicking. If this move makes contact with an enemy or obstacle, Dodrio leaps over it and stomps the ground when landing, dealing damage to enemies in the area-of-effect, slowing by 25% for 2s, and the sprint gauge charges by 75%. If this move makes contact with an enemy, this move's cooldown is reduced by 3s."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Enemies in the area of the landing are also stunned for 1s."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Triple Trample",
+            "Category": "Dash",
+            "Cooldown": 134,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Dodrio runs to a designated location. While running, Dodrio is immune to hindrances. If Dodrio makes contact with an enemy while running, they are dealt damage and thrown into the air for 1s. When Dodrio arrives at the designated location, Dodrio gains 30% increased Attack and loses 5% Sp. Attack for 3s, is granted a 10% Max HP shield for 3s, and the sprint gauge charges faster for 6s. Damage dealt at the designated location is affected by the 30% Attack bonus."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3050,
+            "Attack": 150,
+            "Defense": 45,
+            "SpAttack": 20,
+            "SpDefense": 35,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3122,
+            "Attack": 161,
+            "Defense": 51,
+            "SpAttack": 22,
+            "SpDefense": 39,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1044,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3205,
+            "Attack": 173,
+            "Defense": 57,
+            "SpAttack": 24,
+            "SpDefense": 43,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1095,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3300,
+            "Attack": 187,
+            "Defense": 64,
+            "SpAttack": 26,
+            "SpDefense": 48,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1154,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3735,
+            "Attack": 251,
+            "Defense": 98,
+            "SpAttack": 40,
+            "SpDefense": 70,
+            "CritRate": 0.05,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1422,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3861,
+            "Attack": 269,
+            "Defense": 108,
+            "SpAttack": 44,
+            "SpDefense": 76,
+            "CritRate": 0.05,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.15,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4006,
+            "Attack": 290,
+            "Defense": 119,
+            "SpAttack": 48,
+            "SpDefense": 83,
+            "CritRate": 0.05,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1589,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4173,
+            "Attack": 314,
+            "Defense": 132,
+            "SpAttack": 53,
+            "SpDefense": 91,
+            "CritRate": 0.05,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1692,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4365,
+            "Attack": 342,
+            "Defense": 147,
+            "SpAttack": 59,
+            "SpDefense": 101,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.181,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4586,
+            "Attack": 374,
+            "Defense": 164,
+            "SpAttack": 66,
+            "SpDefense": 112,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1946,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4840,
+            "Attack": 411,
+            "Defense": 184,
+            "SpAttack": 74,
+            "SpDefense": 125,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2102,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5133,
+            "Attack": 454,
+            "Defense": 207,
+            "SpAttack": 83,
+            "SpDefense": 140,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2282,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 5469,
+            "Attack": 503,
+            "Defense": 233,
+            "SpAttack": 93,
+            "SpDefense": 157,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2489,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5856,
+            "Attack": 560,
+            "Defense": 263,
+            "SpAttack": 105,
+            "SpDefense": 177,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2727,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 6300,
+            "Attack": 625,
+            "Defense": 298,
+            "SpAttack": 117,
+            "SpDefense": 200,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Scoring",
+            "MoveOrders": [
+                "Peck",
+                "Quick Attack",
+                "Tri Attack",
+                "Agility"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Float Stone",
+                "Aeos Cookie"
+            ],
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
+        },
+        {
+            "Name": "Hit and Run",
+            "MoveOrders": [
+                "Peck",
+                "Quick Attack",
+                "Tri Attack",
+                "Jump Kick"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Float Stone",
+                "Razor Claw"
+            ],
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
+        },
+        {
+            "Name": "Drill Burst",
+            "MoveOrders": [
+                "Peck",
+                "Quick Attack",
+                "Drill Peck",
+                "Jump Kick"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Float Stone",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Speed"
+        }
+    ]
+}
+

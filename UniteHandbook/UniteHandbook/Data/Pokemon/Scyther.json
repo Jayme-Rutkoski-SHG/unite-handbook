@@ -1,0 +1,333 @@
+{
+    "Name": "Scyther",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Technician",
+            "Desc": "After this Pokémon uses a move, the next auto attack will deal two consecutive auto attacks instead. The second of these deals decreased damage. Technician lasts 5s and has no internal cooldown."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Fury Cutter",
+            "Category": "Melee",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Slashes twice dealing damage with its scythes in a cone. The second slash deals more damage than the first."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Dual Wingbeat",
+                    "Category": "Area",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Slashes in front with scythes, dealing damage in an X-shaped area-of-effect. If the second slash deals damage to an enemy in the center, restore the user's HP. If this move hits an enemy, it can be activated again within a set amount of time. If this move is used again, the user dashes in the designated direction, dealing damage to enemies hit. The dash deals more damage the lower the enemy's HP is."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increases the damage dealt by this move."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Quick Attack",
+            "Category": "Dash",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Dashes in designated direction dealing damage to enemies hit along the way."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Double Hit",
+                    "Category": "Dash",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Jumps in the designated direction, dealing damage to enemies during the jump and applying a mark to that enemy until they leave combat. After hitting an enemy, jump again. An enhanced auto attack is prepared on landing that charges at the enemy being attacked. This enhanced attack is available for 5s./n/nIf a marked enemy is knocked out, all of the user's move cooldowns are reset. The mark may be cleansed."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Reduces cooldown by 1s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Swords Dance",
+                    "Category": "Buff",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Dashes a short distance, increasing attack by 12% for 5s. While Swords Dance's attack buff is active, after basic attacks or abilities make contact 8 times, the user launches an area-of-effect attack that pierces through enemies in a line."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Reduces the damage the user receives by 50% while dashing (0.3s)."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Green Illusion Dive",
+            "Category": "Sure Hit",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Target an enemy, slashing through them dealing an initial hit of damage and creating 5 copies a set distance away. Copies deal damage to enemies they make contact with and apply a mark to them for 5s. After 5s, the copies return to Scyther, dealing damage to enemies they make contact with and healing Scyther for each hit. This move may be used again within 5s of activating as a dash in a designated direction dealing damage to enemies hit. The copies then dash to the end location of the user's dash. If a copy makes contact with an enemy while returning to Scyther, the copy deals damage to that enemy and disappears. If a marked enemy is knocked out, all of Scyther's move cooldowns are reset. Subsequent copies hitting the same target take 70% reduced damage."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3100,
+            "Attack": 160,
+            "Defense": 45,
+            "SpAttack": 20,
+            "SpDefense": 40,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3174,
+            "Attack": 170,
+            "Defense": 51,
+            "SpAttack": 22,
+            "SpDefense": 44,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1044,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3259,
+            "Attack": 182,
+            "Defense": 58,
+            "SpAttack": 24,
+            "SpDefense": 48,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1095,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3357,
+            "Attack": 196,
+            "Defense": 66,
+            "SpAttack": 27,
+            "SpDefense": 53,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1154,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3805,
+            "Attack": 259,
+            "Defense": 100,
+            "SpAttack": 40,
+            "SpDefense": 74,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1422,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3935,
+            "Attack": 277,
+            "Defense": 110,
+            "SpAttack": 44,
+            "SpDefense": 80,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.15,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4084,
+            "Attack": 298,
+            "Defense": 121,
+            "SpAttack": 48,
+            "SpDefense": 87,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1589,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4256,
+            "Attack": 322,
+            "Defense": 134,
+            "SpAttack": 53,
+            "SpDefense": 95,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1692,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4454,
+            "Attack": 350,
+            "Defense": 149,
+            "SpAttack": 59,
+            "SpDefense": 104,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.181,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4682,
+            "Attack": 382,
+            "Defense": 166,
+            "SpAttack": 65,
+            "SpDefense": 115,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1946,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4944,
+            "Attack": 419,
+            "Defense": 186,
+            "SpAttack": 72,
+            "SpDefense": 128,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2102,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5246,
+            "Attack": 461,
+            "Defense": 209,
+            "SpAttack": 81,
+            "SpDefense": 142,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2282,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 5593,
+            "Attack": 510,
+            "Defense": 235,
+            "SpAttack": 91,
+            "SpDefense": 159,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2489,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5992,
+            "Attack": 566,
+            "Defense": 265,
+            "SpAttack": 102,
+            "SpDefense": 178,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2727,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 6450,
+            "Attack": 630,
+            "Defense": 300,
+            "SpAttack": 115,
+            "SpDefense": 200,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Jungle",
+            "MoveOrders": [
+                "Fury Cutter",
+                "Quick Attack",
+                "Dual Wingbeat",
+                "Double Hit"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Razor Claw",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Float Stone",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
+        },
+        {
+            "Name": "Wingbeat Burst",
+            "MoveOrders": [
+                "Fury Cutter",
+                "Quick Attack",
+                "Dual Wingbeat",
+                "Double Hit"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Razor Claw",
+                "Energy Amplifier"
+            ],
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Potion"
+        }
+    ]
+}
+

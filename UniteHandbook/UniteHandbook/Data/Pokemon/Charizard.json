@@ -1,0 +1,365 @@
+{
+    "Name": "Charizard",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Novice",
+    "Ability": [
+        {
+            "Name": "Blaze",
+            "Desc": "Increases Critical-Hit Rate by 20% while at half HP or less."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Flame Burst",
+            "Category": "Ranged",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Charizard attacks with a bursting flame forward, exploding on the first enemy hit, dealing damage and burning enemies in a small radius. Charizard gains a 20% movement speed bonus for 3s when hitting an enemy. The burn lasts 4s and reduces enemy Attack by 5%."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Flamethrower",
+                    "Category": "Ranged",
+                    "Cooldown": 5.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Attacks with a blast of fire while moving, damaging and burning enemies in a line. Charizard gains a small movement speed bonus by 40% for 4s if they hit. The burn lasts 4s and reduces enemy Attack by 5%."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Deals increased damage."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Fire Punch",
+                    "Category": "Melee",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Charizard punches forward, damaging and shoving enemies in their path. The first enemy hit is burned. The burn lasts 4s and reduces enemy Attack by 5%."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Cooldown reduces by .3s per target, every time Charizard damages an enemy with an auto attack (1.2s total for an entire auto attack animation on a single target)."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Fire Spin",
+            "Category": "area",
+            "Cooldown": 10.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Charizard shoots a burst of fire forward, exploding on the first enemy hit or after traveling max distance, dealing damage over time every 0.5s and slowing enemies within the radius by 25% for 1s (refreshing on every damage tick)."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Fire Blast",
+                    "Category": "Area",
+                    "Cooldown": 6.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Charizard shoots a blast of fire forward while moving, exploding on the first enemy hit or after a short distance, damaging enemies and leaving a fire area for 5s that deals damage over time every 0.5s and slows enemies within the radius by 35% for 1s (refreshing on every damage tick)."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Flare Blitz",
+                    "Category": "Sure Hit",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Charizard charges forward, shielding themself for 5s, throwing the targeted enemy and dealing damage in an area."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Also slows enemies by 40% for 3s after thrown."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Seismic Slam",
+            "Category": "Sure Hit",
+            "Cooldown": 123,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Grab an enemy and slam it onto the ground, damaging the target and nearby enemies and deal additional damage based on their max HP. Then, fly up into the air moving freely over obstacles for 7.5s and gaining Hindrance Resistance. While this move is active, auto attacks apply a burn to the target which lasts for 1s, dealing 2 instances of damage and is refreshed by each instance of damage from auto attacks. When dealing damage with auto attacks to an enemy (not from burn or additional damage), recover HP equal to 80% of the damage dealt."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3200,
+            "Attack": 161,
+            "Defense": 70,
+            "SpAttack": 20,
+            "SpDefense": 54,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3264,
+            "Attack": 165,
+            "Defense": 74,
+            "SpAttack": 21,
+            "SpDefense": 57,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3341,
+            "Attack": 170,
+            "Defense": 79,
+            "SpAttack": 23,
+            "SpDefense": 61,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3434,
+            "Attack": 175,
+            "Defense": 85,
+            "SpAttack": 25,
+            "SpDefense": 65,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3771,
+            "Attack": 199,
+            "Defense": 106,
+            "SpAttack": 32,
+            "SpDefense": 81,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3905,
+            "Attack": 208,
+            "Defense": 114,
+            "SpAttack": 35,
+            "SpDefense": 87,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4066,
+            "Attack": 219,
+            "Defense": 124,
+            "SpAttack": 38,
+            "SpDefense": 95,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4259,
+            "Attack": 232,
+            "Defense": 136,
+            "SpAttack": 42,
+            "SpDefense": 104,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4941,
+            "Attack": 278,
+            "Defense": 178,
+            "SpAttack": 56,
+            "SpDefense": 137,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5219,
+            "Attack": 297,
+            "Defense": 195,
+            "SpAttack": 62,
+            "SpDefense": 150,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5553,
+            "Attack": 319,
+            "Defense": 216,
+            "SpAttack": 69,
+            "SpDefense": 166,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5953,
+            "Attack": 346,
+            "Defense": 241,
+            "SpAttack": 77,
+            "SpDefense": 185,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 6433,
+            "Attack": 378,
+            "Defense": 271,
+            "SpAttack": 87,
+            "SpDefense": 208,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 7009,
+            "Attack": 417,
+            "Defense": 307,
+            "SpAttack": 99,
+            "SpDefense": 236,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 7700,
+            "Attack": 463,
+            "Defense": 350,
+            "SpAttack": 114,
+            "SpDefense": 269,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Ranged DPS",
+            "MoveOrders": [
+                "Flame Burst",
+                "Fire Spin",
+                "Flamethrower",
+                "Fire Blast"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Scope Lens",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "High-Mobility",
+            "MoveOrders": [
+                "Flame Burst",
+                "Fire Spin",
+                "Flamethrower",
+                "Flare Blitz"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Focus Band",
+                "Attack Weight"
+            ],
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Seismic Slam",
+            "MoveOrders": [
+                "Flame Burst",
+                "Fire Spin",
+                "Fire Punch",
+                "Flare Blitz"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Scope Lens",
+                "Energy Amplifier"
+            ],
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Speed"
+        }
+    ]
+}
+

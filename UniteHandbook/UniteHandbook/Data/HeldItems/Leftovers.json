@@ -1,0 +1,25 @@
+{
+    "Name": "Leftovers",
+    "BonusStats": [
+        {
+            "Label": "HP",
+            "BaseValue": 0,
+            "IncrementValue": 16,
+            "IsPercent": false
+        },
+        {
+            "Label": "HP/5s",
+            "BaseValue": 0,
+            "IncrementValue": 0.6,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Max HP/s",
+        "BaseValue": 0.01,
+        "IncrementValue": 0.005,
+        "IsPercent": true
+    },
+    "Desc": "Recovers health over time while out of combat by 1%/1.5%/2% HP/s (OoC is 5s after leaving combat)."
+}
+

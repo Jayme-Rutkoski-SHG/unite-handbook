@@ -1,0 +1,348 @@
+{
+    "Name": "Gardevoir",
+    "AttackStyle": "Special",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Synchronize",
+            "Desc": "When an enemy inflicts decreased movement speed or a damage-over-time effect on Gardevoir; damage that enemy one time and slow them by 40% for 3s, when triggered. This ability goes on a 8s cooldown when triggered."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Confusion",
+            "Category": "Ranged",
+            "Cooldown": 4.50,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Gardevoir fires a piercing bolt; damaging enemies and slowing them by 35% for 1s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Psychic",
+                    "Category": "Ranged",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Gardevoir fires a blast; damaging enemies in an area on impact. The blast creates a lingering field that damages and slows enemies by 50% for 1s. Each time Psychic deals damage it reduces the target’s Special Defense by 20% for 4s, up to 60%."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Cooldown reduced by 1s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Moonblast",
+                    "Category": "Ranged",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Gardevoir moves back while firing a blast; stunning the first enemy hit for 1.2s and damaging all enemies in a cone behind it."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Grants Gardevoir a shield for 3s."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Teleport",
+            "Category": "Dash",
+            "Cooldown": 11.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Gardevoir teleports to a targeted area and gains a boosted attack."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Psyshock",
+                    "Category": "Area",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Gardevoir channels three attacks at the targeted area; damaging enemies. Gardevoir's moves' cooldowns are reduced by 15% each time Psyshock hits an enemy."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Each hit of Psyshock also increases the damage of the next hit."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Future Sight",
+                    "Category": "Area",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Gardevoir creates a delayed explosion at the targeted area; damaging enemies. If Future Sight hits an enemy player (not wild), the cooldown is reduced by 75% and Gardevoir gains 40% movement speed for 1.5s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Cooldown is reset on successful hits."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Fairy Singularity",
+            "Category": "Hindrance",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Gardevoir warps space in a large area, creating a field, damaging all enemies in the radius and pulling them towards the center 4 times. When it expires, the field damages and shoves enemies."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3200,
+            "Attack": 134,
+            "Defense": 35,
+            "SpAttack": 65,
+            "SpDefense": 27,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3245,
+            "Attack": 136,
+            "Defense": 37,
+            "SpAttack": 79,
+            "SpDefense": 29,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3299,
+            "Attack": 139,
+            "Defense": 39,
+            "SpAttack": 96,
+            "SpDefense": 31,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3363,
+            "Attack": 142,
+            "Defense": 42,
+            "SpAttack": 116,
+            "SpDefense": 33,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3596,
+            "Attack": 154,
+            "Defense": 52,
+            "SpAttack": 190,
+            "SpDefense": 41,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3689,
+            "Attack": 159,
+            "Defense": 56,
+            "SpAttack": 219,
+            "SpDefense": 44,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 3801,
+            "Attack": 165,
+            "Defense": 61,
+            "SpAttack": 254,
+            "SpDefense": 48,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4247,
+            "Attack": 187,
+            "Defense": 81,
+            "SpAttack": 395,
+            "SpDefense": 64,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4408,
+            "Attack": 195,
+            "Defense": 88,
+            "SpAttack": 446,
+            "SpDefense": 70,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4601,
+            "Attack": 205,
+            "Defense": 97,
+            "SpAttack": 507,
+            "SpDefense": 77,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4832,
+            "Attack": 216,
+            "Defense": 107,
+            "SpAttack": 580,
+            "SpDefense": 85,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5109,
+            "Attack": 230,
+            "Defense": 119,
+            "SpAttack": 668,
+            "SpDefense": 95,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 5442,
+            "Attack": 247,
+            "Defense": 134,
+            "SpAttack": 773,
+            "SpDefense": 107,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5841,
+            "Attack": 267,
+            "Defense": 152,
+            "SpAttack": 899,
+            "SpDefense": 121,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 6320,
+            "Attack": 291,
+            "Defense": 174,
+            "SpAttack": 1050,
+            "SpDefense": 138,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Future Sight",
+            "MoveOrders": [
+                "Confusion",
+                "Teleport",
+                "Moonblast",
+                "Future Sight"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
+            ],
+            "AltHeldItem": "Sp Atk Specs",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Psyshock",
+            "MoveOrders": [
+                "Confusion",
+                "Teleport",
+                "Psychic",
+                "Psyshock"
+            ],
+            "HeldItems": [
+                "Choice Specs",
+                "Slick Spoon",
+                "Energy Amplifier"
+            ],
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
+        }
+    ]
+}
+

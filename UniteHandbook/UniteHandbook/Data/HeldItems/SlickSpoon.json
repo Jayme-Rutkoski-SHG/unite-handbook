@@ -1,0 +1,24 @@
+{
+    "Name": "Slick Spoon",
+    "BonusStats": [
+        {
+            "Label": "HP",
+            "BaseValue": 0,
+            "IncrementValue": 14,
+            "IsPercent": false
+        },
+        {
+            "Label": "Sp Attack",
+            "BaseValue": 0,
+            "IncrementValue": 2,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Sp Defense Penetration",
+        "BaseValue": 0.10,
+        "IncrementValue": 0.05,
+        "IsPercent": true
+    },
+    "Desc": "Makes damage dealt by your Pokémon's Sp. Attack attacks ignore 10%/15%/20% of enemy Sp. Defense."
+}

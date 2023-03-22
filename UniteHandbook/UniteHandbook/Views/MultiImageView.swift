@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-protocol MultiImageViewDelegate {
+protocol MultiImageViewDelegate: AnyObject {
     func imageSelected()
 }
 class MultiImageView: UIView {
     
-    var delegate: MultiImageViewDelegate?
+    weak var delegate: MultiImageViewDelegate?
     var images: [MultiImage] = [] {
         didSet {
             addImageViews()
@@ -22,8 +22,8 @@ class MultiImageView: UIView {
     
     let imageHeight:CGFloat = 60
     let imagePadding: CGFloat = 16
-    let imageSpacingX: CGFloat = 12
-    let imageSpacingY: CGFloat = 12
+    let imageSpacingX: CGFloat = 15
+    let imageSpacingY: CGFloat = 15
 
     var intrinsicHeight: CGFloat = 0
     
@@ -43,68 +43,62 @@ class MultiImageView: UIView {
         
         // if we already have tag labels (or buttons, etc)
         //  remove any excess (e.g. we had 10 tags, new set is only 7)
-        while self.subviews.count > images.count {
+        /*while self.subviews.count > (images.count * 2) {
             self.subviews[0].removeFromSuperview()
-        }
+        }*/
         
         // if we don't have enough labels, create and add as needed
-        while self.subviews.count < images.count {
+        while self.subviews.count < (images.count * 2) {
 
             // create a new label
-            let newImageView = UIImageView()
-            
+            let newView = ImageTitleView()
             
             // set its properties (title, colors, corners, etc)
-            newImageView.isUserInteractionEnabled = true
-            newImageView.contentMode = .scaleAspectFit
-            newImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageTapped(tapGestureRecognizer:))))
+            newView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageTapped(tapGestureRecognizer:))))
 
-            addSubview(newImageView)
-            
+            addSubview(newView)
         }
 
         // now loop through labels and set text and size
         for (img, v) in zip(images, self.subviews) {
-            guard let imageView = v as? UIImageView else {
-                fatalError("non-UIImageView subview found!")
+            if let view = v as? ImageTitleView {
+                view.labelText = img.text ?? ""
+                view.image = img.image
+                view.frame.size.width = view.getViewWidth()
+                view.frame.size.height = view.getViewHeight()
             }
-            imageView.image = img.image
-            imageView.frame.size.width = imageHeight
-            imageView.frame.size.height = imageHeight
         }
 
     }
     
     func displayTagLabels() {
         
+        var oldCurrentOriginX: CGFloat = 0
         var currentOriginX: CGFloat = 0
         var currentOriginY: CGFloat = 0
 
         // for each label in the array
         self.subviews.forEach { v in
             
-            guard let imageView = v as? UIImageView else {
-                fatalError("non-UIImageView subview found!")
+            if let view = v as? ImageTitleView {
+                // if current X + label width will be greater than container view width
+                //  "move to next row"
+                if currentOriginX + view.frame.width > bounds.width {
+                    currentOriginX = 0
+                    currentOriginY += view.getViewHeight() + imageSpacingY
+                }
+                
+                // set the btn frame origin
+                view.frame.origin.x = currentOriginX
+                view.frame.origin.y = currentOriginY
+                
+                // increment current X by btn width + spacing
+                currentOriginX += view.frame.width + imageSpacingX
             }
-
-            // if current X + label width will be greater than container view width
-            //  "move to next row"
-            if currentOriginX + imageView.frame.width > bounds.width {
-                currentOriginX = 0
-                currentOriginY += imageHeight + imageSpacingY
-            }
-            
-            // set the btn frame origin
-            imageView.frame.origin.x = currentOriginX
-            imageView.frame.origin.y = currentOriginY
-            
-            // increment current X by btn width + spacing
-            currentOriginX += imageView.frame.width + imageSpacingX
-            
         }
         
         // update intrinsic height
-        intrinsicHeight = currentOriginY + imageHeight
+        intrinsicHeight = currentOriginY + imageHeight + 20
         invalidateIntrinsicContentSize()
         
     }
@@ -123,8 +117,8 @@ class MultiImageView: UIView {
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
     {
-        let tappedImage = tapGestureRecognizer.view as! UIImageView
-        let currentTapped = self.images.first(where: { $0.image == tappedImage.image} )
+        let tappedView = tapGestureRecognizer.view as! ImageTitleView
+        let currentTapped = self.images.first(where: { $0.image == tappedView.image} )
         if let currentTapped = currentTapped {
             currentTapped.onSelected(currentTapped.image, currentTapped.key)
         }
@@ -135,11 +129,13 @@ class MultiImageView: UIView {
 struct MultiImage {
     
     public var image: UIImage?
+    public var text: String?
     public var key: Any
     public var onSelected: ((UIImage?, Any) -> ())
     
-    public init(image: UIImage? = nil, key: Any, onSelected: @escaping ((UIImage?, Any) -> ())) {
+    public init(image: UIImage? = nil, text: String? = nil, key: Any, onSelected: @escaping ((UIImage?, Any) -> ())) {
         self.image = image
+        self.text = text
         self.key = key
         self.onSelected = onSelected
     }

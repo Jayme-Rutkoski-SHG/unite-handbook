@@ -1,0 +1,365 @@
+{
+    "Name": "Venusaur",
+    "AttackStyle": "Special",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Overgrow",
+            "Desc": "When HP is 30% or less; increase all damage dealt by 20%."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Seed Bomb",
+            "Category": "Ranged",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Venusaur hurls a large seed to the designated location, damaging all enemies in the radius."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Sludge Bomb",
+                    "Category": "Debuff",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Venusaur hurls toxic sludge to the designated location, damaging, slowing movement speed by 35% for 1s (stacking with the radius slow), and poisoning all enemies in the radius when it lands. The sludge lingers; damaging enemies every 0.5s for 5s in the radius, slowing them by 45%, and reducing their Sp. Defense by 30% for 1s (refreshes every tick)."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased radius."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Giga Drain",
+                    "Category": "Recovery",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Venusaur emits a cone-shaped blast in the designated direction, damaging enemies and restoring health when it hits. Venusaur also takes 35% reduced damage for 2.5s./n/nThis move's healing is not increased by Venusaur's passive."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased healing."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Razor Leaf",
+            "Category": "Area",
+            "Cooldown": 9.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Venusaur launches a barrage of sharp-edged leaves in the designated direction, damaging enemies 10 times over 0.75s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Solar Beam",
+                    "Category": "Area",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Venusaur charges for 0.7s before firing a beam of light in the designated direction, damaging enemies several times over 0.3s. It is randomly divided into several distinct hits, with 10 ticks of damage divided among these hits. Half of the ticks deal damage solely based on the enemies' Max HP./n/nAgainst Wild Pokémon: Each tick is capped at 450 damage and the total damage is capped at 2250."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Reduced cast time to 0.6s and cooldown is further reduced by 2s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Petal Dance",
+                    "Category": "Area",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Venusaur scatters petals around themself for 4.8s, increasing movement speed by 90% and damaging enemies every 0.3s in the radius (for a total of 16 damage ticks). This movement speed increase slowly decays during the duration of this move by 9% every every 0.5s. Petal dance reduces the cooldown of Sludge Bomb or Giga Drain by 30% of the current remaining cooldown, per tick of damage that hit an enemy player (hitting multiples enemies reduces the cooldown more)."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increased radius."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Verdant Anger",
+            "Category": "Ranged",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Venusaur hurls a massive seed to the designated location, damaging all enemies in the radius and slowing them by 35% for 1s. The seed then splits apart into 4 smaller seeds, each damaging all enemies in their radius."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3300,
+            "Attack": 134,
+            "Defense": 45,
+            "SpAttack": 50,
+            "SpDefense": 35,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3346,
+            "Attack": 136,
+            "Defense": 48,
+            "SpAttack": 63,
+            "SpDefense": 37,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1014,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3401,
+            "Attack": 139,
+            "Defense": 51,
+            "SpAttack": 79,
+            "SpDefense": 39,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1031,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3467,
+            "Attack": 142,
+            "Defense": 55,
+            "SpAttack": 98,
+            "SpDefense": 42,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1052,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3706,
+            "Attack": 154,
+            "Defense": 69,
+            "SpAttack": 166,
+            "SpDefense": 52,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1127,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3801,
+            "Attack": 159,
+            "Defense": 74,
+            "SpAttack": 193,
+            "SpDefense": 56,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1157,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 3915,
+            "Attack": 165,
+            "Defense": 80,
+            "SpAttack": 226,
+            "SpDefense": 61,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1193,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4052,
+            "Attack": 172,
+            "Defense": 88,
+            "SpAttack": 265,
+            "SpDefense": 67,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1236,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4537,
+            "Attack": 196,
+            "Defense": 115,
+            "SpAttack": 403,
+            "SpDefense": 88,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1387,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4735,
+            "Attack": 206,
+            "Defense": 126,
+            "SpAttack": 459,
+            "SpDefense": 96,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1449,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4972,
+            "Attack": 218,
+            "Defense": 139,
+            "SpAttack": 527,
+            "SpDefense": 106,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1523,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5257,
+            "Attack": 232,
+            "Defense": 155,
+            "SpAttack": 608,
+            "SpDefense": 118,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1612,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 5598,
+            "Attack": 249,
+            "Defense": 174,
+            "SpAttack": 705,
+            "SpDefense": 132,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1719,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 6008,
+            "Attack": 269,
+            "Defense": 197,
+            "SpAttack": 822,
+            "SpDefense": 149,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1847,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 6500,
+            "Attack": 293,
+            "Defense": 225,
+            "SpAttack": 962,
+            "SpDefense": 170,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2021,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "CDR",
+            "MoveOrders": [
+                "Seed Bomb",
+                "Razor Leaf",
+                "Giga Drain",
+                "Petal Dance"
+            ],
+            "HeldItems": [
+                "Shell Bell",
+                "Energy Amplifier",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Full Heal"
+        },
+        {
+            "Name": "Sniper",
+            "MoveOrders": [
+                "Seed Bomb",
+                "Razor Leaf",
+                "Sludge Bomb",
+                "Solar Beam"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
+            ],
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Sustain Tank",
+            "MoveOrders": [
+                "Seed Bomb",
+                "Razor Leaf",
+                "Giga Drain",
+                "Petal Dance"
+            ],
+            "HeldItems": [
+                "Focus Band",
+                "Assault Vest",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Potion"
+        }
+    ]
+}
+

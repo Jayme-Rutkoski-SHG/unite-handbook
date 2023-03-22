@@ -1,0 +1,19 @@
+{
+    "Name": "Wise Glasses",
+    "BonusStats": [
+        {
+            "Label": "Sp Attack",
+            "BaseValue": 0,
+            "IncrementValue": 10,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Sp Attack",
+        "BaseValue": 0.03,
+        "IncrementValue": 0.02,
+        "IsPercent": true
+    },
+    "Desc": "Further increase Sp. Attack by 3%/5%/7%."
+}
+

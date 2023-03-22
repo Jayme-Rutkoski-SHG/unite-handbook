@@ -1,0 +1,365 @@
+{
+    "Name": "Lucario",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Expert",
+    "Ability": [
+        {
+            "Name": "Steadfast",
+            "Desc": "When dropping below 50% HP, gain a shield and increased movement speed for 5s (60s cooldown)."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Quick Attack",
+            "Category": "Dash",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Lucario dashes forward, damaging all enemies hit."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Extreme Speed",
+                    "Category": "Dash",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Lucario dashes forward, damaging all enemies hit and healing Lucario for each enemy hit. The first enemy hit will reset the cooldown of Extreme Speed. This effect cannot occur on the same target more than once every 10s. Attacking immediately after the dash will perform a unique attack in an area dealing 75% Atk and can critically hit."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increases Lucario's damage by 7.5% for 2s. This buff activates regardless if an enemy was hit, and is applied the moment this move is activated."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Power-Up Punch",
+                    "Category": "Melee",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Lucario begins charging power, slowing themself and reducing damage taken by 30% while preparing to unleash a devastating punch. Upon release, Lucario lunges – damaging the first enemy hit and briefly stunning them. Power-Up Punch does bonus damage based on the enemy's missing HP, and will cause Lucario's next attack to be boosted. The cooldown for Power-Up Punch is reduced by 1s whenever Lucario lands a move./n/nAgainst Wild Pokémon: The additional damage from missing HP is capped at 1000."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Lucario is unstoppable while charging the punch."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Meteor Mash",
+            "Category": "Melee",
+            "Cooldown": 7.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Lucario punches with the force of a meteor, damaging and knocking enemies back."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Bone Rush",
+                    "Category": "Dash",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Lucario rapidly strikes with a bone, damaging enemies hit up to 6 times. Enemies in long range will be hit 3 times and at close range they will be hit 6 times. Lucario then throws the bone after the final strike, shoving enemies and causing the bone to land a short distance away. Lucario can activate Bone Rush again to teleport to the bone, damaging enemies in a small area around it. Landing one of Bone Rush's initial strikes will reset the cooldown timer for Extreme Speed on that target."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Teleporting to the bone will reset the cooldown of Extreme Speed or Power-Up Punch."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Close Combat",
+                    "Category": "Melee",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Lucario rapidly punches, damaging enemies in the area in front of them 11 times over the duration, restoring HP per hit, and becomes Unstoppable while punching. For 5s after this move is used, Lucario's next basic attack gains increased range and causes Lucario to dash to the target."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Aura Cannon",
+            "Category": "Ranged",
+            "Cooldown": 134,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Channel aura power into a spherical projectile launched in a designated direction. The projectile picks up speed as it travels. Pokémon that contact the projectile are dealt damage. Aura Cannon does not have a limit to the number of times it can hit one target. At close range, a still enemy can be hit up to 4 times and when the cannon is at max speed, a still enemy will only be struck once. Damage of the next Power-Up Punch is increased by roughly 20%, and enemies hit by the cannon have their internal cooldown for Extreme Speed reset."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3250,
+            "Attack": 160,
+            "Defense": 78,
+            "SpAttack": 20,
+            "SpDefense": 60,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3392,
+            "Attack": 170,
+            "Defense": 89,
+            "SpAttack": 23,
+            "SpDefense": 69,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1107,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3549,
+            "Attack": 180,
+            "Defense": 101,
+            "SpAttack": 27,
+            "SpDefense": 78,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1224,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3721,
+            "Attack": 192,
+            "Defense": 114,
+            "SpAttack": 31,
+            "SpDefense": 88,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1353,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3910,
+            "Attack": 205,
+            "Defense": 129,
+            "SpAttack": 36,
+            "SpDefense": 99,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1495,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4118,
+            "Attack": 219,
+            "Defense": 145,
+            "SpAttack": 41,
+            "SpDefense": 112,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1651,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4347,
+            "Attack": 234,
+            "Defense": 163,
+            "SpAttack": 46,
+            "SpDefense": 126,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1823,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4599,
+            "Attack": 251,
+            "Defense": 183,
+            "SpAttack": 52,
+            "SpDefense": 141,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.2012,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4877,
+            "Attack": 270,
+            "Defense": 205,
+            "SpAttack": 59,
+            "SpDefense": 158,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2221,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5184,
+            "Attack": 291,
+            "Defense": 229,
+            "SpAttack": 66,
+            "SpDefense": 176,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2451,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5522,
+            "Attack": 314,
+            "Defense": 255,
+            "SpAttack": 74,
+            "SpDefense": 196,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2704,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5894,
+            "Attack": 339,
+            "Defense": 284,
+            "SpAttack": 83,
+            "SpDefense": 218,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2983,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 6303,
+            "Attack": 366,
+            "Defense": 316,
+            "SpAttack": 93,
+            "SpDefense": 243,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.329,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 6753,
+            "Attack": 396,
+            "Defense": 351,
+            "SpAttack": 104,
+            "SpDefense": 270,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.3628,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 7249,
+            "Attack": 429,
+            "Defense": 390,
+            "SpAttack": 116,
+            "SpDefense": 300,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.40,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "High Mobility",
+            "MoveOrders": [
+                "Meteor Mash",
+                "Quick Attack",
+                "Extreme Speed",
+                "Bone Rush"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Attack Weight",
+                "Weakness Policy"
+            ],
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Punch Burst",
+            "MoveOrders": [
+                "Meteor Mash",
+                "Quick Attack",
+                "Power-Up Punch",
+                "Close Combat"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Attack Weight",
+                "Razor Claw"
+            ],
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
+        },
+        {
+            "Name": "Damage Amplification",
+            "MoveOrders": [
+                "Meteor Mash",
+                "Quick Attack",
+                "Power-Up Punch",
+                "Close Combat"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Energy Amplifier",
+                "Weakness Policy"
+            ],
+            "AltHeldItem": "Razor Claw",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Slow Smoke"
+        }
+    ]
+}
+

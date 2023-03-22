@@ -1,0 +1,373 @@
+{
+    "Name": "Tyranitar",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Guts",
+            "Desc": "When Larvitar receives damage equal to at least 10% of max HP, Attack is increased by 30% for 3s. This Ability goes on cooldown after it’s triggered (40s cd)."
+        },
+        {
+            "Name": "Shed Skin",
+            "Desc": "When Pupitar receives damage equal to at least 10% max HP, all status conditions are nullified and Pupitar is granted a shield worth 10% Max HP. This Ability goes on cooldown after it’s triggered (40s cd)."
+        },
+        {
+            "Name": "Sand Stream",
+            "Desc": "Summons a sandstorm around Tyranitar for 3s after using a move. This sandstorm increases Defense and Sp. Defense by 65% for 3s and deals damage to nearby enemies every .5s."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Bite",
+            "Category": "Melee",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Deals damage to enemies in front of the user. If the enemy HP is below 50%—or falls below that percentage as a result of this move—they become unable to move for a short time."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Dark Pulse",
+                    "Category": "Area",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Exhale a mist of darkness in a horizontal sweeping motion, dealing damage to any enemy hit. If the remaining HP of an enemy hit by this move falls below 50%, they become unable to move for a short time. If this move hits an enemy again within a set amount of time, it deals additional damage./n/nIf this move is used while Tyranitar's piercing strength is activated by Ancient Power, the 8s duration of piercing damage is refreshed."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Reduces this move's cooldown by 1s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Stone Edge",
+                    "Category": "Area",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Deals damage to enemies in a 90 degree cone, dealing more damage the closer the enemies are to the user. This move can be used up to 3 times with the cone widening to 135 and 180 degrees."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Rock Polish",
+            "Category": "Dash",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Charge ahead in the designated direction, dealing damage to any enemies hit. If this move hits any enemy, Attack is increased by 15% for 3s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Ancient Power",
+                    "Category": "Buff",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 9,
+                            "Desc": "Charge power before releasing a shock wave. The shock wave deals damage to nearby enemies and leaves them unable to act for a short time. While charging power: Tyranitar becomes resistant to hindrances for 4s, movement speed is increased by 20% for 3s (stacking 3 times), and Tyranitar gains a shield (stacking 3 times and lasting up to 5s). If any enemies are hit by the shock wave, Tyranitar is granted piercing strength allowing damage dealt to ignore enemy Defense and shield effects for 8s./n/nIf this move hits an enemy, a second shock wave can be released in front of Tyranitar; dealing damage to enemies and decreasing their movement speed by 30% for 2s. If this second shock wave hits successfully, Tyranitar is granted another shield. The strength of this shield increases for each enemy hit, capping at 3 stacks."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Strengthens the effect of the shields granted by this move."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sand Tomb",
+                    "Category": "Hindrance",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 9,
+                            "Desc": "Leap in a designated direction; dealing damage to any enemies hit and leaving them unable to act for a short time. When Tyranitar lands, the shock from landing creates a cloud of dust at the point of impact for 6s; dealing damage-over-time every 0.5s and decreasing movement speed of enemies hit by 25% for 1s every second./n/nIf this move is used again while Tyranitar is in the cloud of dust, enemies in front of Tyranitar will be pulled closer to it. Furthermore, while the user is in the cloud of dust, they take 25% reduced damage and can ignore the Defense and shield effects of enemies."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increases the length of time the cloud of dust remains at the point of impact."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Tyrannical Rampage",
+            "Category": "Buff",
+            "Cooldown": 134,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Explode with anger and go on a rampage for 10s. While rampaging, Tyranitar also gains 50% Tenacity and the basic attack pattern changes, dealing increased damage. If the HP of an enemy hit by these basic attacks is below 20% it is immediately knocked out (enemy players only)./n/nAttacks during this move cannot critically-hit."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3150,
+            "Attack": 150,
+            "Defense": 90,
+            "SpAttack": 20,
+            "SpDefense": 70,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3224,
+            "Attack": 155,
+            "Defense": 96,
+            "SpAttack": 21,
+            "SpDefense": 74,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1029,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3313,
+            "Attack": 161,
+            "Defense": 103,
+            "SpAttack": 23,
+            "SpDefense": 79,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1063,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3420,
+            "Attack": 168,
+            "Defense": 111,
+            "SpAttack": 25,
+            "SpDefense": 85,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1104,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3809,
+            "Attack": 193,
+            "Defense": 142,
+            "SpAttack": 32,
+            "SpDefense": 108,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.124,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3964,
+            "Attack": 203,
+            "Defense": 154,
+            "SpAttack": 35,
+            "SpDefense": 117,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.13,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4150,
+            "Attack": 215,
+            "Defense": 169,
+            "SpAttack": 38,
+            "SpDefense": 128,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1372,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4373,
+            "Attack": 229,
+            "Defense": 187,
+            "SpAttack": 42,
+            "SpDefense": 141,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1458,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5161,
+            "Attack": 279,
+            "Defense": 249,
+            "SpAttack": 56,
+            "SpDefense": 187,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1761,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5482,
+            "Attack": 300,
+            "Defense": 274,
+            "SpAttack": 62,
+            "SpDefense": 206,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1884,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5868,
+            "Attack": 325,
+            "Defense": 304,
+            "SpAttack": 69,
+            "SpDefense": 229,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2032,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 6330,
+            "Attack": 355,
+            "Defense": 340,
+            "SpAttack": 77,
+            "SpDefense": 256,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.221,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 6885,
+            "Attack": 391,
+            "Defense": 384,
+            "SpAttack": 87,
+            "SpDefense": 289,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2423,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 7551,
+            "Attack": 434,
+            "Defense": 500,
+            "SpAttack": 114,
+            "SpDefense": 375,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2679,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 8350,
+            "Attack": 485,
+            "Defense": 500,
+            "SpAttack": 114,
+            "SpDefense": 375,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Dark Pulse",
+            "MoveOrders": [
+                "Bite",
+                "Rock Polish",
+                "Dark Pulse",
+                "Ancient Power"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Weakness Policy",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Crowd Control",
+            "MoveOrders": [
+                "Bite",
+                "Rock Polish",
+                "Stone Edge",
+                "Sand Tomb"
+            ],
+            "HeldItems": [
+                "Weakness Policy",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Aeos Cookie",
+            "BattleItem": "Slow Smoke",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Jungle Rampage",
+            "MoveOrders": [
+                "Bite",
+                "Rock Polish",
+                "Dark Pulse",
+                "Ancient Power"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Weakness Policy",
+                "Energy Amplifier"
+            ],
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Potion"
+        }
+    ]
+}
+

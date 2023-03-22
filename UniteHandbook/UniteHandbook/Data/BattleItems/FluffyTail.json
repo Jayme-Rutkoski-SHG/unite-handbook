@@ -1,0 +1,6 @@
+{
+    "Name": "Fluffy Tail",
+    "Cooldown": 25,
+    "Desc": "Apply a debuff to a wild Pokemon for 3 seconds. The debuff disables the affected Pokemon’s attacks and triggers an additional hit when the user deals direct damage to the target. The additional hit deals 100% Atk + 60% SpA + 10*(Level-1) + 100 and has a 0.5 second cooldown."
+}
+

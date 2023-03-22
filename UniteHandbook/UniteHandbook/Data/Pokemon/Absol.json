@@ -4,10 +4,12 @@
     "Role": "Speedster",
     "Style": "Melee",
     "Difficulty": "Expert",
-    "Ability": {
-        "Name": "Super Luck",
-        "Desc": "Increases Critical-Hit rate by 15%."
-    },
+    "Ability": [
+        {
+            "Name": "Super Luck",
+            "Desc": "Increases Critical-Hit rate by 15%."
+        }
+    ],
     "Moves": [
         {
             "Name": "Feint",
@@ -96,17 +98,19 @@
             ]
         }
     ],
-    "Unite": {
-        "Name": "Midnight Slash",
-        "Category": "Area",
-        "Cooldown": 134,
-        "LevelDetails": [
-            {
-                "Level": 9,
-                "Desc": "Unleash a flurry of 5 slashes in front of Absol and become untargetable for 1.15s. This move ends by unleashing powerful blades of energy, shoving enemies and dealing damage up to 4 times at melee range and down to 1 time at maximum range. Only the first ending hit connecting with an enemy does full damage, the others, deal 30% damage to the same target."
-            }
-        ]
-    },
+    "Unite": [
+        {
+            "Name": "Midnight Slash",
+            "Category": "Area",
+            "Cooldown": 134,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Unleash a flurry of 5 slashes in front of Absol and become untargetable for 1.15s. This move ends by unleashing powerful blades of energy, shoving enemies and dealing damage up to 4 times at melee range and down to 1 time at maximum range. Only the first ending hit connecting with an enemy does full damage, the others, deal 30% damage to the same target."
+                }
+            ]
+        }
+    ],
     "Stats": [
         {
             "Level": 1,
@@ -306,7 +310,24 @@
     ],
     "PresetBuilds": [
         {
-            "Name": "Night Punch",
+            "Name": "Full Offense",
+            "MoveOrders": [
+                "Slash",
+                "Feint",
+                "Night Slash",
+                "Psycho Cut"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Scope Lens",
+                "Razor Claw"
+            ],
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
+        },
+        {
+            "Name": "Blink-Striker",
             "MoveOrders": [
                 "Slash",
                 "Feint",
@@ -316,31 +337,14 @@
             "HeldItems": [
                 "Razor Claw",
                 "Scope Lens",
-                "Attack Weight"
+                "Buddy Barrier"
             ],
-            "AltHeldItem": "Energy Amplifier",
-            "BattleItem": "Full Heal",
-            "AltBattleItem": "Eject Button"
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         },
         {
-            "Name": "Pursuit Punch",
-            "MoveOrders": [
-                "Slash",
-                "Feint",
-                "Pursuit",
-                "Sucker Punch"
-            ],
-            "HeldItems": [
-                "Razor Claw",
-                "Scope Lens",
-                "Attack Weight"
-            ],
-            "AltHeldItem": "Energy Amplifier",
-            "BattleItem": "Full Heal",
-            "AltBattleItem": "Eject Button"
-        },
-        {
-            "Name": "Night Cut",
+            "Name": "Attack Stack",
             "MoveOrders": [
                 "Slash",
                 "Feint",
@@ -352,9 +356,9 @@
                 "Scope Lens",
                 "Attack Weight"
             ],
-            "AltHeldItem": "Energy Amplifier",
-            "BattleItem": "Full Heal",
-            "AltBattleItem": "Eject Button"
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
         }
     ]
 }

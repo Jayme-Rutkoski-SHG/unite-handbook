@@ -1,0 +1,365 @@
+{
+    "Name": "Mamoswine",
+    "AttackStyle": "Attack",
+    "Role": "Defender",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Thick Fat",
+            "Desc": "When Mamoswine deals damage, Defense and Sp. Def are increased for 3s, stacking up to 3 times. When Mamoswine uses Ice Shard, Icicle Crash or Ice Fang, the next auto attack is boosted. If any of these moves creates a freezing area of effect inside an ally goal zone, the goal-scoring speed of enemies is decreased by 30%."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Ice Shard",
+            "Category": "Area",
+            "Cooldown": 7.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Hurls 3 chunks of ice at the designated location, dealing damage to enemies in the area of effect and decreasing their movement speed for a short time. If an enemy is hit by all three chunks, they're left frozen for 0.5s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Icicle Crash",
+                    "Category": "Hindrance",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Drops icicles on the designated location, dealing damage to enemies in the area of effect and decreasing their movement speed for a short time. The final icicle shatters after a set amount of time or when hit by Mamoswine's other moves or boosted attacks, dealing damage to enemies in the area of effect and leaving them frozen for 1s. If the icicle is shattered by Tackle or High Horsepower, the ground is covered in ice, which increases the movement speed of allies that run over it. The next auto attack is boosted."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "The final icicle leaves enemies hit unable to act for .2s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Ice Fang",
+                    "Category": "Hindrance",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Uses cold-infused fangs to throw the enemy closest to Mamoswine, dealing damage and leaving them frozen for 1.75s. Mamoswine can then designate a direction to slam the thrown Pokémon forward or backward, dealing damage to enemies in the area of effect and leaving them frozen for 0.5s. The next auto attack is boosted."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increases the area of effect in which enemies are left frozen after the slam attack."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Tackle",
+            "Category": "Dash",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Mamoswine rushes recklessly in the designated direction; dealing damage to enemies hit and throws them in the air for 0.5s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "High Horsepower",
+                    "Category": "Dash",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Mamoswine rushes recklessly in the designated direction, dealing damage to enemies they hit and shoving them. Mamoswine then stomps their feet, dealing damage to enemies in the area of effect and leaves them unable to act for 1.4s. This stomping deals increased damage to frozen enemies."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increases the reckless rush's speed and the length of time enemies are left unable to act by .2s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Earthquake",
+                    "Category": "Dash",
+                    "Cooldown": 7.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Mamoswine leaps up in the designated direction and lands forcefully, dealing damage to enemies in the area of effect and pulling them toward Mamoswine. Enemies that are hit cannot act for 1.5s."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Decreases movement speed of enemies by 30% for 2.5s when this move hits and increases the move's pulling power."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Mammoth Mash",
+            "Category": "Area",
+            "Cooldown": 123,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Mamoswine jumps to the designated location and becomes immune to hindrances - then repeatedly stomps the ground, dealing damage to enemies in the area of effect and decreases their movement speed by 20% for 0.5s with each stomp. The final stomp throws enemies in the air."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3280,
+            "Attack": 170,
+            "Defense": 85,
+            "SpAttack": 20,
+            "SpDefense": 65,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3371,
+            "Attack": 172,
+            "Defense": 91,
+            "SpAttack": 21,
+            "SpDefense": 70,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1029,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3480,
+            "Attack": 175,
+            "Defense": 98,
+            "SpAttack": 23,
+            "SpDefense": 75,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1063,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3611,
+            "Attack": 178,
+            "Defense": 107,
+            "SpAttack": 25,
+            "SpDefense": 81,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1104,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4087,
+            "Attack": 190,
+            "Defense": 139,
+            "SpAttack": 32,
+            "SpDefense": 105,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1254,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4277,
+            "Attack": 195,
+            "Defense": 152,
+            "SpAttack": 35,
+            "SpDefense": 114,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1314,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4505,
+            "Attack": 201,
+            "Defense": 167,
+            "SpAttack": 38,
+            "SpDefense": 125,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1386,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4778,
+            "Attack": 208,
+            "Defense": 185,
+            "SpAttack": 42,
+            "SpDefense": 139,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1472,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5743,
+            "Attack": 231,
+            "Defense": 249,
+            "SpAttack": 57,
+            "SpDefense": 187,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1775,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 6136,
+            "Attack": 240,
+            "Defense": 275,
+            "SpAttack": 63,
+            "SpDefense": 206,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1898,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 6608,
+            "Attack": 251,
+            "Defense": 307,
+            "SpAttack": 70,
+            "SpDefense": 229,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2046,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 7174,
+            "Attack": 265,
+            "Defense": 345,
+            "SpAttack": 79,
+            "SpDefense": 257,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2224,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 7854,
+            "Attack": 281,
+            "Defense": 390,
+            "SpAttack": 89,
+            "SpDefense": 291,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2437,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 8669,
+            "Attack": 301,
+            "Defense": 445,
+            "SpAttack": 101,
+            "SpDefense": 331,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2693,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 9648,
+            "Attack": 325,
+            "Defense": 510,
+            "SpAttack": 116,
+            "SpDefense": 379,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Tank",
+            "MoveOrders": [
+                "Ice Shard",
+                "Tackle",
+                "Icicle Crash",
+                "High Horsepower"
+            ],
+            "HeldItems": [
+                "Score Shield",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "Potion"
+        },
+        {
+            "Name": "Initiator",
+            "MoveOrders": [
+                "Ice Shard",
+                "Tackle",
+                "Icicle Crash",
+                "Earthquake"
+            ],
+            "HeldItems": [
+                "Weakness Policy",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Full Heal"
+        },
+        {
+            "Name": "Disabler",
+            "MoveOrders": [
+                "Ice Shard",
+                "Tackle",
+                "Ice Fang",
+                "High Horsepower"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
+        }
+    ]
+}
+

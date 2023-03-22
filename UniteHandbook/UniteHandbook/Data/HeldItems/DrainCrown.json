@@ -1,0 +1,25 @@
+{
+    "Name": "Drain Crown",
+    "BonusStats": [
+        {
+            "Label": "HP",
+            "BaseValue": 0,
+            "IncrementValue": 8,
+            "IsPercent": false
+        },
+        {
+            "Label": "Attack",
+            "BaseValue": 0,
+            "IncrementValue": 1.2,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Lifesteal",
+        "BaseValue": 0,
+        "IncrementValue": 0.06,
+        "IsPercent": true
+    },
+    "Desc": "Restores HP equal to 6%/8%/10% of damage dealt by auto attacks that are Attack damage (ie: not true damage). (Patch 1.8.1.4- Still does not recover HP when dealing damage to shields)"
+}
+

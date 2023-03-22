@@ -1,0 +1,348 @@
+{
+    "Name": "Comfey",
+    "AttackStyle": "Special",
+    "Role": "Supporter",
+    "Style": "Ranged",
+    "Difficulty": "Novice",
+    "Ability": [
+        {
+            "Name": "Triage",
+            "Desc": "Comfey gains one flower every 1.5 seconds. Comfey gains four flowers when entering tall grass on its own. This has an internal cooldown of 5s. Comfey can have a maximum of eight flowers. Also, Comfey moves 25% faster when near ally Pokémon that are at 50% remaining HP or less. Comfey can attach itself to an ally Pokémon when it uses Synthesis, Floral Healing, or Sweet Kiss, applying a base shield of 15% of Comfey's Max HP./n/nWhile attached, Comfey is unable to be affected by attacks and gradually restores HP. When the ally Pokémon this Pokémon is attached to gains more Aeos energy than the maximum it can hold, Comfey takes the excess. When the ally Pokémon this Pokémon is attached to scores a goal, Comfey also scores with the same amount of energy. If Comfey uses a Move during the scoring charge up, Comfey's portion of the score will be cancelled. Comfey may Release from an ally Pokémon, then moves in the designated direction. If the ally Pokémon attached to was being granted a shield via Triage, the Triage portion of the shield is removed. After this Pokémon releases, its next basic attack becomes a boosted basic attack. Release direction is controlled by Right Stick on Switch and uses the D-Pad's down button on Switch or an individual button for Mobile."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Synthesis",
+            "Category": "Recovery",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "If unattached, attach to the designated ally Pokémon and grants it a shield (see Triage). If attached, heal the attached ally Pokémon. All flowers are consumed when used. The more flowers that are consumed, the more HP that is restored."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Floral Healing",
+                    "Category": "Recovery",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "If unattached, attach to the designated ally Pokémon and grant them a shield (See Triage). If attached, heal the attached ally Pokémon’s. All flowers are consumed when used. The more flowers that are consumed, the more HP that is restored. Any HP restored in excess of the ally Pokémon’s maximum is converted into a shield. This overheal shield can stack up to 4 times and lasts 5 seconds, refreshing duration on additional uses"
+                        },
+                        {
+                            "Level": 10,
+                            "Desc": "Also increases the movement speed of the ally Pokémon attached to by 30% for 2s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sweet Kiss",
+                    "Category": "Hindrance",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "If unattached, attach to the designated ally Pokémon and grant them a shield (see Triage). Additional shield is provided if attaching with Sweet Kiss. If attached to an ally Pokémon, charge power for up to 2.5s by holding and release to make opposing Pokémon in the area of effect infatuated. Charging beyond 2.5s cancels the move. Infatuated Pokémon approach Comfey against their will. The longer power is charged, the larger the area of effect reaching maximum charge after 1.5s. All flowers are consumed when using Sweet Kiss while attached. The more flowers that are consumed, the longer Pokémon are infatuated at a rate of 0.1s per flower with a minimum of 0.8s at 2 flowers (Note: It is impossible to use Sweet Kiss at less than 2 flowers due to cooldown cap and flower generation speed)."
+                        },
+                        {
+                            "Level": 10,
+                            "Desc": "Also increases the movement speed of the ally Pokémon attached to by 30% for 2s while charging."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Vine Whip",
+            "Category": "Ranged",
+            "Cooldown": 9.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Strikes out with whiplike vines in front of itself, dealing damage to Pokémon in the area of effect and slowing them by 40% for 2s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Magical Leaf",
+                    "Category": "Area",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Launch three curious, scattering leaves each second for 5s. The leaves target opposing Pokémon in the area of effect and deal damage when they hit. These leaves can even deal damage to Pokémon hiding in tall grass. When Pokémon are damaged they are marked for 4s refreshing on being hit with another leaf. If a Pokémon receives six marks, that Pokémon will be stunned for 0.75s. If this move is used when the user is attached to an ally Pokémon, its area of effect is increased. Magical Leaf prioritized enemy Pokémon."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "Increases the number of leaves launched each second to four."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Grass Knot",
+                    "Category": "Hindrance",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Unleashes vines in the designated direction, dealing damage to opposing Pokémon it hits and rooting them. This move can hit up to two opposing Pokémon. If it hits two opposing Pokémon that are within 75% of the full range, Grass Knot pulls the second Pokémon to the first’s location and deals additional damage to both."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "Increases this move’s area of effect."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Flowery Fields Forever",
+            "Category": "Area",
+            "Cooldown": 89,
+            "LevelDetails": [
+                {
+                    "Level": 8,
+                    "Desc": "Creates a large area of tall grass around itself for 6s. Pokémon in this tall grass cannot be seen, just as with other tall grass on the map. If ally Pokémon enter this tall grass, they will continually heal every 0.5s. Comfey gains special flowers from this tall grass. Flowers from this grass grant access to an empowered Floral Healing and Sweet Kiss."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3000,
+            "Attack": 120,
+            "Defense": 40,
+            "SpAttack": 50,
+            "SpDefense": 30,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3089,
+            "Attack": 126,
+            "Defense": 45,
+            "SpAttack": 71,
+            "SpDefense": 35,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1036,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3187,
+            "Attack": 133,
+            "Defense": 51,
+            "SpAttack": 95,
+            "SpDefense": 40,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1075,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3295,
+            "Attack": 140,
+            "Defense": 57,
+            "SpAttack": 121,
+            "SpDefense": 46,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1118,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3413,
+            "Attack": 148,
+            "Defense": 64,
+            "SpAttack": 149,
+            "SpDefense": 52,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1165,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3543,
+            "Attack": 157,
+            "Defense": 72,
+            "SpAttack": 180,
+            "SpDefense": 59,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1217,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 3686,
+            "Attack": 167,
+            "Defense": 81,
+            "SpAttack": 214,
+            "SpDefense": 66,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1274,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 3844,
+            "Attack": 178,
+            "Defense": 90,
+            "SpAttack": 252,
+            "SpDefense": 74,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1337,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4018,
+            "Attack": 190,
+            "Defense": 100,
+            "SpAttack": 294,
+            "SpDefense": 83,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1407,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4210,
+            "Attack": 203,
+            "Defense": 112,
+            "SpAttack": 340,
+            "SpDefense": 93,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1484,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4421,
+            "Attack": 217,
+            "Defense": 125,
+            "SpAttack": 391,
+            "SpDefense": 104,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1568,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 4653,
+            "Attack": 233,
+            "Defense": 139,
+            "SpAttack": 447,
+            "SpDefense": 116,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1661,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 4909,
+            "Attack": 250,
+            "Defense": 154,
+            "SpAttack": 508,
+            "SpDefense": 129,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1763,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5190,
+            "Attack": 269,
+            "Defense": 171,
+            "SpAttack": 576,
+            "SpDefense": 144,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1876,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 5500,
+            "Attack": 290,
+            "Defense": 190,
+            "SpAttack": 650,
+            "SpDefense": 160,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.20,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Healer",
+            "MoveOrders": [
+                "Vine Whip",
+                "Synthesis",
+                "Floral Healing",
+                "Magical Leaf"
+            ],
+            "HeldItems": [
+                "Exp Share",
+                "Rescue Hood",
+                "Wise Glasses"
+            ],
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Slow Smoke",
+            "AltBattleItem": "Fluffy Tail"
+        },
+        {
+            "Name": "Disabler",
+            "MoveOrders": [
+                "Vine Whip",
+                "Synthesis",
+                "Sweet Kiss",
+                "Grass Knot"
+            ],
+            "HeldItems": [
+                "Exp Share",
+                "Slick Spoon",
+                "Wise Glasses"
+            ],
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Slow Smoke",
+            "AltBattleItem": "Fluffy Tail"
+        }
+    ]
+}
+

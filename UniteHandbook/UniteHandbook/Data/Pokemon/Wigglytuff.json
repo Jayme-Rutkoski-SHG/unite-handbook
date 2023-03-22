@@ -1,0 +1,365 @@
+{
+    "Name": "Wigglytuff",
+    "AttackStyle": "Special",
+    "Role": "Supporter",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Cute Charm",
+            "Desc": "When hit by an enemy attack at close range, make that enemy infatuated for a short time. Infatuated enemies become enthralled and approach Wigglytuff against their will. This ability goes on a 10s cooldown when triggered."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Pound",
+            "Category": "Melee",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Wigglytuff slaps the area in front of them twice (.3s apart), damaging enemies in a cone and slowing them by 40% for0.5s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Double Slap",
+                    "Category": "Melee",
+                    "Cooldown": 4.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Wigglytuff unleashes a barrage of slaps, damaging enemies in a cone 3-5 times and slowing them by 45% for 1.5s."
+                        },
+                        {
+                            "Level": 10,
+                            "Desc": "Slaps 4-6 times instead."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Dazzling Gleam",
+                    "Category": "Area",
+                    "Cooldown": 4.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Wigglytuff emits a flash of fairy energy, dealing a small amount of damage in a cone after 0.6s followed by a large amount of damage."
+                        },
+                        {
+                            "Level": 10,
+                            "Desc": "Slows enemies hit by the first flash by 40% for 1s."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Defense Curl",
+            "Category": "Hindrance",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Wigglytuff gains a 25% max HP shield for 0.5s and rolls forward a short distance, throwing enemies hit in the air for0.5s. Hitting an obstacle while rolling will change the direction Wigglytuff is moving and reset the cooldown of Pound, Double Slap, or Dazzling Gleam."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Rollout",
+                    "Category": "Hindrance",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Wigglytuff gains a 25% max HP shield for 1s, becomes unstoppable for 1.2s and rolls forward, damaging and throwing enemies hit in the air for0.5s. Hitting an obstacle while rolling will change the direction Wigglytuff is moving up to 5 times and reset the cooldown of Pound, Double Slap, or Dazzling Gleam."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "Increases the amount of time enemies are thrown in the air to 0.7s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sing",
+                    "Category": "Area",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Wigglytuff begins singing, slowing enemies around them by 10% for 2s per \"Note\" and increasing Wigglytuff's movement speed by 30% for 2.5s. Enemies that stay inside the song's effect will be put to sleep (when reaching 4 Notes) for 1.5s, and have their Defense and Special Defense reduced by 25% for 1.25s."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "Increases the amount of time enemies are asleep to 1.75s and the duration of Defense and Sp. Defense to 1.5s."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Starlight Recital",
+            "Category": "Buff",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 8,
+                    "Desc": "Begin performing a recital and become unstoppable for 3s, granting Wigglytuff and nearby allies a shield for 2.5s as well as removing all status conditions from the affected allies and granting them immunity to hindrances for as long as the shield is active."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3278,
+            "Attack": 130,
+            "Defense": 90,
+            "SpAttack": 40,
+            "SpDefense": 80,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3415,
+            "Attack": 134,
+            "Defense": 100,
+            "SpAttack": 51,
+            "SpDefense": 89,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1022,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3573,
+            "Attack": 139,
+            "Defense": 111,
+            "SpAttack": 64,
+            "SpDefense": 99,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1048,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 4372,
+            "Attack": 162,
+            "Defense": 169,
+            "SpAttack": 131,
+            "SpDefense": 151,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1177,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4581,
+            "Attack": 168,
+            "Defense": 184,
+            "SpAttack": 148,
+            "SpDefense": 165,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1211,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4821,
+            "Attack": 175,
+            "Defense": 201,
+            "SpAttack": 168,
+            "SpDefense": 181,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.125,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 5097,
+            "Attack": 183,
+            "Defense": 221,
+            "SpAttack": 191,
+            "SpDefense": 199,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1295,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 5414,
+            "Attack": 192,
+            "Defense": 244,
+            "SpAttack": 217,
+            "SpDefense": 220,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1346,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5779,
+            "Attack": 203,
+            "Defense": 271,
+            "SpAttack": 247,
+            "SpDefense": 244,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1405,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 6199,
+            "Attack": 215,
+            "Defense": 302,
+            "SpAttack": 282,
+            "SpDefense": 271,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1473,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 6681,
+            "Attack": 229,
+            "Defense": 337,
+            "SpAttack": 322,
+            "SpDefense": 302,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1551,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 7236,
+            "Attack": 245,
+            "Defense": 377,
+            "SpAttack": 368,
+            "SpDefense": 338,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1641,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 7874,
+            "Attack": 264,
+            "Defense": 424,
+            "SpAttack": 421,
+            "SpDefense": 379,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1744,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 8608,
+            "Attack": 285,
+            "Defense": 477,
+            "SpAttack": 482,
+            "SpDefense": 427,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1863,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 9452,
+            "Attack": 310,
+            "Defense": 539,
+            "SpAttack": 552,
+            "SpDefense": 482,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.20,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Singing Support",
+            "MoveOrders": [
+                "Pound",
+                "Defense Curl",
+                "Dazzling Gleam",
+                "Sing"
+            ],
+            "HeldItems": [
+                "Exp Share",
+                "Rescue Hood",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Damage Dealer",
+            "MoveOrders": [
+                "Pound",
+                "Defense Curl",
+                "Rollout",
+                "Double Slap"
+            ],
+            "HeldItems": [
+                "Choice Specs",
+                "Slick Spoon",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Wise Glasses",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Fluffy Tail"
+        },
+        {
+            "Name": "Initiator",
+            "MoveOrders": [
+                "Pound",
+                "Defense Curl",
+                "Sing",
+                "Double Slap"
+            ],
+            "HeldItems": [
+                "Slick Spoon",
+                "Rescue Hood",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Choice Specs",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
+        }
+    ]
+}
+

@@ -1,0 +1,19 @@
+{
+    "Name": "Choice Specs",
+    "BonusStats": [
+        {
+            "Label": "Sp Attack",
+            "BaseValue": 0,
+            "IncrementValue": 10,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Sp Attack",
+        "BaseValue": 0.30,
+        "IncrementValue": 0.05,
+        "IsPercent": true
+    },
+    "Desc": "When dealing damage with a move, deal (40/50/60 + 30%/35%/40% Sp. Attack) as additional damage. This additional damage only applies to 1 target (8s cd)."
+}
+

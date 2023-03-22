@@ -1,0 +1,365 @@
+{
+    "Name": "Duraludon",
+    "AttackStyle": "Attack",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Heavy Metal",
+            "Desc": "Prevents Duraludon from being thrown or shoved by the first attempt to throw or shove them. This ability goes on cooldown after it's triggered (50s cd)."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Laser Focus",
+            "Category": "Buff",
+            "Cooldown": 9.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Reduces damage received by 20% for .6s. Afterward, Duraludon's auto attacks deal additional damage to enemies hit. This buff expires after 8s or after 3 auto attacks."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Flash Cannon",
+                    "Category": "Buff",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Duraludon ruptures the ground in the designated direction; dealing damage to enemies in the area of effect and decreasing their movement speed for a short time. Afterward, go into \"Cannon Mode\" rooting Duraludon for 6s or if a basic attack is not made for 2.5s. While in Cannon Mode, basic attacks have longer range, deal increased damage, and deal splash damage. Metal Claw, Stealth Rock, Dragon Tail, and boosted attacks can be used while in this mode and boosted attacks decrease the movement speed of enemies hit for a short time and also pierce."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Enemies in the ruptured ground's area of effect are also unable to act for 1s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Dragon Pulse",
+                    "Category": "Area",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Charges power before dealing damage to enemies in the area of effect. Duraludon's movement speed is decreased by 30% while charging, but the longer power is charged, the wider the move's area of effect becomes and the more damage it deals./n/nAfter learning this move: a damage marker will be attached to any enemy when Duraludon damages them (additional boosted damage also adds an orb). Marks accumulate to 5 orbs and 1 ring. Marks last for 5s and refresh in duration when a new mark is applied (marks can be cleansed). When Dragon Pulse hits a marked enemy, additional damage is dealt for each damage marker attached to it, then all damage markers are removed. An opposing Duraludon can wipe your stacks on wilds if they Dragon Pulse, but they will not receive the additional damage from your marks. In addition, if this move knocks out an enemy, the cooldown is reduced by 1s and Duraludon receives a buff for 8s or 3 auto attacks. Under the effect of this buff, auto attacks will each deal additional damage as secondary ticks (and apply additional Dragon Pulse orb stacks) and further reduce this move's cooldown when they hit by 1.5s each."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Also restores 8% of Duraludon's max HP if this move knocks out an enemy player."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Metal Claw",
+            "Category": "Hindrance",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Send sharp claws forward; dealing damage to enemies hit and decreasing their movement speed for a short time. After this move is used, Duraludon's next auto attack becomes a boosted attack."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Dragon Tail",
+                    "Category": "Hindrance",
+                    "Cooldown": 14.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Duraludon shoves enemies and moves itself backward a short distance. The next auto attack becomes a boosted attack. This move ignores obstacles. A maximum of 2 uses can be kept in reserve for this move. There is a 2.5s cooldown between uses."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Apply a mark that is consumed the next time Duraludon damages them, dealing additional damage."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Stealth Rock",
+                    "Category": "Hindrance",
+                    "Cooldown": 12.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Hurl a stone at the designated area, creating an invisible field of stones for 60s or until triggered. The field deals damage over time to enemies in the area of effect and decreases their movement speed by 15% for 2s. If the hurled stone hits an enemy before the designated area, the field will instead be centered on where the stone hit that Pokémon. Once an enemy takes damage from the field, it will become visible to all enemies. If an enemy takes damage from this move 4 times, that enemy becomes unable to move for 1s. After this move is used, Duraludon's next auto attack becomes a boosted attack. A maximum of 2 uses can be kept in reserve for this move. There is a 1s cooldown between uses./n/nA maximum of 2 Stealth Rocks may be on the game field at one time, but 2 more can still be kept in reserve."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Stores 3 uses in reserve instead./n/nA maximum of 3 Stealth Rocks may be on the game field at one time, but 3 more can still be kept in reserve."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Revolving Ruin",
+            "Category": "Area",
+            "Cooldown": 134,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Fire a beam of light at the ground in a sweeping circle around Duraludon. If this beam hits an enemy, it deals damage to them, grants Duraludon a shield and increases Attack by 8% for a short time. Both the shield effect and the Attack increase are strengthened for each enemy that is hit by the beam. Damage is dealt to any enemy in the area of effect after the beam of light is fired. A burning ring is also left where the beam of light touched the ground; enemies that touch this ring take additional damage every 0.5s and have their movement speed decreased by 50% for 1s./n/nSubsequent hits after the first have the Attack stat bonus from this move applied to them."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3000,
+            "Attack": 135,
+            "Defense": 70,
+            "SpAttack": 20,
+            "SpDefense": 50,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3085,
+            "Attack": 148,
+            "Defense": 78,
+            "SpAttack": 24,
+            "SpDefense": 55,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1439,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3179,
+            "Attack": 162,
+            "Defense": 87,
+            "SpAttack": 28,
+            "SpDefense": 61,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1922,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3282,
+            "Attack": 178,
+            "Defense": 97,
+            "SpAttack": 32,
+            "SpDefense": 67,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.2453,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3395,
+            "Attack": 195,
+            "Defense": 108,
+            "SpAttack": 37,
+            "SpDefense": 74,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.3038,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3520,
+            "Attack": 214,
+            "Defense": 120,
+            "SpAttack": 42,
+            "SpDefense": 82,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.3681,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 3657,
+            "Attack": 235,
+            "Defense": 133,
+            "SpAttack": 48,
+            "SpDefense": 91,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.4388,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 3808,
+            "Attack": 258,
+            "Defense": 148,
+            "SpAttack": 54,
+            "SpDefense": 100,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.5166,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 3975,
+            "Attack": 284,
+            "Defense": 164,
+            "SpAttack": 61,
+            "SpDefense": 110,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.6022,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4159,
+            "Attack": 312,
+            "Defense": 182,
+            "SpAttack": 69,
+            "SpDefense": 122,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.6964,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4362,
+            "Attack": 343,
+            "Defense": 201,
+            "SpAttack": 77,
+            "SpDefense": 135,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.20,
+            "AtkSpd": 0.80,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 4585,
+            "Attack": 377,
+            "Defense": 222,
+            "SpAttack": 86,
+            "SpDefense": 149,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.20,
+            "AtkSpd": 0.80,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 4830,
+            "Attack": 414,
+            "Defense": 246,
+            "SpAttack": 96,
+            "SpDefense": 164,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.25,
+            "AtkSpd": 0.80,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5100,
+            "Attack": 455,
+            "Defense": 272,
+            "SpAttack": 107,
+            "SpDefense": 181,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.25,
+            "AtkSpd": 0.80,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 5397,
+            "Attack": 500,
+            "Defense": 301,
+            "SpAttack": 119,
+            "SpDefense": 200,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.25,
+            "AtkSpd": 0.80,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Dragon Pulse",
+            "MoveOrders": [
+                "Metal Claw",
+                "Laser Focus",
+                "Dragon Pulse",
+                "Stealth Rock"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Scope Lens",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Flash Cannon",
+            "MoveOrders": [
+                "Metal Claw",
+                "Laser Focus",
+                "Flash Cannon",
+                "Dragon Tail"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Attack Damage",
+            "MoveOrders": [
+                "Metal Claw",
+                "Laser Focus",
+                "Dragon Pulse",
+                "Dragon Tail"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Scope Lens"
+            ],
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
+        }
+    ]
+}
+

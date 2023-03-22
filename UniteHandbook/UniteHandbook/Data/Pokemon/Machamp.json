@@ -1,0 +1,365 @@
+{
+    "Name": "Machamp",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Guts",
+            "Desc": "Increases Attack by 10% for 5s when afflicted by any debuff."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Karate Chop",
+            "Category": "Melee",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Machamp attacks in a straight line dealing damage to enemies hit."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Close Combat",
+                    "Category": "Melee",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Machamp unleashes a barrage of blows in a targeted direction for 1s, hitting multiple times and finishing with a single large strike. Machamp is unstoppable for the duration and can move while using Close Combat."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Deals 25% additional damage if the target is affected by a status condition."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Cross Chop",
+                    "Category": "Melee",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Machamp dashes forward, dealing damage to enemies hit. Cross Chop may critically hit and has a 5% higher Critical-Hit Rate. Cross Chop further increases Critical-Hit Rate by 5% for 3s on hit."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Machamp’s auto attacks increases Atk by 2 per target hit, permanently stacking up to 40 times."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Bulk Up",
+            "Category": "Buff",
+            "Cooldown": 9.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Machop buffs themselves for 3s becoming unstoppable, increasing attack by 15%, attack speed by 40% and movement speed by 30% inititally, diminishing gradually every 1s. Machop's next attack is boosted."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Dynamic Punch",
+                    "Category": "Hindrance",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Machamp jumps to target location, becoming unstoppable for 0.5s, stunning enemies hit for 0.5s, slowing them by 40% for 3s, and dealing damage four times in quick succession to the landing radius. Machamp’s Atk is increased by 15% for 5s and gains bonus movement speed of 40% inititally, diminishing gradually, for 3s when using Dynamic Punch. Machamp’s next auto attack is boosted."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Further increases movement speed by 30% and Atk bonus by 5%."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Submission",
+                    "Category": "Buff",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Machamp becomes unstoppable for 5s and gains 70% increased movement speed (diminishing every 1s by 20%) or until the next auto attack. Machamp’s next auto attack during submission is enhanced, hitting twice and slamming the target down behind Machamp. If this attack hits, Machamp also gains 5% increased Critical-Hit Rate and 50% Attack Speed for 3s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Further increases Critical-Hit Rate by 5% and Attack Speed by 10%."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Barrage Blow",
+            "Category": "Buff",
+            "Cooldown": 134,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Increases Machamp's movement speed by 5%, Attack by 30%, Defense by 200, and Sp. Defense by 200 for 10s. If used again, unleash a combo attack, dealing damage to enemies in the area of effect and shoving them. The final blow deals double the damage of the previous hits."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3250,
+            "Attack": 165,
+            "Defense": 98,
+            "SpAttack": 20,
+            "SpDefense": 64,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3313,
+            "Attack": 170,
+            "Defense": 104,
+            "SpAttack": 21,
+            "SpDefense": 68,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1029,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3389,
+            "Attack": 175,
+            "Defense": 111,
+            "SpAttack": 23,
+            "SpDefense": 72,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1063,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3480,
+            "Attack": 181,
+            "Defense": 119,
+            "SpAttack": 25,
+            "SpDefense": 77,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1104,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3809,
+            "Attack": 205,
+            "Defense": 148,
+            "SpAttack": 32,
+            "SpDefense": 96,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1254,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3940,
+            "Attack": 214,
+            "Defense": 160,
+            "SpAttack": 35,
+            "SpDefense": 104,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1314,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4097,
+            "Attack": 225,
+            "Defense": 174,
+            "SpAttack": 38,
+            "SpDefense": 113,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1386,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4286,
+            "Attack": 239,
+            "Defense": 191,
+            "SpAttack": 42,
+            "SpDefense": 124,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1472,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4953,
+            "Attack": 287,
+            "Defense": 250,
+            "SpAttack": 56,
+            "SpDefense": 163,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.1775,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5225,
+            "Attack": 306,
+            "Defense": 274,
+            "SpAttack": 62,
+            "SpDefense": 179,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.1898,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5551,
+            "Attack": 329,
+            "Defense": 303,
+            "SpAttack": 69,
+            "SpDefense": 198,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2046,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5942,
+            "Attack": 357,
+            "Defense": 338,
+            "SpAttack": 77,
+            "SpDefense": 221,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2224,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 6411,
+            "Attack": 391,
+            "Defense": 380,
+            "SpAttack": 87,
+            "SpDefense": 248,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.20,
+            "AtkSpd": 0.2437,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 6974,
+            "Attack": 431,
+            "Defense": 430,
+            "SpAttack": 99,
+            "SpDefense": 281,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.20,
+            "AtkSpd": 0.2693,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 7650,
+            "Attack": 479,
+            "Defense": 490,
+            "SpAttack": 114,
+            "SpDefense": 320,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.20,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Brawler",
+            "MoveOrders": [
+                "Karate Chop",
+                "Bulk Up",
+                "Close Combat",
+                "Dynamic Punch"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Focus Band",
+                "Weakness Band"
+            ],
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "Potion",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Initiator",
+            "MoveOrders": [
+                "Karate Chop",
+                "Bulk Up",
+                "Close Combat",
+                "Submission"
+            ],
+            "HeldItems": [
+                "Weakness Policy",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Critical-Hit",
+            "MoveOrders": [
+                "Karate Chop",
+                "Bulk Up",
+                "Cross Chop",
+                "Submission"
+            ],
+            "HeldItems": [
+                "Scope Lens",
+                "Razor Claw",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
+        }
+    ]
+}
+

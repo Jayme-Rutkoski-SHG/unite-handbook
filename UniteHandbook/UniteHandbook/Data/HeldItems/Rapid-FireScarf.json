@@ -1,0 +1,25 @@
+{
+    "Name": "Rapid-Fire Scarf",
+    "BonusStats": [
+        {
+            "Label": "Attack",
+            "BaseValue": 0,
+            "IncrementValue": 0.8,
+            "IsPercent": false
+        },
+        {
+            "Label": "Attack Speed",
+            "BaseValue": 0,
+            "IncrementValue": 0.006,
+            "IsPercent": true
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Attack Speed",
+        "BaseValue": 0.15,
+        "IncrementValue": 0.075,
+        "IsPercent": true
+    },
+    "Desc": "Every instance of auto attack damage applies a hidden \"stack\" for 3s. Stacks up to 3 times and the duration can be refreshed before it expires. The 3rd stack increases auto attack speed by 15%/22.5%/30% for 5s (10s cooldown). Gaining a stack incurs a .35s internal cooldown until another stack can be acquired."
+}
+

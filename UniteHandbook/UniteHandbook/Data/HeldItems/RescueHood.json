@@ -1,0 +1,24 @@
+{
+    "Name": "Rescue Hood",
+    "BonusStats": [
+        {
+            "Label": "Defense",
+            "BaseValue": 2,
+            "IncrementValue": 2,
+            "IsPercent": false
+        },
+        {
+            "Label": "Sp Defense",
+            "BaseValue": 0,
+            "IncrementValue": 2,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Shield and Recovery Effects",
+        "BaseValue": 0.05,
+        "IncrementValue": 0.025,
+        "IsPercent": true
+    },
+    "Desc": "Increases shield and recovery effect by 5%/7.5%/10% when they're granted to ally Pokémon."
+}

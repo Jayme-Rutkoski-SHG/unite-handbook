@@ -1,0 +1,365 @@
+{
+    "Name": "Slowbro",
+    "AttackStyle": "Special",
+    "Role": "Defender",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Oblivious",
+            "Desc": "Slowbro stores up lost HP for a short time (blue HP). Slowbro's Oblivious health remains for 6s and then decreases by 3% max HP every second. When dealing damage to an enemy with Water Gun, Scald, Surf, or Slowbeam - decrease the enemy's Sp.Def by 4% for 5s, stacking up to 5 times."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Water Gun",
+            "Category": "Ranged",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Slowbro fires a stream of water, damaging and slowing enemies hit by 35% for 1s. This move can be channeled to increase its range and damage. Slowbro's movement speed is reduced while channeling. Restore some of Slowbro's Oblivious health (blue HP) once, after hitting an enemy."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Scald",
+                    "Category": "Ranged",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Slowbro fires a stream of boiling water; damaging enemies hit, slowing them by 80% for0.5s and creating a cloud of steam centered on the first enemy hit, which slows by 30% for 3s and applies a burn to all enemies inside. This burn reduces Attack by 40% for 3s. Restore 10% of Slowbro's Oblivious health (blue HP) once per stream instance after hitting an enemy (maximum 3 times)."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increases the size of the steam cloud."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Surf",
+                    "Category": "Hindrance",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Slowbro rides on a wave, damaging, knocking enemies back, and throwing them in the air for .4s. Two more waves follow after the first, damaging and slowing enemies by 25% for 1s. Restore 10% of Slowbro's Oblivious health (blue HP) per wave, when hitting at least one enemy (maximum 3 times)."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "The second and third waves will now also throw enemies in the air for .75s, and the second wave will knock them back."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Slack Off",
+            "Category": "Recovery",
+            "Cooldown": 11.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Slowbro begins channeling a nap and gains a heal over time, healing 1.5% max HP every 0.5s for 3s. While Slowbro remains channeling its nap, all self-healing is doubled (including Slack Off healing)."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Amnesia",
+                    "Category": "Recovery",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Slowbro briefly becomes unstoppable, gaining +300 Defense for 4s and restoring 22.5% of Slowbro's Oblivious health (blue HP) every second for 4s."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Also increases Slowbro's Sp. Defense by 150."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Telekinesis",
+                    "Category": "Hindrance",
+                    "Cooldown": 7.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Slowbro shoots a beam, causing the first enemy hit to float in the air for 2.3s, restoring 15% of Slowbro's Oblivious health (blue HP) every second for 5s. Slowbro can reactivate the ability to pull the enemy to themself, but otherwise cannot act for the duration."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increases the range and speed of the beam."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Slowbeam",
+            "Category": "Hindrance",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Stare at an enemy and attack continually, dealing damage every .5 seconds for 3s and applying 'Bound' to them. This ability counters unstoppable. Grants a shield (10% max HP) and makes Slowbro immune to hindrances while using this move."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3225,
+            "Attack": 150,
+            "Defense": 70,
+            "SpAttack": 50,
+            "SpDefense": 60,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3362,
+            "Attack": 153,
+            "Defense": 79,
+            "SpAttack": 58,
+            "SpDefense": 68,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1044,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3519,
+            "Attack": 157,
+            "Defense": 89,
+            "SpAttack": 67,
+            "SpDefense": 77,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1095,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 4318,
+            "Attack": 175,
+            "Defense": 142,
+            "SpAttack": 114,
+            "SpDefense": 124,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1354,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4527,
+            "Attack": 180,
+            "Defense": 156,
+            "SpAttack": 126,
+            "SpDefense": 136,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1422,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "SpAttack": 0,
+            "SpDefense": 0,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.15,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 5042,
+            "Attack": 192,
+            "Defense": 190,
+            "SpAttack": 156,
+            "SpDefense": 166,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1589,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 5359,
+            "Attack": 199,
+            "Defense": 211,
+            "SpAttack": 175,
+            "SpDefense": 185,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1692,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5724,
+            "Attack": 207,
+            "Defense": 235,
+            "SpAttack": 196,
+            "SpDefense": 206,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.181,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 6144,
+            "Attack": 217,
+            "Defense": 263,
+            "SpAttack": 221,
+            "SpDefense": 231,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1946,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 6627,
+            "Attack": 228,
+            "Defense": 295,
+            "SpAttack": 249,
+            "SpDefense": 259,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2102,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 7183,
+            "Attack": 241,
+            "Defense": 332,
+            "SpAttack": 282,
+            "SpDefense": 291,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2282,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 7822,
+            "Attack": 256,
+            "Defense": 375,
+            "SpAttack": 319,
+            "SpDefense": 328,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2489,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 8556,
+            "Attack": 273,
+            "Defense": 424,
+            "SpAttack": 362,
+            "SpDefense": 271,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2727,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 9400,
+            "Attack": 292,
+            "Defense": 480,
+            "SpAttack": 411,
+            "SpDefense": 420,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Damage Soaker",
+            "MoveOrders": [
+                "Water Gun",
+                "Slack Off",
+                "Scald",
+                "Amnesia"
+            ],
+            "HeldItems": [
+                "Choice Specs",
+                "Slick Spoon",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Potion"
+        },
+        {
+            "Name": "Support",
+            "MoveOrders": [
+                "Water Gun",
+                "Slack Off",
+                "Surf",
+                "Telekinesis"
+            ],
+            "HeldItems": [
+                "Exp Share",
+                "Slick Spoon",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Slow Smoke"
+        },
+        {
+            "Name": "Tank",
+            "MoveOrders": [
+                "Water Gun",
+                "Slack Off",
+                "Surf",
+                "Amnesia"
+            ],
+            "HeldItems": [
+                "Assault Vest",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Slow Smoke"
+        }
+    ]
+}
+

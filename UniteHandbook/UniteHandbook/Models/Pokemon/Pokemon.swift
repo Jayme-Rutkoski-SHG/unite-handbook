@@ -27,9 +27,9 @@ public class Pokemon : BaseListDiffable, Codable {
     public var role: String = ""
     public var style: String = ""
     public var difficulty: String = ""
-    public var ability: Ability = Ability()
+    public var ability: [Ability] = [Ability]()
     public var moves: [Move] = [Move]()
-    public var unite: Unite = Unite()
+    public var unite: [Unite] = [Unite]()
     public var stats: [StatDetails] = [StatDetails]()
     public var presetBuilds: [Build] = [Build]()
     
@@ -56,9 +56,9 @@ public class Pokemon : BaseListDiffable, Codable {
         self.role = try container.decode(String.self, forKey: .role)
         self.style = try container.decode(String.self, forKey: .style)
         self.difficulty = try container.decode(String.self, forKey: .difficulty)
-        self.ability = try container.decode(Ability.self, forKey: .ability)
+        self.ability = try container.decode([Ability].self, forKey: .ability)
         self.moves = try container.decode([Move].self, forKey: .moves)
-        self.unite = try container.decode(Unite.self, forKey: .unite)
+        self.unite = try container.decode([Unite].self, forKey: .unite)
         self.stats = try container.decode([StatDetails].self, forKey: .stats)
         self.presetBuilds = try container.decode([Build].self, forKey: .presetBuilds)
     }

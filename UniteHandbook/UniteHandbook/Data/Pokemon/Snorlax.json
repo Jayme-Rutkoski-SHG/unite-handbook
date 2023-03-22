@@ -1,0 +1,365 @@
+{
+    "Name": "Snorlax",
+    "AttackStyle": "Attack",
+    "Role": "Defender",
+    "Style": "Melee",
+    "Difficulty": "Novice",
+    "Ability": [
+        {
+            "Name": "Gluttony",
+            "Desc": "Increases the effects gained from eating berries. 25% increased movement speed when near berries and doubles the amount healed from the Sitrus berry (yellow berry)."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Tackle",
+            "Category": "Dash",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Snorlax dashes a short distance forward, dealing damage, stunning the first target hit for 1s, and slightly throwing them. Snorlax’s next auto attack is boosted."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Heavy Slam",
+                    "Category": "Dash",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Snorlax jumps to the target location, dealing damage and throwing enemies within the landing radius into the air for 1s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Flail",
+                    "Category": "Buff",
+                    "Cooldown": 6.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Snorlax buffs themselves for 5s causing auto attacks to deal increased damage and slow enemies hit. Damage increase is strengthened for every 20% HP Snorlax is missing. Snorlax also gains a short burst of increased movement speed by 70% for 2s, decreasing every .4s by 14%, and slows nearby enemies by 50% for 1.5s when Flail is activated."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased damage. In addition, if Snorlax is below 40% HP, auto attacks will also gain 30% lifesteal."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Rest",
+            "Category": "Recovery",
+            "Cooldown": 10.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Snorlax falls asleep for 3s, becoming unstoppable, and healing 3 times for 8% Max HP. While asleep enemies cannot pass through Snorlax’s hitbox."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Block",
+                    "Category": "Hindrance",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Snorlax creates and holds a wall in a targeted direction for 4s and gains a shield. The shield lasts 3.5s even if Block is cancelled early. Enemies that contact the wall are knocked back and stunned for .45s. This knockback can occur every 1s (max 4 times). Snorlax cannot attack or use abilities while Blocking but can move with a 45% reduced movement speed."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "The Block becomes larger and the knockback and stun occurs every 0.5s (max 8 times). While blocking, Snorlax’s Def and SpDef are increased by 25%."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Yawn",
+                    "Category": "Hindrance",
+                    "Cooldown": 12.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Snorlax sends out a slow short-range projectile that puts all targets hit to Sleep for 3s."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Enemy movement speed reduced by 35% for 3s upon waking up."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Power Nap",
+            "Category": "Recovery",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Go to sleep and begin snoring, dealing damage to enemies in the area of effect and throws them in the air for 1s. While sleeping enemies cannot pass through Snorlax’s hitbox, Snorlax becomes immune to hindrances, deals damage over time to nearby enemies, slow enemies hit by 30% for 1s, and continually restore 7% of max HP, 9 times. This move can be recasted to flip over, dealing an extra instance of the DoT damage and throwing enemies in the air for 1s."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3300,
+            "Attack": 175,
+            "Defense": 97,
+            "SpAttack": 20,
+            "SpDefense": 70,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3535,
+            "Attack": 181,
+            "Defense": 114,
+            "SpAttack": 23,
+            "SpDefense": 83,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1107,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3793,
+            "Attack": 118,
+            "Defense": 133,
+            "SpAttack": 27,
+            "SpDefense": 98,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1224,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 4077,
+            "Attack": 195,
+            "Defense": 154,
+            "SpAttack": 31,
+            "SpDefense": 114,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1353,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4389,
+            "Attack": 203,
+            "Defense": 177,
+            "SpAttack": 36,
+            "SpDefense": 132,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1495,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4733,
+            "Attack": 212,
+            "Defense": 202,
+            "SpAttack": 41,
+            "SpDefense": 151,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1651,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 5111,
+            "Attack": 222,
+            "Defense": 230,
+            "SpAttack": 46,
+            "SpDefense": 172,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1823,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 5528,
+            "Attack": 233,
+            "Defense": 260,
+            "SpAttack": 52,
+            "SpDefense": 195,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2012,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5987,
+            "Attack": 245,
+            "Defense": 294,
+            "SpAttack": 59,
+            "SpDefense": 221,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2221,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 6493,
+            "Attack": 258,
+            "Defense": 331,
+            "SpAttack": 66,
+            "SpDefense": 249,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2451,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 7050,
+            "Attack": 272,
+            "Defense": 372,
+            "SpAttack": 74,
+            "SpDefense": 280,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2704,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 7663,
+            "Attack": 288,
+            "Defense": 417,
+            "SpAttack": 83,
+            "SpDefense": 314,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2983,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 8338,
+            "Attack": 305,
+            "Defense": 466,
+            "SpAttack": 93,
+            "SpDefense": 352,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.329,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 9081,
+            "Attack": 324,
+            "Defense": 520,
+            "SpAttack": 104,
+            "SpDefense": 394,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.3628,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 9899,
+            "Attack": 345,
+            "Defense": 580,
+            "SpAttack": 116,
+            "SpDefense": 440,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.40,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Frontline",
+            "MoveOrders": [
+                "Tackle",
+                "Rest",
+                "Heavy Slam",
+                "Block"
+            ],
+            "HeldItems": [
+                "Focus Band",
+                "Buddy Barrier",
+                "Weakness Policy"
+            ],
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Potion"
+        },
+        {
+            "Name": "Disabler",
+            "MoveOrders": [
+                "Tackle",
+                "Rest",
+                "Heavy Slam",
+                "Yawn"
+            ],
+            "HeldItems": [
+                "Focus Band",
+                "Energy Amplifier",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Potion"
+        },
+        {
+            "Name": "Offense",
+            "MoveOrders": [
+                "Tackle",
+                "Rest",
+                "Flail",
+                "Yawn"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Focus Band",
+                "Scope Lens"
+            ],
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Slow Smoke",
+            "AltBattleItem": "Eject Button"
+        }
+    ]
+}
+

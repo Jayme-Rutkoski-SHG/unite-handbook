@@ -1,0 +1,369 @@
+{
+    "Name": "Dragonite",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Ranged",
+    "Difficulty": "Novice",
+    "Ability": [
+        {
+            "Name": "Marvel Scale",
+            "Desc": "Increases Defense by 100 for 1.5s when afflicted by a status condition (Dratini and Dragonair only)."
+        },
+        {
+            "Name": "Multiscale",
+            "Desc": "When damaged by an enemy player, gain a buff that reduces damage taken by 25% for 2.5 seconds. This ability has a 15 second cooldown."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Twister",
+            "Category": "Ranged",
+            "Cooldown": 7.50,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Creates a twister and releases it in the designated direction, dealing damage to enemies hit and decreases their movement speed by 50% for 1s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Dragon Dance",
+                    "Category": "Dash",
+                    "Cooldown": 5.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Dash in a designated direction, alternating each use between a left arc, right arc and a direct dash. After using this move, grant a buff increasing attack speed of the next 3 auto attacks by 80% for 4.5s, increasing movement speed by 30% for 1s, increasing Attack by 8% (capping at 24%), as well as increasing the stage of Hyper Beam. This buff stacks up to 3 times, and the duration is reset to full on reuse. All stacks are removed after a few seconds. Auto attacks reduce the cooldown of this ability by 1s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Further increases Dragonite's movement speed by 10% for 4.5s if there are enemies nearby when the dance ends."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Extreme Dance",
+                    "Category": "Hindrance",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Dash toward the designated enemy, damaging and slowing all enemies in a small radius around the target upon impact by 50% for 2s, throwing the primary target and shoving others away. Using this move resets the cooldown of Multiscale."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "If Dragonite's movement speed is currently decreased when it uses this move, that movement speed decrease is negated before the move is used."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Dragon Breath",
+            "Category": "Area",
+            "Cooldown": 7.50,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Exhale a mighty gust in the designated direction. If this move hits an enemy, Dragonite's next attack becomes a boosted attack."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Hyper Beam",
+                    "Category": "Ranged",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 8,
+                            "Desc": "Fires a beam of energy toward the targeted enemy after a delay, dealing damage to all enemies that it hits, as well as additional damage based on their Max HP. The move changes Stages based on the number of stacks of Dragon Dance that Dragonite has, from 0 to 3. The max HP damage is 0%/5%/10%/20%, determined by the current Stage. Dragonite cannot act while releasing the beam./n/nAgainst Wild Pokémon: The additional damage from max HP is capped at 600/1200/1800/2400 depending on the stage."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Reduces damage taken by 50% while charging this move."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Outrage",
+                    "Category": "Melee",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 8,
+                            "Desc": "Dragonite stomps the ground, dealing damage to enemies in an area around Dragonite with the bonus effect of the last Boosted Attack he used. Additionally, Dragonite gains a buff for 5.5s, increasing auto attack speed by 30% for 5.5s, converting all of their attacks into melee Boosted Attacks, and alternating through the water, electric, and fire Boosted Attacks in order. When the buff ends, Dragonite is stunned for .7s."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Reduce the duration of hindrances inflicted on Dragonite while rampaging by 40% for 5.5s."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Draco Impact",
+            "Category": "Dash",
+            "Cooldown": 134,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Briefly fly up in the air, becoming untargetable, before crashing down, approximately 2s after activating, with several comets on a designated area, dealing damage and throwing enemies in the area for 0.5s. The farther Dragonite flies, the more the Unite gauge is consumed (50% at min distance and 100% at max). Dragonite is unstoppable while using this move."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3050,
+            "Attack": 150,
+            "Defense": 78,
+            "SpAttack": 20,
+            "SpDefense": 60,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3117,
+            "Attack": 155,
+            "Defense": 82,
+            "SpAttack": 21,
+            "SpDefense": 64,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1029,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3198,
+            "Attack": 161,
+            "Defense": 89,
+            "SpAttack": 23,
+            "SpDefense": 68,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1063,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3295,
+            "Attack": 169,
+            "Defense": 96,
+            "SpAttack": 25,
+            "SpDefense": 73,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1104,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3647,
+            "Attack": 197,
+            "Defense": 121,
+            "SpAttack": 32,
+            "SpDefense": 92,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1254,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3787,
+            "Attack": 208,
+            "Defense": 131,
+            "SpAttack": 35,
+            "SpDefense": 100,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1314,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 3955,
+            "Attack": 221,
+            "Defense": 143,
+            "SpAttack": 38,
+            "SpDefense": 109,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1386,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4627,
+            "Attack": 274,
+            "Defense": 191,
+            "SpAttack": 52,
+            "SpDefense": 146,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1672,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4869,
+            "Attack": 293,
+            "Defense": 208,
+            "SpAttack": 57,
+            "SpDefense": 158,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1775,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5159,
+            "Attack": 316,
+            "Defense": 229,
+            "SpAttack": 63,
+            "SpDefense": 174,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1898,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5507,
+            "Attack": 343,
+            "Defense": 254,
+            "SpAttack": 70,
+            "SpDefense": 193,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2046,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5925,
+            "Attack": 376,
+            "Defense": 284,
+            "SpAttack": 78,
+            "SpDefense": 216,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2224,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 6426,
+            "Attack": 416,
+            "Defense": 320,
+            "SpAttack": 88,
+            "SpDefense": 243,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2437,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 7028,
+            "Attack": 463,
+            "Defense": 363,
+            "SpAttack": 100,
+            "SpDefense": 276,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2693,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 7750,
+            "Attack": 520,
+            "Defense": 415,
+            "SpAttack": 115,
+            "SpDefense": 315,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Ranged Burst",
+            "MoveOrders": [
+                "Dragon Breath",
+                "Twister",
+                "Dragon Dance",
+                "Hyper Beam"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Scope Lens",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Razor Claw",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Melee Jungle",
+            "MoveOrders": [
+                "Dragon Breath",
+                "Twister",
+                "Extreme Speed",
+                "Outrage"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Rapid-Fire Scarf",
+                "Drain Crown"
+            ],
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Slow Smoke"
+        },
+        {
+            "Name": "Brawler",
+            "MoveOrders": [
+                "Dragon Breath",
+                "Twister",
+                "Extreme Speed",
+                "Outrage"
+            ],
+            "HeldItems": [
+                "Rapid-Fire Scarf",
+                "Drain Crown",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Slow Smoke"
+        }
+    ]
+}
+

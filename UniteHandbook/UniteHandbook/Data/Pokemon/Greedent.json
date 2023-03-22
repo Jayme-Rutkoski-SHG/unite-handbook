@@ -1,0 +1,365 @@
+{
+    "Name": "Greedent",
+    "AttackStyle": "Attack",
+    "Role": "Defender",
+    "Style": "Melee",
+    "Difficulty": "Expert",
+    "Ability": [
+        {
+            "Name": "Cheek Pouch",
+            "Desc": "When Greedent eats a berry, recover HP after receiving the effects of the berry. At the same time, Greedent stashes an Oran berry in its tail. Being hit by a single attack or combination of attacks will cause an Oran berry to drop from Greedent's tail (4.5s cd). Berries stay on the ground for 10s./n/nIf any ally or enemy eats an Oran Berry, they heal for 45 + 2% max HP (unless the enemy is Greedent). Greedent enemies that eat an Oran Berry heal for 45 + 5 x (Level -1) + 2% max HP"
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Tackle",
+            "Category": "Dash",
+            "Cooldown": 5.50,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Leap to the designated area, dealing damage to enemies in the area of effect and decreasing their movement speed by 20% for 1s. If this move is used while Covet is active, no area can be designated for Greedent to leap to. Instead, while running, damage is dealt in an area to enemies in front of Greedent. If Greedent has any Oran berries stashed, consume all of them, reducing Tackle's cooldown by 1s for each berry consumed."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Bullet Seed",
+                    "Category": "Ranged",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Spit berry seeds in the designated direction for 6s; dealing damage to enemies in the area of effect and decreasing their movement speed by 30% for 1s. Greedent fires more seeds for each Oran berry stashed."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Belch",
+                    "Category": "Ranged",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Deals damage to enemies in the area of effect and decrease their movement speed by 15% for 1s. If Greedent has any Oran berries stashed, consume all of them, reducing Belch's cooldown by 1s for each berry consumed (capping at 4s). This move's cooldown cannot be reduced beyond 1s."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Defense Curl",
+            "Category": "Buff",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Grants Greedent a shield (10% max HP) for 3s. In addition, an Oran berry will drop in front of Greedent."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Stuff Cheeks",
+                    "Category": "Buff",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Greedent drops 5 Oran berries, which can be eaten to recover HP. Any HP recovered from an Oran berry eaten within 5s that exceeds Greedent's max HP will be converted to a shield for 1.8% max HP per berry. If Greedent catches sight of a berry while using this move, movement speed is increased by 70% for 6s, but decreasing by 15% every 1s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increase the number of Oran berries dropped by 1."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Covet",
+                    "Category": "Hindrance",
+                    "Cooldown": 11.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Greedent runs with all its might for 6s; becoming resistant to hindrances (for 6.1s), dealing damage to enemies hit and throwing them. While running; Greedent drops Oran berries every 1s. Eating a dropped berry increases movement speed by 22% for 1s (stacking up to 5 times). In addition, Tackle, Belch or Bullet Seed can also be used while running and using this move will reset the cooldown of Tackle or Belch."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased damage and increased frequency of Oran berries dropping (8 berries over 6s)."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Berry Belly Flop",
+            "Category": "Area",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Greedent eats a special berry to recover 15% max HP and then leaps to the designated area; becoming briefly unstoppable, dealing damage, and throwing enemies within the area of effect. Greedent then eats another berry, allowing an unlimited amount of Oran berries to be stored for 8s and resets cooldowns of all moves."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3000,
+            "Attack": 170,
+            "Defense": 75,
+            "SpAttack": 20,
+            "SpDefense": 60,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3135,
+            "Attack": 174,
+            "Defense": 83,
+            "SpAttack": 22,
+            "SpDefense": 67,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1044,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3290,
+            "Attack": 178,
+            "Defense": 92,
+            "SpAttack": 24,
+            "SpDefense": 75,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1095,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3469,
+            "Attack": 183,
+            "Defense": 103,
+            "SpAttack": 27,
+            "SpDefense": 84,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1154,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4285,
+            "Attack": 206,
+            "Defense": 151,
+            "SpAttack": 40,
+            "SpDefense": 124,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1422,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4522,
+            "Attack": 213,
+            "Defense": 165,
+            "SpAttack": 44,
+            "SpDefense": 136,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.15,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4794,
+            "Attack": 221,
+            "Defense": 181,
+            "SpAttack": 48,
+            "SpDefense": 149,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1589,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 5107,
+            "Attack": 230,
+            "Defense": 199,
+            "SpAttack": 53,
+            "SpDefense": 164,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1692,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5467,
+            "Attack": 240,
+            "Defense": 220,
+            "SpAttack": 59,
+            "SpDefense": 182,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.181,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5882,
+            "Attack": 252,
+            "Defense": 244,
+            "SpAttack": 66,
+            "SpDefense": 202,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1946,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 6359,
+            "Attack": 266,
+            "Defense": 272,
+            "SpAttack": 74,
+            "SpDefense": 225,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2102,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 6908,
+            "Attack": 282,
+            "Defense": 304,
+            "SpAttack": 83,
+            "SpDefense": 252,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2282,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 7539,
+            "Attack": 300,
+            "Defense": 341,
+            "SpAttack": 93,
+            "SpDefense": 283,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2489,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 8265,
+            "Attack": 321,
+            "Defense": 384,
+            "SpAttack": 104,
+            "SpDefense": 319,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2727,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 9099,
+            "Attack": 345,
+            "Defense": 433,
+            "SpAttack": 117,
+            "SpDefense": 360,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Score Stack",
+            "MoveOrders": [
+                "Tackle",
+                "Defense Curl",
+                "Belch",
+                "Covet"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Aeos Cookie",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Slow Smoke"
+        },
+        {
+            "Name": "Bruiser",
+            "MoveOrders": [
+                "Tackle",
+                "Defense Curl",
+                "Belch",
+                "Stuff Cheeks"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Weakness Policy",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Full Heal"
+        },
+        {
+            "Name": "Tank DPS",
+            "MoveOrders": [
+                "Tackle",
+                "Defense Curl",
+                "Bullet Seed",
+                "Stuff Cheeks"
+            ],
+            "HeldItems": [
+                "Assault Vest",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Energy Amplifier",
+            "BattleItem": "Full Heal",
+            "AltBattleItem": "Slow Smoke"
+        }
+    ]
+}
+

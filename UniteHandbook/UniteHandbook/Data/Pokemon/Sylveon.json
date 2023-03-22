@@ -1,0 +1,369 @@
+{
+    "Name": "Sylveon",
+    "AttackStyle": "Attack",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Adaptability",
+            "Desc": "Every time Eevee deals or receives damage, increase Sp. Attack by 5% for 1.5s, stacking up to 4 times."
+        },
+        {
+            "Name": "Pixilate",
+            "Desc": "Every time Sylveon deals or receives damage, increase Sp. Atk and Sp. Defense by 2.5% for 1.5s, stacking up to 6 times."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Swift",
+            "Category": "Ranged",
+            "Cooldown": 7.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Shoots 4 star-shaped rays at enemies, dealing damage to them."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Mystical Fire",
+                    "Category": "Dash",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Create four small flames while leaping in the designated direction. These flames shoot towards enemies one by one, dealing damage and decreasing their Sp. Attack by 15% for 1s, stacking up to 4 times. Each time a flame hits, reduce the cooldown of this move by 15% of the current cooldown. After the first flame hits, subsequent flames on the same target deal 25% damage. Wild Pokémon will only be prioritized if no enemy players are in range."
+                        },
+                        {
+                            "Level": 10,
+                            "Desc": "Increases the number of flames by one."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Hyper Voice",
+                    "Category": "Area",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Unleashes an attack of multiple sound waves that deal damage when they hit. The damage dealt increases the farther the target is from Sylveon. Every sound wave reduces enemy Sp. Defense by 20% for 1.5s (capping at 80%)."
+                        },
+                        {
+                            "Level": 10,
+                            "Desc": "Increases the number of sound waves by one."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Baby-Doll Eyes",
+            "Category": "Ranged",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Stare at an enemy with baby-doll eyes, dealing damage and decreasing their Attack by 15% and decreasing their movement speed for a short time when this move hits."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Draining Kiss",
+                    "Category": "Sure Hit",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Blow a kiss at an enemy that goes back and forth between Sylveon and the target multiple times. When the kiss touches Sylveon, restore HP. When it hits the enemy, deal damage and decrease their movement speed by 20% for a short time. If Sylveon and the enemy move too far away from each other, the kiss will disappear faster than normal."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "Increased healing"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Calm Mind",
+                    "Category": "Buff",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Sylveon quietly focuses their mind and calms their spirit, increasing movement speed, Sp. Attack by 40% and Sp. Defense by 10% for 3s."
+                        },
+                        {
+                            "Level": 12,
+                            "Desc": "Up to 3s after using this move, if Sylveon is hit by an Enemy's move, the damage is completely nullified and Sylveon is granted a shield."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Fairy Frolic",
+            "Category": "Buff",
+            "Cooldown": 139,
+            "LevelDetails": [
+                {
+                    "Level": 8,
+                    "Desc": "Jump into the air, removing most statuses and becoming invincible. The moment Sylveon lands, lose invincibility and immediately gain Fairy Frolic buff, while dealing damage to enemies in the area of effect. Fairy Frolic buff: for 10s, 50% of the damage dealt by Sylveon is converted into HP. No HP is recovered if the damage is dealt to shields."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3406,
+            "Attack": 167,
+            "Defense": 52,
+            "SpAttack": 50,
+            "SpDefense": 38,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3489,
+            "Attack": 171,
+            "Defense": 57,
+            "SpAttack": 64,
+            "SpDefense": 41,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1067,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3584,
+            "Attack": 176,
+            "Defense": 62,
+            "SpAttack": 80,
+            "SpDefense": 45,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1143,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 4068,
+            "Attack": 201,
+            "Defense": 89,
+            "SpAttack": 162,
+            "SpDefense": 65,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1531,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4195,
+            "Attack": 208,
+            "Defense": 96,
+            "SpAttack": 183,
+            "SpDefense": 70,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1632,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4340,
+            "Attack": 216,
+            "Defense": 104,
+            "SpAttack": 207,
+            "SpDefense": 76,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1748,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4507,
+            "Attack": 225,
+            "Defense": 113,
+            "SpAttack": 235,
+            "SpDefense": 83,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1882,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4699,
+            "Attack": 235,
+            "Defense": 124,
+            "SpAttack": 267,
+            "SpDefense": 91,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2036,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4920,
+            "Attack": 247,
+            "Defense": 136,
+            "SpAttack": 304,
+            "SpDefense": 100,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2213,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5174,
+            "Attack": 260,
+            "Defense": 150,
+            "SpAttack": 347,
+            "SpDefense": 110,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2317,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5467,
+            "Attack": 275,
+            "Defense": 166,
+            "SpAttack": 396,
+            "SpDefense": 122,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2652,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5804,
+            "Attack": 293,
+            "Defense": 185,
+            "SpAttack": 453,
+            "SpDefense": 136,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2922,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 6191,
+            "Attack": 313,
+            "Defense": 207,
+            "SpAttack": 518,
+            "SpDefense": 152,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.3232,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 6636,
+            "Attack": 336,
+            "Defense": 232,
+            "SpAttack": 593,
+            "SpDefense": 170,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.3589,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 7148,
+            "Attack": 363,
+            "Defense": 260,
+            "SpAttack": 679,
+            "SpDefense": 191,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.3999,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Sustain",
+            "MoveOrders": [
+                "Swift",
+                "Baby-Doll Eyes",
+                "Mystical Fire",
+                "Draining Kiss"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Slick Spoon",
+            "BattleItem": "Potion",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Hyper Voice",
+            "MoveOrders": [
+                "Swift",
+                "Baby-Doll Eyes",
+                "Hyper Voice",
+                "Calm Mind"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
+            ],
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Full Heal"
+        },
+        {
+            "Name": "CDR",
+            "MoveOrders": [
+                "Swift",
+                "Baby-Doll Eyes",
+                "Hyper Voice",
+                "Calm Mind"
+            ],
+            "HeldItems": [
+                "Shell Bell",
+                "Energy Amplifier",
+                "Wise Glasses"
+            ],
+            "AltHeldItem": "Choice Specs",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        }
+    ]
+}
+

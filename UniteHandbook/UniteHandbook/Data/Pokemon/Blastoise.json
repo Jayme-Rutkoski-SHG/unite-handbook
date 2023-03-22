@@ -1,0 +1,365 @@
+{
+    "Name": "Blastoise",
+    "AttackStyle": "Special",
+    "Role": "Defender",
+    "Style": "Ranged",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Torrent",
+            "Desc": "Increases Attack and Sp. Attack by 20% while at half HP or less."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Water Gun",
+            "Category": "Ranged",
+            "Cooldown": 9.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Blastoise shoots a jet of water in a straight line; damaging, knocking back, and stunning enemies hit for0.5s. Enemies hit are also slowed by 30% for 1s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Hydro Pump",
+                    "Category": "Ranged",
+                    "Cooldown": 7.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Blastoise shoots a large amount of water, damaging, knocking back, and stunning enemies hit for 0.5s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Water Spout",
+                    "Category": "Area",
+                    "Cooldown": 7.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Blastoise calls down a barrage of water in a targeted radius. Enemies within the radius are struck 6 times over 3s, damaging and slowing them by 30% for 1s (refreshing every hit)."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Skull Bash",
+            "Category": "Dash",
+            "Cooldown": 10.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Blastoise dashes forward damaging and stunning all enemies hit for 0.5s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Surf",
+                    "Category": "Dash",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Blastoise rides a large wave in the designated direction damaging, knocking back, and stunning enemies hit for 1.6s. Blastoise is unstoppable while surfing, and once it ends, Blastoise can jump in a designated direction. The wave continues for a short duration after leaping off and the wave continues to knock back enemies hit but inflicts no damage."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Blastoise gains a small shield for 4s when hitting an enemy with Surf."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Rapid Spin",
+                    "Category": "Area",
+                    "Cooldown": 11.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Blastoise withdraws into its shell and begins rapidly spinning for 5.5s resetting the cooldown of its other move. Blastoise resists hindrances for the duration of Rapid Spin and can freely move about the battlefield. While spinning, Blastoise will damage nearby enemies. Blastoise’s next auto attack after Rapid Spin ends becomes boosted. For the duration of Rapid Spin, the mechanics of Blastoise’s auto attacks as well as Hydro Pump and Water Spout are changed."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Blastoise gains a massive amount of Def and SpDef for 7s."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Hydro Typhoon",
+            "Category": "Hindrance",
+            "Cooldown": 100,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Blastoise gains a shield for 4s and sweeps powerful water jets in a large circle around itself dealing massive damage and throwing enemies hit into the air for 1.5s."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3225,
+            "Attack": 150,
+            "Defense": 100,
+            "SpAttack": 50,
+            "SpDefense": 70,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3319,
+            "Attack": 152,
+            "Defense": 107,
+            "SpAttack": 55,
+            "SpDefense": 75,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1029,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3432,
+            "Attack": 154,
+            "Defense": 116,
+            "SpAttack": 61,
+            "SpDefense": 81,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1063,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3568,
+            "Attack": 157,
+            "Defense": 126,
+            "SpAttack": 68,
+            "SpDefense": 88,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1104,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4060,
+            "Attack": 168,
+            "Defense": 163,
+            "SpAttack": 95,
+            "SpDefense": 114,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1254,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4256,
+            "Attack": 172,
+            "Defense": 178,
+            "SpAttack": 106,
+            "SpDefense": 124,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1314,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4491,
+            "Attack": 177,
+            "Defense": 196,
+            "SpAttack": 119,
+            "SpDefense": 137,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1386,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4773,
+            "Attack": 183,
+            "Defense": 217,
+            "SpAttack": 135,
+            "SpDefense": 152,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1472,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5769,
+            "Attack": 204,
+            "Defense": 293,
+            "SpAttack": 190,
+            "SpDefense": 205,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1775,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 6175,
+            "Attack": 214,
+            "Defense": 324,
+            "SpAttack": 212,
+            "SpDefense": 227,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1898,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 6662,
+            "Attack": 224,
+            "Defense": 361,
+            "SpAttack": 239,
+            "SpDefense": 253,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2046,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 7247,
+            "Attack": 238,
+            "Defense": 405,
+            "SpAttack": 271,
+            "SpDefense": 284,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2224,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 7948,
+            "Attack": 252,
+            "Defense": 458,
+            "SpAttack": 310,
+            "SpDefense": 321,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2437,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 8790,
+            "Attack": 270,
+            "Defense": 522,
+            "SpAttack": 356,
+            "SpDefense": 366,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2693,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 9800,
+            "Attack": 292,
+            "Defense": 599,
+            "SpAttack": 412,
+            "SpDefense": 420,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Rapid Spin",
+            "MoveOrders": [
+                "Water Gun",
+                "Skull Bash",
+                "Water Spout",
+                "Rapid Spin"
+            ],
+            "HeldItems": [
+                "Sp Atk Specs",
+                "Slick Spoon",
+                "Energy Amplifier"
+            ],
+            "AltHeldItem": "Choice Specs",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Slow Smoke"
+        },
+        {
+            "Name": "Disruptor",
+            "MoveOrders": [
+                "Water Gun",
+                "Skull Bash",
+                "Hydro Pump",
+                "Surf"
+            ],
+            "HeldItems": [
+                "Choice Specs",
+                "Slick Spoon",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Slow Smoke"
+        },
+        {
+            "Name": "Tank",
+            "MoveOrders": [
+                "Water Gun",
+                "Skull Bash",
+                "Water Spout",
+                "Rapid Spin"
+            ],
+            "HeldItems": [
+                "Slick Spoon",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Score Shield",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Eject Button"
+        }
+    ]
+}
+

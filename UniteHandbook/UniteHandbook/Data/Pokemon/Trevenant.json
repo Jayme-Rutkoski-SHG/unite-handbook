@@ -1,0 +1,365 @@
+{
+    "Name": "Trevenant",
+    "AttackStyle": "Attack",
+    "Role": "Defender",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Natural Cure",
+            "Desc": "When Trevenant deals or receives damage while at or below 35% max HP, a continuous HP recovery effect is triggered every 0.5s for 4s. This effect also reduces the cooldowns of Trevenant's moves by 1s every 1s. When this HP recovery effect ends, there is a 100s cooldown. However, this cooldown is reduced by 1s each time one of Trevenant's moves damage an enemy. This cooldown reduction cannot be triggered more than once every 0.5s./n/nHeal - 8 Ticks: [ 2+(0.18 * (Level -1)) ] % of max HP"
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Will-o-Wisp",
+            "Category": "Ranged",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Shoots sinister flames in the designated direction, dealing damage to enemies hit and leaving them burned for a short time. This burn reduces enemy Attack and Sp. Attack by 5% for 3s. The first wisp to hit a target deals full damage, and subsequent flame hits deal 50% damage."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Wood Hammer",
+                    "Category": "Hindrance",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Trevenant pulls back its arms and attacks, dealing damage to enemies in the area of effect and pulls them in front of Trevenant, leaving them unable to act for0.5s. If this attack deals damage to at least one enemy, a follow-up attack will be available for 5s. This follow-up attack slams down a giant wooden hammer in front of Trevenant, dealing damage to any enemy it hits, and leaving them unable to act. The lower Trevenant's HP, the longer the enemy will be left unable to act (Above 70% HP = 1.1s, 40%-70% HP = 1.3s, Below 40% HP = 1.5s). Every time this move is used, it consumes 7% of Trevenant's current HP."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Damage dealt by enemies hit by the second hammer reduced by 20% for 3s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Curse",
+                    "Category": "Hindrance",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Trevenant creates a cursed zone in exchange for 3% max HP per second for 6s, dealing damage over time to enemies in the area of effect every0.5s for 6s and decreasing their movement speed for 1s, refreshing with each tick. The lower Trevenant's HP is, the greater the decrease in movement speed (Above 70% HP = 8%, 40%-70% HP = 10%, Below 40% HP = 14%). While using this move, Trevenant builds up curse power every time it deals or receives damage. Releasing this built-up power will deal additional damage to enemies in the area of effect. If the curse power is at maximum when it’s released, the cooldowns of Branch Poke, Horn Leech, and Pain Split are reset."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased radius."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Branch Poke",
+            "Category": "Dash",
+            "Cooldown": 7.50,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Trevenant jabs in the designated direction; dealing damage, decreasing their movement speed by 40% for 2s, and healing Trevenant for 3% max HP (3 times) when hitting an enemy."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Horn Leech",
+                    "Category": "Dash",
+                    "Cooldown": 8.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Charge forward, becoming unstoppable, dealing damage to enemies and shoving them while dashing in the designated direction for the duration of the dash. At the end of the charge, enemies that were shoved are dealt additional damage and then thrown. Colliding with an enemy while charging recovers Trevenant's HP 3 times, and the lower Trevenant's remaining HP the more HP that is recovered. After this move hits an enemy, Trevenant's next three auto attacks deal more damage and reduce this move’s cooldown by0.5s when they hit."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "After using this move, Trevenant's movement speed is increased by 30% for 1.5s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Pain Split",
+                    "Category": "Sure Hit",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Creates a link between Trevenant and a designated enemy for 6s. While the link holds, a portion of the damage Trevenant takes is redirected to the linked enemy as True damage. The lower Trevenant's remaining HP, the greater the percentage of damage that is redirected. Additionally, if Trevenant's percentage of remaining HP is lower than the linked enemy, this move continuously deals damage and recovers Trevenant's HP equal to the damage dealt every0.5s. If Trevenant and the linked enemy are too far apart, the link will disappear. Using this move increases Trevenant's movement speed by 45% for 2s."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Duration increased to 8.5s, adding 5 ticks."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Phantom Forest",
+            "Category": "Hindrance",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Creates a cursed forest, dealing damage to enemies in the area of effect and marking them, throwing them, and decreasing their movement speed by 50% for 2s. Trevenant and allies deal increased damage to enemies that were marked by this move (0.5s cd for each attacker). The mark lasts for 6s. Trevenant is also granted a shield for 6s when this move hits an enemy with the shield being strengthened for each enemy hit, up to 5 times. While Trevenant is shielded by this shield, HP recovery effects applied to Trevenant are increased by 50%."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3250,
+            "Attack": 175,
+            "Defense": 100,
+            "SpAttack": 20,
+            "SpDefense": 70,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3391,
+            "Attack": 178,
+            "Defense": 109,
+            "SpAttack": 22,
+            "SpDefense": 78,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1044,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3553,
+            "Attack": 182,
+            "Defense": 120,
+            "SpAttack": 24,
+            "SpDefense": 87,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1095,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3739,
+            "Attack": 187,
+            "Defense": 132,
+            "SpAttack": 27,
+            "SpDefense": 97,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1154,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4589,
+            "Attack": 208,
+            "Defense": 188,
+            "SpAttack": 40,
+            "SpDefense": 144,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1422,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4835,
+            "Attack": 214,
+            "Defense": 204,
+            "SpAttack": 44,
+            "SpDefense": 158,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.15,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 5118,
+            "Attack": 221,
+            "Defense": 223,
+            "SpAttack": 48,
+            "SpDefense": 174,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1589,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 5444,
+            "Attack": 229,
+            "Defense": 245,
+            "SpAttack": 53,
+            "SpDefense": 192,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1692,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5819,
+            "Attack": 238,
+            "Defense": 270,
+            "SpAttack": 59,
+            "SpDefense": 213,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.181,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 6251,
+            "Attack": 249,
+            "Defense": 299,
+            "SpAttack": 66,
+            "SpDefense": 237,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1946,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 6748,
+            "Attack": 261,
+            "Defense": 332,
+            "SpAttack": 74,
+            "SpDefense": 264,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2102,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 7319,
+            "Attack": 275,
+            "Defense": 370,
+            "SpAttack": 83,
+            "SpDefense": 295,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2282,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 7976,
+            "Attack": 291,
+            "Defense": 413,
+            "SpAttack": 93,
+            "SpDefense": 331,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2489,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 8731,
+            "Attack": 309,
+            "Defense": 463,
+            "SpAttack": 104,
+            "SpDefense": 373,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2727,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 9599,
+            "Attack": 330,
+            "Defense": 520,
+            "SpAttack": 117,
+            "SpDefense": 421,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Displacer",
+            "MoveOrders": [
+                "Will-o-Wisp",
+                "Branch Poke",
+                "Curse",
+                "Horn Leech"
+            ],
+            "HeldItems": [
+                "Weakness Policy",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Rocky Helmet",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Slow Smoke"
+        },
+        {
+            "Name": "Crowd Control",
+            "MoveOrders": [
+                "Will-o-Wisp",
+                "Branch Poke",
+                "Wood Hammer",
+                "Horn Leech"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Rocky Helmet,
+            "BattleItem": "Slow Smoke",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Debilitator Tank",
+            "MoveOrders": [
+                "Will-o-Wisp",
+                "Branch Poke",
+                "Curse",
+                "Pain Split"
+            ],
+            "HeldItems": [
+                "Score Shield",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Slow Smoke"
+        }
+    ]
+}
+

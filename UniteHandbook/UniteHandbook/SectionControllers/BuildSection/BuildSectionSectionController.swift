@@ -7,14 +7,14 @@
 
 import IGListKit
 
-protocol BuildSectionSectionControllerDelegate {
+protocol BuildSectionSectionControllerDelegate: AnyObject {
     func didClickDelete(section: BuildSection)
 }
 
 class BuildSectionSectionController: ListSectionController {
     
     private var model: BuildSection? = nil
-    private var delegate: BuildSectionSectionControllerDelegate?
+    private weak var delegate: BuildSectionSectionControllerDelegate?
     
     convenience init(delegate: BuildSectionSectionControllerDelegate) {
         self.init()

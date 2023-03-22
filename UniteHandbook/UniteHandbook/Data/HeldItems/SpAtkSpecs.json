@@ -1,0 +1,19 @@
+{
+    "Name": "Sp Atk Specs",
+    "BonusStats": [
+        {
+            "Label": "Sp Attack",
+            "BaseValue": 0,
+            "IncrementValue": 0.8,
+            "IsPercent": false
+        }
+    ],
+    "LevelBonus": {
+        "Label": "Sp Attack",
+        "BaseValue": 8,
+        "IncrementValue": 4,
+        "IsPercent": false
+    },
+    "Desc": "When you score a goal, your Sp. Attack is raised by 8/12/16 for the rest of the match (This bonus caps at 6 stacks)."
+}
+

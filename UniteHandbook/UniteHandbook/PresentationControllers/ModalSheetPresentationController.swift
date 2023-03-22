@@ -25,6 +25,7 @@ open class ModalSheetPresentationController : UIPresentationController {
     private var middlePoint: CGPoint?
     private var topPoint: CGPoint?
     private var lowerPoint: CGPoint?
+    public var lastPosition: modalPosition = .middle
     public var currentPosition: modalPosition = .middle
     
     public override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
@@ -50,17 +51,17 @@ open class ModalSheetPresentationController : UIPresentationController {
     }
     
     public override var frameOfPresentedViewInContainerView: CGRect {
+        self.topPoint = CGPoint(x: 0, y: 1)
+        self.middlePoint = CGPoint(x: 0, y: self.containerView!.frame.height * 0.5)
+        self.lowerPoint = CGPoint(x: 0, y: self.containerView!.frame.height * 0.7)
         var currentPoint: CGPoint?
         switch self.currentPosition {
         case .top:
-            self.topPoint = CGPoint(x: 0, y: 1)
             currentPoint = self.topPoint
         case .middle:
-            self.middlePoint = CGPoint(x: 0, y: self.containerView!.frame.height * 0.5)
             currentPoint = self.middlePoint
         case .lower:
-            self.lowerPoint = CGPoint(x: 0, y: self.containerView!.frame.height * 0.7)
-            currentPoint = lowerPoint
+            currentPoint = self.lowerPoint
         }
         
         return CGRect(origin: currentPoint!, size: CGSize(width: self.containerView!.frame.width, height: self.containerView!.frame.height))
@@ -158,15 +159,16 @@ open class ModalSheetPresentationController : UIPresentationController {
             let dragVelocity = sender.velocity(in: self.presentedViewController.view)
             if dragVelocity.y >= 1000 {
                 if currentPosition == .top {
-                    currentPosition = .middle
+                    currentPosition = lastPosition
                     animateToPosition()
                 }
                 self.dismissController()
             } else if abs(dragVelocity.y) >= 1000 {
+                lastPosition = currentPosition
                 currentPosition = .top
                 animateToPosition()
             } else {
-                currentPosition = .middle
+                currentPosition = lastPosition
                 animateToPosition()
             }
         }

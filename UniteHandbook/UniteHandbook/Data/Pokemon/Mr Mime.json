@@ -1,0 +1,365 @@
+{
+    "Name": "Mr Mime",
+    "AttackStyle": "Special",
+    "Role": "Supporter",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Filter",
+            "Desc": "Upon casting a Move, Mr. Mime takes 10% less damage for 2s."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Fake Out",
+            "Category": "Melee",
+            "Cooldown": 7.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Mr. Mime claps, damaging and knocking back enemies hit."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Confusion",
+                    "Category": "Ranged",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Mr. Mime fires a wave of psychic energy, damaging and knocking enemies back. Enemies hit into a wall take bonus damage and are stunned for 1.5s. Enemies debuffed by Power Swap take bonus damage and are stunned, but are not knocked back./n/nNormal damage will apply to targets that are unstoppable or unstunnable. (Example: Drednaw & Zapdos)"
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Psychic",
+                    "Category": "Area",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 4,
+                            "Desc": "Mr. Mime. pulses energy, dealing damage in an area around themself, any target affected by Power Swap, and any Barriers or Light Screens. After three pulses, a final pulse will damage enemies and stun them for 1s. Enemies hit by the pulses have their SpDef lowered by 5% for 3s with each hit (maximum 8 stacks)."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Enemies hit by the pulses are additionally slowed by 30%."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Light Screen",
+            "Category": "Hindrance",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Mr. Mime creates a wall that prevents enemies from passing. If an enemy is near the location where the wall is created, they are shoved and left unable to act for a short time."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Barrier",
+                    "Category": "Hindrance",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Mr. Mime creates a wall that prevents enemies from passing. If an enemy is near the location where the wall is created, they are shoved and left unable to act for a short time. Holds 2 uses in reserve and cannot be used more than once every 2s."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Stores 3 uses in reserve instead."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Power Swap",
+                    "Category": "Debuff",
+                    "Cooldown": 4.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 6,
+                            "Desc": "Creates a link between Mr. Mime and the target this move hits. While the link holds, Mr. Mime's movement speed increases by 8% and their HP is continually restored. The link will continue to hold for as long as the linked target stays in range or until another target is Power Swapped. Damage and healing ticks at a rate of 0.5s./n/nIf the linked target is an ally, this move increases their movement speed by 15%, increases the amount of damage they deal by 15%, and continually restores their HP. If the linked target is an enemy, this move decreases their movement speed by 8%, decreases the amount of damage they deal by 15% and deals damage over time to them. Power Swap can be cleansed."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Increases the amount of damage dealt by allies to 20% and decreases the amount of damage dealt by enemies to 20%."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Showtime",
+            "Category": "Area",
+            "Cooldown": 100,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Mr. Mime leaps forward and begins a performance; stunning enemies for 0.5s, dealing damage in a large area around him 4 times, and becomes unstoppable for the duration. The final hit deals double damage."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3150,
+            "Attack": 150,
+            "Defense": 70,
+            "SpAttack": 50,
+            "SpDefense": 60,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3351,
+            "Attack": 155,
+            "Defense": 82,
+            "SpAttack": 63,
+            "SpDefense": 71,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3572,
+            "Attack": 161,
+            "Defense": 96,
+            "SpAttack": 77,
+            "SpDefense": 83,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.00,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3815,
+            "Attack": 167,
+            "Defense": 111,
+            "SpAttack": 93,
+            "SpDefense": 96,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.05,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4082,
+            "Attack": 174,
+            "Defense": 128,
+            "SpAttack": 110,
+            "SpDefense": 110,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.05,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4376,
+            "Attack": 181,
+            "Defense": 146,
+            "SpAttack": 129,
+            "SpDefense": 126,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.05,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4700,
+            "Attack": 189,
+            "Defense": 166,
+            "SpAttack": 150,
+            "SpDefense": 143,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.05,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 5057,
+            "Attack": 198,
+            "Defense": 188,
+            "SpAttack": 173,
+            "SpDefense": 162,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.05,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5450,
+            "Attack": 208,
+            "Defense": 212,
+            "SpAttack": 198,
+            "SpDefense": 183,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5883,
+            "Attack": 219,
+            "Defense": 239,
+            "SpAttack": 226,
+            "SpDefense": 205,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 6360,
+            "Attack": 231,
+            "Defense": 269,
+            "SpAttack": 257,
+            "SpDefense": 231,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 6885,
+            "Attack": 244,
+            "Defense": 302,
+            "SpAttack": 291,
+            "SpDefense": 259,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 7463,
+            "Attack": 259,
+            "Defense": 338,
+            "SpAttack": 328,
+            "SpDefense": 290,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 8099,
+            "Attack": 275,
+            "Defense": 377,
+            "SpAttack": 369,
+            "SpDefense": 324,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 8800,
+            "Attack": 293,
+            "Defense": 420,
+            "SpAttack": 414,
+            "SpDefense": 361,
+            "CritRate": 0.00,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Full Offense",
+            "MoveOrders": [
+                "Fake Out",
+                "Light Screen",
+                "Confusion",
+                "Power Swap"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
+            ],
+            "AltHeldItem": "Sp Atk Specs",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Support",
+            "MoveOrders": [
+                "Fake Out",
+                "Light Screen",
+                "Confusion",
+                "Power Swap"
+            ],
+            "HeldItems": [
+                "Exp Share",
+                "Rescue Hood",
+                "Slick Spoon"
+            ],
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Slow Smoke"
+        },
+        {
+            "Name": "Blocker",
+            "MoveOrders": [
+                "Fake Out",
+                "Light Screen",
+                "Psychic",
+                "Barrier"
+            ],
+            "HeldItems": [
+                "Choice Specs",
+                "Slick Spoon",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Potion"
+        }
+    ]
+}
+

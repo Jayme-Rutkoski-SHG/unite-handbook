@@ -1,0 +1,373 @@
+{
+    "Name": "Mew",
+    "AttackStyle": "Special",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Novice",
+    "Ability": [
+        {
+            "Name": "Synchronize",
+            "Desc": "Each time Mew uses a move, Mew and nearby allies have their movement speed increased by 15% for 2s."
+        },
+        {
+            "Name": "Move Reset",
+            "Desc": "When Mew reaches level 5, the Move Reset icon can be used to reset Mew's moves and learn new moves. This ability goes on a 20s cooldown after it's used. Each time Mew knocks out or makes an assist on an enemy player, or scores a goal, the Move Reset cooldown is reduced (Knockout: 40%, Assist: 20%, Goal: 5%). Using Move Reset adds 5000 Unite Move energy to Mystical Mirage."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Electro Ball",
+            "Category": "Sure Hit",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Hurl an electric orb, dealing damage to enemies in the area-of-effect and leaving them paralyzed (40% slow) for 2s. This move deals more damage the lower the enemies' remaining HP is./n/nThrough Light Screen: Damage dealt and area-of-effect radius are increased."
+                },
+                {
+                    "Level": 10,
+                    "Desc": "Strengthens the effect of the paralysis inflicted by this move to 60%."
+                }
+            ]
+        },
+        {
+            "Name": "Solar Beam",
+            "Category": "Area",
+            "Cooldown": 9.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Blast a bundled beam of light, dealing damage 3 times to enemies in the area-of-effect. If this move hits an enemy, Mew gains an additional boost counter./n/nThrough Light Screen: Damage dealt and area-of-effect radius are increased."
+                },
+                {
+                    "Level": 10,
+                    "Desc": "Reduce this move's cooldown by 0.7s for each enemy hit."
+                }
+            ]
+        },
+        {
+            "Name": "Surf",
+            "Category": "Hindrance",
+            "Cooldown": 12.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Charge forward on a wave, shoving enemies for 0.5s and leaving them unable to act for 0.5s. Mew gains a shield for 3s and becomes immune to hindrances while using this move. At the end of this move, Mew can jump in a designated direction and becomes immune to hindrances for a short time. If this move hits an enemy, Mew gains an additional boost counter./n/nThrough Light Screen: Distance the wave travels is increased and Light Screen attaches to Mew."
+                },
+                {
+                    "Level": 10,
+                    "Desc": "Strengthens the shield effect of this move."
+                }
+            ]
+        },
+        {
+            "Name": "Coaching",
+            "Category": "Buff",
+            "Cooldown": 7.00,
+            "LevelDetails": [
+                {
+                    "Level": 3,
+                    "Desc": "Teleport to an ally, granting them a shield for 3s and increased basic attack speed by 40% for 2s. If this move is used on an ally who hasn't been coached within 7s, the cooldown of this move is reduced by 90%. If this move is used on an ally who has been recently coached, this move goes on cooldown. The cooldown of Electro Ball, Solar Beam, and Surf is reduced by 1s each time this move is used."
+                },
+                {
+                    "Level": 12,
+                    "Desc": "Reduce this move's cooldown by 1s and reduces the timer of recently coached on allies to 6s."
+                }
+            ]
+        },
+        {
+            "Name": "Light Screen",
+            "Category": "Buff",
+            "Cooldown": 10.00,
+            "LevelDetails": [
+                {
+                    "Level": 3,
+                    "Desc": "Create a translucent wall in the designated location for 4s that prevents enemies from passing and shoves them for 0.5s if they make contact with the wall. If Mew's Electro Ball, Solar Beam, or Surf passes through the wall, the effects of those moves will be enhanced (such as increased damage, range, and area-of-effect). If this move is used again within 4s, the wall is pulled towards Mew and follows them as they move for an additional 4s. While the wall moves with Mew, enemy attacks that pass through it will deal 25% reduced damage but will not prevent enemies from passing and does not shove them anymore."
+                },
+                {
+                    "Level": 12,
+                    "Desc": "Increases the size of the wall."
+                }
+            ]
+        },
+        {
+            "Name": "Agility",
+            "Category": "Dash",
+            "Cooldown": 10.00,
+            "LevelDetails": [
+                {
+                    "Level": 3,
+                    "Desc": "Move quickly in a designated direction, increasing Mew's movement speed by 5% for 2s. Holds 2 uses in reserve and cannot be used more than once every 2s."
+                },
+                {
+                    "Level": 12,
+                    "Desc": "Increases the distance Mew moves in the designated direction."
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Mystical Mirage",
+            "Category": "Area",
+            "Cooldown": 123,
+            "LevelDetails": [
+                {
+                    "Level": 8,
+                    "Desc": "Mew floats in the air for 1s, becoming invincible for 6s or until using an attack or move and creating a field around their location for 5s. This field travels with Mew. Mew and all allies within the area become stealthed for 4s. After the field expires, this move deals damage to enemies within the area-of-effect."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3300,
+            "Attack": 130,
+            "Defense": 50,
+            "SpAttack": 90,
+            "SpDefense": 50,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3414,
+            "Attack": 136,
+            "Defense": 56,
+            "SpAttack": 121,
+            "SpDefense": 55,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1036,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3539,
+            "Attack": 143,
+            "Defense": 63,
+            "SpAttack": 155,
+            "SpDefense": 60,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1075,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3677,
+            "Attack": 150,
+            "Defense": 71,
+            "SpAttack": 192,
+            "SpDefense": 66,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1118,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3828,
+            "Attack": 158,
+            "Defense": 80,
+            "SpAttack": 233,
+            "SpDefense": 72,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1165,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3995,
+            "Attack": 167,
+            "Defense": 89,
+            "SpAttack": 278,
+            "SpDefense": 79,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1217,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4178,
+            "Attack": 177,
+            "Defense": 99,
+            "SpAttack": 327,
+            "SpDefense": 86,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1274,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4380,
+            "Attack": 188,
+            "Defense": 110,
+            "SpAttack": 381,
+            "SpDefense": 94,
+            "CritRate": 0.00,
+            "CDR": 0.05,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1337,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4603,
+            "Attack": 200,
+            "Defense": 123,
+            "SpAttack": 441,
+            "SpDefense": 103,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1407,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4849,
+            "Attack": 213,
+            "Defense": 137,
+            "SpAttack": 507,
+            "SpDefense": 113,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1484,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5119,
+            "Attack": 227,
+            "Defense": 152,
+            "SpAttack": 579,
+            "SpDefense": 124,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1568,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5416,
+            "Attack": 243,
+            "Defense": 169,
+            "SpAttack": 659,
+            "SpDefense": 136,
+            "CritRate": 0.00,
+            "CDR": 0.15,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1661,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 5743,
+            "Attack": 260,
+            "Defense": 188,
+            "SpAttack": 747,
+            "SpDefense": 149,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1763,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 6103,
+            "Attack": 279,
+            "Defense": 208,
+            "SpAttack": 844,
+            "SpDefense": 164,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1876,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 6500,
+            "Attack": 300,
+            "Defense": 230,
+            "SpAttack": 950,
+            "SpDefense": 180,
+            "CritRate": 0.00,
+            "CDR": 0.25,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.20,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Offense-Powered",
+            "MoveOrders": [
+                "Electro Ball",
+                "Agility",
+                "Solar Beam",
+                "Light Screen"
+            ],
+            "HeldItems": [
+                "Wise Glasses",
+                "Choice Specs",
+                "Slick Spoon"
+            ],
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Defense-Powered",
+            "MoveOrders": [
+                "Electro Ball",
+                "Coaching",
+                "Surf",
+                "Light Screen"
+            ],
+            "HeldItems": [
+                "Slick Spoon",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Assault Vest",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Support-Focused",
+            "MoveOrders": [
+                "Solar Beam",
+                "Coaching",
+                "Surf",
+                "Light Screen"
+            ],
+            "HeldItems": [
+                "Exp Share",
+                "Rescue Hood",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Shell Bell",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        }
+    ]
+}
+

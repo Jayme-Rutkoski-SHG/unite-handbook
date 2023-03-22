@@ -1,0 +1,365 @@
+{
+    "Name": "Greninja",
+    "AttackStyle": "Attack",
+    "Role": "Attacker",
+    "Style": "Ranged",
+    "Difficulty": "Expert",
+    "Ability": [
+        {
+            "Name": "Torrent",
+            "Desc": "While HP is at 50% or less, Attack is increased by 5% and movement speed is increased by 12%."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Bubble",
+            "Category": "Ranged",
+            "Cooldown": 9.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Greninja launches 2 bubbles which pop when they hit an enemy, damaging and slowing them by 25% for 1s."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Water Shuriken",
+                    "Category": "Ranged",
+                    "Cooldown": 6.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Greninja throws 4 shurikens made of water which explode when they hit an enemy, damaging and slowing enemies by 25% for 1s in a small area while healing Greninja. While using this move, Greninja's movement speed is increased by 15% for 3s."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Throws 5 shurikens instead."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Surf",
+                    "Category": "Melee",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Greninja dashes on a wave, damaging enemies and healing themself for each enemy hit. Enemies below half health are dealt bonus damage, and if this move KOs an enemy the cooldown is reset./n/nAgainst Wild Pokémon: The first hit is capped at 1200 and the second hit is capped at 600."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased healing."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Substitute",
+            "Category": "Dash",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Greninja dashes while leaving behind a targetable decoy. Greninja is unstoppable while dashing."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Double Team",
+                    "Category": "Dash",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Greninja briefly vanishes before dashing and sending clones in different directions. The clones attack nearby targets, have the same HP and defenses as Greninja, deal 18% of Greninja's damage (clones use Surf or Water Shuriken - whichever is learned by Greninja), and last for 3s. Greninja is unstoppable while dashing."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Cooldown reduced by 1s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Smokescreen",
+                    "Category": "Buff",
+                    "Cooldown": 13.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Greninja becomes invisible for 3s, gaining 10% bonus movement speed, and leaving behind a cloud of smoke. Enemies that stay in the smoke cloud have their vision range reduced by 60%. Greninja's next attack is boosted and deals increased damage, melee and ranged bonus effects apply. Greninja is unstoppable while dashing."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Also increases Greninja's attack by 20% for 2s when leaving stealth."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Waterburst Shuriken",
+            "Category": "Area",
+            "Cooldown": 134,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Throw a giant water shuriken toward the designated area, dealing damage to enemies in the area of effect and those in the line shown by arrowed reticule but are outside Greninja's melee attack range. Pokémon damaged by the designated circular area have their movement speed decreased by 50% for 2s when this move hits. The water shuriken then immediately explodes, dealing damage to enemies in the area of effect and throws them in the air. Once this move ends, Greninja may jump in a designated direction."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3000,
+            "Attack": 146,
+            "Defense": 50,
+            "SpAttack": 20,
+            "SpDefense": 30,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3031,
+            "Attack": 151,
+            "Defense": 53,
+            "SpAttack": 21,
+            "SpDefense": 32,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1157,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3068,
+            "Attack": 156,
+            "Defense": 56,
+            "SpAttack": 23,
+            "SpDefense": 34,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1346,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3112,
+            "Attack": 162,
+            "Defense": 60,
+            "SpAttack": 25,
+            "SpDefense": 36,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1573,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3273,
+            "Attack": 186,
+            "Defense": 75,
+            "SpAttack": 32,
+            "SpDefense": 45,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.2396,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3337,
+            "Attack": 195,
+            "Defense": 81,
+            "SpAttack": 35,
+            "SpDefense": 49,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.2724,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 3629,
+            "Attack": 238,
+            "Defense": 108,
+            "SpAttack": 49,
+            "SpDefense": 65,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.4217,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 3721,
+            "Attack": 252,
+            "Defense": 117,
+            "SpAttack": 53,
+            "SpDefense": 70,
+            "CritRate": 0.15,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.4689,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 3832,
+            "Attack": 268,
+            "Defense": 127,
+            "SpAttack": 58,
+            "SpDefense": 76,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.5255,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 3965,
+            "Attack": 287,
+            "Defense": 139,
+            "SpAttack": 64,
+            "SpDefense": 83,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.5934,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4125,
+            "Attack": 310,
+            "Defense": 154,
+            "SpAttack": 71,
+            "SpDefense": 92,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.675,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 4316,
+            "Attack": 338,
+            "Defense": 172,
+            "SpAttack": 80,
+            "SpDefense": 103,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.7728,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 4546,
+            "Attack": 372,
+            "Defense": 193,
+            "SpAttack": 91,
+            "SpDefense": 116,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.892,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 4821,
+            "Attack": 412,
+            "Defense": 219,
+            "SpAttack": 104,
+            "SpDefense": 131,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 1.031,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 5152,
+            "Attack": 460,
+            "Defense": 250,
+            "SpAttack": 119,
+            "SpDefense": 149,
+            "CritRate": 0.30,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 1.20,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Carry",
+            "MoveOrders": [
+                "Bubble",
+                "Substitute",
+                "Double Team",
+                "Water Shuriken"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Scope Lens",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
+        },
+        {
+            "Name": "Assassin",
+            "MoveOrders": [
+                "Bubble",
+                "Substitute",
+                "Smokescreen",
+                "Surf"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Scope Lens",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Buddy Barrier",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "Full Heal"
+        },
+        {
+            "Name": "Balanced",
+            "MoveOrders": [
+                "Bubble",
+                "Substitute",
+                "Smokescreen",
+                "Water Shuriken"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Speed"
+        }
+    ]
+}
+

@@ -1,0 +1,365 @@
+{
+    "Name": "Talonflame",
+    "AttackStyle": "Attack",
+    "Role": "Speedster",
+    "Style": "Melee",
+    "Difficulty": "Novice",
+    "Ability": [
+        {
+            "Name": "Gale Wings",
+            "Desc": "While above 85% HP; movement speed is increased by 10%."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Peck",
+            "Category": "Melee",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Talonflame flies toward a target Pokémon and attacks it three times."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Flame Charge",
+                    "Category": "Dash",
+                    "Cooldown": 6.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Talonflame dashes forward; damaging enemies in its path. Talonflame gains 30% movement speed for 1.5s after dashing."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "For 3s after this move hits; Talonflame's abilities and auto attacks partially ignore the enemies' defense (capped at 0) and enemies hit are slowed by 30% for 5s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Aerial Ace",
+                    "Category": "Dash",
+                    "Cooldown": 5.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Talonflame dashes through a targeted enemy; damaging them and healing Talonflame. Talonflame's next auto attack is boosted."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Increased damage."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Acrobatics",
+            "Category": "Dash",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Talonflame flies toward a targeted area; attacking all Pokémon in the area up to three times. Talonflame can choose a direction to dash after the move ends."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Fly",
+                    "Category": "Dash",
+                    "Cooldown": 12.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Talonflame flies up into the sky; becoming untargetable and increasing movement speed by 65%. After 3s, Talonflame dives at the targeted area, damaging all enemies in the area. Fly can be recast to dive early. This move's cooldown is reduced by 40% if it hits an enemy player. After using this move, the next attack becomes a boosted attack."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Enemies hit are also thrown in the air for 0.4s."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Brave Bird",
+                    "Category": "Dash",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Talonflame dives at the targeted area; taking 5% of remaining HP as recoil damage and damaging all enemies in the area. If Talonflame uses a boosted attack on an enemy hit by Brave Bird within 4s, the cooldown of Flame Charge or Aerial Ace is reset. The cooldown of Flame Charge and Aerial Ace can only be reset once per target hit by Brave bird."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Talonflame takes 15% less damage per enemy hit for 5s when this move hits. This damage reduction stacks up to 3 times (capped at 45%)."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Flame Sweep",
+            "Category": "Dash",
+            "Cooldown": 100,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Talonflame charges forward; damaging and shoving all enemies in its path. Flame Sweep deals damage up to 2 times and Talonflame takes 50% less damage during the sweep."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3024,
+            "Attack": 200,
+            "Defense": 58,
+            "SpAttack": 20,
+            "SpDefense": 40,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3071,
+            "Attack": 207,
+            "Defense": 61,
+            "SpAttack": 21,
+            "SpDefense": 42,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1043,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3127,
+            "Attack": 215,
+            "Defense": 65,
+            "SpAttack": 23,
+            "SpDefense": 45,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1094,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3195,
+            "Attack": 225,
+            "Defense": 70,
+            "SpAttack": 25,
+            "SpDefense": 48,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1156,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 3440,
+            "Attack": 261,
+            "Defense": 87,
+            "SpAttack": 32,
+            "SpDefense": 60,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.138,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 3538,
+            "Attack": 275,
+            "Defense": 94,
+            "SpAttack": 35,
+            "SpDefense": 65,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1469,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 3983,
+            "Attack": 340,
+            "Defense": 125,
+            "SpAttack": 48,
+            "SpDefense": 87,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1876,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4124,
+            "Attack": 361,
+            "Defense": 135,
+            "SpAttack": 52,
+            "SpDefense": 94,
+            "CritRate": 0.05,
+            "CDR": 0.10,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2005,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 4293,
+            "Attack": 386,
+            "Defense": 147,
+            "SpAttack": 57,
+            "SpDefense": 102,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2159,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 4495,
+            "Attack": 416,
+            "Defense": 161,
+            "SpAttack": 63,
+            "SpDefense": 112,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2344,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 4738,
+            "Attack": 452,
+            "Defense": 178,
+            "SpAttack": 70,
+            "SpDefense": 124,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2566,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 5029,
+            "Attack": 495,
+            "Defense": 199,
+            "SpAttack": 79,
+            "SpDefense": 138,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.2833,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 5378,
+            "Attack": 546,
+            "Defense": 224,
+            "SpAttack": 89,
+            "SpDefense": 155,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.3153,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 5797,
+            "Attack": 607,
+            "Defense": 254,
+            "SpAttack": 102,
+            "SpDefense": 175,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.3537,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 6300,
+            "Attack": 681,
+            "Defense": 290,
+            "SpAttack": 117,
+            "SpDefense": 200,
+            "CritRate": 0.10,
+            "CDR": 0.20,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.3998,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Burst",
+            "MoveOrders": [
+                "Peck",
+                "Aerobatics",
+                "Aerial Ace",
+                "Fly"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Scope Lens",
+                "Razor Claw"
+            ],
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
+        },
+        {
+            "Name": "Sniper",
+            "MoveOrders": [
+                "Peck",
+                "Aerobatics",
+                "Aerial Ace",
+                "Brave Bird"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Scope Lens",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "High-Mobility",
+            "MoveOrders": [
+                "Peck",
+                "Aerobatics",
+                "Flame Charge",
+                "Fly"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Razor Claw",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Focus Band",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
+        }
+    ]
+}
+

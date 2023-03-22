@@ -1,0 +1,380 @@
+{
+    "Name": "Urshifu",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Inner Focus",
+            "Desc": "Reduces the duration of hindrance effects on Kubfu."
+        },
+        {
+            "Name": "Unseen Fist",
+            "Desc": "When Urshifu deals damage to an enemy with a shield effect, 70% of the damage is dealt to the shield and 30% is dealt to their HP."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Rock Smash",
+            "Category": "Melee",
+            "Cooldown": 6.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Charges power before punching in the designated direction, dealing damage to enemies. The longer the power is charged, the more damage this move deals. The user receives 20% reduced damage while charging."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Wicked Blow",
+                    "Category": "Melee",
+                    "Cooldown": 7.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Charge power before striking in the designated direction with a fierce blow. Urshifu's next basic attack after hitting an enemy with this move becomes a boosted attack. While charging, movement speed is decreased but Urshifu receives 20% reduced damage and becomes immune to hindrances. If Urshifu charges power for a set amount of time or longer before striking, this move deals damage to enemies in an area-of-effect. The lower the enemies' remaining HP is, the more damage is dealt. Enemies in the center of the area receive a critical hit and are shoved./n/nIf Urshifu does not charge power for that set amount of time, this move deals damage to enemies in an area-of-effect, decreasing their movement speed. If an enemy is hit with the uncharged punch, this move's cooldown is reduced by 50%."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Damage reduction that Urshifu receives while charging this move is increased to 40%. When Urshifu strikes after charging power, enemies in the center of the area-of-effect are also stunned with the shove."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Surging Strikes",
+                    "Category": "Melee",
+                    "Cooldown": 11.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Dash in the designated direction and strike with a flowing motion, dealing damage to enemies hit. This move can be used an additional two times. The third time it is used, the enemy is thrown and the damage dealt will be critical. Urshifu's next basic attack after using this move becomes a boosted attack and if the boosted attack hits, Urshifu's HP is restored."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "While using this move, Urshifu receives 30% damage reduction."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Headbutt",
+            "Category": "Dash",
+            "Cooldown": 9.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Charge in the designated direction, dealing damage to enemies hit and leaving them unable to act for a short time."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Throat Chop",
+                    "Category": "Dash",
+                    "Cooldown": 9.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Dash in the designated direction, dealing damage to enemies hit and leaving them stunned for 0.7s. Urshifu's next basic attack after using this move becomes a boosted attack."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "This move's cooldown is reduced by 2s when Wicked Blow hits."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Liquidation",
+                    "Category": "Melee",
+                    "Cooldown": 10.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Deal damage to and decrease the defense of enemies in the area around Urshifu by 30% for 2s. When this move hits, Urshifu is granted a shield whose strength is based on the number of enemies hit. The Shield lasts for 3s."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Reduces this move's cooldown by 1s."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Ebon Fist",
+            "Category": "Sure Hit",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Dash at the designated enemy and designate a direction or not. If no direction is designated, this move instead deals damage and throws the singular enemy, leaving them unable to act when they land. If a direction is designated, this move deals a more powerful blow to the target and shoves them in the designated direction. The shoved enemy then also deals damage to and throws other enemies they hit. Using this move will reset Wicked Blow's cooldown."
+                }
+            ]
+        },
+        {
+            "Name": "Flowing Fists",
+            "Category": "Melee",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Deal damage to enemies in an area-of-effect and shove them. If this move is used again, Urshifu unleashes five consecutive blows upon the designated enemy, dealing damage and shoving them. In the time between activating Flowing Fists and the follow-up attack, every 2 times Urshifu deals damage to an enemy, the number of consecutive blows the follow-up attack will deal is increased by 1 up to 10 times maximum. While dealing the consecutive blows, Urshifu receives 30% reduced damage and becomes immune to hindrances. After the consecutive blows have finished, Urshifu deals damage and shoves enemies in an area-of-effect in front of themself."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3200,
+            "Attack": 150,
+            "Defense": 80,
+            "SpAttack": 20,
+            "SpDefense": 60,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3304,
+            "Attack": 157,
+            "Defense": 89,
+            "SpAttack": 22,
+            "SpDefense": 66,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1044,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3424,
+            "Attack": 165,
+            "Defense": 99,
+            "SpAttack": 24,
+            "SpDefense": 73,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1095,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3562,
+            "Attack": 175,
+            "Defense": 111,
+            "SpAttack": 27,
+            "SpDefense": 81,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1154,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4191,
+            "Attack": 219,
+            "Defense": 164,
+            "SpAttack": 40,
+            "SpDefense": 119,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1422,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4373,
+            "Attack": 232,
+            "Defense": 179,
+            "SpAttack": 44,
+            "SpDefense": 130,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.15,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4583,
+            "Attack": 247,
+            "Defense": 197,
+            "SpAttack": 48,
+            "SpDefense": 143,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1589,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4824,
+            "Attack": 264,
+            "Defense": 218,
+            "SpAttack": 53,
+            "SpDefense": 157,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1692,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5102,
+            "Attack": 284,
+            "Defense": 242,
+            "SpAttack": 59,
+            "SpDefense": 174,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.181,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5421,
+            "Attack": 306,
+            "Defense": 269,
+            "SpAttack": 65,
+            "SpDefense": 193,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1946,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5789,
+            "Attack": 332,
+            "Defense": 300,
+            "SpAttack": 72,
+            "SpDefense": 215,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2102,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 6212,
+            "Attack": 362,
+            "Defense": 336,
+            "SpAttack": 81,
+            "SpDefense": 240,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2282,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 6698,
+            "Attack": 396,
+            "Defense": 377,
+            "SpAttack": 91,
+            "SpDefense": 269,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2489,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 7257,
+            "Attack": 435,
+            "Defense": 425,
+            "SpAttack": 102,
+            "SpDefense": 302,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2727,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 7900,
+            "Attack": 480,
+            "Defense": 480,
+            "SpAttack": 115,
+            "SpDefense": 340,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.30,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Single Strike",
+            "MoveOrders": [
+                "Rock Smash",
+                "Headbutt",
+                "Wicked Blow",
+                "Throat Chop"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Razor Claw",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Drain Crown",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
+        },
+        {
+            "Name": "Rapid Strike",
+            "MoveOrders": [
+                "Rock Smash",
+                "Headbutt",
+                "Surging Strikes",
+                "Liquidation"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Weakness Policy",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Rapid-Fire Scarf",
+            "BattleItem": "X Speed",
+            "AltBattleItem": "X Attack"
+        },
+        {
+            "Name": "Full Offense",
+            "MoveOrders": [
+                "Rock Smash",
+                "Headbutt",
+                "Wicked Blow",
+                "Throat Chop"
+            ],
+            "HeldItems": [
+                "Attack Weight",
+                "Weakness Policy",
+                "Energy Amplifier"
+            ],
+            "AltHeldItem": "Scope Lens",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Full Heal"
+        }
+    ]
+}
+

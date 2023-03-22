@@ -1,0 +1,365 @@
+{
+    "Name": "Buzzwole",
+    "AttackStyle": "Attack",
+    "Role": "All-Rounder",
+    "Style": "Melee",
+    "Difficulty": "Intermediate",
+    "Ability": [
+        {
+            "Name": "Beast Boost",
+            "Desc": "When Buzzwole knocks out or assists in knocking out an enemy player, movement speed is increased by 100% and basic attack speed increased by 50% for 3s. Each time Buzzwole hits an enemy with basic attacks, Mega Punch, Lunge, or Smack Down - muscle gauge increases. Conversely, when Buzzwole is not in combat with enemy players, muscle gauge depletes by 1 increment every 5s. Up to 6 muscle gauge increments can be stored."
+        }
+    ],
+    "Moves": [
+        {
+            "Name": "Mega Punch",
+            "Category": "Area",
+            "Cooldown": 5.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Jump in the designated direction before slamming the ground with a powerful punch. The shock from the punch deals damage to enemies in the area. If this move hits an enemy, muscle gauge increases by 1 increment for each enemy hit."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Lunge",
+                    "Category": "Area",
+                    "Cooldown": 7.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Lunge in the designated direction, dealing damage to enemies, decreasing their Attack by 30% for 2s and slowing them by 30% for 1s. If this move hits an enemy, muscle gauge increases by 1 increment for each enemy hit. After this move is used, Buzzwole's basic attack speed is increased by 30% for 2s. Holds 2 uses in reserve and cannot be used more than once every 1s."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Whenever this move hits enemy players, Buzzwole's Attack increases by 10% for 2s for each player hit (up to a max of 5 stacks)."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Smack Down",
+                    "Category": "Hindrance",
+                    "Cooldown": 7.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 7,
+                            "Desc": "Deliver an uppercut punch to an enemy in the designated direction, dealing damage and throwing them into the air. While the enemy is airborne, the user can activate this move again to perform a follow-up attack that smacks the target to the ground, dealing damage to all enemies in an area centered on the airborne enemy. When this move deals damage, muscle gauge increases by 2 increments for each enemy hit."
+                        },
+                        {
+                            "Level": 13,
+                            "Desc": "Widens the area-of-effect in which damage is dealt when the grappled enemy slams the ground. Additionally, muscle gauge will now increase by 3 increments for each enemy player hit from the slam."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Fell Stinger",
+            "Category": "Melee",
+            "Cooldown": 8.00,
+            "LevelDetails": [
+                {
+                    "Level": 1,
+                    "Desc": "Consumes the entire muscle gauge and has the user deal damage to an enemy in the designated direction, briefly shoving and stunning them for .2s. The damage dealt by this move increases for each muscle gauge increment consumed at a rate of 12.5% per increment. If this move knocks out an enemy, the user recovers 10% of maximum HP."
+                }
+            ],
+            "Upgrades": [
+                {
+                    "Name": "Leech Life",
+                    "Category": "Melee",
+                    "Cooldown": 8.00,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Grab and restrain an enemy in the designated direction, dealing damage-over-time while restoring Buzzwole's HP. When this move is used, consume the user's entire muscle gauge. The number of hits and the amount of damage dealt per hit increases for each muscle gauge increment consumed. Number of hits starts at 4 and increases by 1 per 2 increments of muscle gauge consumed. Initial damage increases by 1.5% per muscle gauge increment. This move ends if Buzzwole becomes unable to act for any reason or if the restrained enemy escapes by using an Eject Button or through some other means."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Also causes each instance of damage dealt by this move to be stronger than the last by 5% additively."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Super Power",
+                    "Category": "Area",
+                    "Cooldown": 7.50,
+                    "LevelDetails": [
+                        {
+                            "Level": 5,
+                            "Desc": "Consumes the entire muscle gauge and has the user run in the designated direction and grab an enemy. The user then slams the target down on the ground at full strength, dealing damage to all enemies in the area and granting an 8% Max HP shield. The damage dealt by this move is increased at a rate of 12.5% per muscle gauge increment. The shield is increased at a rate of 1.5% Max HP per muscle gauge increment."
+                        },
+                        {
+                            "Level": 11,
+                            "Desc": "Resets the cooldown of this move when the user's muscle gauge reaches maximum."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Unite": [
+        {
+            "Name": "Ultra Swole Slam",
+            "Category": "Sure Hit",
+            "Cooldown": 112,
+            "LevelDetails": [
+                {
+                    "Level": 9,
+                    "Desc": "Buzzwole flies at high speed, dealing damage to enemies in the area-of-effect. Afterward, the user targets the enemy with the lowest percentage of HP remaining among those hit and charges down at them from the sky, dealing area damage once again and additional damage to the targeted enemy based on their missing HP./n/nAgainst Wild Pokemon: Missing HP damage is not dealt."
+                }
+            ]
+        }
+    ],
+    "Stats": [
+        {
+            "Level": 1,
+            "HP": 3250,
+            "Attack": 170,
+            "Defense": 100,
+            "SpAttack": 20,
+            "SpDefense": 70,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.10,
+            "Speed": 0
+        },
+        {
+            "Level": 2,
+            "HP": 3412,
+            "Attack": 180,
+            "Defense": 113,
+            "SpAttack": 23,
+            "SpDefense": 79,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1071,
+            "Speed": 0
+        },
+        {
+            "Level": 3,
+            "HP": 3590,
+            "Attack": 191,
+            "Defense": 127,
+            "SpAttack": 27,
+            "SpDefense": 89,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal": 0.00,
+            "AtkSpd": 0.1149,
+            "Speed": 0
+        },
+        {
+            "Level": 4,
+            "HP": 3786,
+            "Attack": 203,
+            "Defense": 143,
+            "SpAttack": 31,
+            "SpDefense": 100,
+            "CritRate": 0.00,
+            "CDR": 0.00,
+            "Lifesteal":0.000,
+            "AtkSpd": 0.1235,
+            "Speed": 0
+        },
+        {
+            "Level": 5,
+            "HP": 4001,
+            "Attack": 216,
+            "Defense": 160,
+            "SpAttack": 35,
+            "SpDefense": 112,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1329,
+            "Speed": 0
+        },
+        {
+            "Level": 6,
+            "HP": 4238,
+            "Attack": 231,
+            "Defense": 179,
+            "SpAttack": 40,
+            "SpDefense": 126,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1433,
+            "Speed": 0
+        },
+        {
+            "Level": 7,
+            "HP": 4499,
+            "Attack": 247,
+            "Defense": 200,
+            "SpAttack": 45,
+            "SpDefense": 141,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1548,
+            "Speed": 0
+        },
+        {
+            "Level": 8,
+            "HP": 4786,
+            "Attack": 265,
+            "Defense": 223,
+            "SpAttack": 51,
+            "SpDefense": 157,
+            "CritRate": 0.10,
+            "CDR": 0.00,
+            "Lifesteal": 0.05,
+            "AtkSpd": 0.1674,
+            "Speed": 0
+        },
+        {
+            "Level": 9,
+            "HP": 5103,
+            "Attack": 285,
+            "Defense": 249,
+            "SpAttack": 58,
+            "SpDefense": 175,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1813,
+            "Speed": 0
+        },
+        {
+            "Level": 10,
+            "HP": 5452,
+            "Attack": 306,
+            "Defense": 277,
+            "SpAttack": 65,
+            "SpDefense": 195,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.1966,
+            "Speed": 0
+        },
+        {
+            "Level": 11,
+            "HP": 5836,
+            "Attack": 330,
+            "Defense": 308,
+            "SpAttack": 73,
+            "SpDefense": 217,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2135,
+            "Speed": 0
+        },
+        {
+            "Level": 12,
+            "HP": 6259,
+            "Attack": 356,
+            "Defense": 342,
+            "SpAttack": 82,
+            "SpDefense": 241,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.10,
+            "AtkSpd": 0.2321,
+            "Speed": 0
+        },
+        {
+            "Level": 13,
+            "HP": 6724,
+            "Attack": 385,
+            "Defense": 380,
+            "SpAttack": 92,
+            "SpDefense": 268,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2526,
+            "Speed": 0
+        },
+        {
+            "Level": 14,
+            "HP": 7236,
+            "Attack": 417,
+            "Defense": 422,
+            "SpAttack": 103,
+            "SpDefense": 297,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2751,
+            "Speed": 0
+        },
+        {
+            "Level": 15,
+            "HP": 7800,
+            "Attack": 452,
+            "Defense": 468,
+            "SpAttack": 115,
+            "SpDefense": 329,
+            "CritRate": 0.20,
+            "CDR": 0.00,
+            "Lifesteal": 0.15,
+            "AtkSpd": 0.2929,
+            "Speed": 0
+        }
+    ],
+    "PresetBuilds": [
+        {
+            "Name": "Jungle-Brawler",
+            "MoveOrders": [
+                "Fell Stinger",
+                "Mega Punch",
+                "Super Power",
+                "Lunge"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Scope Lens",
+                "Weakness Policy"
+            ],
+            "AltHeldItem": "Attack Weight",
+            "BattleItem": "X Attack",
+            "AltBattleItem": "Eject Button"
+        },
+        {
+            "Name": "Grappler",
+            "MoveOrders": [
+                "Fell Stinger",
+                "Mega Punch",
+                "Super Power",
+                "Smack Down"
+            ],
+            "HeldItems": [
+                "Muscle Band",
+                "Attack Weight",
+                "Focus Band"
+            ],
+            "AltHeldItem": "Weakness Policy",
+            "BattleItem": "Eject Button",
+            "AltBattleItem": "X Attack"
+        },
+        {
+            "Name": "Sustain",
+            "MoveOrders": [
+                "Fell Stinger",
+                "Mega Punch",
+                "Leech Life",
+                "Lunge"
+            ],
+            "HeldItems": [
+                "Weakness Policy",
+                "Focus Band",
+                "Buddy Barrier"
+            ],
+            "AltHeldItem": "Muscle Band",
+            "BattleItem": "Potion",
+            "AltBattleItem": "Eject Button"
+        }
+    ]
+}
+
