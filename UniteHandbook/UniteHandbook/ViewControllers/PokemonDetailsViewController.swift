@@ -405,7 +405,7 @@ class PokemonDetailsViewController: UIViewController, GADFullScreenContentDelega
     
     @objc func buttonAddBuild_TouchUpInside(sender: UIButton) {
         if SwiftAppDefaults.shared.addBuildCredits == 0 {
-            self.navigateToPopUpAd(title: "Watch Ad", message: "Please watch this video ad to add a new build! (This helps supports the developer, thank-you!)") { [weak self] in
+            self.navigateToPopUpAd(title: "Watch Ad", message: "Please watch this video ad to add a new build!\n\n(This helps to support the developer, thank-you!)") { [weak self] in
                 guard let self = self else { return }
                 if let ad = self.rewardedAd {
                     ad.present(fromRootViewController: self) {

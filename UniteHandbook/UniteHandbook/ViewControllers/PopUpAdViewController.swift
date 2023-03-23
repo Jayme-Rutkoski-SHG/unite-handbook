@@ -67,7 +67,7 @@ public class PopUpAdViewController: UIViewController {
         button.imageView?.contentMode = .scaleAspectFit
         button.tintColor = .black
         button.addTarget(self, action: #selector(buttonOk_TouchUpInside), for: .touchUpInside)
-        button.backgroundColor = UIColor.init(hex: 0x00A300)
+        button.backgroundColor = UIColor.init(hex: 0x00D100)
         button.clipsToBounds = true
         button.layer.cornerRadius = 20.0
         button.layer.maskedCorners = [.layerMinXMaxYCorner]
@@ -147,11 +147,11 @@ public class PopUpAdViewController: UIViewController {
         
         self.contentView.addSubview(self.labelMessage)
         self.labelMessage.snp.makeConstraints { (make) in
-            make.top.equalTo(self.viewHeader.snp.bottom).offset(15)
+            make.top.equalTo(self.viewHeader.snp.bottom).offset(20)
             make.left.equalTo(self.contentView.snp.left).offset(10)
             make.right.equalTo(self.contentView.snp.right).offset(-10)
             make.centerX.equalTo(self.viewHeader.snp.centerX)
-            make.bottom.equalTo(self.buttonClose.snp.top).offset(-15);
+            make.bottom.equalTo(self.buttonClose.snp.top).offset(-20);
         }
         
         self.viewHeader.backgroundColor = self.viewModel.headerBackgroundColor
